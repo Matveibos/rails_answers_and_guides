@@ -1,6 +1,14 @@
 # The most useful rails materials and guades
 
+## Chat 
+
 Would you like create own chat (messaging system) on rails? No problem [Tutorial: Create a simple messaging system on Rails](https://medium.com/@danamulder/tutorial-create-a-simple-messaging-system-on-rails-d9b94b0fbca1#.9c0lxziry) 
+
+
+## Study and play! 
+
+Be a hero! Write ruby code and finish the game! This game will help you write correct class and loop [Ruby Warrior](https://www.bloc.io/ruby-warrior#/)
+
 
 ## Tips
 
