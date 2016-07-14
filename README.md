@@ -9,6 +9,9 @@ Would you like create own chat (messaging system) on rails? No problem [Tutorial
 
 Be a hero! Write ruby code and finish the game! This game will help you write correct class and loop [Ruby Warrior](https://www.bloc.io/ruby-warrior#/)
 
+## Can't deploy your rails app on DigitalOcean!?
+
+No problem. This gay will help you! Best tutorial about deploy app. Try it [Deploy Ruby On Rails on Ubuntu 14.04](https://gorails.com/deploy/ubuntu/14.04).
 
 ## Tips
 
