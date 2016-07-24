@@ -17,5 +17,9 @@ No problem. This gay will help you! Best tutorial about deploy app. Try it [Depl
 
 No problem. The most shortest way [HOW TO USE WILL_PAGINATE](http://pathfindersoftware.com/2008/06/how-to-use-will_paginate-with-non-activerecord-collectionarray/).
 
+## Would you like using MongoDB in your app!? and push him on Heroku?
+
+This tutorial help you: create MongoDB enviroment, create account on MongoLab and push app on Heroku.[Integrating Mongo Ruby API with Rails](https://github.com/jhu-ep-coursera/fullstack-course3-module1-zips)
+
 
 
