@@ -41,6 +41,10 @@ No problem ruby hard way can help https://learnrubythehardway.org/book/
 
 http://ruby.bastardsbook.com/toc/
 
+## Youtube chanel for learning Ruby and other language 
+
+https://www.youtube.com/channel/UCJbPGzawDH1njbqV-D5HqKw
+
 
 
 
