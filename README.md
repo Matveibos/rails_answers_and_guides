@@ -29,5 +29,10 @@ Old tutorial, but may be usefull [railscast](http://railscasts.com/)
 
 Check it [rubyplus](https://rubyplus.com/articles)
 
+## You are always have seen it, but never complete, may be time is comming?
+
+Rails guide http://guides.rubyonrails.org/, and on russinal language http://rusrails.ru/
+
+
 
 
