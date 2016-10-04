@@ -23,7 +23,7 @@ This tutorial help you: create MongoDB enviroment, create account on MongoLab an
 
 ## Any new tutorial?
 
-[Old tutorial, but may be usefull](http://railscasts.com/)
+Old tutorial, but may be usefull[railscast](http://railscasts.com/)
 
 
 
