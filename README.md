@@ -25,5 +25,9 @@ This tutorial help you: create MongoDB enviroment, create account on MongoLab an
 
 Old tutorial, but may be usefull[railscast](http://railscasts.com/)
 
+## Do you neea any information and articles about Ruby and rails 5?
+
+Check it [rubyplus](https://rubyplus.com/articles)
+
 
 
