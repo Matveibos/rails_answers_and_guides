@@ -21,5 +21,9 @@ No problem. The most shortest way [HOW TO USE WILL_PAGINATE](http://pathfinderso
 
 This tutorial help you: create MongoDB enviroment, create account on MongoLab and push app on Heroku.[Integrating Mongo Ruby API with Rails](https://github.com/jhu-ep-coursera/fullstack-course3-module1-zips)
 
+## Any new tutorial?
+
+[Old tutorial, but may be usefull](http://railscasts.com/)
+
 
 
