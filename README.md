@@ -37,6 +37,10 @@ Rails guide http://guides.rubyonrails.org/, and in russion http://rusrails.ru/
 
 No problem ruby hard way can help https://learnrubythehardway.org/book/
 
+## Bastard ruby book!
+
+http://ruby.bastardsbook.com/toc/
+
 
 
 
