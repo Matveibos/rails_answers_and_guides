@@ -33,6 +33,10 @@ Check it [rubyplus](https://rubyplus.com/articles)
 
 Rails guide http://guides.rubyonrails.org/, and in russion http://rusrails.ru/
 
+## Would you like read about ruby something new?
+
+No problem ruby hard way can help https://learnrubythehardway.org/book/
+
 
 
 
