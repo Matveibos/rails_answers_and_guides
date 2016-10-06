@@ -49,6 +49,10 @@ https://www.youtube.com/channel/UCJbPGzawDH1njbqV-D5HqKw
 
 https://www.youtube.com/playlist?list=PLSXDqiI4sC5PsASjJy7dBncALnhjud2fx
 
+## Many ruby and rails tutor
+
+http://iwanttolearnruby.com/
+
 
 
 
