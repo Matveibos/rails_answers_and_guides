@@ -5,4 +5,6 @@ http://slides.com/ra_levis/html_css_basics#/
 https://github.com/rolling-scopes-school/tasks/tree/2016-Q4/tasks
 ## css video tutorial 
 https://css-tricks.com/
+## css topics
+http://alistapart.com/article/
 
