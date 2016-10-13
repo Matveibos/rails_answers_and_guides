@@ -41,7 +41,7 @@ No problem ruby hard way can help https://learnrubythehardway.org/book/
 
 http://ruby.bastardsbook.com/toc/
 
-# New resources for ruby! 
+# List from 29 new resources for ruby! 
 
 http://ruby.bastardsbook.com/resources/
 
