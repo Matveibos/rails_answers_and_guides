@@ -9,3 +9,4 @@
             # after you boot in ubuntu run the following commands
             sudo update-grub
             sudo grub-install /dev/sda
+2. Как установить ubunty?
