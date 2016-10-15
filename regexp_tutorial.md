@@ -1,4 +1,5 @@
 1. Check if a string matches or not regexp
+
      "test123" =~ /1/
       => 4
      --------------------------
