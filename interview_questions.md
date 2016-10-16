@@ -21,4 +21,10 @@
 
         puts tom   
         #=> kittykat
+2. Fibonacci sequence 
+
+           arr = [0,1]
+           18.times do
+               arr << arr[-2] + arr[-1]
+           end 
 
