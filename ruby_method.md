@@ -33,3 +33,8 @@
          total += num
          end   
          puts val   #=> 16
+6. File.open 
+         
+         somefile = File.open("sample.txt", "w")
+         somefile.puts "Hello file!"
+         somefile.close 
