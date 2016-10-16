@@ -26,3 +26,10 @@
 
          #=> CA
          #=> California
+         
+5. inject
+         
+         val = [1,3,5,7].inject(0) do |total, num|
+         total += num
+         end   
+         puts val   #=> 16
