@@ -16,3 +16,13 @@
 5. iterate in hash
 
          hsh.each_pair{ |k,v| puts "#{k}: #{v}"}
+         
+         -------------------------------------------------------------------
+         
+         {"CA"=>"California"}.each do |pair|
+            puts pair[0]
+            puts pair[1]
+         end      
+
+         #=> CA
+         #=> California
