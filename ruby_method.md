@@ -10,3 +10,9 @@
          puts arr.slice(3, 2).join(',')   #=> 3,4
          puts arr.slice(0,1).join(',')   #=> 0
          arr.slice(1,0).join(',')   #=> []
+4. add to hash 
+         
+         hsh["pig"] = "Wilbur"
+5. iterate in hash
+
+         hsh.each_pair{ |k,v| puts "#{k}: #{v}"}
