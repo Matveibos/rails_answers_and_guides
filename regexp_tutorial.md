@@ -1,3 +1,5 @@
+[cheat book |https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/]
+
 1. Check if a string matches or not regexp
 
           "test123" =~ /1/
