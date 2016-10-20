@@ -84,4 +84,9 @@
 14. File.size
          
          File.open('1.txt','r').size # => 12342 kb
-15. 
+15. rindex
+         
+         # returns index of first object for which block is true, starting from the last object.
+         a = [ "a", "b", "b", "b", "c" ]
+         a.rindex("b")             #=> 3
+         a.rindex("z")             #=> nil
