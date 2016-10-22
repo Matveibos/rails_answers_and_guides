@@ -27,4 +27,12 @@
            18.times do
                arr << arr[-2] + arr[-1]
            end 
+3. Argument
+           
+           def total( price:, count: 1)
+             price * count 
+           end
+           
+           total price: 10
+           => 10
 
