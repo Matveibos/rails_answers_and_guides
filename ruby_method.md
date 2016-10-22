@@ -90,3 +90,7 @@
          a = [ "a", "b", "b", "b", "c" ]
          a.rindex("b")             #=> 3
          a.rindex("z")             #=> nil
+16. `ls`
+         
+         with back quote
+         => "examples.desktop\ngraph.svf\nRuby\nВидео\nДокументы\nЗагрузки\nИзображения\nМузыка\nОбщедоступные\nРабочий стол\nШаблоны\n" 
