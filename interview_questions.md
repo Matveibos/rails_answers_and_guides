@@ -35,4 +35,21 @@
            
            total price: 10
            => 10
+4. Rewrite instance method
+
+           class Dog
+             def bark 
+               puts '1'
+             end
+           end 
+           
+           dog = Dog.new 
+           
+           def dog.bark 
+             puts '2'
+           end
+           
+           dog.bark 
+           
+           => 2
 
