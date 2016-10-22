@@ -72,3 +72,6 @@
            
            => 6
 
+7. require or require_relative
+
+           difference: point of start ruby program, with require_relative you can run your code from any folder, with require - not 
