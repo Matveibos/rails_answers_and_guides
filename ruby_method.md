@@ -92,5 +92,5 @@
          a.rindex("z")             #=> nil
 16. `ls`
          
-         with back quote
+         with back quote `ls`
          => "examples.desktop\ngraph.svf\nRuby\nВидео\nДокументы\nЗагрузки\nИзображения\nМузыка\nОбщедоступные\nРабочий стол\nШаблоны\n" 
