@@ -57,6 +57,10 @@ https://www.youtube.com/playlist?list=PLSXDqiI4sC5PsASjJy7dBncALnhjud2fx
 
 http://iwanttolearnruby.com/
 
+## Вникаем в метаклассы Ruby
+
+https://habrahabr.ru/post/143990/
+
 
 
 
