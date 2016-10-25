@@ -49,6 +49,10 @@
 
          contents = file.read
          puts contents   #=> ""
+8. * File.open 'a' (append)
+         
+         # add text without rewriting file
+         File.open("sample.txt", "a"){ |somefile| somefile.puts "Hello file!"}
 9. File: readlines
           
           File.open("sample.txt").readlines.each do |line|
