@@ -75,3 +75,12 @@
 7. require or require_relative
 
            difference: point of start ruby program, with require_relative you can run your code from any folder, with require - not 
+8. How you can redefine method '+' ?
+           
+           define_method(:+) do |j|
+           end
+9. How you can define alias method?( :+ equal to :plus )
+
+           class Fixnum 
+             alias_method :plus, :+
+           end
