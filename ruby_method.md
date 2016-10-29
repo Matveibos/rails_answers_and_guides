@@ -98,3 +98,21 @@
          
          with back quote `ls`
          => "examples.desktop\ngraph.svf\nRuby\nВидео\nДокументы\nЗагрузки\nИзображения\nМузыка\nОбщедоступные\nРабочий стол\nШаблоны\n" 
+         
+17. check if string is valid Datetime value
+         
+         require 'date'
+         d, m, y = date_string.split '-'
+         Date.valid_date? y.to_i, m.to_i, d.to_i
+18. str to date 
+         
+         require 'time'
+         t = Time.parse('12.12.2004')
+19. Ruby function to check file existence
+         
+         # file? will only return true for files
+         File.file?(filename)
+         
+         # Will also return true for directories - watch out!
+         File.exist?(filename)
+         
