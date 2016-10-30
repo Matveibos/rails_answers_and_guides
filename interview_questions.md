@@ -84,3 +84,11 @@
            class Fixnum 
              alias_method :plus, :+
            end
+10. Case statement with multiple values in each 'when' block
+           
+           # In a case statement, a , is the equivalent of || in an if statement.
+           
+           case car
+           when 'toyota', 'lexus'
+                 # code
+           end
