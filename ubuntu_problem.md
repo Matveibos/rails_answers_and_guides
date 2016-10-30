@@ -9,4 +9,9 @@
             # after you boot in ubuntu run the following commands
             sudo update-grub
             sudo grub-install /dev/sda
-2. Как установить ubunty?
+2. How you can install app (redis for example)?
+            
+            wget http://download.redis.io/releases/redis-3.2.5.tar.gz
+            tar xzf redis-3.2.5.tar.gz
+            cd redis-3.2.5
+            make
