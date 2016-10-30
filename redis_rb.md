@@ -51,6 +51,10 @@
         
         #get value from the hash
         redis.hgetall('2')
+10. redis.sdiff
+        
+        # show different between set
+        redis.sdiff('222','221')
 
         
         
