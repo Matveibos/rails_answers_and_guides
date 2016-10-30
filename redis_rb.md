@@ -31,10 +31,12 @@
     
         redisl.llen('hello')
         => return rength of list
-7. redis.sadd
+7. redis.sadd, redis.srem
 
         #add value to set
         redis.sadd('set1', 'vlad')
+        # remove value from set
+        redis.srem('set1','vlad')
 8. redis.smembers
 
         # show all value from set 
