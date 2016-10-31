@@ -57,6 +57,13 @@
         
         # show different between set
         redis.sdiff('222','221')
+11. redis.keys('*')
+        
+        # show all existing keys
+        redis.keys('*')
+12. redis.flushall
+
+        # clear all database
 
         
         
