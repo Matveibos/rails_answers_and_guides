@@ -115,4 +115,12 @@
          
          # Will also return true for directories - watch out!
          File.exist?(filename)
+20. each_slice
+          
+         (1..10).each_slice(3) { |a| p a }
+         # outputs below
+         [1, 2, 3]
+         [4, 5, 6]
+         [7, 8, 9]
+         [10]
          
