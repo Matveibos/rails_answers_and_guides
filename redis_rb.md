@@ -65,5 +65,10 @@
 
         # clear all database
 
+13. redis.del
+
+        # del 'sunset3' set with all members
+        redis.del('sunset3')
+
         
         
