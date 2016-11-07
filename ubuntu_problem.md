@@ -15,3 +15,9 @@
             tar xzf redis-3.2.5.tar.gz
             cd redis-3.2.5
             make
+3. How you can clean free space?
+            
+            # show size of cache
+            du -sh /var/cache/apt/archives
+            # clean cache
+            sudo apt-get clean
