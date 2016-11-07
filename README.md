@@ -61,6 +61,9 @@ http://iwanttolearnruby.com/
 
 https://habrahabr.ru/post/143990/
 
+## Rspec tutorial 
+https://www.tutorialspoint.com/rspec/rspec_introduction.htm
+
 
 
 
