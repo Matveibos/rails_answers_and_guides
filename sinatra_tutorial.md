@@ -34,4 +34,12 @@
         get '/' do
           erb :index
         end
-8. 
+8.  Example of form for post request in erb
+        
+        <form action='cast' method='post'>
+                <% Choices.each do |id, text| %>
+                      <input type='radio' name='vote' value='<%= id %>' id='vote_<%= id %>' />
+                      <%= text %>
+                <% end %>
+              <button type='submit' class='btn btn-primary'>Cast this vote!</button>
+         </form>
