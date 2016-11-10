@@ -29,3 +29,9 @@
         post '/' do
           slim :example_above
         end
+7. How you can call erb file?
+        
+        get '/' do
+          erb :index
+        end
+8. 
