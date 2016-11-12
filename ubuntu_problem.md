@@ -21,3 +21,6 @@
             du -sh /var/cache/apt/archives
             # clean cache
             sudo apt-get clean
+4. Without block /var/lib/dpkg/
+            
+            sudo fuser -vki /var/lib/dpkg/lock
