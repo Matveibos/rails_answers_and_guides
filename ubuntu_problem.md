@@ -53,6 +53,13 @@
             curl -sSL https://get.rvm.io | bash -s stable
             # then reopen terminal
             rvm install ruby-2.3.1
+                        
+                - Open console
+                - Select Edit -> Profile Preferences
+                - Select tab: Title and Command
+                - Check box 'Run command as a login shell'
+                - Restart terminal
+
             rvm use ruby-2.3.1
 
             
