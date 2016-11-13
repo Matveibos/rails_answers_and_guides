@@ -61,7 +61,13 @@
                 - Restart terminal
 
             rvm use ruby-2.3.1
-
+10. git install 
+            
+            sudo apt-get update
+            sudo apt-get install git
+            
+            git config --global user.name "Your Name"
+            git config --global user.email "youremail@domain.com"
             
             
             
