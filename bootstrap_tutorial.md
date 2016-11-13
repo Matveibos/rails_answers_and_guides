@@ -2,7 +2,7 @@
 
         got to http://getbootstrap.com/getting-started/ and download bootstrap.zip
         unzip this file in your project directory and include bootstrap.min.css
-3. Can you show me example of html file with bootstrap?
+3. Can you show me the example of html file with bootstrap?
         
         <!DOCTYPE html>
         <html lang="en">
@@ -24,3 +24,56 @@
             <script src="js/bootstrap.min.js"></script>
           </body>
         </html>
+3. Can you show me what file include bootstrap directory?        
+        
+        bootstrap/
+        ├── css/
+        │   ├── bootstrap.css
+        │   ├── bootstrap.css.map
+        │   ├── bootstrap.min.css
+        │   ├── bootstrap.min.css.map
+        │   ├── bootstrap-theme.css
+        │   ├── bootstrap-theme.css.map
+        │   ├── bootstrap-theme.min.css
+        │   └── bootstrap-theme.min.css.map
+        ├── js/
+        │   ├── bootstrap.js
+        │   └── bootstrap.min.js
+        └── fonts/
+            ├── glyphicons-halflings-regular.eot
+            ├── glyphicons-halflings-regular.svg
+            ├── glyphicons-halflings-regular.ttf
+            ├── glyphicons-halflings-regular.woff
+            └── glyphicons-halflings-regular.woff2
+4. What 3 kind of creating button you know?  
+        
+          -  <a href=""> PRESS ME</a>
+          
+          -  <input type="button" name="Vlad" value="PRESS ME">
+          
+          -  <button>PRESS ME</button>
+5. How you can create button in bootstrap?
+        
+        <a class="btn btn-default" href="#" >Link</a>
+        OR
+        <button class="btn btn-default">Button</button>
+        OR
+        <input class="btn btn-default" type="button" value="Input">
+6. How you can change button color?
+        
+        class="btn btn-default" # white
+        class="btn btn-primary" # blue
+        class="btn btn-success" # green 
+        class="btn btn-warning" # yellow
+        
+7. How you can change button size?
+        
+        class="btn btn-primary btn-lg" # large
+        class="btn btn-primary btn-sm" # small
+        class="btn btn-primary btn-xs" # extra small
+        
+        
+        
+        
+        
+        
