@@ -45,6 +45,9 @@
             ├── glyphicons-halflings-regular.ttf
             ├── glyphicons-halflings-regular.woff
             └── glyphicons-halflings-regular.woff2
+            
+-----------------------------------------button-----------------------------------
+
 4. What 3 kind of creating button you know?  
         
           -  <a href=""> PRESS ME</a>
@@ -68,9 +71,18 @@
         
 7. How you can change button size?
         
-        class="btn btn-primary btn-lg" # large
-        class="btn btn-primary btn-sm" # small
-        class="btn btn-primary btn-xs" # extra small
+        class="btn btn-lg" # large
+        class="btn btn-sm" # small
+        class="btn btn-xs" # extra small
+        
+8. How you can add block level button? (button size on all block)
+        
+        class="btn btn-block"
+        
+9. How you can make active button?
+
+        class="btn active"
+        
         
         
         
