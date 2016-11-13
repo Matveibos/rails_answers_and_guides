@@ -13,10 +13,21 @@
           $("div").click(function() {alert("Hello, world!");});
 4. How you can change css style of elements?
          
-         $("p").css("background-color", "yellow");
+          $("p").css("background-color", "yellow");
+          # multiply
+          selector.css( {key1:val1, key2:val2....keyN:valN})
 5. How you can puts text inside tag?
           
-         $("#div_id").text(title);
+          $("#div_id").text(title);
 6. How you can take attribute of tag?
           
-         var tag = $('#div_id').attr("title")
+          var tag = $('#div_id').attr("title")
+7. How you can set new argument value?
+          
+          $('a').attr('href', 'google.com')
+8. How you can add class to tag?
+          
+          $("#myid").addClass("highlight");
+9. How you can replace tag?
+          
+          $('div').replaceWith("<h1>JQuery is Great</h1>");
