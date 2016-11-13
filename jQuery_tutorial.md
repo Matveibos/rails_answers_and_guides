@@ -49,3 +49,7 @@
              $('div').bind('click', function( event ){
                alert('Event type is ' + event.type);
             });
+14. How you can show and hide elements?
+          
+           $(".mydiv").show( 1000 );
+           $(".mydiv").hide( 1000 );
