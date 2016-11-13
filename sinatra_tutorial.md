@@ -43,3 +43,9 @@
                 <% end %>
               <button type='submit' class='btn btn-primary'>Cast this vote!</button>
          </form>
+9. How you can add bootstrap file to sinatra?
+        
+        - create folder 'public'
+        - inside 'public' create folder 'vendor'
+        - add all bootstrap file there
+        - include bootstrap <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
