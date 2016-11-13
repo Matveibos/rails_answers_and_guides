@@ -31,3 +31,21 @@
 9. How you can replace tag?
           
           $('div').replaceWith("<h1>JQuery is Great</h1>");
+10. How you can delete tag?
+
+           $('div').remove( );
+11. How you can Inserting DOM elements?
+          
+           $('div').before('<div class="div"></div>' );
+           $('div').after('<div class="div"></div>' );
+12. How you can work with curent element?
+          
+          # this
+          $("div").click(function () {
+               $(this).before('<div class="div"></div>' );
+            });
+13. How you can set event listener?
+          
+             $('div').bind('click', function( event ){
+               alert('Event type is ' + event.type);
+            });
