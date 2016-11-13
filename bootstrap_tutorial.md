@@ -82,7 +82,15 @@
 9. How you can make active button?
 
         class="btn active"
+
+-----------------------------------------image-----------------------------------
+
+1. How you can change image size?
         
+        <img src="" alt="" width=30% >
+2. How you can make circle image?
+        
+        <img src="" class="img-circle">
         
         
         
