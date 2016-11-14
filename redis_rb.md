@@ -69,6 +69,17 @@
 
         # del 'sunset3' set with all members
         redis.del('sunset3')
+14. How you can set hash value to redis?
+         
+          require 'redis'
+          require 'json'
+
+          hash = {"field" => "value", "field2" => 'value2'}
+
+          redis = Redis.new
+          redis.set 'data', hash.to_json
+
+          data = JSON.parse(redis.get("data"))
 
         
         
