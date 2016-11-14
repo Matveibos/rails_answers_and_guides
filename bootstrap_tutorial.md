@@ -91,8 +91,60 @@
 2. How you can make circle image?
         
         <img src="" class="img-circle">
+-----------------------------------------navbar-----------------------------------
+
+1. What does it mean 'navbar'?
+
+        A navigation bar is a navigation header that is placed at the top of the page:
+2. How you can create navbar? 
         
+        <nav class="navbar navbar-default">
+          ...
+        </nav>
+        # navbar-inverse will be with black foreground
+3. How you can create navbar menu list?
         
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li> 
+        </ul>
+4. How you can make fixed navbar position?
+       
+       # navbar-fixed-bottom, navbar-fixed-top
+        <nav class="navbar navbar-default navbar-fixed-bottom">
+          ...
+        </nav>
+
+6. How you can create dropdown menu?
+        
+        <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Page 1-1</a></li>
+                  <li><a href="#">Page 1-2</a></li>
+                  <li><a href="#">Page 1-3</a></li> 
+                </ul>
+        </li>
+7. How you can add some menu link to right?
+        
+        # navbar-right
+        <ul class="nav navbar-nav navbar-right">
+          ....
+        </ul>
+        
+-----------------------------------------icon-----------------------------------       
+        
+1. How you can create caret symbol?
+        
+        <span class="caret"></span>  
+2. User symbol?
+
+        <span class="glyphicon glyphicon-user">
+3. Log in symbol?
+        
+         <span class="glyphicon glyphicon-log-in">
         
         
         
