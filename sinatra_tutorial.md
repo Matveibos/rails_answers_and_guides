@@ -49,3 +49,55 @@
         - inside 'public' create folder 'vendor'
         - add all bootstrap file there
         - include bootstrap <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+10. How you can set start value in sinatra?
+        
+        configure do
+          set :foo, 'bar'
+        end
+
+        get '/' do
+          settings.foo? # => true
+          settings.foo  # => 'bar'
+        end
+11. How you can set true and false value?
+        
+        enable  :sessions, :logging #=> true
+        disable :dump_errors, :some_custom_option #=> false
+12. How you can define method?
+        
+        # with help helpers
+        helpers do
+          def bar(name)
+            "#{name}bar"
+          end
+        end
+
+        get '/:name' do
+          bar(params['name'])
+        end
+ 13. How you can use sessions?
+        
+         enable :sessions
+         
+         get '/' do
+           "value = " << session[:value].inspect
+         end
+
+         get '/:value' do
+           session['value'] = params['value']
+         end
+14. How you can immediately stop request?
+
+        halt 'this will be the body'
+        halt 410
+15. How you can use pattern in request? 
+        
+        get '/say/*/to/*' do
+          # matches /say/hello/to/world
+          params['splat'] # => ["hello", "world"]
+        end
+
+        get '/download/*.*' do
+          # matches /download/path/to/file.xml
+          params['splat'] # => ["path/to/file", "xml"]
+        end
