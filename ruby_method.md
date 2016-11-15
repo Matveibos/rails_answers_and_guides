@@ -10,6 +10,8 @@
          puts arr.slice(3, 2).join(',')   #=> 3,4
          puts arr.slice(0,1).join(',')   #=> 0
          arr.slice(1,0).join(',')   #=> []
+-------------------------------------------hash-------------------------------------
+
 4. add to hash 
          
          hsh["pig"] = "Wilbur"
@@ -33,6 +35,8 @@
          total += num
          end   
          puts val   #=> 16
+-------------------------------------------file-------------------------------------
+
 6. File.open 'w' (write)
          
          somefile = File.open("sample.txt", "w")
