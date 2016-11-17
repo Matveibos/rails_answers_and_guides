@@ -101,3 +101,11 @@
           # matches /download/path/to/file.xml
           params['splat'] # => ["path/to/file", "xml"]
         end
+16. How you can take params from input tag?
+        
+        # inside form  tag
+        <input type="text" name='word'>
+        # inside post method
+        @word = params['word']
+        
+
