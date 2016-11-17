@@ -2,12 +2,12 @@
   
           1. heroku login
           
-          2. # create Gemfile and add 2 string
+          2. # create Gemfile and add 2 string:
                 source "https://rubygems.org"
                 gem 'sinatra'
           bundle install
           
-          3. # create config.ru file and add 2 string
+          3. # create config.ru file and add 2 string:
                 require_relative "my_app"
                 run Sinatra::Application
           # check it run: rackup config.ru
@@ -24,3 +24,13 @@
                 
                 git push heroku master
                 
+2. How to add app with redis on heroku?
+           
+           heroku addons:create redistogo
+           # check it
+           heroku config
+           
+           # change Redis.new on this(in sinatra):
+           set :uri, URI.parse(ENV["REDISTOGO_URL"])
+           set :redis, Redis.new(:host => settings.uri.host, :port => settings.uri.port, :password => settings.uri.password)
+           
