@@ -69,6 +69,10 @@
             git config --global user.name "Your Name"
             git config --global user.email "youremail@domain.com"
             
+11. heroku install
+
+            sudo wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+            
             
             
             
