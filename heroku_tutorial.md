@@ -1,1 +1,26 @@
 1. How to add sinatra app on heroku?
+  
+          1. heroku login
+          
+          2. # create Gemfile and add 2 string
+                source "https://rubygems.org"
+                gem 'sinatra'
+          bundle install
+          
+          3. # create config.ru file and add 2 string
+                require_relative "my_app"
+                run Sinatra::Application
+          # check it run: rackup config.ru
+          
+          4. # create Procfile and add there:
+                web: bundle exec rackup config.ru -p $PORT
+                
+          5. # add git and push to heroku 
+                $ git init
+                $ git add .
+                $ git commit -m "init"
+                
+                heroku create
+                
+                git push heroku master
+                
