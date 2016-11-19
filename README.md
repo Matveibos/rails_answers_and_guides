@@ -1,5 +1,7 @@
 # The most useful rails materials and guades
+## Example of using websocket 
 
+http://geekhmer.github.io/blog/2014/02/04/ruby-websocket-and-real-time-app-tutorial/
 ## Chat 
 
 Would you like create own chat (messaging system) on rails? No problem [Tutorial: Create a simple messaging system on Rails](https://medium.com/@danamulder/tutorial-create-a-simple-messaging-system-on-rails-d9b94b0fbca1#.9c0lxziry) 
