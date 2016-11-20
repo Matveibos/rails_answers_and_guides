@@ -128,3 +128,7 @@
          [7, 8, 9]
          [10]
          
+21. How you can use Time.now without timezone 
+         
+         Time.now.strftime('%a, %d %b %Y %H:%M:%S')
+         
