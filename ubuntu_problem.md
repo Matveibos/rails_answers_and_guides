@@ -72,6 +72,11 @@
 11. heroku install
 
             sudo wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+12. skype install
+            
+            sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
+            sudo apt-get update
+            sudo apt-get install skype
             
             
             
