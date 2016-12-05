@@ -11,10 +11,27 @@
 
 
 ## MODEL
+# validation
+
 1. How you can set text size validation?
          
          validates :content, length: { maximum: 140 }
-
+2. How you can set validate presence?
+         
+         validates :content, presence: true
+# assosiation
+1. How you can set has_many assosiation?
+         
+         class User < ApplicationRecord
+           has_many :microposts
+         end
+         
+         class Micropost < ApplicationRecord
+           belongs_to :user
+         end
+2. Hou you can see all User's microposts?
+         
+         first_user.microposts
 
 ## VIEW
 
