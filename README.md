@@ -1,4 +1,7 @@
 # The most useful rails materials and guades
+## New tutorial by Mike Hart
+https://www.learnenough.com/web-development-fundamentals
+
 ## Example of using websocket 
 
 http://geekhmer.github.io/blog/2014/02/04/ruby-websocket-and-real-time-app-tutorial/
