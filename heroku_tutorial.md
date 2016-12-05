@@ -34,3 +34,7 @@
            set :uri, URI.parse(ENV["REDISTOGO_URL"])
            set :redis, Redis.new(:host => settings.uri.host, :port => settings.uri.port, :password => settings.uri.password)
            
+ 3. How to add rails app on heroku?
+        
+          ...
+          heroku run rails db:migrate
