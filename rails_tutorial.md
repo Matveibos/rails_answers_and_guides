@@ -1,7 +1,7 @@
 1. How you can run server with another environment?
          
          rails s -e another_environment_name
-## CONTROLER
+## -----------------------------------CONTROLER-----------------------------------
 1. How you can generate controller?
          
          rails generate controller StaticPages home help
@@ -17,7 +17,7 @@
 
 
 
-## MODEL
+## -----------------------------------MODEL-----------------------------------
 1. How you can generate model?
          
          rails g model User name:string email:string
@@ -50,7 +50,9 @@
 1. How you can send title from file to layout?
          
          # inside file
-         <% content_for :title, "about | "%>
+         <% content_for :title, "about" %>
+         # or 
+         <% provide(:title, "about") %>
          # inside layout
          <%= yield :title %>
 
@@ -63,12 +65,12 @@
          root 'controller_name#method_name'
 2. How you can set simple get action?
          
-         get 'controller_name#method_name'
+         get 'controller_name/method_name'
 2. How you can add all action for User?
          
          resources :users
 
-## DATABASE
+## -----------------------------------DATABASE-----------------------------------
 1. How you can migrate db?
          
          rails db:migrate
