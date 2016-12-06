@@ -1,3 +1,14 @@
+1. How you can include bootstrap inside rails app?
+        
+        # add bootstrap-sass gem to gemfile 
+        gem 'bootstrap-sass'
+        
+        # touch new file 
+        touch app/assets/stylesheets/custom.scss
+        
+        # import bootstrap inside new file
+        @import "bootstrap-sprockets";
+        @import "bootstrap";
 1. How you can install bootstap?
 
         got to http://getbootstrap.com/getting-started/ and download bootstrap.zip
