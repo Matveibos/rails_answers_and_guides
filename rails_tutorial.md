@@ -18,12 +18,27 @@
 
 
 ## -----------------------------------MODEL-----------------------------------
+# ---filter 
+1. How you can use before filter inside model?
+         
+         before_filter { self.email = email.downcase }
+# ---generator
 1. How you can generate model?
          
          rails g model User name:string email:string
 2. How you can destroy model?
          
          rails destroy model User
+3. How you can generate secure password value?
+        
+         # inside User model add
+         has_secure_password
+         rails generate migration add_password_digest_to_users password_digest:string
+         # where users it's table name
+         rails db:migrate
+         # add gem 'bcrypt' to gemfile and run bundle install
+         # has_secure_password will create two new column => password: "foobar", password_confirmation: "foobar"
+         # and for example you can add validation there => validates :password, presence: true
 # ---validation
 1. How you can set text size validation?
          
@@ -31,7 +46,13 @@
 2. How you can set validate presence?
          
          validates :content, presence: true
-# assosiation
+3. How you can check regex value?
+         
+         validates :email, format: { with: /<regular expression>/ }
+4. How you can uniq value?
+         
+         validates :email, uniqueness: true
+# ---assosiation
 1. How you can set has_many assosiation?
          
          class User < ApplicationRecord
@@ -90,6 +111,16 @@
 3. How you can go to the first step?
          
          rails db:migrate VERSION=0
+4. How you can add index to column?
+         
+         rails generate migration add_index_to_users_email
+         # where user - model, email - column
+         # and fill in 
+           def change
+             add_index :users, :email, unique: true
+           end
+         
+         rails db:migrate
 ## -----------------------------------HELPERS-----------------------------------
 1. What you can use instead of < a > tag in rails?
          
