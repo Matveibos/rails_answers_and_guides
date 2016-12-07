@@ -18,6 +18,7 @@
 
 
 ## -----------------------------------MODEL-----------------------------------
+
 # ---filter 
 1. How you can use before filter inside model?
          
@@ -39,6 +40,7 @@
          # add gem 'bcrypt' to gemfile and run bundle install
          # has_secure_password will create two new column => password: "foobar", password_confirmation: "foobar"
          # and for example you can add validation there => validates :password, presence: true
+         user.authenticate('password') # if true will return user 
 # ---validation
 1. How you can set text size validation?
          
