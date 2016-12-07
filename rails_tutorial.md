@@ -24,8 +24,7 @@
 2. How you can destroy model?
          
          rails destroy model User
-# validation
-
+# ---validation
 1. How you can set text size validation?
          
          validates :content, length: { maximum: 140 }
