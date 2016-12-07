@@ -77,6 +77,13 @@
             sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
             sudo apt-get update
             sudo apt-get install skype
+13. sqlitebrowser install
+            
+            sudo add-apt-repository -y ppa:linuxgndu/sqlitebrowser
+            sudo apt-get update
+            sudo apt-get install sqlitebrowser
+            # open 
+            sqlitebrowser db/development.sqlite3
             
             
             
