@@ -14,7 +14,14 @@
          def index
            @users = User.all
          end
+4. How you can set strong params?
+         
+           private
 
+           def user_params
+             params.require(:user).permit(:name, :email, :password,
+                                          :password_confirmation)
+           end
 
 
 ## -----------------------------------MODEL-----------------------------------
@@ -77,6 +84,14 @@
          <% provide(:title, "about") %>
          # inside layout
          <%= yield :title %>
+ 2. How you can show flash?
+         
+         # inside controller 
+         flash[:success] = "Welcome to the Sample App!"
+         # inside view
+         <% flash.each do |message_type, message| %>
+           <div class="alert alert-<%= message_type %>"><%= message %></div>
+         <% end %>
 
 ## -----------------------------------ROUTING-----------------------------------
 1. how you can see all route?
@@ -137,3 +152,28 @@
          
          <%= render 'layouts/header' %>
          # inside layout create _header.html.erb with code
+4. How you can use form_for tag?
+         
+         # inside controller
+           def new
+             @user = User.new
+           end
+          # inside view
+            <%= form_for(@user) do |f| %>
+               <%= f.label :name %>
+               <%= f.text_field :name %>
+
+               <%= f.label :email %>
+               <%= f.email_field :email %>
+
+               <%= f.label :password %>
+               <%= f.password_field :password %>
+
+               <%= f.label :password_confirmation, "Confirmation" %>
+               <%= f.password_field :password_confirmation %>
+
+               <%= f.submit "Create my account", class: "btn btn-primary" %>
+             <% end %>
+5. How you can set corect value of many users? (users or user)
+         
+         helper.pluralize(2, "error") => 2 errors
