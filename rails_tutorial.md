@@ -138,6 +138,9 @@
            end
          
          rails db:migrate
+5. How you can reset database?
+         
+         rails db:migrate:reset
 ## -----------------------------------HELPERS-----------------------------------
 1. What you can use instead of < a > tag in rails?
          
