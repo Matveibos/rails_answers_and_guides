@@ -31,6 +31,9 @@
 8. How you can see errors messages?
             
             user.errors.full_messages
+9. How you can check if user has error?
+            
+            @user.errors.any?
             
             
             
