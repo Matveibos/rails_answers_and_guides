@@ -92,3 +92,9 @@
            when 'toyota', 'lexus'
                  # code
            end
+##----------------------------RAILS--------------------------------------------------
+
+11. What is the difference between User.find(1) and User.find_by(id: 1)?
+           
+           User.find return exception if argument uncorect
+           User.find_by will return nill
