@@ -1,6 +1,20 @@
 1. How you can run server with another environment?
          
          rails s -e another_environment_name
+## -----------------------------------SESSION-----------------------------------
+1. How you can include session?
+         
+         # inside application controller add
+         include SessionsHelper
+2. How you can create session?
+         
+         # inside helpers
+         def log_in(user)
+           session[:user_id] = user.id
+         end
+3. How you can destroy session?
+         
+         session.delete(:user_id)
 ## -----------------------------------CONTROLER-----------------------------------
 1. How you can generate controller?
          
@@ -92,6 +106,20 @@
          <% flash.each do |message_type, message| %>
            <div class="alert alert-<%= message_type %>"><%= message %></div>
          <% end %>
+3. How you can change flash color?  
+         
+         flash[:success] => green
+         flash[:danger] => red
+         flash[:something_else] => ordinary
+4. How you can show flash only 1 times?
+         
+         flash.now[:danger] = 'Invalid email/password combination'
+5. How you can use destroy method?  
+         
+         <%= link_to "Log out", logout_path, method: "delete" %>
+         # inside routes
+         delete '/logout', to: 'sessions#destroy'
+         
 
 ## -----------------------------------ROUTING-----------------------------------
 1. how you can see all route?
@@ -117,6 +145,10 @@
          
           get '/about', to: 'static_pages#about', as: 'ab'
           #=> was about_path, will be ab_path
+5. How you can find specific name in routes?
+         
+         rake routes | grep ressource_name
+ 
 
 ## -----------------------------------DATABASE-----------------------------------
 1. How you can migrate db?
@@ -177,6 +209,14 @@
 
                <%= f.submit "Create my account", class: "btn btn-primary" %>
              <% end %>
+4. How you can use form_for without model object?     
+         
+         <%= form_for(:session, url: login_path) do |f| %>
+               <%= f.label :email %>
+               <%= f.email_field :email, class: 'form-control' %>
+
+               <%= f.submit "Log in", class: "btn btn-primary" %>
+         <% end %>
 5. How you can set corect value of many users? (users or user)
          
          helper.pluralize(2, "error") => 2 errors
