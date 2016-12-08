@@ -9,6 +9,14 @@
         # import bootstrap inside new file
         @import "bootstrap-sprockets";
         @import "bootstrap";
+        
+        2. Adding the Bootstrap JavaScript library to application.js
+        //= require jquery
+        //= require jquery_ujs
+        //= require bootstrap
+        //= require turbolinks
+        //= require_tree .
+        
 1. How you can install bootstap?
 
         got to http://getbootstrap.com/getting-started/ and download bootstrap.zip
