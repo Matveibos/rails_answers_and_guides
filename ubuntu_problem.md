@@ -84,6 +84,12 @@
             sudo apt-get install sqlitebrowser
             # open 
             sqlitebrowser db/development.sqlite3
+14. turn screen of when inactive    
+            
+            gsettings set org.gnome.desktop.screensaver lock-enabled  false
+            gsettings set org.gnome.desktop.screensaver lock-delay 3600
+            gsettings set org.gnome.settings-daemon.plugins.power idle-dim false
+            
             
             
             
