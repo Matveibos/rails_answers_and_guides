@@ -2,6 +2,7 @@
          
          rails s -e another_environment_name
 ## -----------------------------------SESSION-----------------------------------
+
 1. How you can include session?
          
          # inside application controller add
@@ -15,7 +16,20 @@
 3. How you can destroy session?
          
          session.delete(:user_id)
+## -----------------------------------COOKIES-----------------------------------
+
+1. How you can add cookies?
+         
+          cookies.permanent.signed[:user_id] = user.id
+          cookies.permanent[:remember_token] = user.remember_token
+          cookies.permanent[:example] = "example"
+2. How you can destroy cookies?
+         
+         cookies.delete(:user_id)
+         cookies.delete(:remember_token)
+
 ## -----------------------------------CONTROLER-----------------------------------
+
 1. How you can generate controller?
          
          rails generate controller StaticPages home help
