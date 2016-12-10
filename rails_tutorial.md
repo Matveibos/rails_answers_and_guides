@@ -1,6 +1,7 @@
 1. How you can run server with another environment?
          
          rails s -e another_environment_name
+         
 ## -----------------------------------SESSION-----------------------------------
 
 1. How you can include session?
@@ -16,6 +17,7 @@
 3. How you can destroy session?
          
          session.delete(:user_id)
+         
 ## -----------------------------------COOKIES-----------------------------------
 
 1. How you can add cookies?
