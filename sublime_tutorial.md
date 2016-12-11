@@ -27,3 +27,22 @@
           Ctrl+Shift+P and type htmlprettify
           # or 
           Ctrl+Shift+H
+5. How you can set 2 spcases instead tab in Ruby?
+          
+          1. open a rb file
+          2. go to Preferences -> Settings -> Syntax Specific
+          3. This should open a settings window named Ruby.sublime_settings
+          Save these settings:
+
+                    {
+                      "tab_size": 2,
+                      "translate_tabs_to_spaces": true
+                    }
+                    
+                    
+                    
+6. How you can disable package?
+          
+          ctr+shift+p and type disable 
+
+                  
