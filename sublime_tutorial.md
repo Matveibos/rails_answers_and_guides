@@ -15,3 +15,15 @@
           div.class_name + tab
           div.id_name + tab
           aside>ul>li*5 + tab
+          
+3. How you can install Prettify plagin?
+          
+          - Ctrl+Shift+P or Cmd+Shift+P in Linux/Windows/OS X
+          -  type install, select Package Control: Install Package
+          - type prettify, select HTML-CSS-JS Prettify
+          
+4. How you can run prettify?
+          
+          Ctrl+Shift+P and type htmlprettify
+          # or 
+          Ctrl+Shift+H
