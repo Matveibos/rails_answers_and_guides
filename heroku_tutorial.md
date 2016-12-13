@@ -41,3 +41,6 @@
 4. How you can run console on heroku?
   
           heroku run console --sandbox
+5. How you can resete database?
+          
+          heroku pg:reset DATABASE
