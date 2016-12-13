@@ -34,6 +34,9 @@
 9. How you can check if user has error?
             
             @user.errors.any?
+10. How you can delete object?
+            
+            User.find(params[:id]).destroy
             
             
             
