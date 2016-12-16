@@ -132,3 +132,10 @@
          
          Time.now.strftime('%a, %d %b %Y %H:%M:%S')
          
+22. Find element not in common for two arrays
+         
+         a = [1,2,3,4]
+         b = [1,2,4]
+         (a-b) | (b-a)
+         => [3]
+         
