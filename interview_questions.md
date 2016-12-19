@@ -27,6 +27,10 @@
            18.times do
                arr << arr[-2] + arr[-1]
            end 
+           
+           # another method
+           p (1..67).inject([0,1]) {|sum, i| sum << sum[-1] + sum[-2]}
+           
 3. Argument
            
            def total( price:, count: 1)
@@ -92,6 +96,21 @@
            when 'toyota', 'lexus'
                  # code
            end
+11. What will val1 and val2 equal after the code below is executed? Explain your answer.
+
+           val1 = true and false  # => true
+           val2 = true && false   # => false
+12. There are three ways to invoke a method in ruby. Can you give me at least two?
+           
+           object = Object.new
+           puts object.object_id
+            #=> 282660
+
+           puts object.send(:object_id)
+            #=> 282660
+
+           puts object.method(:object_id).call # (Kudos to Ezra)
+            #=> 282660
 ##----------------------------RAILS--------------------------------------------------
 
 11. What is the difference between User.find(1) and User.find_by(id: 1)?
