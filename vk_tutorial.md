@@ -15,3 +15,25 @@
           for(var i = 0; i <= document.getElementsByClassName('item_like _i').length; i++) {
              document.getElementsByClassName('item_like _i')[i].click();
           }
+3. How you can set timer on every 2 second action?
+          
+          # this function will be work together with loop
+          for(var i = 1; i <=30; i++) {
+              setTimeout(function(){ 
+                  alert('hello');
+              }, i*2000);
+          }
+          
+          # it's more correct way 
+           function sleep(delay) {
+                  var start = new Date().getTime();
+                  while (new Date().getTime() < start + delay);
+           }
+           
+           alert("Wait for 5 seconds.");
+           sleep(5000)
+           alert("5 seconds passed.")
+           
+4. How you can add 30 friends by one click?       
+          
+          document.getElementsByClassName("flat_button button_small button_wide")[i].click();
