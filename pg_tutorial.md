@@ -1,3 +1,6 @@
+            
+# ------------------------------------PostgreSQL - Setup----------------------------------------------------
+
 1. How you can install gem pg?
       
             sudo apt-get install libpq-dev
@@ -29,12 +32,6 @@
 7. How you can select db?
             
             psql -d postgres
-8. How you can watch curent db?
-      
-            \conninfo
-9. How you can watch list of all existing database?
-            
-            \list or \l
 10. How you can setup all pg database for rails app?  
             
             tp> sudo -u postgres createuser rubyuser -s
@@ -56,20 +53,42 @@
                password: <Password for rubyuser>
 
             test:
-               adapter: postgresql
-               encoding: unicode
-               database: library_test
-               username: rubyuser
-               password: <Password for rubyuser>
+               -\\-
 
             production:
-               adapter: postgresql
-               encoding: unicode
-               database: library_production
-               username: rubyuser
-               password: <Password for rubyuser>
+               -\\-
             
             
+# ------------------------------------PostgreSQL - Syntax----------------------------------------------------
+
+8. How you can watch curent db?
+      
+            \conninfo
+9. How you can watch list of all existing database?
+            
+            \list or \l
+10. How youc can connected to database?
+            
+            \c database_name
+2. How you can create or destroy database?
+            
+            CREATE DATABASE name;
+            DROP DATABASE name;
+            
+3. How you can create table?
+            
+            CREATE TABLE COMPANY(
+               ID INT PRIMARY KEY     NOT NULL,
+               NAME           TEXT    NOT NULL,
+               AGE            INT     NOT NULL,
+               ADDRESS        CHAR(50),
+               SALARY         REAL
+            );
+4. How you can watch list of all table?
+            
+            \d 
+            # and with with describe table 
+            \d table_name
 
 2. How you can change user pg password?
       
@@ -78,6 +97,8 @@
             # or 
             postgres=# \password pushkin
             
+# ------------------------------------PostgreSQL - PROBLEMS----------------------------------------------------
+
 3. How you can fix problem: psql: FATAL: Peer authentication failed for user “rubyuser”?
             
             1. Open /etc/postgresql/9.5/main/pg_hba.conf with root access
