@@ -57,7 +57,12 @@
 
             production:
                -\\-
-            
+ 2. How you can change user pg password?
+      
+            # run psql and write:
+            postgres=# alter role pushkin password '1'
+            # or 
+            postgres=# \password pushkin
             
 # ------------------------------------PostgreSQL - Syntax----------------------------------------------------
 
@@ -75,7 +80,7 @@
             CREATE DATABASE name;
             DROP DATABASE name;
             
-3. How you can create table?
+3. How you can create/drop table?
             
             CREATE TABLE COMPANY(
                ID INT PRIMARY KEY     NOT NULL,
@@ -84,18 +89,34 @@
                ADDRESS        CHAR(50),
                SALARY         REAL
             );
+            
+            # drop 
+            DROP TABLE COMPANY
+            
 4. How you can watch list of all table?
             
             \d 
             # and with with describe table 
             \d table_name
-
-2. How you can change user pg password?
-      
-            # run psql and write:
-            postgres=# alter role pushkin password '1'
-            # or 
-            postgres=# \password pushkin
+5. How you can insert value into table?         
+             
+             INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS) VALUES (1, 'Paul', 32, 'California');
+6. How you can select value from table?
+            
+            SELECT ID, NAME, SALARY FROM COMPANY ;
+            or 
+            select * from company;
+7. How you can update value?        
+            
+            UPDATE table_name
+            SET column1 = value1, column2 = value2...., columnN = valueN
+            WHERE [condition];
+8. How you can delete the existing records from a table?
+            
+            DELETE FROM angels WHERE surname='BY';
+9. How you can sort records by name?
+            
+            SELECT * FROM COMPANY ORDER BY NAME DESC;
             
 # ------------------------------------PostgreSQL - PROBLEMS----------------------------------------------------
 
