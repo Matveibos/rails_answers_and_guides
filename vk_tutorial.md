@@ -37,3 +37,16 @@
 4. How you can add 30 friends by one click?       
           
           document.getElementsByClassName("flat_button button_small button_wide")[i].click();
+          
+5. How you can set like by click with interval?
+          
+          function sleep(delay) {
+                  var start = new Date().getTime();
+                  while (new Date().getTime() < start + delay);
+           }
+          
+           for(var i = 0; i <= document.getElementsByClassName("post_like _like_wrap").length; i++) {
+             sleep(2000);
+             document.getElementsByClassName("post_like _like_wrap")[i].click();
+          }
+          
