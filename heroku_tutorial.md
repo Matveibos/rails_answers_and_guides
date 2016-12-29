@@ -44,3 +44,10 @@
 5. How you can resete database?
           
           heroku pg:reset DATABASE
+6. How you can watch and close background process on heroku?
+          
+          # show all runnung proces
+          heroku ps
+          # => run.4859 (Free): up 2016/01/12 21:28:41 (~ 7m ago): rails c
+          # stop process
+          heroku ps:stop run.4859
