@@ -51,3 +51,15 @@
           # => run.4859 (Free): up 2016/01/12 21:28:41 (~ 7m ago): rails c
           # stop process
           heroku ps:stop run.4859
+7. Assets doesn't loading on heroku 
+          
+          You need to do two things to resolve it. First, change these two lines from false to true in production.rb file.
+
+                config.assets.compile = true
+                config.assets.digest = true
+          Second, if you've syntax like this for your images
+
+              background: url("imgo.jpg") 
+          Change it to
+
+               background: image-url("image.jpg")
