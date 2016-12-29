@@ -63,3 +63,28 @@
           Change it to
 
                background: image-url("image.jpg")
+ 8. How you can install sidekiq on heroku?
+          
+          # In the console:
+
+          heroku addons:create redistogo
+          heroku config:set REDIS_PROVIDER=REDISTOGO_URL
+          # In my Procfile I added:
+
+          worker: bundle exec sidekiq
+          # In my gemfile.rb I added:
+
+          gem 'redis'
+          # I added the following file, config/initializers/redis.rb:
+
+          uri = ENV["REDISTOGO_URL"] || "redis://localhost:6379/"
+          REDIS = Redis.new(:url => uri)
+          
+9. How you can add workers and run sidekiq?
+          
+            # It's worth checking if the sidekiq process is really started with this command:
+
+            heroku ps
+            # If there's no worker, then you might need to run this command:
+
+            heroku ps:scale worker+1
