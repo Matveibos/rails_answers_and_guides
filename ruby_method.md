@@ -138,4 +138,9 @@
          b = [1,2,4]
          (a-b) | (b-a)
          => [3]
+23. Delete all right and left space for string
+         
+         "  frfgr  ".strip!
+         "    ferfr".lstrip!
+         "defef    ".rstrip!
          
