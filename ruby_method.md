@@ -144,3 +144,24 @@
          "    ferfr".lstrip!
          "defef    ".rstrip!
          
+24. Example of check work time
+  
+         limit = 3000000
+
+         tstart_1 = Time.now()
+         (0..limit).each do |i; a,b, max|
+           a = rand(9999999)
+           b = rand(9999999)
+           max = [a,b].max
+         end
+         puts "Array method: #{Time.now() - tstart_1} seconds"
+
+         tstart_2 = Time.now()
+         (0..limit).each do |i; a,b, max|
+           a = rand(9999999)
+           b = rand(9999999)
+           max = (a > b) ? a : b
+         end
+
+         puts "Ternary method: #{Time.now() - tstart_2} seconds"
+         
