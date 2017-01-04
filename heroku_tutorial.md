@@ -88,3 +88,7 @@
             # If there's no worker, then you might need to run this command:
 
             heroku ps:scale worker+1
+10. How you can clear redis?
+            
+            heroku console
+            REDIS.FLUSHALL
