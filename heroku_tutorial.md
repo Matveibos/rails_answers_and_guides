@@ -92,3 +92,9 @@
             
             heroku console
             REDIS.FLUSHALL
+11. How you can create app with another region?
+            
+            heroku create --region eu
+12. How you can wathc information about app?
+            
+            heroku info
