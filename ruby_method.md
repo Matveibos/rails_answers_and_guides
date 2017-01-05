@@ -164,4 +164,10 @@
          end
 
          puts "Ternary method: #{Time.now() - tstart_2} seconds"
+     
+23. How you can convert char to ASCI symbol?
          
+         'a'.ord
+24. How you can specify range with latter?
+         
+         ('a'..'b')
