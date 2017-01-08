@@ -22,3 +22,15 @@
 6. How you can change user?
           
           su deploy
+          
+## Nginx
+
+1. How you can start and restart nginx server?
+          
+          sudo service nginx start
+          sudo service nginx restart
+          sudo service nginx stop
+2. How you can watch nginx log?
+
+          sudo tail /var/log/nginx/error.log
+
