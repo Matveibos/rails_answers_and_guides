@@ -53,3 +53,33 @@
           # and write
           tail -80 production.log 
 
+## CAPISTRANO
+
+1. How you can create db:seed?
+        
+        # put in in config/deploy.rb
+        
+          namespace :deploy do
+            after :restart, :clear_cache do
+              on roles(:web), in: :groups, limit: 3, wait: 10 do
+                # Here we can do anything such as:
+                # within release_path do
+                #   execute :rake, 'cache:clear'
+                # end
+              end
+            end
+
+            task :seed do
+              on primary fetch(:migration_role) do
+                within release_path do
+                  with rails_env: fetch(:rails_env)  do
+                    execute :rake, 'db:seed'
+                  end
+                end
+              end
+            end
+          end
+          
+          # then 
+          bundle exec cap production deploy:seed
+
