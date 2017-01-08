@@ -34,3 +34,14 @@
 
           sudo tail /var/log/nginx/error.log
 
+## Console
+
+1. How you can run rails console on digital ocean?
+          
+          # I need to start the Rails console in the 'current' folder with:
+          RAILS_ENV=production bundle exec rails c
+2. How you can run rake db:seed?
+          
+          RAILS_ENV=production bundle exec rails db:seed
+          
+
