@@ -44,4 +44,12 @@
           
           RAILS_ENV=production bundle exec rails db:seed
           
+## LOGER
+          
+1. How you can see development log?
+          
+          remove gem 'rails_12factor'
+          go to curent/log
+          # and write
+          tail -80 production.log 
 
