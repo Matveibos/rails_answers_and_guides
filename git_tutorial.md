@@ -15,4 +15,9 @@ http://gitreal.codeschool.com/
         
         git branch -D branch_name # without merge
         git branch -d branch_name
+5. How you can add to gitignore file?
         
+        # in terminal
+        git rm --cache app/controllers/*.rb
+        # inside git.ignore
+        /app/controllers/*.rb
