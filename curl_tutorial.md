@@ -34,6 +34,18 @@
 
             {"question"=>"Пятьсот рублей, проигранных тобою", "id"=>456614, "level"=>1}}
             "094687c8f9437d615e6f48cc07d1d859"
+            
+             require 'net/http'
+                uri = URI('http://pushkin.rubyroidlabs.com/quiz')
+                parameters = { 
+                    quiz: {
+                            answer: 'answer',
+                            token: '79f539abd88950dd654f6d52ef0ad8a6',
+                            task_id: 996172
+                    } 
+                  }
+                res = Net::HTTP.post_form(uri, parameters)
+                puts res.body
 
 
       
