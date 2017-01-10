@@ -37,6 +37,12 @@
 10. How you can delete object?
             
             User.find(params[:id]).destroy
+11. How you can delete table from database?
             
+            $rails console
+            # Then just type:
+            ActiveRecord::Migration.drop_table(:users)
+            
+            # Where :users is the table name
             
             
