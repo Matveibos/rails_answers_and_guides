@@ -5,6 +5,7 @@
           rails g model Poem title:string balada:text
           rails g model Token value:string
           rails g model PoemLine line:string sort_letters:string length:integer
+          rails g model Temp question:string answer:string level:integer time:integer
 2. Create controller
 
           rails g controller Contest registration quiz
