@@ -44,5 +44,10 @@
             ActiveRecord::Migration.drop_table(:users)
             
             # Where :users is the table name
+12. How you can add column to existing table?
             
+            #Use this command at rails console
+            rails generate migration add_fieldname_to_tablename fieldname:string
+            # and
+            rake db:migrate 
             
