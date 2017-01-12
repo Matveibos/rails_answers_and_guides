@@ -171,3 +171,7 @@
 24. How you can specify range with latter?
          
          ('a'..'b')
+25. What's the opposite of ord in Ruby?
+         
+         >> 65.chr
+         A
