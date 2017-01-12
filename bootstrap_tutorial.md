@@ -165,6 +165,11 @@
         
          <span class="glyphicon glyphicon-log-in">
         
+
+1. How you can fix panel when you are scrolling?
         
+        <div  data-spy="affix" data-offset-top="20">
+          ...
+        </div>
         
         
