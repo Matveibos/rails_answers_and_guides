@@ -23,9 +23,9 @@
         $index
 5. How you can run function on click?
         
-       <div ng-click="plusOne($index)">
-          ...
-       </div>
+        <div ng-click="plusOne($index)">
+            ...
+        </div>
 
 
 ## CONTROLLER
