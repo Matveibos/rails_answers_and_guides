@@ -50,4 +50,12 @@
             rails generate migration add_fieldname_to_tablename fieldname:string
             # and
             rake db:migrate 
+13. How you can add index to existing column?
             
+            rails generate migration AddIndexToTable
+            # and change
+            class AddIndexToTable < ActiveRecord::Migration
+              def change
+                add_index :table, :column_name
+              end
+            end
