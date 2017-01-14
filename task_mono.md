@@ -16,3 +16,5 @@ https://www.sitepoint.com/cancancan-rails-authorization-dance/
 
 ## Devise part 1
 https://habrahabr.ru/post/208056/
+## Authlogic
+https://www.sitepoint.com/rails-authentication-with-authlogic/
