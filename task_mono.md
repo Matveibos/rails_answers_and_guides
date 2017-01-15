@@ -13,6 +13,7 @@
 
 https://habrahabr.ru/post/142128/
 
+https://www.sitepoint.com/rails-authentication-oauth-2-0-omniauth/
 omniauth, omniauth-facebook, omniauth-vkontakte
 ## CanCanCan
 
