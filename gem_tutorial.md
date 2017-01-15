@@ -20,13 +20,13 @@
         
 4. 'will_paginate'
        
-       gem 'will_paginate'
-       gem 'bootstrap-will_paginate'
-       
-       # add to controller 
-       def index
-         @users = User.paginate(page: params[:page])
-       end
-       
-       # add to view 
-       <%= will_paginate %>
+           gem 'will_paginate'
+           gem 'bootstrap-will_paginate'
+
+           # add to controller 
+           def index
+             @users = User.paginate(page: params[:page])
+           end
+
+           # add to view 
+           <%= will_paginate %>
