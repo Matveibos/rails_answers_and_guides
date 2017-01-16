@@ -24,3 +24,5 @@ https://www.sitepoint.com/cancancan-rails-authorization-dance/
 https://habrahabr.ru/post/208056/
 ## Authlogic
 https://www.sitepoint.com/rails-authentication-with-authlogic/
+## ActiveAdmin
+https://www.sitepoint.com/easy-admin-interfaces-active-admin-rails/
