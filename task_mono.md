@@ -26,3 +26,5 @@ https://habrahabr.ru/post/208056/
 https://www.sitepoint.com/rails-authentication-with-authlogic/
 ## ActiveAdmin
 https://www.sitepoint.com/easy-admin-interfaces-active-admin-rails/
+## Angular Divese and Rails
+https://www.sitepoint.com/setting-up-an-angular-spa-on-rails-with-devise-and-bootstrap/
