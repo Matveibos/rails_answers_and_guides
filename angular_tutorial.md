@@ -1,7 +1,17 @@
 1. How you can include angular?
 
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+## MODULE
 
+1. How you can define module?
+        
+        var app =  angular.module("store", [])
+2. How you can include angular module?
+       
+        <html ng-app="store">
+        
+        </heml>
+        
 ## VIEW
 
 1. How you can show array of object?  
@@ -30,7 +40,12 @@
         <div ng-click="plusOne($index)">
             ...
         </div>
-
+6. How you can show tag when attribute is true?
+        
+        <button ng-show="true"> ... </button>
+7. How you can hide tag when attribute is true?
+        
+        <button ng-hide="true"> ... </button>
 
 ## CONTROLLER
 
