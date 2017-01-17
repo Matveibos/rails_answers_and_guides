@@ -1,3 +1,7 @@
+1. How you can include angular?
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+
 ## VIEW
 
 1. How you can show array of object?  
