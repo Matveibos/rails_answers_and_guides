@@ -10,3 +10,18 @@
             # provider :twitter, ENV['TWITTER_KEY'], ENV['TWITTER_SECRET']
             provider :twitter, '75UOAIDmKrRXvXKBhNvKA', 'GrIaBI0tQy2TtjOtaFL9VxT6s9qq1sV7h9yRaZW4A'
           end
+## ActiveAdmin
+          
+1. How you can start work with ActiveAdmin?
+          
+          gem 'activeadmin', github: 'activeadmin'
+          gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+          gem 'devise'
+          
+          rails g active_admin:install
+          rails db:migrate
+          rails db:seed
+          
+          http://localhost:3000/admin
+          # Username: admin@example.com
+          # Password: password
