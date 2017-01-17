@@ -1,7 +1,7 @@
 1. How you can include angular?
 
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
-## MODULE
+## MODULE, MODEL
 
 1. How you can define module?
         
@@ -11,7 +11,9 @@
         <html ng-app="store">
         
         </heml>
+3. How you can set simple model?
         
+        < ng-model=""
 ## VIEW
 
 1. How you can show array of object?  
@@ -59,6 +61,9 @@
 8. How you can cpecify class?
         
         <li ng-class="{ active: true }"> .. </li>
+9. How you can add action by submit?
+        
+        <form ng-submit="product.addReview()">
 
 ## CONTROLLER
 
@@ -118,6 +123,11 @@
         
         
 ## DIRECTIVE
+2. How you can include html file?
+        
+         <div  ng-include="'product-description.html'">
+            ...
+         </div>
 
 1. How you can specify new directive(tag) ?
         
@@ -139,6 +149,16 @@
         
         # index.html
                 <app-info info="move"></app-info>
+ 2. How you can specify directive as attribute of tag?
+        
+          app.directive("productSpecs", function(){
+            return {
+              restrict: 'A',
+              templateUrl:  "product-specs.html"
+            };
+          });
+
+        <div product-specs"></div>
 ## SERVICE
 
 1. How you can define service?
