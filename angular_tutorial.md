@@ -40,12 +40,25 @@
         <div ng-click="plusOne($index)">
             ...
         </div>
+6. How you can set value by click?
+        
+        <a href="" ng-click="tab = 1"> ... </a>
+        {{ tab }} 
+        
+        # tab => 1
+6. How you can init value ?
+        
+        <div ng-init="tab = 1"> ... </div>
+        
 6. How you can show tag when attribute is true?
         
         <button ng-show="true"> ... </button>
 7. How you can hide tag when attribute is true?
         
         <button ng-hide="true"> ... </button>
+8. How you can cpecify class?
+        
+        <li ng-class="{ active: true }"> .. </li>
 
 ## CONTROLLER
 
@@ -96,6 +109,13 @@
 3. UPPERCASE?
         
         {{ product.name | uppercase}}
+4. How you can limit ng-repeat count in array?
+        
+        < div ng-repeat="product in products | limitTo:3"> ... </div>
+5. How you can ordered array?
+        
+         < div ng-repeat="product in products | orderedBy:'-price'"> ... </div>
+        
         
 ## DIRECTIVE
 
