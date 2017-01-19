@@ -13,7 +13,7 @@
         </heml>
 3. How you can set simple model?
         
-        < ng-model=""
+        <  ng-model=""> 
 ## VIEW
 
 1. How you can show array of object?  
@@ -159,6 +159,22 @@
           });
 
         <div product-specs"></div>
+ 3. How you can add controller to directive?
+        
+        app.directive("productTabs", function(){
+            return {
+              restrict: 'E',
+              templateUrl: 'product-tabs.html',
+              controller: function(){
+                  this.tab = 1;
+                  
+                  this.setTab = function(setTab) {
+                    this.tab = setTab;
+                  };
+              },
+              controllerAs: "tab"
+            };
+          });
 ## SERVICE
 
 1. How you can define service?
