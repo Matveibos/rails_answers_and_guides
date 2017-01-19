@@ -80,3 +80,8 @@
  9. How you can change list to check box in filter?
           
             filter :author, :as => :checkbox
+## Devise
+1. How you can start with devise?
+          
+          rails g devise:install
+          rails g devise user
