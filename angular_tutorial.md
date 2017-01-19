@@ -1,6 +1,7 @@
 1. How you can include angular?
 
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+        
 ## MODULE, MODEL
 
 1. How you can define module?
@@ -11,6 +12,22 @@
         <html ng-app="store">
         
         </heml>
+3. How you can add another module to main module?
+        
+        # main.js
+                var app = angular.module('gemStore', ['store-directives']);
+        # main.html
+                 <script type="text/javascript" src="product.js"></script>
+        # product.js
+                (function() {
+                          var app = angular.module('store-directives',[]);
+                          app.directive("productDescription", function() {
+                            return {
+                              restrict: 'E',
+                              templateUrl: "product-description.html"
+                            };
+                          });
+                 })();
 3. How you can set simple model?
         
         <  ng-model=""> 
@@ -196,6 +213,17 @@
                     $scope.fiveDay = data; 
                   });
                 }]);
+2. How you can add dependency to our controller(dependency injection)?
+                
+                app.controller('MyController', ['$http', $log, function($http, $log) {
+                   var store = this;
+                   
+                   store.products = [];
+                   
+                   $http.get('/products.json').success(function(data){
+                     store.products = data;
+                   });
+                }  ]);
                 
 ## ROYTING
 
