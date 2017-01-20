@@ -10,3 +10,8 @@
           <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
           <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
           7. Add there all another angular html code
+          8.  Add to main controller
+            def angular
+              render 'layouts/application'
+            end
+          9. root 'application#angular'
