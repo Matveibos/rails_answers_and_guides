@@ -80,7 +80,16 @@
         <li ng-class="{ active: true }"> .. </li>
 9. How you can add action by submit?
         
-        <form ng-submit="product.addReview()">
+        # index.html
+            <form ng-submit="addPost()">
+               <input type="text" ng-model="title">
+               <button type="submit">Post</button>
+            </form>
+        # controller.js
+             $scope.addPost = function(){
+		  $scope.posts.push({title: $scope.title, upvotes: 0});
+		  $scope.title = '';
+	     };
 
 ## CONTROLLER
 
@@ -246,4 +255,34 @@
               redirectTo: '/' 
             }); 
         });
+2. What is the second way define route with ui-routing?(better)
+        
+       # index.html
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
+         <ui-view> </ui-view>
+       # app.js
+       angular.module('flapperNews',['ui.router])
+        .config([
+        '$stateProvider',
+        '$urlRouterProvider',
+        function($stateProvider, $urlRouterProvider) {
 
+          $stateProvider
+            .state('home', {
+              url: '/home',
+              templateUrl: '/home.html',
+              controller: 'MainCtrl'
+            });
+
+          $urlRouterProvider.otherwise('home');
+        }])
+3. How you can specify url with id?
+        
+        .state('posts', {
+          url: '/posts/{id}',
+          templateUrl: '/posts.html',
+          controller: 'PostsCtrl'
+        });
+4. How you can take this id inside controller?
+        
+        $stateParams.id
