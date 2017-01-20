@@ -7,8 +7,8 @@
 
     rails g model Product name:string description:text price:decimal  photo_url:string
     
-    # add seed
-    Product.create(name: "Apple", description: "One of the popular product", price: 12.99,
+# add seed
+      Product.create(name: "Apple", description: "One of the popular product", price: 12.99,
       photo_url: "http://assets.creativity-online.com/images/work/full/i/p/h/iPhone_Thumb12.jpg")
 
     
@@ -31,5 +31,9 @@ https://www.sitepoint.com/rails-authentication-with-authlogic/
 ## ActiveAdmin
 https://www.sitepoint.com/easy-admin-interfaces-active-admin-rails/
 ## Angular Divese and Rails
+
 https://www.sitepoint.com/setting-up-an-angular-spa-on-rails-with-devise-and-bootstrap/
+
 https://thinkster.io/tutorials/angular-rails
+
+https://blog.joshsoftware.com/2014/07/17/building-web-apps-with-rails4-and-angularjs-in-15-minutes/
