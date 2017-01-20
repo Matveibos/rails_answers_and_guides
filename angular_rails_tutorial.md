@@ -38,3 +38,54 @@
           # app.js
                  angular.module('flapperNews', ['ui.router', 'templates'])
                            
+4. How you can overwrite model and include dependent data in json?
+          
+          class Post < ActiveRecord::Base
+            has_many :comments
+
+            def as_json(options = {})
+              super(options.merge(include: :comments))
+            end
+          end
+5. How to add routing to two binding controller?
+           
+           resources :posts, only: [:create, :index, :show] do
+              resources :comments, only: [:show, :create] do
+                member do
+                  put '/upvote' => 'comments#upvote'
+                end
+              end
+
+              member do
+                put '/upvote' => 'posts#upvote'
+              end
+            end
+6. How to add controllers for angular?
+          
+          rails generate controller Posts --skip-assets --skip-template-engine
+          # add to application controller
+           respond_to :json
+          # in post controller
+            def index
+              respond_with Post.all
+            end
+
+            def create
+              respond_with Post.create(post_params)
+            end
+
+            def show
+              respond_with Post.find(params[:id])
+            end
+
+            def upvote
+              post = Post.find(params[:id])
+              post.increment!(:upvotes)
+
+              respond_with post
+            end
+
+            private
+            def post_params
+              params.require(:post).permit(:link, :title)
+            end
