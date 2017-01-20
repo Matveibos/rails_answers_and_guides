@@ -15,3 +15,26 @@
               render 'layouts/application'
             end
           9. root 'application#angular'
+2. How to install angular with bower?
+          
+          1. bower init (skipp all)
+          2. create .bowerrc and add there
+                    {
+                      "directory":"vendor/assets/bower_components"
+                    }
+          3. bower install angular angular-ui-router bootstrap --save
+          4. add to application.js 
+                    //= require angular
+                    //= require angular-ui-router
+                    //= require_tree .
+3. Why you need using 'angular-rails-templates' gem and how include them?
+          
+          Gem angular-rails-templates takes html templates and compiles them into javascript files that insert our templates into Angular's $templateCache. This allows us to move our templates into the app/assets/javascripts folder.
+          # Gemfile
+            gem 'angular-rails-templates'
+          # application.js
+            //= require angular
+            //= require angular-rails-templates
+          # app.js
+                 angular.module('flapperNews', ['ui.router', 'templates'])
+                           
