@@ -1,4 +1,17 @@
+1. Добавить возможность редактировать, добовлять и удалять записи.
+2. Как связать баззу данных рельс и действия с ангулар?
+3. Как сделать так, чтобы мои руби вставки можно было делать в ангулар?
+4. Как добавить кан-кан-кан к ангулару?
+5. Из чего состоят поля в девайсе и других частях.
+## Steps 
 
+    rails g model Product name:string description:text price:decimal  photo_url:string
+    
+    # add seed
+    Product.create(name: "Apple", description: "One of the popular product", price: 12.99,
+      photo_url: "http://assets.creativity-online.com/images/work/full/i/p/h/iPhone_Thumb12.jpg")
+
+    
 
 ## Autentication on vk and facebook 
 
