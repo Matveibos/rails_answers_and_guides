@@ -164,6 +164,9 @@
 5. How you can find specific name in routes?
          
          rake routes | grep ressource_name
+6. How you can set default another format for answer (json for example)?
+         
+         resources :visitors, only: [:index, :create, :destroy], defaults: {format: :json}
  
 
 ## -----------------------------------DATABASE-----------------------------------
