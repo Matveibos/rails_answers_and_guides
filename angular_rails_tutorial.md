@@ -89,3 +89,9 @@
             def post_params
               params.require(:post).permit(:link, :title)
             end
+7. How you can return back methods respond_to, respond_with?
+          
+          # ADD gem "responders"
+          
+          $ bundle install
+          $ rails g responders:install
