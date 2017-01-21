@@ -95,3 +95,9 @@
           
           $ bundle install
           $ rails g responders:install
+##  Angular $resource
+1. How you can include angular $resourse?
+          
+          1. angular.module('mainApp',['ngResource']); //mainApp is our main module
+          2. //= require angular-resource  // in application.js
+
