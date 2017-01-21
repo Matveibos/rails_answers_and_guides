@@ -90,7 +90,13 @@
 		  $scope.posts.push({title: $scope.title, upvotes: 0});
 		  $scope.title = '';
 	     };
+10. How to include another html file?
+	
+		<body ng-app="">
 
+			<div ng-include="'myFile.html'"></div>
+
+		</body>
 ## CONTROLLER
 
 1. Can you show me example of angular simple controller?
