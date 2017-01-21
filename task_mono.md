@@ -37,3 +37,5 @@ https://www.sitepoint.com/setting-up-an-angular-spa-on-rails-with-devise-and-boo
 https://thinkster.io/tutorials/angular-rails
 
 https://blog.joshsoftware.com/2014/07/17/building-web-apps-with-rails4-and-angularjs-in-15-minutes/
+
+https://richonrails.com/articles/getting-started-with-angularjs-and-rails
