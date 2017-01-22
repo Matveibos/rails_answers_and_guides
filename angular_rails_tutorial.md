@@ -95,6 +95,19 @@
           
           $ bundle install
           $ rails g responders:install
+8. How you can change rails routing on angular routing?
+          
+          # application.html.erb
+          ## add ng-app, ng-view and delete yeild
+          <html ng-app="ProductCenter">
+            <head>
+               ...
+            </head>
+            <body class="container" ng-view>
+            
+            </body>
+          </html>
+
 ##  Angular $resource
 1. How you can include angular $resourse?
           
