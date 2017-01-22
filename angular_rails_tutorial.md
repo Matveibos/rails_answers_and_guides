@@ -107,6 +107,20 @@
             
             </body>
           </html>
+          
+          ## application.js 
+          ///= require angular-route
+          
+          ## app.js
+          var productCenter = angular.module("ProductCenter", ['ngRoute','templates']);
+          productCenter.config([
+            '$routeProvider', function($routeProvider) {
+              $routeProvider.when('/products',{
+                templateUrl: 'views/products.html',
+                controller: 'productsController'
+              }); 
+            }
+          ]);
 
 ##  Angular $resource
 1. How you can include angular $resourse?
