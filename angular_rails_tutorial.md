@@ -95,7 +95,7 @@
           
           $ bundle install
           $ rails g responders:install
-8. How you can change rails routing on angular routing?
+8. How you can change rails routing on angular routing['ngRoute']?
           
           # application.html.erb
           ## add ng-app, ng-view and delete yeild
@@ -121,7 +121,35 @@
               }); 
             }
           ]);
-
+9. How you can change rails routing on angular routing['ui.router']?
+          
+          # 1. install angular-ui-router with bower
+          # 2. include to application.js
+                     //= require angular-ui-router
+          # 3. change application.html.erb
+          ## ng-app and ui-view
+                    <html ng-app="VisitorCenter">
+                      <head>
+                         ...
+                      </head>
+                      <body class="container">
+                               <ui-view> </ui-view>
+                      </body>
+                    </html>
+           # 4. add ui.router to app.js
+                 angular
+                    .module('VisitorCenter', ['ui.router'])
+           # 5. add state 
+                  angular
+                    .module('VisitorCenter')
+                    .config(function($stateProvider, $urlRouterProvider) {
+                      $stateProvider
+                        .state('products', {
+                          url: '/products',
+                          templateUrl: 'views/products.html',
+                          controller: 'productsController'
+                        })
+                    });
 ##  Angular $resource
 1. How you can include angular $resourse?
           
