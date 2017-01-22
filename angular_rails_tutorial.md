@@ -150,6 +150,13 @@
                           controller: 'productsController'
                         })
                     });
+10. How to add part of html template?
+                    
+             # application.html.erb
+            <body class="container">
+                     <div ng-include="'views/navigate.html'"></div>
+                     <ui-view> </ui-view>
+            </body>
 ##  Angular $resource
 1. How you can include angular $resourse?
           
