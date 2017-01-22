@@ -162,4 +162,217 @@
           
           1. angular.module('mainApp',['ngResource']); //mainApp is our main module
           2. //= require angular-resource  // in application.js
+          
+## Add DEVISE to RAILS with ANGULAR
+          
+          # 1. add gems
+                    gem 'bower-rails'
+                    gem 'devise'
+                    gem 'angular-rails-templates' 
+                    gem 'active_model_serializers'
+                    gem 'bootstrap-sass'
+                    
+                    bundle install
+          # 2. generate devise
+                    rails generate devise:install
+                    rails generate devise User
+                    
+                    # Devise only includes an email and password for registration, let's also add our own username to our                       # User model. We also want to have a unique index on our username.
+                    
+                    rails generate migration AddUsernameToUser username:string:uniq
+                    
+                    rails db:migrate
+           # 3.  install angular, angular-ui-router, angular-devise with bower  
+                    bower init
+                    
+                    # add to bower.json
+                    "vendor": {
+                      "name": "bower-rails generated vendor assets",
+                      "dependencies": {
+                        "angular": "v1.5.8",
+                        "angular-ui-router": "latest",
+                        "angular-devise": "latest"
+                      }
+                    }
+                    
+                    rake bower:install
+           # 4. change id on nane when you see user
+                    rails g serializer user
+                    # add :username to app/serializers/user_serializer.rb 
+                    class UserSerializer < ActiveModel::Serializer
+                      attributes :id, :username
+                    end
 
+                    
+           # 5. add :json respond for device
+               # Add the following in config/application.rb directly under class Application < Rails::Application:
+                      config.to_prepare do
+                        DeviseController.respond_to :html, :json
+                      end
+           # 6. change application controller
+                    class ApplicationController < ActionController::Base
+                      protect_from_forgery with: :exception
+                      before_action :configure_permitted_parameters, if: :devise_controller?
+                      skip_before_action :verify_authenticity_token
+
+                      respond_to :json
+
+                      def index
+                        render 'application/index'
+                      end
+
+                      protected
+
+                      def configure_permitted_parameters
+                        added_attrs = [:username, :email, :password, :password_confirmation, :remember_me]
+                        devise_parameter_sanitizer.permit :sign_up, keys: added_attrs
+                        devise_parameter_sanitizer.permit :account_update, keys: added_attrs
+                      end
+                    end
+           # 6. set root, and add application/index
+                    # routes.rb
+                    root 'application#index'
+                    # create application/index.html.erb
+                    
+           # 7. change main application.html.erb for angular 
+                    <!DOCTYPE html>
+                    <html ng-app="myApp">
+                      <head>
+                        <title>VisitorsCenter</title>
+                        <%= csrf_meta_tags %>
+
+                        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+                        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+                      </head>
+
+                      <body class="container">
+                               <div ng-include="'views/nav.html'"></div>
+                               <ui-view> </ui-view>
+                      </body>
+                    </html>
+             # 8. add angular dependences to assets/js/application.js
+                    //= require angular
+                    //= require angular-ui-router
+                    //= require angular-devise
+                    //= require angular-rails-templates
+                    //= require bootstrap-sprockets
+             # 9. add bootstrap 
+                    # create custom.scss
+                    @import "bootstrap-sprockets";
+                    @import "bootstrap";
+             # 10. add module app.js
+                    (function(){
+                      angular
+                        .module('myApp', ['ui.router', 'Devise', 'templates'])
+                    }())
+             # 11. add navigationController.js
+                    angular
+                    .module('myApp')
+                    .controller('navigationController', function($scope, Auth){
+                      $scope.signedIn = Auth.isAuthenticated;
+                      $scope.logout = Auth.logout;
+                      Auth.currentUser().then(function (user){
+                        $scope.user = user;
+                      });
+                       $scope.$on('devise:new-registration', function (e, user){
+                        $scope.user = user;
+                      });
+
+                      $scope.$on('devise:login', function (e, user){
+                        $scope.user = user;
+                      });
+
+                      $scope.$on('devise:logout', function (e, user){
+                        $scope.user = {};
+                      });
+                    });
+              # 12. add authContoller.js
+                    angular
+                    .module('myApp')
+                    .controller('authController', function($scope, $state, Auth){
+                      $scope.login = function() {
+                        Auth.login($scope.user).then(function(){
+                          $state.go('home');
+                        });
+                      };
+
+                      $scope.register = function() {
+                        Auth.register($scope.user).then(function(){
+                          $state.go('home');
+                        });
+                      };
+                    });
+               # 13. add router.js
+                    angular
+                    .module('myApp')
+                    .config(function($stateProvider, $urlRouterProvider) {
+                      $stateProvider
+                         .state('home', {
+                                  url: '/home',
+                                  templateUrl: 'views/home.html'
+                                })
+                         .state('login', {
+                          url: '/login',
+                          templateUrl: 'views/_login.html',
+                          controller: 'authController',
+                          onEnter: ['$state', 'Auth', function($state, Auth) {
+                            Auth.currentUser().then(function (){
+                              $state.go('home');
+                            })
+                          }]
+                        })
+                        .state('register', {
+                          url: '/register',
+                          templateUrl: 'views/_register.html',
+                          controller: 'authController',
+                          onEnter: ['$state', 'Auth', function($state, Auth) {
+                            Auth.currentUser().then(function (){
+                              $state.go('home');
+                            })
+                          }]
+                        })
+                    });
+                # 14. begin add views (views/nav.html) and views/home.html
+                   # views/nav.html
+                    <div class="collapse navbar-collapse pull-right" ng-controller="navigationController">
+                      <ul class="nav navbar-nav">
+                        <li ng-hide="signedIn()"><a href="#/login">Log In</a></li>
+                        <li ng-hide="signedIn()"><a href="#/register">Register</a></li>
+                        <li ng-show="signedIn()"><a href="#/">{{ user.username }}</a></li>
+                        <li ng-show="signedIn()"><a ng-click="logout()">Log Out</a></li>
+                      </ul>
+                    </div>
+                    
+                    # views/home.html
+                     Hello Home!
+                # 15. add views/_login.html
+                    <div class="page-header">
+                      <h1>Log In</h1>
+                    </div>
+
+                    <form ng-submit="login()">
+                      <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Email" ng-model="user.email">
+                      </div>
+                      <div class="input-group">
+                        <input type="password" class="form-control" placeholder="Password" ng-model="user.password">
+                      </div>
+                      <input type="submit" class="btn btn-default" value="Log In">
+                    </form>
+               # 16. add views/_register.html
+                    <div class="page-header">
+                      <h1>Register</h1>
+                    </div>
+
+                    <form ng-submit="register()">
+                      <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Email" ng-model="user.email">
+                      </div>
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Username" ng-model="user.username">
+                      </div>
+                      <div class="input-group">
+                        <input type="password" class="form-control" placeholder="Password" ng-model="user.password">
+                      </div>
+                      <input type="submit" class="btn btn-default" value="Register">
+                    </form>
