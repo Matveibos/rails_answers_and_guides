@@ -18,6 +18,10 @@
 https://habrahabr.ru/post/142128/
 
 https://www.sitepoint.com/rails-authentication-oauth-2-0-omniauth/
+
+
+## Authentication with twitter and devise
+https://www.digitalocean.com/community/tutorials/how-to-configure-devise-and-omniauth-for-your-rails-application
 omniauth, omniauth-facebook, omniauth-vkontakte
 ## CanCanCan
 
@@ -39,3 +43,4 @@ https://thinkster.io/tutorials/angular-rails
 https://blog.joshsoftware.com/2014/07/17/building-web-apps-with-rails4-and-angularjs-in-15-minutes/
 
 https://richonrails.com/articles/getting-started-with-angularjs-and-rails
+
