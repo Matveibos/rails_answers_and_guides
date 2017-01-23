@@ -115,7 +115,10 @@
             <% if user_signed_in? %>	
 	     <%= current_user.email %>      
 	    <% end %>
-          
+4. How you can copy devise views to your app?
+	   
+	   rails generate devise:views
+	   
 ## Omniath with devise
 
 		1. add gems 
