@@ -119,5 +119,54 @@
 ## Omniath with devise
 
 		1. add gems 
-          
+			gem 'devise'
+			gem 'omniauth'
+			gem 'omniauth-twitter'
+			gem 'omniauth-facebook'
+			gem 'omniauth-vkontakte'
+		
+		3. generate devise
+			rails generate devise:install
+			rails generate devise User
+			rake db:migrate
+		4. add provider and uid column to user
+			rails g migration AddColumnsToUsers provider uid
+			rake db:migrate
+		5. creatate facebook, vk, twitter app ang get secret id
+		6. add secret key to config/initialize/devise.rb
+			  #ID first, secret second
+			  config.omniauth :digitalocean, "db381dc9990be7e3bc42503d0", "5b0824c2722b65d29965f1a1df"
+		7. update user class with omniathable, and from_omneath method
+			class User < ApplicationRecord
+			  devise :database_authenticatable, :registerable,
+				 :recoverable, :rememberable, :trackable, :validatable,
+				 :omniauthable, :omniauth_providers => [:twitter, :facebook, :vkontakte]
+
+			  def self.from_omniauth(auth)
+			      where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
+				user.provider = auth.provider
+
+				user.uid = auth.uid
+				if auth.info.email != nil
+				  user.email = auth.info.email
+				elsif auth.info.nickname != ''
+				  user.email = auth.info.nickname + '@tut.by'
+				else
+				  user.email = "vk#{auth.uid}@tut.by"
+				end
+				user.password = Devise.friendly_token[0,20]
+			      end
+			  end
+			end
+		8. add to routing callback
+			devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
+		9. create callback controller  myapp/app/controllers/callbacks_controller.rb
+			class CallbacksController < Devise::OmniauthCallbacksController
+			    def twitter
+				@user = User.from_omniauth(request.env["omniauth.auth"])
+				sign_in_and_redirect @user
+			    end
+			end
+			
+		
           
