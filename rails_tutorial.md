@@ -135,7 +135,13 @@
          <%= link_to "Log out", logout_path, method: "delete" %>
          # inside routes
          delete '/logout', to: 'sessions#destroy'
+6. How to add dropdown menu with references?
          
+         # user belongs_to role
+         <div class="field">
+             <%= f.label :user_role %><br>
+             <%= f.collection_select :user_role_id, Role.all, :id, :user_role %>
+          </div>
 
 ## -----------------------------------ROUTING-----------------------------------
 1. how you can see all route?
