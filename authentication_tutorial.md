@@ -1,9 +1,18 @@
-1. What local adress you can use for testing Omniath?
+1. How you can create provider app for testing Omniath?
           
           # for twitter
-          http://127.0.0.1:3000/auth/twitter/callback
+	   1. https://apps.twitter.com/
+	   # callback (users for devise)
+	   2 http://127.0.0.1:3000/users/auth/twitter/callback
+	   
           # for facebook
-          http://localhost:3000
+	   1. https://developers.facebook.com/
+	   2. create new app, in "проверка приложения" choose available for everybody
+	   3. in setting add new platform (web-site) with such adress (#users need for devise)
+	   http://localhost:3000/users/auth/facebook/callback
+	  
+	  # for vk
+	  
 2. Where you have to insert KEY in omniath.rb ?
           
           Rails.application.config.middleware.use OmniAuth::Builder do
