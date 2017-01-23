@@ -171,5 +171,13 @@
 			    end
 			end
 			
+## CanCanCan
+
+1. How you can show element only when user has access?
+	
+		<% if can? :update, @article %>
+		  <%= link_to "Edit", edit_article_path(@article) %>
+		<% end %>
+		
 		
           
