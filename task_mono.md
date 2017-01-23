@@ -32,6 +32,9 @@ http://stackoverflow.com/questions/24858695/rails-rest-api-permissions-cancan-wi
         cancan and devise
 https://github.com/mezbahalam/devise_cancan
 
+        with console
+https://github.com/RolifyCommunity/rolify/wiki/Devise---CanCanCan---rolify-Tutorial
+
 ## Devise part 1
 https://habrahabr.ru/post/208056/
 ## Authlogic
