@@ -12,6 +12,9 @@
 	   	http://localhost:3000/users/auth/facebook/callback
 	  
 	  	# for vk
+		1. https://vk.com/dev
+		2. choose my_app -> create new app -> web-site
+		3. http://localhost:3000/users/auth/vkontakte/callback
 	  
 2. Where you have to insert KEY in omniath.rb ?
           
@@ -113,6 +116,8 @@
 	     <%= current_user.email %>      
 	    <% end %>
           
-          
+## Omniath with devise
+
+		1. add gems 
           
           
