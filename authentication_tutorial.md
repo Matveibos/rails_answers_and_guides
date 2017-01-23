@@ -102,7 +102,7 @@
           
             <% if user_signed_in? %>	
 	     <%= current_user.email %>      
-	  <% end %>
+	    <% end %>
           
           
           
