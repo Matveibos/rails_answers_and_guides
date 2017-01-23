@@ -27,6 +27,8 @@ omniauth, omniauth-facebook, omniauth-vkontakte
 
 https://www.sitepoint.com/cancancan-rails-authorization-dance/
 
+http://stackoverflow.com/questions/24858695/rails-rest-api-permissions-cancan-with-angular-js-client-how-to-render-ui-bas
+
 
 ## Devise part 1
 https://habrahabr.ru/post/208056/
