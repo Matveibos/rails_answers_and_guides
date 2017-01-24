@@ -102,6 +102,29 @@
 		      end
 		      actions
 		  end
+11. How you can customize show action?
+		
+		# admin/users.rb
+		 show do
+		    attributes_table do
+		      row :id
+		      row :email
+		      row :role do |p|
+			p.role.user_role  unless p.role_id.nil?
+		      end
+		    end
+		    active_admin_comments
+		  end
+12. How  you can show correct value of refferences model?
+		
+		# just add for bad customize model(for example Role.md)
+		  def to_s
+		    user_role
+		  end
+13. How you can permmit change params for user?
+		
+		# admin/user.rb
+		permit_params :role_id, :email, :id, :role
 ## Devise
 
 1. How you can start with devise?
