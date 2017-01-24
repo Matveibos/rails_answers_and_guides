@@ -22,6 +22,7 @@
             # provider :twitter, ENV['TWITTER_KEY'], ENV['TWITTER_SECRET']
             provider :twitter, '75UOAIDmKrRXvXKBhNvKA', 'GrIaBI0tQy2TtjOtaFL9VxT6s9qq1sV7h9yRaZW4A'
           end
+	  
 ## ActiveAdmin
           
 1. How you can start work with ActiveAdmin?
@@ -92,7 +93,15 @@
  9. How you can change list to check box in filter?
           
             filter :author, :as => :checkbox
-            
+ 10. How to change references model to normal view?
+ 	    
+	   	 # admin/users.rb
+		 index do
+		      column :role do |p|
+			p.role.user_role  unless p.role_id.nil?
+		      end
+		      actions
+		  end
 ## Devise
 
 1. How you can start with devise?
