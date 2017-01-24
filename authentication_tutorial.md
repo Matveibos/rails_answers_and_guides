@@ -249,10 +249,6 @@
 			     roles == role
 			   end
 
-			   def roles=(role)
-			     self.role_id = Role.find_by(user_role: role).id
-			   end
-
 			   def roles
 			     role.user_role.to_sym
 			   end
