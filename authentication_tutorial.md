@@ -243,6 +243,10 @@
 			# User belongs_to :role
 			rails generate migration add_role_to_users role:references
 			rake db:migrate
+		6. add seed.rb
+			Role.create!(user_role: 'admin');
+			Role.create!(user_role: 'author');
+			Role.create!(user_role: 'destroyer');
 		7. Add role to model 
 			# \app\models\user.rb
 			  def has_role?(role)
