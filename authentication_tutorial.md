@@ -210,7 +210,24 @@
 		<% if can? :update, @article %>
 		  <%= link_to "Edit", edit_article_path(@article) %>
 		<% end %>
+2. How to translate answer to json?
 		
+		# add as_json method
+		class Ability
+		    include CanCan::Ability
+
+		    def initialize(user)
+		    end
+
+		  def as_json(options = {})
+		    abilities = []
+		    rules.each do |rule|
+		      abilities << { can: rule.base_behavior, actions: rule.actions.as_json, subjects: rule.subjects.map(&:to_s), conditions: rule.conditions.as_json }
+		    end
+		    abilities
+		  end
+		end
+
 ## CanCanCan with Devise
 
 1. How to create Devise with CanCanCan?
