@@ -254,7 +254,7 @@
 			   end
 
 			   def roles
-			     Role.find(role_id).user_role.to_sym
+			     role.user_role.to_sym
 			   end
 		8. Add permited for devise in controller
 			# \app\controller\application_controller.rb
