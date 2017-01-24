@@ -241,7 +241,7 @@
 			rails g model Role user_role:string
 			# Role has_many :users
 			# User belongs_to :role
-			rails generate migration add_user_role_to_users user_role:references
+			rails generate migration add_role_to_users role:references
 			rake db:migrate
 		7. Add role to model 
 			# \app\models\user.rb
@@ -250,11 +250,11 @@
 			   end
 
 			   def roles=(role)
-			     self.user_role_id = Role.find_by(user_role: role).id
+			     self.role_id = Role.find_by(user_role: role).id
 			   end
 
 			   def roles
-			     Role.find(user_role_id).user_role.to_sym
+			     Role.find(role_id).user_role.to_sym
 			   end
 		8. Add permited for devise in controller
 			# \app\controller\application_controller.rb
@@ -265,7 +265,7 @@
 				  private 
 
 				  def configure_permitted_parameters
-				    added_attrs = [:email, :password, :password_confirmation, :role_mask, :user_role_id]
+				    added_attrs = [:email, :password, :password_confirmation, :role_mask, :role_id]
 				    devise_parameter_sanitizer.permit :sign_up, keys: added_attrs
 				  end
 				end
@@ -276,7 +276,7 @@
 
 				  <div class="field">
 				    <%= f.label :user_role %><br>
-				    <%= f.collection_select :user_role_id, Role.all, :id, :user_role %>
+				    <%= f.collection_select :role_id, Role.all, :id, :user_role %>
 				  </div>
 		10. Change app model ability
 			class Ability
