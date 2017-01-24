@@ -179,5 +179,93 @@
 		  <%= link_to "Edit", edit_article_path(@article) %>
 		<% end %>
 		
+## CanCanCan with Devise
+
+1. How to create Devise with CanCanCan?
 		
-          
+		1. create new app
+			rails new devise_cancan
+          		rails g scaffold status post:text
+		2. add gems
+			 gem 'devise'
+  			 gem 'cancancan'
+		3. generate devise
+			rails generate devise:install
+			rails generate devise User
+			rake db:migrate
+		4. add route root and authenticate
+			root 'statuses#index'
+			#\app\controllers\statuses_controller.rb
+  			before_action :authenticate_user!
+		5. add view for show log_out and log_in
+			# \app\views\layouts\application.html.erb
+
+			 <% if user_signed_in? %>
+			     <%= link_to "sign out",destroy_user_session_path, method: :delete   %>
+			 <% end %>
+			 <br>
+		6. Setup cancan abilites
+			rails g cancan:ability
+			rails g model Role user_role:string
+			# Role has_many :users
+			# User belongs_to :role
+			rails generate migration add_user_role_to_users user_role:references
+			rake db:migrate
+		7. Add role to model 
+			# \app\models\user.rb
+			  def has_role?(role)
+			     roles == role
+			   end
+
+			   def roles=(role)
+			     self.user_role_id = Role.find_by(user_role: role).id
+			   end
+
+			   def roles
+			     Role.find(user_role_id).user_role.to_sym
+			   end
+		8. Add permited for devise in controller
+			# \app\controller\application_controller.rb
+				class ApplicationController < ActionController::Base
+				  protect_from_forgery with: :exception
+				  before_action :configure_permitted_parameters, if: :devise_controller?
+
+				  private 
+
+				  def configure_permitted_parameters
+				    added_attrs = [:email, :password, :password_confirmation, :role_mask, :user_role_id]
+				    devise_parameter_sanitizer.permit :sign_up, keys: added_attrs
+				  end
+				end
+		9. Add new template for registration view
+			#\app\views\devise\registrations\new.html.erb
+				<%= devise_error_messages! %>
+ 
+
+				  <div class="field">
+				    <%= f.label :user_role %><br>
+				    <%= f.collection_select :user_role_id, Role.all, :id, :user_role %>
+				  </div>
+		10. Change app model ability
+			class Ability
+			  include CanCan::Ability
+
+			  def initialize(user)
+
+			   user ||= User.new
+			   if user.has_role? :admin
+			     can :manage, :all
+			   elsif user.has_role? :author
+			     can :create, Status # author can create status
+			     can :update, Status # author can update status
+			     # can :destroy, Status # #uncomment this line, author can destroy status 
+			     can :read, :all
+			   else
+			     can :read, :all
+			   end
+			  end
+			end
+		11. add loud_and_authorize resource
+			# \app\controllers\statuses_controller.rb
+			load_and_authorize_resource
+
