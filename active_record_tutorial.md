@@ -59,3 +59,7 @@
                 add_index :table, :column_name
               end
             end
+14. How to get access to the references params?
+            
+            # user belongs_to role, role has_many :users
+            user.role.any_params
