@@ -63,3 +63,9 @@
             
             # user belongs_to role, role has_many :users
             user.role.any_params
+15. How to add default value to column throught a migration?
+            
+            # rails g migration add_default_value
+              def change
+                change_column_default :table, :column, value
+              end
