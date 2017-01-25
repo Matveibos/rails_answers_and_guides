@@ -21,4 +21,20 @@
         left: 50%;
         margin-left: -150px;
         margin-top: -50px;
- 
+ 6. How you can add glyphicon of facebook, vk, twitter?
+        
+        # add fontawesome css
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" >
+        # add glyphicon 
+        
+            <i class="fa fa-twitter-square"></i>
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-vk"></i>
+7. How you can change glyphicon icon size?
+
+        <span class="glyphicon glyphicon-globe"></span>
+        <span class="glyphicon glyphicon-globe fa-lg"></span>
+        <span class="glyphicon glyphicon-globe fa-2x"></span>
+        <span class="glyphicon glyphicon-globe fa-3x"></span>
+        <span class="glyphicon glyphicon-globe fa-4x"></span>
+        <span class="glyphicon glyphicon-globe fa-5x"></span>
