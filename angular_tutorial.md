@@ -97,6 +97,16 @@
 			<div ng-include="'myFile.html'"></div>
 
 		</body>
+11. How to add dropdown list for angular?( 2 way)
+		
+		# first way
+	 	    <select ng-model="newVisitor.category_id">
+		      <option ng-repeat="x in categories" value="{{x.id}}">{{x.category_name}}</option>
+		    </select>
+		# second way
+		   <select ng-model="newVisitor.category_name" ng-options="x.id for x in categories">
+           	   </select> 
+	
 ## CONTROLLER
 
 1. Can you show me example of angular simple controller?
