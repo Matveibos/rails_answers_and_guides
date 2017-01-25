@@ -21,7 +21,8 @@
         left: 50%;
         margin-left: -150px;
         margin-top: -50px;
- 6. How you can add glyphicon of facebook, vk, twitter?
+        
+6. How you can add glyphicon of facebook, vk, twitter?
         
         # add fontawesome css
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" >
