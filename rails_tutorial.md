@@ -142,7 +142,9 @@
              <%= f.label :user_role %><br>
              <%= f.collection_select :user_role_id, Role.all, :id, :user_role %>
           </div>
-
+7. How you can get access to the img from js file?
+         
+         "/assets/1.png"
 ## -----------------------------------ROUTING-----------------------------------
 1. how you can see all route?
          
