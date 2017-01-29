@@ -1,3 +1,20 @@
+1. How to add references modele in angular?
+          
+          # first step in controller merge references params
+            def create
+              respond_with Moderation.create(visitor_params.merge(user_id: current_user.id))
+            end
+
+          # second step change default json view
+          class Moderation < ApplicationRecord
+            belongs_to :user
+
+            def as_json(options = {})
+              super(options.merge(include: :user))
+            end
+          end
+
+
 1. How to include angular to rails? (first method)
           
           1. rails new RailsName --skip-javascript
