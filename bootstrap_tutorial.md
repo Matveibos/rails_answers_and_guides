@@ -1,6 +1,7 @@
 1. How to add bootstrap by link?
         
          <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  rel="stylesheet">
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 1. How you can include bootstrap inside rails app?
         
         # add bootstrap-sass gem to gemfile 
