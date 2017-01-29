@@ -12,6 +12,11 @@
             def as_json(options = {})
               super(options.merge(include: :user))
             end
+            
+            # or for several modele for example(:user, :category)
+            def as_json(options = {})
+              super options.merge(:methods => [:user, :category])
+            end
           end
 
 
