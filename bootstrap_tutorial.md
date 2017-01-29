@@ -186,4 +186,6 @@
         
         http://bootsnipp.com/snippets/featured/bootstrap-snipp-for-datatable
 
-http://bootsnipp.com/snippets/featured/bootstrap-snipp-for-datatable
+2. Template table with user?
+        
+        http://bootsnipp.com/snippets/Ba4OQ
