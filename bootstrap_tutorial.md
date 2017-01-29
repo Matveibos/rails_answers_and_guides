@@ -180,3 +180,10 @@
         </div>
         
         
+## ----------------- Bootstrap template ------------------------
+
+1. Bootstrap table template vith edit and delete?
+        
+        http://bootsnipp.com/snippets/featured/bootstrap-snipp-for-datatable
+
+http://bootsnipp.com/snippets/featured/bootstrap-snipp-for-datatable
