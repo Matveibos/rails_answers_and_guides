@@ -69,3 +69,6 @@
               def change
                 change_column_default :table, :column, value
               end
+14. How to remove index from column?
+            
+            remove_index :table, :column
