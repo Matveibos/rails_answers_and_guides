@@ -72,3 +72,6 @@
 14. How to remove index from column?
             
             remove_index :table, :column
+15. How to remove column from table?
+
+            remove_column :table_name, :column_name
