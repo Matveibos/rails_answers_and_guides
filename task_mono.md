@@ -1,8 +1,8 @@
-1. Добавить возможность редактировать, добовлять и удалять записи.
-2. Как связать баззу данных рельс и действия с ангулар?
-3. Как сделать так, чтобы мои руби вставки можно было делать в ангулар?
-4. Как добавить кан-кан-кан к ангулару?
-5. Из чего состоят поля в девайсе и других частях.
+1. Redirect to visitors page angular 
+2. Add edit page angular
+3. Add reaction on cancan exeption
+4. add new template for table (with user)
+5.
 ## Steps 
 
     rails g model Product name:string description:text price:decimal  photo_url:string
