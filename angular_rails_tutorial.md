@@ -398,3 +398,36 @@
                       </div>
                       <input type="submit" class="btn btn-default" value="Register">
                     </form>
+## How to add update action to angular?
+          
+                    1. change update
+                    
+                      def update
+                          @user = User.find(params[:id]).update_attributes(user_params)
+                          render json: @user, status: :ok 
+                      end
+                    2. change factory
+                    
+                    myApp.factory('User', ['$resource', function($resource){
+                      return $resource('/users/:id.json', {id: '@id'}, {
+                        show: { method: 'GET' },
+                        update: { method: 'PUT'},
+                        delete: { method: 'DELETE', params: {id: '@id'} }
+                      });
+                    }]);
+                    
+                    3. Add link to edit 
+                               <a href="#/users/{{user.id}}/edit">Edit</a>
+                    4. Add update method to UserUpdate controller
+                               $scope.user = User.get({id: $routeParams.id})
+                                $scope.update = function(){
+                                  if ($scope.userForm.$valid){
+                                    User.update({id: $scope.user.id},{user: $scope.user},function(){
+                                      $location.path('/');
+                                    }, function(error) {
+                                      console.log(error)
+                                    });
+                                  }
+                                };
+                    5. Add view form
+                    
