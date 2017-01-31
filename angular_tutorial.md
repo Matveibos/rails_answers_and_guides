@@ -299,6 +299,15 @@
           templateUrl: '/posts.html',
           controller: 'PostsCtrl'
         });
+		# or
+		.state('visitors_edit', {
+		      url: '/visitors/:id/edit',
+		      templateUrl: 'views/visitors_edit.html',
+		      controller: 'visitorsController'
+		    })
 4. How you can take this id inside controller?
         
         $stateParams.id
+5. How you can set another routing for invalid way?
+	
+	  	$urlRouterProvider.otherwise('/index')
