@@ -400,12 +400,17 @@
                     </form>
 ## How to add update action to angular?
           
-                    1. change update
-                    
-                      def update
-                          @user = User.find(params[:id]).update_attributes(user_params)
-                          render json: @user, status: :ok 
+                    1. change update, show add route update
+                                        
+                      def show
+                        respond_with Visitor.find(params[:id])
                       end
+                      
+                      def update 
+                        respond_with User.find(params[:id]).update_attributes(user_params)
+                      end
+                      # routes add update and show
+                      resources :visitors, defaults: {format: :json}
                     2. change factory
                     
                     myApp.factory('User', ['$resource', function($resource){
@@ -419,15 +424,21 @@
                     3. Add link to edit 
                                <a href="#/users/{{user.id}}/edit">Edit</a>
                     4. Add update method to UserUpdate controller
-                               $scope.user = User.get({id: $routeParams.id})
+                              # for ui-router use $stateParams instead $routeParams
+                               $scope.user = User.get({id: $stateParams.id})
                                 $scope.update = function(){
-                                  if ($scope.userForm.$valid){
                                     User.update({id: $scope.user.id},{user: $scope.user},function(){
                                       $location.path('/');
-                                    }, function(error) {
-                                      console.log(error)
-                                    });
-                                  }
+                                    })
                                 };
-                    5. Add view form
+                    5. add angular routing
+                      .state('visitors_edit', {
+                          url: '/visitors/:id/edit',
+                          templateUrl: 'views/visitors_edit.html',
+                          controller: 'visitorsUpdateController'
+                        })
+                    6. create view template form
                     
+1. What ui-routing use instead $routeParams?
+          
+          $stateParams
