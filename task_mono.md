@@ -1,4 +1,4 @@
-1. Redirect to visitors page angular 
+1. Redirect to visitors page angular ++++
 2. Add edit page angular ++++
 3. Add reaction on cancan exeption
 4. add new template for table (with user)
