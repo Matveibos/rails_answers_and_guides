@@ -1,8 +1,8 @@
 1. Redirect to visitors page angular 
-2. Add edit page angular
+2. Add edit page angular ++++
 3. Add reaction on cancan exeption
 4. add new template for table (with user)
-5.
+5. Create only one page (visitors on moderations) with attribute(moderation, accept, rejected)
 ## Steps 
 
     rails g model Product name:string description:text price:decimal  photo_url:string
