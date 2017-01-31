@@ -3,6 +3,7 @@
 3. Add reaction on cancan exeption
 4. add new template for table (with user)
 5. Create only one page (visitors on moderations) with attribute(moderation, accept, rejected)
+6. add user image from social network
 ## Steps 
 
     rails g model Product name:string description:text price:decimal  photo_url:string
