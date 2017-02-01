@@ -10,3 +10,9 @@
                 alert(myStringArray[i]);
                 //Do something
             }
+3. What is the best way loop through array of Object?
+            
+            var a = ["a", "b", "c"];
+            a.forEach(function(entry) {
+                console.log(entry);
+            });
