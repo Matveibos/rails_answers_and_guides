@@ -18,7 +18,21 @@
               super options.merge(:methods => [:user, :category])
             end
           end
-
+1. How to add nested model (has_many references)
+          
+          1. inside model 
+                     has_many :category_visitors, :dependent => :destroy
+                     accepts_nested_attributes_for :category_visitors, allow_destroy: true, reject_if: :all_blank
+          2. add nested permited params to controller
+                    def visitor_params
+                        unless params["visitor"]["category_visitors"].blank?
+                          params["visitor"]["category_visitors_attributes"] = params["visitor"]["category_visitors"]
+                          params["visitor"].delete("category_visitors")
+                        end
+                        params.require(:visitor).permit(:first_name, :last_name, :reason, :category_id,
+                         :state, :user_id, :category_visitors,
+                         :category_visitors_attributes => [:id,:category, :_destroy, :visitor_id])
+                      end
 
 1. How to include angular to rails? (first method)
           
