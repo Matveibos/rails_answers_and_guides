@@ -1,3 +1,4 @@
+rails g model CategoryVisitor category:string visitor:references
 1. How you can check data?
             
             user = User.new(name: "Michael Hartl", email: "mhartl@example.com")
