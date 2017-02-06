@@ -67,3 +67,6 @@
             a ** 2 
             // for old js
             Math.pow(4,3);
+11. How you can convert array of string to array of number?
+            
+            arr.map(Number);
