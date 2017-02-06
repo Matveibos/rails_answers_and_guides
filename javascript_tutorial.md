@@ -70,3 +70,6 @@
 11. How you can convert array of string to array of number?
             
             arr.map(Number);
+12. How you can add new method to existing class?
+            
+            Array.prototype.square  = function () { return this.map(function(n) { return n*n; }); }
