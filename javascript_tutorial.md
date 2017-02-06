@@ -52,6 +52,8 @@
             
             [...Array(5).keys()];
             => [0, 1, 2, 3, 4]
+            // or 
+            Array.from(Array(5).keys())
 9. How you can define reduce function?
             
             arr.reduce(function(sum, current) {
