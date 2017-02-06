@@ -80,3 +80,7 @@
 14. How you can check if number is a integer?
             
             number % 1 === 0
+15. How to get a JavaScript object's class?
+            
+            typeof "dwda" 
+            => string
