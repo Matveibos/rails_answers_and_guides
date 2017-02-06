@@ -22,12 +22,11 @@
               if (a > b) return 1;
               if (a < b) return -1;
             }
-
             var arr = [ 1, 2, 15 ];
-
             arr.sort(compareNumeric);
-
             alert(arr);  // 1, 2, 15
+            // or
+            numbers.sort(function(a, b){return a - b; });
 5. How you can find min and max value of array?
             
             var arr = [1,2,3,55,-12,4,23,11];
