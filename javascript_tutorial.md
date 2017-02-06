@@ -41,3 +41,28 @@
             arr.map(function(latter){
               return latter + latter
             });
+7. How you can convert int to string and string to int?
+            
+            var a = 123.toString()
+            var a = 123 + '';
+            
+            parseInt("10")
+            
+8. How you can create a range?
+            
+            [...Array(5).keys()];
+            => [0, 1, 2, 3, 4]
+9. How you can define reduce function?
+            
+            arr.reduce(function(sum, current) {
+               return sum + current;
+            }, 0);
+            // or
+            arr.reduce((sum,i) =>
+            (sum + i),0);
+10. How you can use exponention method?
+            
+            // for new js 
+            a ** 2 
+            // for old js
+            Math.pow(4,3);
