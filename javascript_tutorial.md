@@ -77,3 +77,6 @@
             
             arr.filter(function(item) { return 0 == item % 2; })
             
+14. How you can check if number is a integer?
+            
+            number % 1 === 0
