@@ -73,3 +73,7 @@
 12. How you can add new method to existing class?
             
             Array.prototype.square  = function () { return this.map(function(n) { return n*n; }); }
+13. Do you know select method in js?
+            
+            arr.filter(function(item) { return 0 == item % 2; })
+            
