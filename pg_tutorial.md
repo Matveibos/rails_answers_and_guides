@@ -147,3 +147,6 @@
 5. How to install pg to macOSX?     
             
             https://gist.github.com/lxneng/741932
+6. Unistal postgres?
+
+             https://gist.github.com/mrcasals/2788529
