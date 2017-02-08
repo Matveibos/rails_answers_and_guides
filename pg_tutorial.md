@@ -144,4 +144,6 @@
            4. Restart postgresql using
                   sudo service postgresql restart
             
-        
+5. How to install pg to macOSX?     
+            
+            https://gist.github.com/lxneng/741932
