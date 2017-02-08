@@ -9,7 +9,9 @@
 3. Show all rbenv version installed on mac
     
         rbenv versions
-
+5. Rmagick install on mac
+        
+        http://stackoverflow.com/questions/6688557/cant-install-rmagick-2-13-1-cant-find-magick-config
 4. SHow curren ruby version 
     
         ruby -v
