@@ -314,3 +314,6 @@
 6. Angular-ui bootsrap model
 	
 		http://angular-ui.github.io/bootstrap/#!#modal
+7. Angular ui-modal with id
+		
+		https://lingohub.com/blog/2015/06/bootstrap-modal-window-custom-url-angularjs/
