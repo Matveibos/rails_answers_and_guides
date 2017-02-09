@@ -311,3 +311,6 @@
 5. How you can set another routing for invalid way?
 	
 	  	$urlRouterProvider.otherwise('/index')
+6. Angular-ui bootsrap model
+	
+		http://angular-ui.github.io/bootstrap/#!#modal
