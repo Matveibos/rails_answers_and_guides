@@ -317,7 +317,7 @@
 7. Angular ui-modal with id
 		
 		https://lingohub.com/blog/2015/06/bootstrap-modal-window-custom-url-angularjs/
-8. https://www.tutorialspoint.com/angularjs/index.html
+8. https://www.tutorialspoint.com/angularjs/index.htm
 9. http://www.w3schools.com/angular/default.asp
 10. https://docs.angularjs.org/tutorial
 11. https://thinkster.io/a-better-way-to-learn-angularjs
