@@ -95,4 +95,8 @@
               expect(@simple_class.message).to_not be 'howdy' 
            end
         end
-10. 
+10. How you can check if value equal each other?
+        
+         it "status should be 'declaimed' by default" do
+           expect(@monument.status).to eq('declaimed')
+         end
