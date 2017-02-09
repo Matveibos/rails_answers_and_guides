@@ -103,3 +103,6 @@
 11. Rspec test api?
         
         http://www.thegreatcodeadventure.com/better-rails-5-api-controller-tests-with-rspec-shared-examples/
+12. FactoryGirl documentation
+        
+        https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md
