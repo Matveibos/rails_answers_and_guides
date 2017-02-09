@@ -45,4 +45,6 @@
           
           ctr+shift+p and type disable 
 
-                  
+7. How to change default syntax?
+          
+          http://joncaveman.com/2015/08/11/sublime-text-3-default-syntax-highlighting-for-file-types/
