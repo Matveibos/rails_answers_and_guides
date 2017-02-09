@@ -100,3 +100,6 @@
          it "status should be 'declaimed' by default" do
            expect(@monument.status).to eq('declaimed')
          end
+11. Rspec test api?
+        
+        http://www.thegreatcodeadventure.com/better-rails-5-api-controller-tests-with-rspec-shared-examples/
