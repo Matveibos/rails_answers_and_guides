@@ -99,3 +99,4 @@ onEnter: ['$stateParams', '$state', '$uibModal',
           ) 
 
     ]    
+ng-click="showModal(monument.id)"
