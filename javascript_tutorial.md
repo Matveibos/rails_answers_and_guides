@@ -101,3 +101,4 @@ onEnter: ['$stateParams', '$state', '$uibModal',
     ]    
 ng-click="showModal(monument.id)"
 ng-href="/monuments/{{monument.id}}"
+ng-href="/cemetaries/{{cemetary.id}}"
