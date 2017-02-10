@@ -84,3 +84,6 @@
             
             typeof "dwda" 
             => string
+16. How you can debug js code?
+            
+            debugger;
