@@ -87,3 +87,15 @@
 16. How you can debug js code?
             
             debugger;
+garbage
+onEnter: ['$stateParams', '$state', '$uibModal',
+      ($stateParams, $state, $uibModal) ->   
+         $uibModal    
+          .open(
+           # controller: 'CemetaryModalController'
+             templateUrl: 'app/templates/modals/cemetary_modal.html'
+           # resolve: { cemetaryId: $stateParams.id }
+           # size: 'lg'    
+          ) 
+
+    ]    
