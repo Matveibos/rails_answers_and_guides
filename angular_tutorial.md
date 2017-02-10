@@ -321,3 +321,9 @@
 9. http://www.w3schools.com/angular/default.asp
 10. https://docs.angularjs.org/tutorial
 11. https://thinkster.io/a-better-way-to-learn-angularjs
+
+10. How to use ref on state?
+	
+		a ui-sref="monuments-show({id: monument.id})"
+		# inside controller
+		$state.go('monuments-show', {id: monumentId})
