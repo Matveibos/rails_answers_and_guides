@@ -330,3 +330,13 @@
 11. How to add params to $state.go?
 
 		$state.go("auctions", {"product": auction.product, "id": auction.id}); 
+12. How you can know previous state?
+	
+		$rootScope.previousState;
+		$rootScope.currentState;
+		$rootScope.$on('$stateChangeSuccess', function(ev, to, toParams, from, fromParams) {
+		    $rootScope.previousState = from.name;
+		    $rootScope.currentState = to.name;
+		    console.log('Previous state:'+$rootScope.previousState)
+		    console.log('Current state:'+$rootScope.currentState)
+		});
