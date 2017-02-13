@@ -46,3 +46,14 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
                     go dancing
                 when "Sun" then go church
                 else go work
+# working switch 
+
+    $rootScope.previousState
+    $rootScope.currentState
+    $rootScope.$on('$stateChangeSuccess', (ev, to, toParams, from, fromParams) ->
+      $rootScope.previousState = from.name;
+      $rootScope.currentState = to.name;
+
+      console.log('Previous state:'+$rootScope.previousState)
+      console.log('Current state:'+$rootScope.currentState)
+    )
