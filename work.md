@@ -4,3 +4,4 @@
 vlad_hilko gitlab 
 rails api
 ng-click="showMapModal(monument)"
+ng-click="showMapModal(cemetaries)"
