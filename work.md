@@ -16,3 +16,19 @@ ng-click="showMapModal(cemetaries)"
                   $state.go('monuments')
                 else if $state.params.id == 'map' && $state.current.url.includes("cemetaries")
                   $state.go('cemetaries')
+# switch not working
+                  switch $state.current.url
+                  when '/monuments/:id'
+                    if $state.params.id == "map"
+                      baseMonument.getList().then (response) ->
+                        $scope.monuments = response
+                        $scope.showMapModal($scope.monuments)
+                    else
+                      monumentId = parseInt($state.params.id)
+                      ModalService.openMonumentModal(monumentId)
+                  when 'monuments/:id/map'
+                    monumentId = parseInt($state.params.id)
+                    baseMonument = Restangular.one('monuments', monumentId)
+                    baseMonument.get().then (response) ->
+                      $scope.monument = response
+                      ModalService.openMapModal([$scope.monument])
