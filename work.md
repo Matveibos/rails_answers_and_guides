@@ -32,3 +32,6 @@ ng-click="showMapModal(cemetaries)"
                     baseMonument.get().then (response) ->
                       $scope.monument = response
                       ModalService.openMapModal([$scope.monument])
+                      
+                      
+https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
