@@ -34,4 +34,15 @@ ng-click="showMapModal(cemetaries)"
                       ModalService.openMapModal([$scope.monument])
                       
                       
-https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
+https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.html
+
+                switch day
+                when "Mon" then go work
+                when "Tue" then go relax
+                when "Thu" then go iceFishing
+                when "Fri", "Sat"
+                  if day is bingoDay
+                    go bingo
+                    go dancing
+                when "Sun" then go church
+                else go work
