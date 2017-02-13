@@ -3,3 +3,4 @@
 3. toggl
 vlad_hilko gitlab 
 rails api
+ng-click="showMapModal(monument)"
