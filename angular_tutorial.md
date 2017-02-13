@@ -327,3 +327,6 @@
 		a ui-sref="monuments-show({id: monument.id})"
 		# inside controller
 		$state.go('monuments-show', {id: monumentId})
+11. How to add params to $state.go?
+
+		$state.go("auctions", {"product": auction.product, "id": auction.id}); 
