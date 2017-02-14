@@ -57,3 +57,13 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
       console.log('Previous state:'+$rootScope.previousState)
       console.log('Current state:'+$rootScope.currentState)
     )
+# previuos state example
+.state('monuments-map',
+      url: '/monuments/map'
+      controller: 'MonumentController'
+      templateUrl: 'app/templates/monuments/index.html'
+  ).state('cemetaries-map',
+      url: '/cemetaries/map'
+      controller: 'CemetaryController'
+      templateUrl: 'app/templates/cemetaries/index.html'
+  )
