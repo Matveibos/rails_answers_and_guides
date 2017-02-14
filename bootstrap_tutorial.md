@@ -189,3 +189,10 @@
 2. Template table with user?
         
         http://bootsnipp.com/snippets/Ba4OQ
+
+
+
+1. How to align content by center?
+        
+        # add text-center class
+         .text-center
