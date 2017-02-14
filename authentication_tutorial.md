@@ -198,6 +198,7 @@
 			     end
 			end
 		8. add to routing callback
+			# before this action delete devise_for :users, which was generated before
 			devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
 		9. create callback controller  myapp/app/controllers/callbacks_controller.rb
 			class CallbacksController < Devise::OmniauthCallbacksController
