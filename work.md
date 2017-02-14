@@ -85,3 +85,6 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
         baseCemetary.get().then (response) ->
           $scope.cemetary = response
           ModalService.openMapModal([$scope.cemetary])
+1. sourcery
+      
+       https://www.sitepoint.com/magical-authentication-sorcery/
