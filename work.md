@@ -96,3 +96,4 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
            http://bootsnipp.com/snippets/D25A4
            http://bootsnipp.com/snippets/vryPA
            http://bootsnipp.com/snippets/M3MPP
+           http://azmind.com/bootstrap-registration-forms-3-free-responsive-templates/
