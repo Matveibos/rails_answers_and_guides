@@ -176,22 +176,26 @@
 			  devise :database_authenticatable, :registerable,
 				 :recoverable, :rememberable, :trackable, :validatable,
 				 :omniauthable, :omniauth_providers => [:twitter, :facebook, :vkontakte]
+				 
+			    def self.from_omniauth(auth)
+				    where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
+				      user.provider = auth.provider
+				      user.uid = auth.uid
 
-			  def self.from_omniauth(auth)
-			      where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
-				user.provider = auth.provider
-
-				user.uid = auth.uid
-				if auth.info.email != nil
-				  user.email = auth.info.email
-				elsif auth.info.nickname != ''
-				  user.email = auth.info.nickname + '@tut.by'
-				else
-				  user.email = "vk#{auth.uid}@tut.by"
-				end
-				user.password = Devise.friendly_token[0,20]
-			      end
-			  end
+				      case user.provider
+				      when "facebook"
+					user.email = auth.info.email
+					user.username = auth.info.name
+				      when "vkontakte"
+					user.email = auth.info.email.nil? ? "vk#{auth.uid}@tut.by": auth.info.email
+					user.username = auth.info.name
+				      when "twitter"
+					user.email = auth.info.email.nil? ? (auth.info.nickname + '@tut.by') : auth.info.email
+					user.username = auth.info.name        
+				      end
+				      user.password = Devise.friendly_token[0,20]
+				    end
+			     end
 			end
 		8. add to routing callback
 			devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
