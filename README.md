@@ -1,4 +1,7 @@
 # The most useful rails materials and guades
+
+## Some new tutorial 
+https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-one
 ## Place for pictures
 https://cloudinary.com/console/media_library
 
