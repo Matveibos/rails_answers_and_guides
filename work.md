@@ -67,3 +67,21 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
       controller: 'CemetaryController'
       templateUrl: 'app/templates/cemetaries/index.html'
   )
+# last if 
+    # Modal opening
+      Modal opening
+      if $state.current.url == '/cemetaries/:id'
+        if $state.params.id == "map"
+          baseCemetary.getList().then (response) ->
+            $scope.cemetaries = response
+            $scope.showMapModal($scope.cemetaries)
+        else
+          cemetaryId = parseInt($state.params.id)
+          ModalService.openCemetaryModal(cemetaryId)
+
+      if $state.current.url == '/cemetaries/:id/map'
+        cemetaryId = parseInt($state.params.id)
+        baseCemetary = Restangular.one('cemetaries', cemetaryId)
+        baseCemetary.get().then (response) ->
+          $scope.cemetary = response
+          ModalService.openMapModal([$scope.cemetary])
