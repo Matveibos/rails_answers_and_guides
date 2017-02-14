@@ -340,3 +340,7 @@
 		    console.log('Previous state:'+$rootScope.previousState)
 		    console.log('Current state:'+$rootScope.currentState)
 		});
+13. How to create link with full page reload?
+	
+		Links that contain target element
+		Example: <a href="/ext/link?a=b" target="_self">link</a>
