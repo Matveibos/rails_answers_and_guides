@@ -88,3 +88,11 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
 1. sourcery
       
        https://www.sitepoint.com/magical-authentication-sorcery/
+2. Template for bootrap login 
+        
+       http://bootsnipp.com/snippets/featured/login-form-layered
+       http://bootsnipp.com/snippets/featured/modal-login-with-jquery-effects
+       http://bootsnipp.com/snippets/featured/yahoo-login-style
+       http://bootsnipp.com/snippets/D25A4
+       http://bootsnipp.com/snippets/vryPA
+       http://bootsnipp.com/snippets/M3MPP
