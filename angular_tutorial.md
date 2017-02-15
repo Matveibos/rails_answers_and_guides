@@ -344,3 +344,12 @@
 	
 		Links that contain target element
 		Example: <a href="/ext/link?a=b" target="_self">link</a>
+
+
+14. How to take only one value from api with RestAngular?
+		
+		  baseSettings = Restangular.one('settings');
+		  baseSettings.get().then((settings) -> 
+		    $scope.allSettings = settings;
+		    debugger
+		  )
