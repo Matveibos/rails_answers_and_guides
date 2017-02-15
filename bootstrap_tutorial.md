@@ -196,3 +196,6 @@
         
         # add text-center class
          .text-center
+2. How you can define social media color?
+        
+        https://www.competethemes.com/blog/social-media-colors/
