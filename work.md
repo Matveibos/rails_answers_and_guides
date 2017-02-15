@@ -120,3 +120,33 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
                     }
                   });
 
+4. Temp navigation template
+          
+          angular
+                .module('monuments')
+                .controller('NavigationController', function($scope, $state, Auth, ModalService){
+                  $scope.signedIn = Auth.isAuthenticated;
+                  $scope.logout = Auth.logout;
+                  Auth.currentUser().then(function (user){
+                    $scope.user = user;
+                  });
+                   $scope.$on('devise:new-registration', function (e, user){
+                    $scope.user = user;
+                  });
+
+                  $scope.$on('devise:login', function (e, user){
+                    $scope.user = user;
+                  });
+
+                  $scope.$on('devise:logout', function (e, user){
+                    $scope.user = {};
+                  });
+
+                  $scope.showAuthModal = function() {
+                    ModalService.openAuthModal();
+                  }
+                  $scope.showRegisterModal = function() {
+                    ModalService.openRegisterModal();
+                  }
+
+                });
