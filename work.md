@@ -97,3 +97,26 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
            http://bootsnipp.com/snippets/vryPA
            http://bootsnipp.com/snippets/M3MPP
            http://azmind.com/bootstrap-registration-forms-3-free-responsive-templates/
+           
+3. 
+                        
+                        angular
+                  .module('monuments')
+                  .controller('AuthenticationController', function($scope, $state, $uibModalInstance, Auth){
+                    $scope.login = function() {
+                      Auth.login($scope.user).then(function(){
+                        $state.go('root');
+                      });
+                    };
+
+                    $scope.register = function() {
+                      Auth.register($scope.user).then(function(){
+                        $state.go('root');
+                      });
+                    };
+
+                    $scope.cancel = function() {
+                      $uibModalInstance.close();
+                    }
+                  });
+
