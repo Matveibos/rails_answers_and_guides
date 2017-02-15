@@ -150,3 +150,24 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
                   }
 
                 });
+5. Template for state registration
+       
+       .state('login'
+            url: '/login'
+            templateUrl: 'app/templates/authentication/login.html'
+            controller: 'AuthenticationController'
+            onEnter: ['$state', 'Auth', ($state, Auth) ->
+              Auth.currentUser().then(() ->
+                $state.go('root');
+              )
+            ]
+        ).state('register'
+            url: '/register'
+            templateUrl: 'app/templates/authentication/register.html'
+            controller: 'AuthenticationController'
+            onEnter: ['$state', 'Auth', ($state, Auth) ->
+              Auth.currentUser().then(() ->
+                $state.go('root');
+              )
+            ]
+        )
