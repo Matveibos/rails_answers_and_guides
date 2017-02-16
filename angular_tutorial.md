@@ -353,3 +353,12 @@
 		    $scope.allSettings = settings;
 		    debugger
 		  )
+15. How you can take variable outside Restangular request?
+	
+		  baseSettings = Restangular.one('settings')
+
+		  baseSettings.get().then (response) -> 
+		    $scope.settings = response
+	          # it will be work
+		  $scope.$watch "settings", () ->
+		    console.log($scope.settings)
