@@ -177,3 +177,10 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
 7. Lifelets
         
         http://leafletjs.com/examples/quick-start/
+8. How you can get access to Leaflet map
+    
+        leafletData.getMap().then(
+         function (map) {
+             alert('hello')
+         }
+       );
