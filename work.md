@@ -174,3 +174,6 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
 6. Hower
 
          https://github.com/tombatossals/angular-leaflet-directive/issues/1144
+7. Lifelets
+        
+        http://leafletjs.com/examples/quick-start/
