@@ -332,3 +332,11 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
               return
             return
           return
+11. sikrets key
+Карта с маркерами
+development:
+  secret_key_base: 36bdab71624ba10d91bc124c767c3b706b1571fc6bbe3bbb3e2573486861ad71931eb4d38a6d5accf9776c9b3ba875fcaf07d9bec27b651ae2d69142aa37066f
+  vk: 
+    app_id:
+    app_token:
+  fb: 
