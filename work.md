@@ -308,3 +308,27 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
 
 
       }]);
+10. Take a big date 
+      
+        $scope.$on 'leafletDirectiveMarker.click', (event, args) ->
+          if $state.current.url.includes('monuments')
+            current_state_watch = 'monuments'
+            current_state_scope = $scope.monuments
+          else if $state.current.url.includes('cemetaries')
+            current_state_watch = 'cemetaries'
+            current_state_scope = $scope.cemetaries
+
+          $scope.$watch current_state_watch, ->
+            currentLat = undefined
+            currentLng = undefined
+            # debugger
+            currentLat = parseInt(args.model.lat)
+            currentLng = parseInt(args.model.lng)
+            angular.forEach current_state_scope, (item) ->
+              if currentLat == parseInt(item.place.latitude) and currentLng == parseInt(item.place.longitude)
+                # console.log item
+                # ModalService.openCemetaryModal(item.id)
+                $state.go(current_state_watch + "-show", {"id": item.id})
+              return
+            return
+          return
