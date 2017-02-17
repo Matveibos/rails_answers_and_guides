@@ -184,3 +184,127 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
              alert('hello')
          }
        );
+9. Example of my thing
+      
+            angular
+        .module('monuments')
+        .controller("EventsController", [ '$scope', '$state', 'Restangular', 'ModalService', 'leafletData',function($scope, $state, Restangular,  ModalService, leafletData) {
+          angular.extend($scope, {
+              center: {
+                  lat: 40.095,
+                  lng: -3.823,
+                  zoom: 6
+              },
+              defaults: {
+                  scrollWheelZoom: false
+              },
+              events: {
+                  map: {
+                      enable: ['zoomstart', 'drag', 'click', 'mousemove', 'mouseover', 'mouseout'],
+                      logic: 'emit'
+                  }
+              },
+              markers: {
+                  Madrid: {
+                      lat: 40.095,
+                      lng: -3.823,
+                      message: "This is Madrid. But you can drag me to another position",
+                      focus: false,
+                      draggable: true
+                  },
+                  Barcelona: {
+                      lat: 41.38,
+                      lng: 2.18,
+                      message: "This is Barcelona. You can't drag me",
+                      focus: false,
+                      draggable: false
+                  }
+              }
+          });
+
+          // leafletData.getMap().then(
+          //     function (map) {
+          //         alert('hello')
+          //     }
+          // );
+
+          baseCemetary = Restangular.all('cemetaries')
+          baseCemetary.getList().then(function(response) {
+            $scope.cemetaries = response
+          })
+
+          $scope.eventDetected = "No events yet...";
+
+          $scope.$on('leafletDirectiveMap.zoomstart', function(event){
+              $scope.eventDetected = "ZoomStart";
+          });
+
+          $scope.$on('leafletDirectiveMap.drag', function(event){
+              $scope.eventDetected = "Drag";
+          });
+
+          // $scope.$on('leafletDirectiveMap.click', function(event){
+          //     $scope.eventDetected = "Click";
+          //     console.log(this);
+          // });
+          // add new marker by click
+          // $scope.markers = new Array();
+          // $scope.$on("leafletDirectiveMap.click", function(event, args){
+          //     var leafEvent = args.leafletEvent;
+          //     $scope.markers.push({
+          //         lat: leafEvent.latlng.lat,
+          //         lng: leafEvent.latlng.lng,
+          //         draggable: true
+          //     });
+          // });
+          //add all cemetaries marker on example map
+          $scope.markers = new Array();
+          $scope.$on("leafletDirectiveMap.click", function(event, args){
+            $scope.$watch("cemetaries", function(){
+              angular.forEach($scope.cemetaries, function (item) {
+                $scope.markers.push({lat: parseInt(item.place.latitude), lng: parseInt(item.place.longitude), message: item.name })
+              })
+            })
+          });
+
+          $scope.$on('leafletDirectiveMap.mousemove', function(event){
+              $scope.eventDetected = "MouseMove";
+          });
+
+          $scope.$on('leafletDirectiveMarker.click', function(event, args){
+            $scope.$watch("cemetaries", function(){
+              var currentLat = parseInt(args.model.lat)
+              var currentLng = parseInt(args.model.lng)
+              angular.forEach($scope.cemetaries, function (item) {
+                 if(currentLat === parseInt(item.place.latitude) && currentLng === parseInt(item.place.longitude)) {
+                   console.log(item);
+                   //ModalService.openCemetaryModal(item.id)
+                   // $state.go("cemetaries-show", {"id": item.id})
+                 }
+              })
+              // ModalService.openCemetaryModal($scope.cemetaries[0].id)
+              // $state.go("cemetaries", {"id": $scope.cemetaries[0].id}); 
+            })
+          });
+
+
+
+          $scope.$on('leafletDirectiveMarker.mouseover', function(event, args){
+              console.log('I am over!');
+              var popup = L.popup({ offset: L.point(0, -28)})
+                          .setLatLng([args.model.lat, args.model.lng])
+                          .setContent(args.model.message)
+
+               leafletData.getMap().then(function(map) {
+                 popup.openOn(map);
+              });
+          });
+
+          $scope.$on('leafletDirectiveMarker.mouseout', function(event){
+            leafletData.getMap().then(function(map) {
+              map.closePopup();
+            });
+          });
+
+
+      }]);
