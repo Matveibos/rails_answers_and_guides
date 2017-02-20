@@ -404,4 +404,7 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
             </body>
 15. How to add something with polimorfic?
           
-          Complaint.create(content: "hello", complaint_entity: monum_last)
+          Complaint.create(content: "hello", complaint_entity: Monument.last)
+16. Do you know how create service for controler?
+          
+          http://stackoverflow.com/questions/9293423/can-one-controller-call-another
