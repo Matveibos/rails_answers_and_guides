@@ -343,3 +343,62 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
 12. Полиморфные связи 
           
           https://habrahabr.ru/post/261835/
+          
+13. Ui bootstrap close on outisde click
+          
+         # just add popover-trigger="'outsideClick'"
+        
+        <div id="new_button" uib-popover-template="plusButtonURL" popover-trigger="'outsideClick'" >+</div>
+14. How you can hide popower by click on button?
+          
+          # angular file
+          app = angular.module('ui.bootstrap.demo', ['ui.bootstrap']);
+
+            app.controller(
+              'myPopoverCtrl', ['$scope',
+                function($scope) {
+
+                  // query popover
+                  $scope.myPopover = {
+
+                    isOpen: false,
+
+                    templateUrl: 'myPopoverTemplate.html',
+
+                    open: function open() {
+                      $scope.myPopover.isOpen = true;
+                      $scope.myPopover.data = 'Hello!';
+                    },
+
+                    close: function close() {
+                      $scope.myPopover.isOpen = false;
+                    }
+                  };
+
+                }
+
+              ]);
+              
+              # html file
+              <body 
+                  ng-app="ui.bootstrap.demo" 
+                  class="container">
+
+              <button 
+                      class="btn btn-danger" 
+                      ng-controller="myPopoverCtrl" 
+                      popover-template="myPopover.templateUrl" 
+                      popover-title="This is a popover" 
+                      popover-placement="bottom" 
+                      popover-is-open="myPopover.isOpen" 
+                      ng-click="myPopover.open()">Click me!</button>
+
+              <script type="text/ng-template" 
+                      id="myPopoverTemplate.html">
+                <h2 ng-bind="myPopover.data" />
+                <button class="btn btn-success" 
+                        ng-click="myPopover.close()">Close me!</button>
+
+              </script>
+
+            </body>
