@@ -402,3 +402,6 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
               </script>
 
             </body>
+15. How to add something with polimorfic?
+          
+          Complaint.create(content: "hello", complaint_entity: monum_last)
