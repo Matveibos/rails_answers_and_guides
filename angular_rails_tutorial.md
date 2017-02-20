@@ -456,3 +456,31 @@
 1. What ui-routing use instead $routeParams?
           
           $stateParams
+2. How to use post method with Restangular and Grep api?
+          
+          1. First generate model
+                     rails g model Example name:string
+          2. Add api to grep 
+          
+                         resource :examples do 
+                          desc 'Return a examples list.'
+                          get '/' do
+                            Example.all  
+                          end
+
+                          # add new Example
+                          post '/' do
+                            photo = Example.new(name: params[:name])
+                            photo.save!
+                          end
+
+                        end
+            3. Add serialization
+                    class ExampleSerializer < ActiveModel::Serializer
+                      attributes :id, :name
+                    end
+            4. Add post method to controller
+            
+                       $scope.submit = function() {
+                                  Restangular.all('examples').post({name: $scope.dynamicPopover.title});
+                        };
