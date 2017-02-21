@@ -362,3 +362,24 @@
 	          # it will be work
 		  $scope.$watch "settings", () ->
 		    console.log($scope.settings)
+16. How to create and use own service?
+		
+		// popoover_service.js
+		angular.module("monuments").factory('PopoverService', function($rootScope) {
+		  var sharedService = {};
+
+		  sharedService.message = '';
+
+		  sharedService.prepForBroadcast = function(msg) {
+		    alert(msg);
+		  };
+
+		  return sharedService;
+		});
+		
+		// controller.coffee
+		CemetaryModalController = ($scope, PopoverService) ->
+		  PopoverSevice.message;
+		  PopoverSevice.prepForBroadcast("hello");
+		  # will be work 
+		angular.module('monuments').controller "CemetaryModalController", ['$scope', 'PopoverService', CemetaryModalController]
