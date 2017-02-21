@@ -456,3 +456,7 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
 20. Choosen for your categories
 
         https://github.com/leocaseiro/angular-chosen
+21. Add choosen directly 
+        
+        Remember, everything what you install with bower you have to include directly for example i forget require chosen 
+        #= require chosen/chosen
