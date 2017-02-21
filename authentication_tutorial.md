@@ -132,6 +132,12 @@
 		      monument.complaints.size
 		    end
 		  end
+15. Create link with filter by click inside ActiveAdmin?
+		
+		    column "Число жалоб", :complaints do |cemetary|
+			      link_to "#{cemetary.complaints.count}", :controller => "complaints", :action => "index",
+				'q[complaint_entity_id_eq]' => "#{cemetary.id}".html_safe, 'q[complaint_entity_type_eq]' => 													"Cemetary".html_safe
+		    end
 ## Devise
 
 1. How you can start with devise?
