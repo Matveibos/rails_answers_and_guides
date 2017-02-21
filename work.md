@@ -408,3 +408,40 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
 16. Do you know how create service for controler?
           
           http://stackoverflow.com/questions/9293423/can-one-controller-call-another
+17. Tempalte for my doesn't working service
+
+          angular.module("monuments").factory('PopoverService', function($scope) {
+          var sharedService = {};
+
+          sharedService.message = '';
+
+          // sharedService.complaint_popover = {
+          //   isOpen: false,
+          //   templateUrl: 'myPopoverTemplate.html',
+          //   title: 'Title',
+          //   complaint_text: '',
+          //   open: function open() {
+          //     $scope.complaintPopover.isOpen = true
+          //   },
+          //   close: function close() {
+          //     $scope.complaintPopover.isOpen = false
+          //   }
+          // };
+
+          sharedService.complaint_popover = function(local_scope) {
+            return {
+              isOpen: false,
+              templateUrl: 'myPopoverTemplate.html',
+              title: 'Title',
+              complaint_text: '',
+              open: function open() {
+                local_scope.complaintPopover.isOpen = true
+              },
+              close: function close() {
+                local_scope.complaintPopover.isOpen = false
+              }
+            };
+          };
+
+          return sharedService;
+        });
