@@ -199,3 +199,15 @@
 2. How you can define social media color?
         
         https://www.competethemes.com/blog/social-media-colors/
+3. How to align button on center?
+        
+        # Wrap the Button in div with "text-center" class.
+        <!-- correct -->
+        <div class="col-md-4 text-center"> 
+            <button id="singlebutton" name="singlebutton" class="btn btn-primary">Next Step!</button> 
+        </div>
+4. How to align button on left or right?        
+        
+        button.btn.pull-right
+        button.btn.pull-left
+        
