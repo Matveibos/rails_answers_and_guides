@@ -125,6 +125,13 @@
 		
 		# admin/user.rb
 		permit_params :role_id, :email, :id, :role
+14. How you can show something differrent in activeAdmin?
+		
+		  index do
+		    column :complaints do |monument|
+		      monument.complaints.size
+		    end
+		  end
 ## Devise
 
 1. How you can start with devise?
