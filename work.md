@@ -453,6 +453,8 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
         http://cobwwweb.com/rails-has-many-through-polymorphic-association
         # add another link
         http://stackoverflow.com/questions/6997141/rails-has-many-through-with-polymorphic-association-will-this-work
+        # with picture 
+        http://stackoverflow.com/questions/9361641/how-to-set-up-a-polymorphic-has-many-through
 20. Choosen for your categories
 
         https://github.com/leocaseiro/angular-chosen
