@@ -460,3 +460,5 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
         
         Remember, everything what you install with bower you have to include directly for example i forget require chosen 
         #= require chosen/chosen
+        Don't forget added css code from bower
+        @import "chosen/chosen";
