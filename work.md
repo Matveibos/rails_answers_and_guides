@@ -467,3 +467,6 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
 22. Article about angular custom filter
         
         https://toddmotto.com/everything-about-custom-filters-in-angular-js/
+23. How to add multiply filter?
+        
+        http://stackoverflow.com/questions/18792039/angularjs-multiple-filter-with-custom-filter-function
