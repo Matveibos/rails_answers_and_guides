@@ -117,3 +117,7 @@ rails g model CategoryVisitor category:string visitor:references
               end
             end
 
+===========
+            assignment_entity
+            rails g model Category name:string
+            rails g model CategoryAssignment assignment_entity:references 
