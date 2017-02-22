@@ -76,3 +76,44 @@ rails g model CategoryVisitor category:string visitor:references
 15. How to remove column from table?
 
             remove_column :table_name, :column_name
+16. How to create many_to_many polimorphic accociation?
+            
+            # asigment.rb
+            class Asigment < ApplicationRecord
+              belongs_to :patient
+              belongs_to :doctor_entity, :polymorphic => true
+            end
+            
+            # doctor.rb
+            class Doctor < ApplicationRecord
+              has_many :asigments, as: :doctor_entity
+              has_many :patients, through: :asigments
+            end
+            
+            # stomotolog.rb
+            class Stomotolog < ApplicationRecord
+              has_many :asigments, as: :doctor_entity
+              has_many :patients, through: :asigments
+            end
+            
+            # patient.rb
+            class Patient < ApplicationRecord
+              has_many :asigments
+              has_many :doctors, through: :asigments, :source => :doctor_entity,
+                :source_type => 'Doctor'
+              has_many :stomotologs, through: :asigments, :source => :doctor_entity,
+                :source_type => 'Stomotolog'
+            end
+            
+            # migration all ordinary, without this
+            class CreateAsigments < ActiveRecord::Migration[5.0]
+              def change
+                create_table :asigments do |t|
+                  t.belongs_to :patient, index: true
+                  t.references :doctor_entity, polymorphic: true, index: true
+
+                  t.timestamps
+                end
+              end
+            end
+
