@@ -464,3 +464,6 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
         #= require chosen/chosen
         Don't forget added css code from bower
         @import "chosen/chosen";
+22. Article about angular custom filter
+        
+        https://toddmotto.com/everything-about-custom-filters-in-angular-js/
