@@ -39,3 +39,10 @@
         <span class="glyphicon glyphicon-globe fa-3x"></span>
         <span class="glyphicon glyphicon-globe fa-4x"></span>
         <span class="glyphicon glyphicon-globe fa-5x"></span>
+8. How to delete circle from radio button?
+        
+        <input type='radio' value='2' name='radio'  id='radio2'/>
+        
+        input {
+            visibility:hidden;
+        }
