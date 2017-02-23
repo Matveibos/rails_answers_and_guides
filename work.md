@@ -479,6 +479,6 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
               break;
             }
           }
-25. How to make pretty list with radio button?
-
-         https://jsfiddle.net/asjnk7a6/1/  
+25. How to make radio button 
+        
+        http://bootsnipp.com/snippets/xNGMB
