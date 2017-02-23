@@ -87,18 +87,23 @@
 16. How you can debug js code?
             
             debugger;
-garbage
-onEnter: ['$stateParams', '$state', '$uibModal',
-      ($stateParams, $state, $uibModal) ->   
-         $uibModal    
-          .open(
-           # controller: 'CemetaryModalController'
-             templateUrl: 'app/templates/modals/cemetary_modal.html'
-           # resolve: { cemetaryId: $stateParams.id }
-           # size: 'lg'    
-          ) 
+            garbage
+            onEnter: ['$stateParams', '$state', '$uibModal',
+                  ($stateParams, $state, $uibModal) ->   
+                     $uibModal    
+                      .open(
+                       # controller: 'CemetaryModalController'
+                         templateUrl: 'app/templates/modals/cemetary_modal.html'
+                       # resolve: { cemetaryId: $stateParams.id }
+                       # size: 'lg'    
+                      ) 
 
-    ]    
-ng-click="showModal(monument.id)"
-ng-href="/monuments/{{monument.id}}"
-ng-href="/cemetaries/{{cemetary.id}}"
+                ]    
+            ng-click="showModal(monument.id)"
+            ng-href="/monuments/{{monument.id}}"
+            ng-href="/cemetaries/{{cemetary.id}}"
+17. How you can check if array is empty?
+            
+            if (array === undefined || array.length == 0) {
+                // empty
+            }
