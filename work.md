@@ -470,3 +470,12 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
 23. How to add multiply filter?
         
         http://stackoverflow.com/questions/18792039/angularjs-multiple-filter-with-custom-filter-function
+24. Example of not exactly returned value
+
+          var itemCategoryNameLength = item_category_name.length;
+          for (var j = 0; j < itemCategoryNameLength; j++) {
+            if(chosen_category_name.includes(item_category_name[j])){
+              filtered.push(item);            
+              break;
+            }
+          }
