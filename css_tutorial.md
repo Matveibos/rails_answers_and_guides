@@ -46,3 +46,8 @@
         input {
             visibility:hidden;
         }
+9. Hot to set color by click n radiob button?
+
+        .without_circle input[type="radio"]:checked + span{
+          color:#000;
+        }
