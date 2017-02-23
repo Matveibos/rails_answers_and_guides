@@ -383,3 +383,13 @@
 		  PopoverSevice.prepForBroadcast("hello");
 		  # will be work 
 		angular.module('monuments').controller "CemetaryModalController", ['$scope', 'PopoverService', CemetaryModalController]
+
+
+17. How to create radion button with angular model?
+	
+		# use $parent.selected
+		<label ng-repeat="category in categories">
+		  <input type="radio" name="response" ng-model="$parent.selected" ng-value="category.name" />
+		  {{category.name}}
+		</label>
+		{{selected}}
