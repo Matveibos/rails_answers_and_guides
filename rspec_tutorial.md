@@ -110,4 +110,6 @@
         
         http://betterspecs.org/ru/
 14. Пару вводных уроков 
+
         https://semaphoreci.com/community/tutorials/getting-started-with-rspec
+        http://blog.teamtreehouse.com/an-introduction-to-rspec
