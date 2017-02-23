@@ -106,3 +106,8 @@
 12. FactoryGirl documentation
         
         https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md
+13. На русском языке немного об рспек
+        
+        http://betterspecs.org/ru/
+14. Пару вводных уроков 
+        https://semaphoreci.com/community/tutorials/getting-started-with-rspec
