@@ -482,3 +482,7 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
 25. How to make radio button 
         
         http://bootsnipp.com/snippets/xNGMB
+26. Example of three points
+        
+          span style="margin-left: 20px" ng-click="hello"
+           |     ... 
