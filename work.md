@@ -492,3 +492,8 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
                 input name="optradio" ng-model="$parent.show_all_categorories" ng-value="true" type="radio" /
                 span
                   | ...
+28. Git pull origin base
+              
+              # if you want add 
+              git pull --base origin master
+              
