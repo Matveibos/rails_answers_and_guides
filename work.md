@@ -486,3 +486,9 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
         
           span style="margin-left: 20px" ng-click="hello"
            |     ... 
+27. Another example 
+
+              label.radio-inline.without_circle ng-show=("{{$index == 5}}")
+                input name="optradio" ng-model="$parent.show_all_categorories" ng-value="true" type="radio" /
+                span
+                  | ...
