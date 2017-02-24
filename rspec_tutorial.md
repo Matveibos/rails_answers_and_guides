@@ -123,3 +123,9 @@
         describe Post do
           it { should have_many(:categories).through(:other_model) }
         end
+16. Belong_to accosiation
+        
+          context "association" do
+            it { should belong_to(:category) }
+            it { should belong_to(:assignment_entity) }
+          end
