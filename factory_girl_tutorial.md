@@ -16,3 +16,6 @@
             association :assignment_entity, factory: :monument
           end
         end
+3. How to create many factory by one model?
+        
+        http://stackoverflow.com/questions/5509790/how-to-create-build-multiple-instances-of-a-factory-in-factory-girl
