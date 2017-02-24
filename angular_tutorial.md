@@ -393,3 +393,7 @@
 		  {{category.name}}
 		</label>
 		{{selected}}
+18. How to sort array with reverse order?
+		
+		# add true option
+		ng-repeat=("category in categories | orderBy:'monuments.length':true")
