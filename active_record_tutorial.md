@@ -117,7 +117,8 @@ rails g model CategoryVisitor category:string visitor:references
               end
             end
 
-===========
-            assignment_entity
-            rails g model Category name:string
-            rails g model CategoryAssignment assignment_entity:references 
+
+16. How to drop test environment data_base?
+           
+           bundle exec rake db:drop RAILS_ENV=test
+           bundle exec rake db:create RAILS_ENV=test
