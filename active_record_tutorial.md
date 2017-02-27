@@ -122,3 +122,16 @@ rails g model CategoryVisitor category:string visitor:references
            
            bundle exec rake db:drop RAILS_ENV=test
            bundle exec rake db:create RAILS_ENV=test
+17. How you can create collback with check old value?
+            
+            # So if you have an attribute total, you will have a total_changed? method and a total_was method that returns the                  old value.
+            after_update :send_message_to_user
+              private
+
+                          def send_message_to_user
+                              if self.status_changed?
+                                if self.status_was == 'declined' && self.status == 'accepted' 
+                                  puts 'changed'
+                                end
+                            end
+                          end
