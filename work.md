@@ -496,4 +496,6 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
               
               # if you want add 
               git pull --rebase origin master
-              
+29. Rspec check test delivery
+          
+          http://stackoverflow.com/questions/7284413/how-to-test-with-rspec-if-an-email-is-delivered              
