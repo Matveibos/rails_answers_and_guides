@@ -416,4 +416,6 @@
 22. How you can add attributes which will be check email if valid?
 		
 		ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" required=""
-22. 
+23. Example of validation 
+		
+		https://gist.github.com/rnkoaa/8333940
