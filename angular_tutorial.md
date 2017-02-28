@@ -401,3 +401,19 @@
 		
 		# include $window
 		$window.location.href = '/';
+20. How you can check if data is valid?
+		
+		<form name="myForm">
+		<input name="myInput" ng-model="myInput" type="email">
+		</form>
+
+		<p>The input's valid state is:</p>
+		<h1>{{myForm.myInput.$valid}}</h1>
+21. How you can disabled button if invalid?
+		
+		button.btn.btn-primary.btn-block ng-click="cancel()" type="submit" ng-disabled="myForm.myInput.$invalid" Подтвердить
+
+22. How you can add attributes which will be check email if valid?
+		
+		ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" required=""
+22. 
