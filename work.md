@@ -499,3 +499,6 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
 29. Rspec check test delivery
           
           http://stackoverflow.com/questions/7284413/how-to-test-with-rspec-if-an-email-is-delivered              
+30. Page for self-references assocoation
+          
+          https://collectiveidea.com/blog/archives/2015/07/30/bi-directional-and-self-referential-associations-in-rails
