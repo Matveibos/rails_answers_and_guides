@@ -397,3 +397,7 @@
 		
 		# add true option
 		ng-repeat=("category in categories | orderBy:'monuments.length':true")
+19. Equivalent to target=“_self” programatically in angular
+		
+		# include $window
+		$window.location.href = '/';
