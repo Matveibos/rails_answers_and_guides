@@ -509,3 +509,4 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
 31. Rails style gaide
       
          https://github.com/arbox/ruby-style-guide/blob/master/README-ruRU.md#consistent-classes
+         https://github.com/bbatsov/rails-style-guide
