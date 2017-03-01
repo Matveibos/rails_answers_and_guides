@@ -419,3 +419,34 @@
 23. Example of validation 
 		
 		https://gist.github.com/rnkoaa/8333940
+24. How to add popOver?
+		
+		# add to controlller 
+		
+		  # it help open tooltip for complaint
+		  $scope.complaintPopover =
+		    isOpen: false
+		    templateUrl: 'myPopoverTemplate.html'
+		    title: 'Title'
+		    complaint_text: ''
+		    open: ->
+		      $scope.complaintPopover.isOpen = true
+		      return
+		    close: ->
+		      $scope.complaintPopover.isOpen = false
+		      return
+		# add button 
+		  button.btn.btn-danger.pull-left ng-click="complaintPopover.open()" popover-is-open="complaintPopover.isOpen" popover-trigger="'outsideClick'" type="button" uib-popover-template="complaintPopover.templateUrl"  Пожаловаться 
+	
+		# add script to the page
+		  script id="myPopoverTemplate.html" type="text/ng-template" 
+		    span.glyphicon.glyphicon-remove.pull-right ng-click="complaintPopover.close()"
+		    br/
+		    form ng-submit="submit(monument)" 
+		      .form-group
+			label Введите жалобу: 
+			textarea.form-control placeholder="Текст жалобы..." ng-model="complaintPopover.complaint_text" type="text" /
+			br/
+			div.text-center
+			  button.btn.btn-primary ng-click="complaintPopover.close()" type="submit" value="Submit" 
+			    | Отправить
