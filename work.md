@@ -506,3 +506,6 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
           https://coderwall.com/p/4d2utg/self-referencing-association-in-active-record-and-its-factories
           # condition
           https://teamtreehouse.com/community/unknown-key-conditions
+31. Rails style gaide
+      
+         https://github.com/arbox/ruby-style-guide/blob/master/README-ruRU.md#consistent-classes
