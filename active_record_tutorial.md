@@ -1,4 +1,3 @@
-rails g model CategoryVisitor category:string visitor:references
 1. How you can check data?
             
             user = User.new(name: "Michael Hartl", email: "mhartl@example.com")
@@ -135,3 +134,31 @@ rails g model CategoryVisitor category:string visitor:references
                                 end
                             end
                           end
+18. How to add addition condition to has_many field?
+           
+           # adding where
+           has_many :unauthorized_friends,  -> { where(friendships: { authorized: true}) }, :through => :friendships, :source => :user
+19. How to create Self-Referential Association?
+            
+            #user.rb
+            has_many :friendships
+            has_many :friends, :through => :friendships
+            
+            has_many :unauthorized_friends,  -> { where(friendships: { authorized: true}) }, :through => :friendships, :source => :user
+            # friednship.rb
+            belongs_to :user
+            belongs_to :friend, :class_name => "User"
+            
+            # inside db
+            class CreateFriendships < ActiveRecord::Migration[5.0]
+              def change
+                create_table :friendships do |t|
+                  t.integer :user_id
+                  t.integer :friend_id
+                  # add addition field for adding new condition and type if friends
+                  t.boolean :authorized, :default => false
+                  
+                  t.timestamps
+                end
+              end
+            end
