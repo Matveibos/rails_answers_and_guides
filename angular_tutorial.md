@@ -450,3 +450,6 @@
 			div.text-center
 			  button.btn.btn-primary ng-click="complaintPopover.close()" type="submit" value="Submit" 
 			    | Отправить
+23. How you can go to the previous state in angular?
+		
+		window.history.back()
