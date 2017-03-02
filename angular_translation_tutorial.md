@@ -36,3 +36,9 @@
                 $translate.use(langKey);
               };
             }]);
+6. How you can use chosen with angular-translate?
+            
+            <select chosen
+                    placeholder-single-text="'{{ 'my.translation.placeholder' | translate }}'"
+                    no-results-text="'{{ 'my.translation.noResults' | translate }}'" >
+            </select>
