@@ -24,7 +24,17 @@
 4. How you can set automaticaly determination language?
             
             // try to find out preferred language by yourself
+            $translateProvider.registerAvailableLanguageKeys(
+                ['pl', 'en'],
+                {
+                    'en*': 'en',
+                    'pl*': 'pl',
+                    '*': 'en' // must be last!
+                }
+            );
+            $translateProvider.fallbackLanguage('en');
             $translateProvider.determinePreferredLanguage();
+            
 5. How to add button for changing language?
             
             <button ng-click="changeLanguage('de')" translate="BUTTON_LANG_DE"></button>
