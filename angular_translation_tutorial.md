@@ -42,3 +42,10 @@
                     placeholder-single-text="'{{ 'my.translation.placeholder' | translate }}'"
                     no-results-text="'{{ 'my.translation.noResults' | translate }}'" >
             </select>
+7. How you can remember the selected language value?
+            
+            bower install angular-translate-storage-cookie
+            # include 
+            var module = angular.module('AppService', ['pascalprecht.translate','ngCookies']);
+            # add
+            $translateProvider.useCookieStorage();
