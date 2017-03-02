@@ -8,10 +8,16 @@ rails api
 ng-click="showMapModal(monument)"
 ng-click="showMapModal(cemetaries)"
 
-      # if $rootScope.previousId
-      #   $state.go($rootScope.previousState, {"id": $rootScope.previousId})
-      # else
-      # 	$state.go($rootScope.previousState)
+            # if $rootScope.previousId
+            #   $state.go($rootScope.previousState, {"id": $rootScope.previousId})
+            # else
+            # 	$state.go($rootScope.previousState)
+            
+            # for map
+                if $state.current.url.includes('monuments')
+                  $state.go('monuments')
+                else if $state.current.url.includes('cemetaries')
+                  $state.go('cemetaries')
 
 # hello
 
