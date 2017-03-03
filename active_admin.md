@@ -34,3 +34,13 @@
               date:
                 formats:
                   long: "%Y-%m-%d"
+1. How you can delete nested params in active admin?
+            
+            # first allow destroy
+             accepts_nested_attributes_for :category_assignments, allow_destroy: true
+             
+            # add permited params with destroy
+            permit_params category_assignments_attributes: [:id, :category_id, :_destroy]
+            
+            # add checkbox with destroy method
+            item.input :_destroy, :as => :boolean, :label => "Destroy?"
