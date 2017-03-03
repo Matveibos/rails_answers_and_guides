@@ -21,3 +21,11 @@ http://gitreal.codeschool.com/
         git rm --cache app/controllers/*.rb
         # inside git.ignore
         /app/controllers/*.rb
+6. How you can fix git config?
+        
+        git pull origin master
+        git status
+7. How to go back to the previous commit?
+        
+        git reset --hard
+        git clean -df
