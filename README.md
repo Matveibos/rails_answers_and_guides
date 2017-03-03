@@ -1,5 +1,8 @@
 # The most useful rails materials and guades
 
+## Guide about angular-translation and rails
+
+https://technpol.wordpress.com/2013/11/02/adding-translation-using-angular-translate-to-an-angularjs-app/
 ## Some new tutorial 
 https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-one
 ## Place for pictures
