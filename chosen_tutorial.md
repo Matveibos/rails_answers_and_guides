@@ -18,3 +18,13 @@
         input :categories, as: :select, collection: Category.all.map{|c| [c.name, c.id]}, include_blank: false, multiple: true, input_html: { class: 'chosen-select' }
         
         
+2. How to make widder chosen window in active admin?
+        
+        :input_html => { :class => "chosen-input",  :style => "width: 700px;"},
+        
+3. How to include multiply choosen in actve admin?
+        
+        # add permited params
+           permit_params category_ids: []
+        #  add to mail active admin window
+        input :category_ids, as: :select, :multiple => true, :input_html => { :class => "chosen-input",  :style => "width: 700px;"}, collection: Category.all.collect {|x| [x.name, x.id]}
