@@ -44,3 +44,9 @@
             
             # add checkbox with destroy method
             item.input :_destroy, :as => :boolean, :label => "Destroy?"
+2. How you can add ordinary adding with several clacc in active admin?
+            
+               has_many :category_assignments do |item|
+                 item.input :category
+                 item.input :_destroy, as: :boolean, label: "Удалить?"
+               end
