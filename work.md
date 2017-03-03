@@ -526,3 +526,6 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
       
          https://github.com/arbox/ruby-style-guide/blob/master/README-ruRU.md#consistent-classes
          https://github.com/bbatsov/rails-style-guide
+32. Choosen example
+        
+        # item.inputs :category_assignments, as: :select, collection: Category.all.map{|c| [c.name, c.id]}, include_blank: false, multiple: true, input_html: { class: 'chosen-select' }
