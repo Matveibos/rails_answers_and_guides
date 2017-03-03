@@ -529,3 +529,8 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
 32. Choosen example
         
         # item.inputs :category_assignments, as: :select, collection: Category.all.map{|c| [c.name, c.id]}, include_blank: false, multiple: true, input_html: { class: 'chosen-select' }
+33. How to create action when previous button opened?
+              
+              # when user click back button, close modal window 
+              window.addEventListener 'popstate', (event) ->
+                $uibModalInstance.close()
