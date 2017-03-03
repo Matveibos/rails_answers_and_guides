@@ -62,3 +62,10 @@
             var module = angular.module('AppService', ['pascalprecht.translate','ngCookies']);
             # add
             $translateProvider.useCookieStorage();
+8. How to include json file with keys?
+            
+              # translate folder app/assets/javascript/translations/locale-
+              
+              $translateProvider.useStaticFilesLoader
+                prefix: '/assets/translations/locale-'
+                suffix: '.json'
