@@ -453,3 +453,10 @@
 23. How you can go to the previous state in angular?
 		
 		window.history.back()
+24. How to add toggle swith button?
+	
+		<ANY ng-switch="expression">
+		  <ANY ng-switch-when="matchValue1">...</ANY>
+		  <ANY ng-switch-when="matchValue2">...</ANY>
+		  <ANY ng-switch-default>...</ANY>
+		</ANY>
