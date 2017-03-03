@@ -29,3 +29,6 @@ http://gitreal.codeschool.com/
         
         git reset --hard
         git clean -df
+8. How to pull all from master directly?
+      
+       git pull --rebase origin master
