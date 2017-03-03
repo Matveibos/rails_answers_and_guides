@@ -46,6 +46,9 @@
                 $translate.use(langKey);
               };
             }]);
+6. How to show current language?
+            
+            $translate.use()
 6. How you can use chosen with angular-translate?
             
             <select chosen
