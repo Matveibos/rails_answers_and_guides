@@ -211,3 +211,6 @@
         button.btn.pull-right
         button.btn.pull-left
         
+5. How to create glyphicons close button with bigger size?
+        
+        span.glyphicon.glyphicon-remove.fa-2x.pull-right ng-click="cancel()"
