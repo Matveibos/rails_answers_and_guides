@@ -10,6 +10,7 @@ vlad_hilko gitlab
 rails api
 ng-click="showMapModal(monument)"
 ng-click="showMapModal(cemetaries)"
+button.btn.pull-right ng-click="cancel()" Закрыть
 
             # if $rootScope.previousId
             #   $state.go($rootScope.previousState, {"id": $rootScope.previousId})
