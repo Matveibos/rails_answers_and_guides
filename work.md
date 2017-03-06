@@ -612,7 +612,7 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
                 class CreateLikes < ActiveRecord::Migration[5.0]
                   def change
                     create_table :likes do |t|
-                      t.belongs_to :users, index: true
+                      t.belongs_to :user, index: true
                       t.references :post_entity, polymorphic: true, index: true
 
                       t.timestamps
