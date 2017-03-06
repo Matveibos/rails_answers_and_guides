@@ -460,3 +460,9 @@
 		  <ANY ng-switch-when="matchValue2">...</ANY>
 		  <ANY ng-switch-default>...</ANY>
 		</ANY>
+25. How to change class with help angular?
+	
+		# where showDiv is true or false
+		<div ng-class="{ 'vis': showDiv}" >
+		    hello test
+		</div>
