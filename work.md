@@ -544,3 +544,78 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
                 span.fa.fa-heart.fa-2x.pull-right ng-show="liked" ng-click="liked = !liked"
                 span.fa.fa-heart-o.fa-2x.pull-right ng-hide="liked" ng-click="liked = !liked"
             
+35. Model for my likes
+            
+            # like.rb
+                class Like < ApplicationRecord
+                  belongs_to :user
+                  belongs_to :post_entity, :polymorphic => true
+                end
+
+                # monument.rb
+                class Monument < ApplicationRecord
+                  has_many :likes, as: :post_entity
+                  has_many :users, through: :likes
+                end
+
+                # Cemetary.rb
+                class Cemetary < ApplicationRecord
+                  has_many :likes, as: :post_entity
+                  has_many :users, through: :likes
+                end
+
+                # user.rb
+                class User < ApplicationRecord
+                  has_many :likes
+                  has_many :monuments, through: :likes, :source => :post_entity,
+                    :source_type => 'Monument'
+                  has_many :cemetaries, through: :likes, :source => :post_entity,
+                    :source_type => 'Cemetary'
+                end
+
+                # migration all ordinary, without this
+                class CreateLikes < ActiveRecord::Migration[5.0]
+                  def change
+                    create_table :likes do |t|
+                      t.belongs_to :users, index: true
+                      t.references :post_entity, polymorphic: true, index: true
+
+                      t.timestamps
+                    end
+                  end
+                end
+                
+36. Another variant
+            
+            # like.rb
+                class Like < ApplicationRecord
+                  belongs_to :user
+                  belongs_to :post_entity, :polymorphic => true
+                end
+
+                # monument.rb
+                class Monument < ApplicationRecord
+                  has_many :likes, as: :post_entity
+                end
+
+                # Cemetary.rb
+                class Cemetary < ApplicationRecord
+                  has_many :likes, as: :post_entity
+                end
+
+                # user.rb
+                class User < ApplicationRecord
+                  has_many :likes
+                end
+
+                # migration all ordinary, without this
+                class CreateLikes < ActiveRecord::Migration[5.0]
+                  def change
+                    create_table :likes do |t|
+                      t.belongs_to :users, index: true
+                      t.references :post_entity, polymorphic: true, index: true
+
+                      t.timestamps
+                    end
+                  end
+                end
