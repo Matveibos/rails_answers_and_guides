@@ -466,3 +466,10 @@
 		<div ng-class="{ 'vis': showDiv}" >
 		    hello test
 		</div>
+26. How to create very simple toggle?
+		
+		# where $scope.showDiv = false inside controller
+		<button ng-click="showDiv = !showDiv">test </button>
+		<div ng-show="showDiv" >
+		    hello test
+		</div>
