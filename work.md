@@ -619,3 +619,11 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
                     end
                   end
                 end
+                
+                
+                # if you want get access to monuments add 
+                class User < ApplicationRecord
+                  has_many :likes
+                  has_many :monument_likes, through: :likes, :source => :post_entity,
+                  :source_type => 'Monument'
+                end
