@@ -535,3 +535,12 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
               # when user click back button, close modal window 
               window.addEventListener 'popstate', (event) ->
                 $uibModalInstance.close()
+34. Example of glyphicons
+
+            http://marcoceppi.github.io/bootstrap-glyphicons/
+            icon-dislikes
+            icon-star
+            # heart 
+                span.fa.fa-heart.fa-2x.pull-right ng-show="liked" ng-click="liked = !liked"
+                span.fa.fa-heart-o.fa-2x.pull-right ng-hide="liked" ng-click="liked = !liked"
+            
