@@ -473,3 +473,8 @@
 		<div ng-show="showDiv" >
 		    hello test
 		</div>
+27. How to just invoke function in angular?
+		
+		     <div>
+			    {{parseDate(test)}}
+		      </div>
