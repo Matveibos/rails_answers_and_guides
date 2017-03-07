@@ -6,6 +6,9 @@
 6. При выборе семьи choosen должен храниться в глобальном скопе.
 7. При фильтрации в active admin видны объекты, а не названия 
 8. Желтый warning появляется при обновлении страницы
+9. При нажатии на enter в форме редиректит тебе назад
+            http://stackoverflow.com/questions/25263345/stop-angular-js-route-changing-on-press-enter-in-input-box
+
 vlad_hilko gitlab 
 rails api
 ng-click="showMapModal(monument)"
