@@ -478,3 +478,16 @@
 		     <div>
 			    {{parseDate(test)}}
 		      </div>
+28. How to make action by button click?
+	
+		# The form is submitted hitting enter.
+		# You can try adding an event that listen to the Enter keypressed like this:
+
+		<input ... ng-keypress="keyPressed($event)">
+		# Then in your controller you can just prevent the default behavior for Enter key.
+
+		$scope.keyPressed = function(event) {
+		  if (event.which === 13){
+		    event.preventDefault();
+		  }
+		}  
