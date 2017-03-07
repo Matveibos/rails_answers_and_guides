@@ -9,6 +9,8 @@
 9. При нажатии на enter в форме редиректит тебе назад
             http://stackoverflow.com/questions/25263345/stop-angular-js-route-changing-on-press-enter-in-input-box
 
+Example of validation validator="required" required-error-message="{{ 'REQUIRED_ERROR_MESSAGE'| translate }}"
+
 vlad_hilko gitlab 
 rails api
 ng-click="showMapModal(monument)"
