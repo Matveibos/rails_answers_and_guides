@@ -491,3 +491,8 @@
 		    event.preventDefault();
 		  }
 		}  
+29. How you can define action on changing value?
+	
+		# selected_categories it's you changing value 
+		$scope.$watch 'selected_categories', () ->
+		    console.log 'Search key was entered'
