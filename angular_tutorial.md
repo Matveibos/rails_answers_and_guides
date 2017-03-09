@@ -496,3 +496,6 @@
 		# selected_categories it's you changing value 
 		$scope.$watch 'selected_categories', () ->
 		    console.log 'Search key was entered'
+30. How you can define $watch with multiply variables?
+		
+		$scope.$watch('[age,name]', function () { ... }, true);
