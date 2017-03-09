@@ -499,3 +499,13 @@
 30. How you can define $watch with multiply variables?
 		
 		$scope.$watch('[age,name]', function () { ... }, true);
+31. How you can create invoke filter inside controller?
+				
+				#  $filter('chosenFilter')($scope.monuments, $scope.selected_categories)
+				
+				$scope.$watch '[filterMonument.born_country, filterMonument.first_name, filterMonument.burial_country, filterMonument.burial_city, filterMonument.cemetary.name, selected_categories]', () ->
+		    $scope.$watch 'monuments', () ->
+		      filteredCategorieValues = $filter('chosenFilter')($scope.monuments, $scope.selected_categories)
+		      filteredAllValues =  $filter('filter')(filteredCategorieValues, $scope.filterMonument)
+		      $scope.center = SerializationService.changeCenter(filteredAllValues)
+		      $scope.markers = SerializationService.markersToLeaflet(filteredAllValues)
