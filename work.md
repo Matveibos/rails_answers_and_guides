@@ -8,7 +8,8 @@
 8. Желтый warning появляется при обновлении страницы
 9. При нажатии на enter в форме редиректит тебе назад
             http://stackoverflow.com/questions/25263345/stop-angular-js-route-changing-on-press-enter-in-input-box
-
+10. Leaflet with form
+            http://tombatossals.github.io/angular-leaflet-directive/examples/0000-viewer.html#/controls/custom-layer-control-example
 Example of validation validator="required" required-error-message="{{ 'REQUIRED_ERROR_MESSAGE'| translate }}"
 
 vlad_hilko gitlab 
