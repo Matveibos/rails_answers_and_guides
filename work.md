@@ -13,6 +13,8 @@
 11. How you can use filter inside controller?
             http://stackoverflow.com/questions/14302267/how-to-use-a-filter-in-a-controller/14302334#14302334
             Создай фильтр. отсортируй значения и передай его с новыми параметрами 
+12. Leaflet problems with markers
+            https://github.com/tombatossals/angular-leaflet-directive/issues/1041
             
 Example of validation validator="required" required-error-message="{{ 'REQUIRED_ERROR_MESSAGE'| translate }}"
 
