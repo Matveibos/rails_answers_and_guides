@@ -509,3 +509,8 @@
 		      filteredAllValues =  $filter('filter')(filteredCategorieValues, $scope.filterMonument)
 		      $scope.center = SerializationService.changeCenter(filteredAllValues)
 		      $scope.markers = SerializationService.markersToLeaflet(filteredAllValues)
+32. How you can create working scope?
+		
+		# use several object
+		{{my.model}}
+		<my-component ng-model="my.model"></my-component>
