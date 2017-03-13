@@ -51,3 +51,9 @@
         .without_circle input[type="radio"]:checked + span{
           color:#000;
         }
+10. How you can set element on all window?
+        
+        # 
+        div {
+            height:100vh;
+        }
