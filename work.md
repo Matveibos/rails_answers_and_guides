@@ -2,10 +2,11 @@
             # 3. При обновлении страницы проподает выбранный язык # fixed
             # 4. Всё можно использовать проще через window.history.back # accepted
             # 5. В настройках изменить отображение allow_user... на русский
+            # 6. Желтый warning появляется при обновлении страницы
 2. Когда жмешь не на кнопку закрыть окна не закрыватется и не возвращает на нужный стейт
 6. При выборе семьи choosen должен храниться в глобальном скопе.
 7. При фильтрации в active admin видны объекты, а не названия 
-8. Желтый warning появляется при обновлении страницы
+
 9. При нажатии на enter в форме редиректит тебе назад
             http://stackoverflow.com/questions/25263345/stop-angular-js-route-changing-on-press-enter-in-input-box
 10. Leaflet with form
@@ -15,6 +16,8 @@
             Создай фильтр. отсортируй значения и передай его с новыми параметрами 
 12. Leaflet problems with markers
             https://github.com/tombatossals/angular-leaflet-directive/issues/1041
+13. Center of coordinate 
+            http://stackoverflow.com/questions/6671183/calculate-the-center-point-of-multiple-latitude-longitude-coordinate-pairs
             
 Example of validation validator="required" required-error-message="{{ 'REQUIRED_ERROR_MESSAGE'| translate }}"
 
