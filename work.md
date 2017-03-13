@@ -18,6 +18,8 @@
             https://github.com/tombatossals/angular-leaflet-directive/issues/1041
 13. Center of coordinate 
             http://stackoverflow.com/questions/6671183/calculate-the-center-point-of-multiple-latitude-longitude-coordinate-pairs
+14. Позиционирование
+            http://shpargalkablog.ru/2012/04/position-fixed-html.html
             
 Example of validation validator="required" required-error-message="{{ 'REQUIRED_ERROR_MESSAGE'| translate }}"
 
