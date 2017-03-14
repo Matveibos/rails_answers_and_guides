@@ -20,7 +20,8 @@
             http://stackoverflow.com/questions/6671183/calculate-the-center-point-of-multiple-latitude-longitude-coordinate-pairs
 14. Позиционирование
             http://shpargalkablog.ru/2012/04/position-fixed-html.html
-            
+15. Map on all page
+            https://github.com/tombatossals/angular-leaflet-directive/issues/113
 Example of validation validator="required" required-error-message="{{ 'REQUIRED_ERROR_MESSAGE'| translate }}"
 
 vlad_hilko gitlab 
