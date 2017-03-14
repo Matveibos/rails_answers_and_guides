@@ -57,3 +57,8 @@
         div {
             height:100vh;
         }
+11. Is it possible to minus px from vh?
+        
+        height: calc(100% - 65px);
+        # yes
+        height: calc(100vh - 65px);
