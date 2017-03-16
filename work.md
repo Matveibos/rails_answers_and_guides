@@ -1,5 +1,5 @@
  http://bourabai.ru/tpoi/compilers.html
- 
+ https://habrahabr.ru/company/infopulse/blog/262389/
  1. angular common mistakes
  https://www.toptal.com/angular-js/top-18-most-common-angularjs-developer-mistakes 
  
