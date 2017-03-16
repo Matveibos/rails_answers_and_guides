@@ -1,3 +1,5 @@
+ 1. angular common mistakes
+ https://www.toptal.com/angular-js/top-18-most-common-angularjs-developer-mistakes 
             # 1. Баг при нажатии несколько раз на карту, появляется всплывающее 2 окна # fixed
             # 3. При обновлении страницы проподает выбранный язык # fixed
             # 4. Всё можно использовать проще через window.history.back # accepted
