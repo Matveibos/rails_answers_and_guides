@@ -1,3 +1,5 @@
+ http://stepansuvorov.com/blog/2015/02/angularjs-optimization/
+ 
  http://bourabai.ru/tpoi/compilers.html
  https://habrahabr.ru/company/infopulse/blog/262389/
  1. angular common mistakes
