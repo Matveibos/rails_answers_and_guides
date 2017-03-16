@@ -16,3 +16,7 @@
           You'll see the straight HTML version of your markup.
 
           You can then copy that out.
+4. How to set html5 validation with min-length?
+          
+          <input pattern=".{3,}"   required title="3 characters minimum">
+          <input pattern=".{5,10}" required title="5 to 10 characters">
