@@ -28,3 +28,9 @@
            permit_params category_ids: []
         #  add to mail active admin window
         input :category_ids, as: :select, :multiple => true, :input_html => { :class => "chosen-input",  :style => "width: 700px;"}, collection: Category.all.collect {|x| [x.name, x.id]}
+
+4. How to set placeholder value for chosen?
+        
+       You must use the attributes: placeholder-text-multiple and placeholder-text-single
+        # don't forget about single quotes inside
+        placeholder-text-multiple="'Recepients'"
