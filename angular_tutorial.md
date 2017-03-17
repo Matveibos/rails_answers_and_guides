@@ -514,3 +514,6 @@
 		# use several object
 		{{my.model}}
 		<my-component ng-model="my.model"></my-component>
+33. How to add delay on input?
+		
+		 data-ng-model-options="{debounce: 150}"
