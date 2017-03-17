@@ -1,6 +1,8 @@
- http://stepansuvorov.com/blog/2015/02/angularjs-optimization/
+1. Pass params to modal window
+
+        http://stackoverflow.com/questions/18576454/pass-parameter-to-modal
  
- http://bourabai.ru/tpoi/compilers.html
+
  https://habrahabr.ru/company/infopulse/blog/262389/
  1. angular common mistakes
  https://www.toptal.com/angular-js/top-18-most-common-angularjs-developer-mistakes 
