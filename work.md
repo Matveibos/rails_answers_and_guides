@@ -1,7 +1,8 @@
 1. Pass params to modal window
 
         http://stackoverflow.com/questions/18576454/pass-parameter-to-modal
- 
+ 2. Go to state without reloading
+        http://stackoverflow.com/questions/33484457/how-can-i-update-stateparams-without-reloading-the-ui-view-angular-ui-router
 
  https://habrahabr.ru/company/infopulse/blog/262389/
  1. angular common mistakes
