@@ -517,3 +517,22 @@
 33. How to add delay on input?
 		
 		 data-ng-model-options="{debounce: 150}"
+34. How you can bind two controllers?
+
+		In modal controller where close button is triggered
+
+		  	$rootScope.$broadcast('updateList');
+		If you wanna to pass data from modal
+
+			$rootScope.$broadcast('updateList',{data : 'passing'}); // pass object in {} if you wanna to pass anything
+		In data Controller
+
+			$scope.$on("updateList",function(){
+			   // Post your code
+			});
+		If you passed data from modal
+
+			$scope.$on("updateList",function(e,a){
+			       // Post your code
+			   console.log(a.data);
+			});
