@@ -12,3 +12,12 @@
         $scope.getMyMap = () ->
             leafletData.getMap().then (map) ->
             console.log map
+3. How to set id to map and firing event?
+        
+        # add id to leaflet
+            leaflet id="myMap" lf-center="center" markers="markers"
+        # id is myMap, adding his to controller
+            $scope.$on 'leafletDirectiveMarker.myMap.mouseout', (event) ->
+        # how you can return map now?
+            leafletData.getMap("myMap").then (map) ->
+        
