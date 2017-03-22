@@ -1,3 +1,6 @@
+2. Omniath testing
+        https://www.natashatherobot.com/rails-test-omniauth-sessions-controller/
+        
 1. Pass params to modal window
 
         http://stackoverflow.com/questions/18576454/pass-parameter-to-modal
