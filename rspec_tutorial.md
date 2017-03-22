@@ -130,3 +130,10 @@
             it { should belong_to(:category) }
             it { should belong_to(:assignment_entity) }
           end
+17. How you can check callback value?
+        
+        install gem shoulda-callback-matchers
+        # and add 
+        describe Article do
+          it { should callback(:do_something).after(:save) }
+        end
