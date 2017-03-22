@@ -19,3 +19,6 @@
 3. How to create many factory by one model?
         
         http://stackoverflow.com/questions/5509790/how-to-create-build-multiple-instances-of-a-factory-in-factory-girl
+4. How to create factory girl with another field?
+        
+        FactoryGirl.create(:cemetary, status: 'accepted')
