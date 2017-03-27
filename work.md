@@ -663,3 +663,42 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
                   has_many :monument_likes, through: :likes, :source => :post_entity,
                   :source_type => 'Monument'
                 end
+111. Temp file for popover 
+        
+          script id="myPopoverTemplate.html" type="text/ng-template" 
+                    span.glyphicon.glyphicon-remove.pull-right ng-click="complaintPopover.close()"
+                    br/
+                    form.form-horizontal.side-padding-30 role="form" 
+                      / .form-group 
+                      /   input.form-control.input-sm type="text" ng-model="filterMonument.first_name"  data-ng-model-options="{debounce: 300}" placeholder="{{ 'BEGIN_ENTER_NAME' | translate }}"
+                      .form-group
+                        label for="inputsm"
+                          | {{ 'PARENTS'| translate }}
+                        select.form-control.input-sm chosen="" multiple="" ng-model="filterMonument.parents" ng-options=("s.full_name for s in ::monuments") placeholder-text-multiple=("'  {{ 'SELECT_PARENTS' | translate }}'")
+                            option value=""
+                        label for="inputsm"
+                          | {{ 'GRANDPARENTS'| translate }}     
+                        br
+                        select.form-control.input-sm chosen="" multiple="" ng-model="filterMonument.grandparents" ng-options=("s.full_name for s in ::monuments") placeholder-text-multiple=("'  {{'SELECT_GRANDPARENTS' | translate }}'")
+                          option value="" 
+                        label for="inputsm"
+                          | {{ 'GRANDCHILDREN'| translate }}   
+                        br
+                        select.form-control.input-sm chosen="" multiple="" ng-model="filterMonument.grandchildren" ng-options=("s.full_name for s in ::monuments") placeholder-text-multiple=("'  {{'SELECT_GRANDCHILDREN' | translate }}'")
+                          option value=""
+                        label for="inputsm"
+                          | {{ 'CHILDREN'| translate }} 
+                        br
+                        select.form-control.input-sm chosen="" multiple="" ng-model="filterMonument.children" ng-options=("s.full_name for s in ::monuments") placeholder-text-multiple=("'  {{'SELECT_CHILDREN' | translate }}'")
+                          option value=""
+                        label for="inputsm"
+                          | {{ 'BROTHERS_AND_SISTERS'| translate }} 
+                        br
+                        select.form-control.input-sm chosen="" multiple="" ng-model="filterMonument.brothers_and_sisters" ng-options=("s.full_name for s in ::monuments") placeholder-text-multiple=("'  {{'SELECT_BROTHERS_AND_SISTERS' | translate }}'")
+                          option value=""
+                        label for="inputsm"
+                          | {{ 'DATE_OF_BIRTH'| translate }}
+                          input.form-control ng-keypress="keyPressed($event)" name='birth_date' type="text" ng-model="filterMonument.birth_date" placeholder="{{ 'SELECT_BIRTH_DATE'| translate }}" valid-method="submit" date-time="" format="D MMM YYYY" min-view="date" view="year" auto-close="true"
+                        label for="inputsm"
+                          | {{ 'DATE_OF_DEATH'| translate }}
+                          input.form-control ng-keypress="keyPressed($event)" name='death_date' type="text" ng-model="filterMonument.death_date" placeholder="{{ 'SELECT_DEATH_DATE'| translate }}" valid-method="submit" date-time="" format="D MMM YYYY" min-view="date" view="year" auto-close="true"
