@@ -723,3 +723,11 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
                       selected_category_index_array.push(category_name.indexOf(category.name) + 1)
 
                     return selected_category_index_array
+13. Another way to set default values for choosen?
+        
+        # just add
+        Examples:
+        <select
+            ng-model="user.favMovieStub"
+            ng-options="movie as movie.name for movie in movies track by movie.id">
+        </select>
