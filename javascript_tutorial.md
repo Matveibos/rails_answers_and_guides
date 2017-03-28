@@ -1,4 +1,5 @@
 # some tutorial
+https://habrahabr.ru/post/319472/
 
 1. How you can check if array include element?
             
