@@ -702,3 +702,18 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
                         label for="inputsm"
                           | {{ 'DATE_OF_DEATH'| translate }}
                           input.form-control ng-keypress="keyPressed($event)" name='death_date' type="text" ng-model="filterMonument.death_date" placeholder="{{ 'SELECT_DEATH_DATE'| translate }}" valid-method="submit" date-time="" format="D MMM YYYY" min-view="date" view="year" auto-close="true"
+12. Set default values for chosen
+
+                  $scope.selected_categories.my = advancedFilterCategorySelectedArray($scope.selected_categories.my) # [1,3]
+
+                  advancedFilterCategorySelectedArray = (selected_category) ->
+                    selected_category_index_array = []
+                    category_name = []
+
+                    $scope.categories.forEach (category) ->
+                      category_name.push(category.name)
+
+                    selected_category.forEach (category) ->
+                      selected_category_index_array.push(category_name.indexOf(category.name) + 1)
+
+                    return selected_category_index_array
