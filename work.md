@@ -1,3 +1,5 @@
+3. Balance board
+        http://dominant.by/142-balanceboard
 2. Omniath testing
         https://www.natashatherobot.com/rails-test-omniauth-sessions-controller/
         
