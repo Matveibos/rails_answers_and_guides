@@ -13,4 +13,9 @@
 4. How you can show uploded image?
         
         <%= image_tag @pet.image.thumb.url %>
-      
+5. How you can save file from link?
+    
+          # your user image field is called simply 'image'
+          gravatar_url = "http://www.gravatar.com/avatar/#{Digest::MD5.new.update(current_user.email)}?s=512&d=identicon"
+          @user.remote_image_url = gravatar_url
+          @user.save 
