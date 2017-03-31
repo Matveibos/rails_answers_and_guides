@@ -1,4 +1,32 @@
+1. try to cathch previus state
+                
+                $scope.cancel = ->
+                    console.log($rootScope.currentId)
+                    $uibModalInstance.close()
+                    if typeof $rootScope.currentState != 'undefined'
+                      if typeof $rootScope.currentId != 'undefined'
+                        $state.go($rootScope.currentState, {params: $rootScope.currentId}, {notify: false})
+                      else
+                        # $state.go($rootScope.currentState, {params: null}, {notify: false})
+                        $state.go($rootScope.currentState, {params: $rootScope.currentId}, {notify: false})
 
+                    else
+                      $state.go('cemetaries')
+                      
+                 .state('profile',
+                      url: '/profiles'
+                      # controller: 'NavigationController'
+                      templateUrl: ''
+                  )
+                  
+                  
+                  
+                  $scope.openUserProfile = (userId) ->
+                    $state.go('profile', {id: null}, {notify: false})
+                    ModalService.openUserProfileModal(userId)
+                    
+                      $rootScope.currentState = to.name
+                      $rootScope.currentId = toParams.id
 3. Balance board
         http://dominant.by/142-balanceboard
                                                                         http://frontside.by/%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3/%D0%B1%D0%B0%D0%BB%D0%B0%D0%BD%D1%81%D0%B1%D0%BE%D1%80%D0%B4%D1%8B/marisboards/%D0%B1%D0%B0%D0%BB%D0%B0%D0%BD%D1%81%D0%B1%D0%BE%D1%80%D0%B4-hammerhead-blank
