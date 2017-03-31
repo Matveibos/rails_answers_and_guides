@@ -27,6 +27,17 @@
                     
                       $rootScope.currentState = to.name
                       $rootScope.currentId = toParams.id
+                      
+                   $rootScope.$on('$stateChangeSuccess', (ev, to, toParams, from, fromParams) ->
+                    $rootScope.previousState = from.name
+                    $rootScope.previousId = fromParams.id
+                    $rootScope.currentState = to.name
+                    $rootScope.currentId = toParams.id
+                  )
+                  $scope.cancel = ->
+                    console.log($rootScope.currentId)
+                    $state.go($rootScope.currentState, {id: $rootScope.currentId}, {notify: false})
+                    $uibModalInstance.close()
 3. Balance board
         http://dominant.by/142-balanceboard
                                                                         http://frontside.by/%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3/%D0%B1%D0%B0%D0%BB%D0%B0%D0%BD%D1%81%D0%B1%D0%BE%D1%80%D0%B4%D1%8B/marisboards/%D0%B1%D0%B0%D0%BB%D0%B0%D0%BD%D1%81%D0%B1%D0%BE%D1%80%D0%B4-hammerhead-blank
