@@ -1,3 +1,6 @@
+2. Json rails book
+        
+        http://apionrails.icalialabs.com/book/chapter_seven
 1. try to cathch previus state
                 
                 $scope.cancel = ->
