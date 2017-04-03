@@ -137,3 +137,10 @@
         describe Article do
           it { should callback(:do_something).after(:save) }
         end
+18. How you can pass params on PUT/POST methods?
+        
+          before do 
+            params = {place: {id: place.id, latitude: place.latitude, longitude: place.longitude, description: place.description},
+            cemetary: {id: cemetary.id, name: cemetary.name, country: cemetary.country, city: cemetary.city}}
+            put "/api/v1/cemetaries/#{cemetary.id}", params: params
+          end
