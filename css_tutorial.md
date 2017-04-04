@@ -79,3 +79,6 @@
              filter: url(#contrast);
             filter:contrast(50%);
         }
+13. Article about image hover?
+        
+        https://line25.com/tutorials/image-hover-css-snippets
