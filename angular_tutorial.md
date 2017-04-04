@@ -536,3 +536,7 @@
 			       // Post your code
 			   console.log(a.data);
 			});
+35. How you can set ng-class ?
+	
+		ng-class="{'email-ng-invalid': false}"
+		# Classes with dashes need to be quoted: ng-class="'label-success': obj.value1 == 'Ready'
