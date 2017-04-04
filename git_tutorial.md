@@ -32,3 +32,7 @@ http://gitreal.codeschool.com/
 8. How to pull all from master directly?
       
        git pull --rebase origin master
+9. How you can add information to old last commit?
+      
+       git add .
+       git commit --amend
