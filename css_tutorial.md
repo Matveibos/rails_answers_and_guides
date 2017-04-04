@@ -82,3 +82,6 @@
 13. Article about image hover?
         
         https://line25.com/tutorials/image-hover-css-snippets
+14. How to add spinner on center?
+        
+        <span id="searching_spinner_center" style="position: absolute;display: block;top: 50%;left: 50%;"></span>
