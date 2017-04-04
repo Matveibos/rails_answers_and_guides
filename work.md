@@ -1,3 +1,6 @@
+3. Link for chosen-sprite png
+        
+        https://cdnjs.com/libraries/chosen
 2. Json rails book
         
         http://apionrails.icalialabs.com/book/chapter_seven
