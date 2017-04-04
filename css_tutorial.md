@@ -62,3 +62,20 @@
         height: calc(100% - 65px);
         # yes
         height: calc(100vh - 65px);
+12. How to set brightness on half?
+        
+        img {
+        width:250px;
+        }
+        #one:hover {
+            -webkit-filter:brightness(50%);
+            -moz-filter:brightness(50%);
+            filter: url(#brightness); /* required for FF */
+            filter:brightness(50%);
+        }
+        #two:hover {
+            -webkit-filter:contrast(50%);    
+            -moz-filter:contrast(50%);
+             filter: url(#contrast);
+            filter:contrast(50%);
+        }
