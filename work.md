@@ -1,3 +1,6 @@
+1. 47.946781
+   14.620341
+
 3. Link for chosen-sprite png
         
         https://cdnjs.com/libraries/chosen
