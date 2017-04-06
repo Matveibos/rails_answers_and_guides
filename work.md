@@ -1,3 +1,5 @@
+Added new values by enter    
+      https://github.com/leocaseiro/angular-chosen/issues/112
 .  Scope in angular js
       
       https://habrahabr.ru/post/182670/
