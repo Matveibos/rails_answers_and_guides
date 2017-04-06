@@ -1,3 +1,6 @@
+.  Scope in angular js
+      
+      https://habrahabr.ru/post/182670/
 1. 47.946781
    14.620341
 
