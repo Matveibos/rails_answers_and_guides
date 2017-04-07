@@ -540,3 +540,13 @@
 	
 		ng-class="{'email-ng-invalid': false}"
 		# Classes with dashes need to be quoted: ng-class="'label-success': obj.value1 == 'Ready'
+36. How to add filter on object?
+		
+		<h3>Unregistered Users</h3>
+		<div ng-repeat="user in users | filter:{registered:false}">
+		    <div class="row-fluid">
+		    <div class="span2">
+		      {{user.name}}
+		    </div>
+		  </div>
+		</div>
