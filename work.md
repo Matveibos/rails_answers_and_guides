@@ -1,3 +1,10 @@
+1. rails g migration AddStatusToCategory status:string
+   extend Enumerize
+
+   enumerize :status, in: [:show, :hide], default: :hide, scope: true, predicates: true
+   
+   
+   
 1. Try overides existing methods
       class OverwrideAbstractChosen extends ChosenAbstract {
         keydown_checker(a) {
