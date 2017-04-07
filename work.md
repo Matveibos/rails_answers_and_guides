@@ -1,3 +1,30 @@
+1. Try overides existing methods
+      class OverwrideAbstractChosen extends ChosenAbstract {
+        keydown_checker(a) {
+            var b, c;
+            switch (b = null != (c = a.which) ? c : a.keyCode, this.search_field_scale(), 8 !== b && this.pending_backstroke && this.clear_backstroke(), b) {
+                case 8:
+                    this.backstroke_length = this.search_field.val().length;
+                    break;
+                case 9:
+                    this.results_showing && !this.is_multiple && this.result_select(a), this.mouse_on_container = !1;
+                    break;
+                case 13:
+                    this.winnow_results_set_highlight();
+                    this.results_showing && a.preventDefault();
+                    break;
+                case 32:
+                    this.disable_search && a.preventDefault();
+                    break;
+                case 38:
+                    a.preventDefault(), this.keyup_arrow();
+                    break;
+                case 40:
+                    a.preventDefault(), this.keydown_arrow()
+          }
+        }
+      }
+      window.Chosen = OverwrideChosen
 Added new values by enter    
       https://github.com/leocaseiro/angular-chosen/issues/112
 .  Scope in angular js
