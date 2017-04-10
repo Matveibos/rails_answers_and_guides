@@ -1,6 +1,8 @@
 BAGS 
 
-     1. You can't edit monument directly after creating 
+     1. You can't edit monument directly after creating
+     2. Если у памятника не было даты рождения и и при редактировании ты сохраняешь изменения не меняя даты, то в админке будет ошибка с датами
+     3. Неправильный логин и пороль поставь больше времени
      
 1. rails g migration AddStatusToCategory status:string
    extend Enumerize
