@@ -1,3 +1,7 @@
+BAGS 
+
+     1. You can't edit monument directly after creating 
+     
 1. rails g migration AddStatusToCategory status:string
    extend Enumerize
 
