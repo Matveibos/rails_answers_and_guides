@@ -162,3 +162,6 @@
                 end
               end
             end
+20. Flaot value in activerecord?
+            
+            decimal
