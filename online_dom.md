@@ -39,3 +39,7 @@
                       # end
                     end
       
+4. plan 
+           rails g model Service name:string value:decimal estate:references
+           Estate
+              has_many :services
