@@ -41,7 +41,15 @@
       
 4. plan 
             Tariff
+              
               has_many tarriff_archieves, dependent: nullify
+              
+              
             rails g model TariffArchive tariff:references updating_date:date old_value:decimal new_value:decimal
+            
+            
+              set callback after update and check old and new params if they whill changed -> createt TariffArchieve object
+              
+              
               
            
