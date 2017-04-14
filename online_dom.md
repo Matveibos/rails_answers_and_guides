@@ -40,6 +40,8 @@
                     end
       
 4. plan 
-           rails g model Service name:string value:decimal estate:references
-           Estate
-              has_many :services
+            Tariff
+              has_many tarriff_archieves, dependent: nullify
+            rails g model TariffArchive tariff:references updating_date:date old_value:decimal new_value:decimal
+              
+           
