@@ -51,5 +51,14 @@
               set callback after update and check old and new params if they whill changed -> createt TariffArchieve object
               
               
-              
+ 5. 
+            
+            1. Change style for filter: use old field for name
+            2. Change style for select box: use select value from another select box
+            3. Create show action with link on tariff name: route, controller - show, angulur - service, angular - tariifController
+            4. Create TariffArchive model: rails g model TariffArchive tariff:references old_value:decimal new_value:decimal
+            5. Create callback inside Tariif model: on update action ( if old.value != new_value -> create TariffArchieve object)
+            6. On the tariff show page create butoon with link on tariffArchieve( blue button like save with excel) 
+            7. can i add serialization?
+            
            
