@@ -53,7 +53,7 @@
               
  5. 
             
-            1. Change style for filter: use old field for name
+            1. Change style for filter: use old field for name ++++
             2. Change style for select box: use select value from another select box
             3. Create show action with link on tariff name: route, controller - show, angulur - service, angular - tariifController
             4. Create TariffArchive model: rails g model TariffArchive tariff:references old_value:decimal new_value:decimal
