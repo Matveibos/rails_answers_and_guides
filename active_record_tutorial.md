@@ -165,3 +165,6 @@
 20. Flaot value in activerecord?
             
             decimal
+21. How to set uniqunes for several model?
+            
+              validates :name, uniqueness: { scope: :estate_id }
