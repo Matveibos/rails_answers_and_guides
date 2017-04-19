@@ -18,3 +18,4 @@
 6. Simple chart 
             
             https://github.com/chartjs/Chart.js
+            https://cdnjs.com/libraries/Chart.js/1.0.2
