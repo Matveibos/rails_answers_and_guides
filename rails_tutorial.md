@@ -247,3 +247,11 @@
 5. How you can set corect value of many users? (users or user)
          
          helper.pluralize(2, "error") => 2 errors
+## -----------------------------------ENVIROMPENT PRODUCTION-----------------------------------
+
+                  # 1. rake db:create RAILS_ENV=production
+                  # 2. rake db:migrate RAILS_ENV=production
+                  # 3. rake db:seed RAILS_ENV=production
+                  # 4. rails s -e production
+                  # 5. RAILS_ENV=production bundle exec rake assets:precompile
+                  # 6. set config/environments/production config.assets.compile = true
