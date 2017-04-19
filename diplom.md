@@ -1,3 +1,8 @@
+Регрессионыне модели на примере зависимости дохода магазина от парметров
+      
+      http://baguzin.ru/wp/?p=6078
+
+
 1. https://www.analyticsvidhya.com/blog/2015/08/comprehensive-guide-regression/
 
 2. Js library for bulding regression
