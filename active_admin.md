@@ -59,3 +59,6 @@
               end
             end
            # config locales add ru.yml, active_admin.ru.yml and devise.ru.yml
+4. ActiveAdmin haw you can manage data access?
+           
+           https://activeadmin.info/13-authorization-adapter.html
