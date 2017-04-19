@@ -19,3 +19,10 @@
             
             https://github.com/chartjs/Chart.js
             https://cdnjs.com/libraries/Chart.js/1.0.2
+            # tutorial 1
+            https://www.sitepoint.com/creating-beautiful-charts-chart-js/
+            # titorial 2
+            https://www.sitepoint.com/fancy-responsive-charts-with-chart-js/
+            # tutorial 3
+            https://www.sitepoint.com/introduction-chart-js-2-0-six-examples/
+
