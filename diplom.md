@@ -15,3 +15,6 @@
 5. Another js library for statistic 
             
             https://github.com/simple-statistics/simple-statistics
+6. Simple chart 
+            
+            https://github.com/chartjs/Chart.js
