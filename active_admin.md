@@ -50,3 +50,12 @@
                  item.input :category
                  item.input :_destroy, as: :boolean, label: "Удалить?"
                end
+3. How you can add internalzation for ActiveAdmin?
+            
+            # inside aplication rb add 
+            module Sakurami
+              class Application < Rails::Application
+                config.i18n.default_locale = :ru
+              end
+            end
+           # config locales add ru.yml, active_admin.ru.yml and devise.ru.yml
