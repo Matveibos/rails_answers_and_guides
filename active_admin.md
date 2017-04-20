@@ -62,3 +62,16 @@
 4. ActiveAdmin haw you can manage data access?
            
            https://activeadmin.info/13-authorization-adapter.html
+5. How to hide field only for creating new record?
+            
+              form do |f|
+                f.inputs "Member Details" do
+                    f.input :email
+                    if !f.object.new_record?
+                        f.input :password
+                        f.input :password_confirmation
+                    end
+                    f.input :role
+                end
+                f.actions
+               end
