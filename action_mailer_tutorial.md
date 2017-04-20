@@ -64,3 +64,6 @@
               def send_email
                 UserMailer.welcome_email(self, self.password).deliver_later
               end
+6. How to generate mailer?
+            
+             rails generate mailer User
