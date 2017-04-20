@@ -61,3 +61,15 @@
       
             cannot :update, AdminUser
             cannot :manage, Post
+6. How to check only one field?
+            
+            ActiveAdmin.register Post do
+
+              index do
+                column :title
+                column '' do |post|
+                  link_to 'Edit', admin_post_path(post) if authorized? :update, post
+                end
+              end
+
+            end
