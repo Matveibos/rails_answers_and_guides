@@ -46,3 +46,21 @@
             
             generated_password = Devise.friendly_token.first(8)
             user = User.create!(:email => email, :password => generated_password)
+5. Send random password after callback?
+            
+              before_validation :set_password, on: :create
+              after_create :send_email
+
+              private
+
+              def set_password
+                temp_password = Devise.friendly_token.first(8)
+                if self.password.nil? && !self.email.nil?
+                  self.password = temp_password
+                  self.password_confirmation = temp_password
+                end
+              end
+
+              def send_email
+                UserMailer.welcome_email(self, self.password).deliver_later
+              end
