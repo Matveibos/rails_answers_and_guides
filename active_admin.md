@@ -75,3 +75,6 @@
                 end
                 f.actions
                end
+6. ckeditor with activeadmin?
+      
+            https://github.com/activeadmin/activeadmin/wiki/ckeditor-integration
