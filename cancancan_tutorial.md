@@ -57,3 +57,7 @@
                 self.role == requested_role.to_s
               end
             end
+5. How to check can_not action?
+      
+            cannot :update, AdminUser
+            cannot :manage, Post
