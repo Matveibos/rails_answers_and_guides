@@ -42,3 +42,7 @@
 3. Good article about testing actionMailer and rspec?
             
             https://blog.lucascaton.com.br/index.php/2010/10/25/how-to-test-mailers-in-rails-3-with-rspec/
+4. How to generate random password with devise?
+            
+            generated_password = Devise.friendly_token.first(8)
+            user = User.create!(:email => email, :password => generated_password)
