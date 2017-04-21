@@ -31,3 +31,8 @@
             # tutorial 3
             https://www.sitepoint.com/introduction-chart-js-2-0-six-examples/
 
+7. Some article about regression in English
+            
+            http://www.statisticshowto.com/probability-and-statistics/regression-analysis/
+            
+            
