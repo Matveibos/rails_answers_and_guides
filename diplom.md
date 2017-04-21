@@ -36,3 +36,6 @@
             http://www.statisticshowto.com/probability-and-statistics/regression-analysis/
             
             
+8.  Another name for multiphase regression 
+            
+            "change point" analysis, or a multiphase regression
