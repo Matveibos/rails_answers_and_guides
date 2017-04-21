@@ -38,5 +38,9 @@
             
 8.  Another name for multiphase regression 
             
-            "change point" analysis, or a multiphase regression
+            "change point" analysis, or a multiphase regression (точки переключение)
             Two-phase Regression
+            из сейбера
+            7.6. Двухфазная линейная регрессия стр 200
+            8.3.3. Многофазная полиномиальная регрессия
+            
