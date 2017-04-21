@@ -39,3 +39,4 @@
 8.  Another name for multiphase regression 
             
             "change point" analysis, or a multiphase regression
+            Two-phase Regression
