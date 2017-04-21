@@ -78,3 +78,12 @@
 6. ckeditor with activeadmin?
       
             https://github.com/activeadmin/activeadmin/wiki/ckeditor-integration
+7. How to hide records for some admin?
+            
+            ActiveAdmin.register Shop do
+                controller do
+                    def scoped_collection
+                       Shop.where(admin_user_id: current_admin_user.id)
+                    end
+                end
+            end
