@@ -14,3 +14,4 @@ password
 1. subdomain 
         
         https://gist.github.com/indiesquidge/b836647f851179589765
+2. http://lvh.me:3000 some like localhost
