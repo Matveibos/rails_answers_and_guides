@@ -87,3 +87,12 @@
                     end
                 end
             end
+8. How to translate string with html tag to real html?
+            
+              index do
+                column :title
+                column :body do |post|
+                  post.body.html_safe
+                end
+                actions
+              end
