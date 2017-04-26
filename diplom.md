@@ -47,6 +47,7 @@
 9. Метод наименьших квадратов с mathprofi?
             
             http://mathprofi.ru/metod_naimenshih_kvadratov.html
-            
+            y = ax + b
             y - dependent value 
             x - predictor value, regressor, undependent value
+            a - regressor coeficent
