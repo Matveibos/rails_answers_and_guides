@@ -67,3 +67,8 @@
 6. How to generate mailer?
             
              rails generate mailer User
+7. What method you know for deliver letter?
+            
+            UserMailer.welcome_email(self, self.password).deliver_now
+              and
+            UserMailer.welcome_email(self, self.password).deliver_later
