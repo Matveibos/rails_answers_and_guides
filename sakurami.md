@@ -15,3 +15,5 @@ password
         
         https://gist.github.com/indiesquidge/b836647f851179589765
 2. http://lvh.me:3000 some like localhost
+3. 
+        http://manuelvanrijn.nl/blog/2015/05/19/rails-subdomains-for-localhost-development/
