@@ -144,3 +144,10 @@
             cemetary: {id: cemetary.id, name: cemetary.name, country: cemetary.country, city: cemetary.city}}
             put "/api/v1/cemetaries/#{cemetary.id}", params: params
           end
+19. How you can check if object is valid?
+        
+                admin = AdminUser.new(email:'aaa@tut.by')
+                admin.valid?
+20. How you can compare value with length?
+                
+                expect(admin.password.length).to be(8)
