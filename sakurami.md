@@ -18,3 +18,7 @@ password
 3. 
         http://manuelvanrijn.nl/blog/2015/05/19/rails-subdomains-for-localhost-development/
         https://rails.devcamp.com/professional-rails-development-course/advanced-user-features/how-to-use-subdomains-rails-application
+        
+4. Example of using subdomain
+        
+        Article.locales.keys.include? request.subdomain
