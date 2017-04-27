@@ -168,3 +168,6 @@
 21. How to set uniqunes for several model?
             
               validates :name, uniqueness: { scope: :estate_id }
+22. How to set after_update callback with condition?
+            
+            before_save :do_something, if: :status_id_changed?
