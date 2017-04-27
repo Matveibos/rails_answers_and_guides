@@ -17,3 +17,4 @@ password
 2. http://lvh.me:3000 some like localhost
 3. 
         http://manuelvanrijn.nl/blog/2015/05/19/rails-subdomains-for-localhost-development/
+        https://rails.devcamp.com/professional-rails-development-course/advanced-user-features/how-to-use-subdomains-rails-application
