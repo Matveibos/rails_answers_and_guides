@@ -96,3 +96,7 @@
                 end
                 actions
               end
+9. How to check localization for current admin user?
+      
+      
+            before_filter :set_user_location, :if => proc { current_user }
