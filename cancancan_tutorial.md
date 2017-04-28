@@ -73,3 +73,32 @@
               end
 
             end
+7. Good style for cancancan
+            
+            class Ability
+              include CanCan::Ability
+
+              def initialize(user)
+                if user.role.present?
+                  send user.role
+                else
+                  send :guest
+                end
+              end
+
+              def director
+                can :manage, :all
+              end
+
+              def administrator
+                can :manage, :all
+              end
+
+              def manager
+                can :read, :all
+              end
+
+              def guest
+                can :read, :all
+              end
+            end
