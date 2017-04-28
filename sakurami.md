@@ -22,3 +22,9 @@ password
 4. Example of using subdomain
         
         Article.locales.keys.include? request.subdomain
+5. 
+            imageable 
+            add polymorphic связь 
+            news has_one image
+            banner
+            static page has_many images
