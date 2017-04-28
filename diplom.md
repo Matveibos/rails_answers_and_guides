@@ -54,6 +54,7 @@
 10. Модели регрессии с точкаси разрыва
             
             http://www.e-reading.club/chapter.php/1002275/41/Yakovleva_Angelina_-_Otvety_na_ekzamenacionnye_bilety_po_ekonometrike.html
+            Ввод в регресиию http://statsoft.ru/home/textbook/modules/stgenregmod.html
             
 11. План работы
                   
