@@ -100,3 +100,26 @@
       
       
             before_filter :set_user_location, :if => proc { current_user }
+10. How to set country-select gem for active admin?
+            
+            First you need to add the gem in GemFile
+
+                  gem 'country-select'
+            Create a helper file '/app/helpers/active_admin/views_helper.rb'. Add the below code
+
+                  module ActiveAdmin::ViewsHelper
+
+                    def country_dropdown 
+                      ActionView::Helpers::FormOptionsHelper::COUNTRIES
+                    end 
+                  end 
+                  
+            In your view file use
+
+                  form do |f|
+                    f.inputs do 
+                      f.input :country, as: :select, collection: country_dropdown
+                    end
+
+                    f.actions
+                  end
