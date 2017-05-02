@@ -63,6 +63,7 @@
                         Определение регресии
                         Определение многофазной регресии
                         Определение предикторных переменных
+                        https://docs.google.com/document/d/1haRrVFg4g64bupSgzQ5C7KZWeGFM05wxTHi66bJ_zj4/edit?usp=sharing
                     2. Пример построениея инейной регрессии
                         http://www.matburo.ru/Examples/Files/ms_lr_1.pdf    
                     ?. Применнение регрессии в обычное жизни/ в делах
