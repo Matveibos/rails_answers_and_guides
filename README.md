@@ -1,5 +1,8 @@
 # The most useful rails materials and guades
 
+## Neural network
+  http://www.rubylab.io/2015/03/18/simple-neural-network-implenentation-in-ruby/
+
 ## Guide about angular-translation and rails
 
 https://technpol.wordpress.com/2013/11/02/adding-translation-using-angular-translate-to-an-angularjs-app/
