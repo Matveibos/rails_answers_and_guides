@@ -164,3 +164,6 @@
                 menu.add id: 'vehicles', label: proc{ I18n.t 'active_admin.vehicles' }
               end
             end
+13. How to set sorting priority for ActiveAdmin menu?
+            
+            menu.add id: 'language', label: proc { I18n.t "language" }, priority: 1 
