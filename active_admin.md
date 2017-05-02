@@ -155,3 +155,12 @@
              class Application < Rails::Application
                 config.i18n.default_locale = :ru
               end
+12. How to add translation to menu label?
+            
+            # config/initializers/active_admin.rb
+            # don't forget id
+            config.namespace :admin do |admin|
+              admin.build_menu do |menu|
+                menu.add id: 'vehicles', label: proc{ I18n.t 'active_admin.vehicles' }
+              end
+            end
