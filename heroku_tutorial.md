@@ -106,3 +106,6 @@
 14. If you add new gem and bundle can't update?
             
             rm -fr .bundle
+15. How to drop db on heroku?
+            
+            heroku pg:reset DATABASE
