@@ -98,3 +98,8 @@
 12. How you can wathc information about app?
             
             heroku info
+13. How to add your repo to the existing repo?
+            
+            git remote add heroku git@heroku.com:sakurami.git
+            # if you need deleted old
+            git remote rm heroku
