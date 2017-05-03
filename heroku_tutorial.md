@@ -109,3 +109,6 @@
 15. How to drop db on heroku?
             
             heroku pg:reset DATABASE
+16. How to see correct mistake?
+
+            heroku logs --tail
