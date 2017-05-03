@@ -103,3 +103,6 @@
             git remote add heroku git@heroku.com:sakurami.git
             # if you need deleted old
             git remote rm heroku
+14. If you add new gem and bundle can't update?
+            
+            rm -fr .bundle
