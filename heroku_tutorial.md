@@ -112,3 +112,6 @@
 16. How to see correct mistake?
 
             heroku logs --tail
+17. How to show all gems on heroku?
+            
+            heroku run gem list
