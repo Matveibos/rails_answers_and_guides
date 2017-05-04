@@ -167,3 +167,6 @@
 13. How to set sorting priority for ActiveAdmin menu?
             
             menu.add id: 'language', label: proc { I18n.t "language" }, priority: 1 
+14. How to add polymorhic accosiation in active admin?
+            
+            https://github.com/activeadmin/activeadmin/wiki/Nested-forms-with-polymorphic-association-in-Active-Admin-Formtastic
