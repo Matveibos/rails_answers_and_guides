@@ -33,3 +33,7 @@ password
             - else
               = link_to I18n.t('read'), school_path(review.reviewable, testimonials: true, anchor: "review-#{review.id}")
             - end
+6. 
+            admin_reviews = Review.includes(:reviewable, :user).joins(:main_page_reviews)
+            random_reviews = Review.includes(:reviewable, :user).where.not(id:                   admin_reviews.pluck(:id)).order('RANDOM()').with_status(:published).limit(4)
+            @reviews = admin_reviews.includes(:reviewable) + random_reviews 
