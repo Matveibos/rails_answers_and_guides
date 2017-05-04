@@ -28,3 +28,8 @@ password
             news has_one image
             banner
             static page has_many images
+            - if review.reviewable_type == 'Course'
+              = link_to I18n.t('read'), course_path(review.reviewable, testimonials: true, anchor: "review-#{review.id}")
+            - else
+              = link_to I18n.t('read'), school_path(review.reviewable, testimonials: true, anchor: "review-#{review.id}")
+            - end
