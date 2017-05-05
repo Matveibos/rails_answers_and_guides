@@ -65,10 +65,13 @@
                         Определение предикторных переменных
                         https://docs.google.com/document/d/1haRrVFg4g64bupSgzQ5C7KZWeGFM05wxTHi66bJ_zj4/edit?usp=sharing
                     2. Пример построениея инейной регрессии
+                        
                         http://www.matburo.ru/Examples/Files/ms_lr_1.pdf    
                     ?. Применнение регрессии в обычное жизни/ в делах
                        -  Как регресииия применяется в экономике.
                     2. Виды регрессиооных моделей
+                       - линейная регрессия 
+                       https://docs.google.com/document/d/1JU7YLR91a-o-9y5SwbbWoxz8T_vPy-lkd8VTE6RSuIg/edit?usp=sharing
                        - простая регрессия Y = b0 + b1P, Y = b0 + b1P2
                        - множественная регрессия Y = b0 + b1P + b2Q + b3R
                        - полиномиальная регрессия Y = b0 + b1P + b2P2 + b3Q + b4Q2 + b5R + b6R2
