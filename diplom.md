@@ -80,6 +80,7 @@
                        -  Двуфазная мадель
                        -  Двуфазная модель 
                        -  Многофазная модель(Segmented regression, piecewise regression, broken-stick regression, Threshold                          model)
+                       https://docs.google.com/document/d/1YyTwmCxOv30yeNUxyUVmdy0B4jb3LIS1scvOoVGYZTA/edit?usp=sharing
                           https://en.wikipedia.org/wiki/Segmented_regression
                           https://onlinecourses.science.psu.edu/stat501/node/310
                        - 
