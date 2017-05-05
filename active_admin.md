@@ -170,3 +170,13 @@
 14. How to add polymorhic accosiation in active admin?
             
             https://github.com/activeadmin/activeadmin/wiki/Nested-forms-with-polymorphic-association-in-Active-Admin-Formtastic
+15. How to change status by button click in ActiveAdmin?
+            
+              action_item :view, only: :show do
+                link_to I18n.t('active_admin.course.toggle_status'), toggle_status_admin_course_path(course), method: :put
+              end
+
+              member_action :toggle_status, method: :put do
+                resource.update(status: resource.status.archive? ? :published : :archive)
+                redirect_to admin_course_path(resource), notice: I18n.t('active_admin.course.status_updated', status: resource.status_text)
+              end
