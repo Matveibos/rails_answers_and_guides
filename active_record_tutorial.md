@@ -171,3 +171,9 @@
 22. How to set after_update callback with condition?
             
             before_save :do_something, if: :status_id_changed?
+23. How to change column type and column name by migration?
+            
+            def change
+              rename_column :general_exams, :semester, :semester_id
+              change_column :general_exams, :semester_id, :integer
+            end
