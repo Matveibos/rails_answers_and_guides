@@ -37,3 +37,6 @@ password
             admin_reviews = Review.includes(:reviewable, :user).joins(:main_page_reviews)
             random_reviews = Review.includes(:reviewable, :user).where.not(id:                   admin_reviews.pluck(:id)).order('RANDOM()').with_status(:published).limit(4)
             @reviews = admin_reviews.includes(:reviewable) + random_reviews 
+7. 
+                
+            return '' unless lesson.next.present?
