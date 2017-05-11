@@ -40,3 +40,4 @@ password
 7. 
                 
             return '' unless lesson.next.present?
+                Course.last.user_courses.where.not(current_lesson_status: 'done')
