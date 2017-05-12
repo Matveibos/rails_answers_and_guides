@@ -180,3 +180,6 @@
 24. How to select uniq value from active record models?
                         
             user.addresses.pluck(:city).uniq # => ['Moscow']
+25. How you can group by multiply variables?
+            
+            @bunch.group_by{|e| [e.commentable_id, e.commentable_type]}
