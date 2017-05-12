@@ -177,3 +177,6 @@
               rename_column :general_exams, :semester, :semester_id
               change_column :general_exams, :semester_id, :integer
             end
+24. How to select uniq value from active record models?
+                        
+            user.addresses.pluck(:city).uniq # => ['Moscow']
