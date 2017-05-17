@@ -180,3 +180,6 @@
                 resource.update(status: resource.status.archive? ? :published : :archive)
                 redirect_to admin_course_path(resource), notice: I18n.t('active_admin.course.status_updated', status: resource.status_text)
               end
+16. Как сделать перевод для enum в актив админ?
+       
+            Добавить к полю текст column :current_lesson_status_text
