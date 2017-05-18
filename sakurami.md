@@ -54,3 +54,6 @@ password
         t(:'best_in_place.yes', default: 'Yes')
         t(:'best_in_place.no', default: 'No')
             
+10. 
+        # about check box
+        https://github.com/collectiveidea/awesome_nested_set/wiki/Awesome-nested-set-cheat-sheet
