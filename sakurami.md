@@ -41,3 +41,16 @@ password
                 
             return '' unless lesson.next.present?
                 Course.last.user_courses.where.not(current_lesson_status: 'done')
+8.  Best in place checkbox 
+           
+           column :status do |service|
+                      # best_in_place service, :status, as: :select, url: [:admin, service], collection: ['true', 'false']
+                      best_in_place service, :status, as: :checkbox, url: [:admin, service], collection: {false: raw("&#x2610;"), true: raw("&#x2611;")}
+                      best_in_place service, :status, as: :checkbox, url: [:admin, service], collection: {false: 'Подключена', true: 'Отключена'} 
+
+            end
+9.  Translation 
+        
+        t(:'best_in_place.yes', default: 'Yes')
+        t(:'best_in_place.no', default: 'No')
+            
