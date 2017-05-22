@@ -5,6 +5,10 @@
 2. How you can run R console?
     
         just write r in console
+3. How to install addition packet to R?
+        
+        run r in console, then type 
+        install.packages('stringr')
 3. How you can use R with ruby?
    
         RinRuby
