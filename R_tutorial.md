@@ -20,4 +20,6 @@
 4. Как включить установленный пакет?
         
         library(ggplot2)
-        
+5. Ссылку на сегментированную регресиию
+
+        https://climateecology.wordpress.com/2012/08/19/r-for-ecologists-putting-together-a-piecewise-regression/
