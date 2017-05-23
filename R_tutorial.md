@@ -17,4 +17,7 @@
    
         RinRuby
         https://quickleft.com/blog/running-r-script-ruby-rails-app/
+4. Как включить установленный пакет?
+        
+        library(ggplot2)
         
