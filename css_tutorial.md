@@ -85,3 +85,6 @@
 14. How to add spinner on center?
         
         <span id="searching_spinner_center" style="position: absolute;display: block;top: 50%;left: 50%;"></span>
+15. How to set bacground images?
+        
+        background: url('/assets/ico-location.png') no-repeat left center;
