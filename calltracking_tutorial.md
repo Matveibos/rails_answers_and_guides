@@ -38,3 +38,4 @@
 
 5. voximplant.com что-то похожее на аналог е
 6. Ещё один аналог https://github.com/Nexmo/nexmo-ruby
+7. https://github.com/sipuni/static-calltracking
