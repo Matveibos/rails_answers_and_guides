@@ -110,3 +110,8 @@ https://habrahabr.ru/post/319472/
             if (array === undefined || array.length == 0) {
                 // empty
             }
+18. How to laod file after load all js?
+            
+            $(document).on('turbolinks:load', function() {
+            
+            });
