@@ -70,3 +70,31 @@ password
 13. Geocoder
 
         http://www.rubygeocoder.com/
+14.  Old fragment
+
+                    - @main_salon.salon_services.each do |salon_service|
+                      - if salon_service.service.root?
+                        li
+                          a.toggle href="#"
+                            = salon_service.service&.name
+                          ul.inner
+                            - @main_salon.salon_services.where(status: true).each do |salon_service_2|
+                              - if salon_service_2.service.root == salon_service.service &&  salon_service_2.service.leaf?
+                                li
+                                  p.left
+                                    = salon_service_2.service.self_and_ancestors.pluck(:name)[1..-1].join('-')
+                                  p.right
+                                    | £
+                                    = salon_service_2.price 
+                            li
+                              p.left Ladies cut
+                              p.right £20
+                            li
+                              p.left Ladies cut
+                              p.right £20
+                            li
+                              p.left Ladies cut
+                              p.right £20
+                            li
+                              p.left Ladies cut
+                              p.right £20 
