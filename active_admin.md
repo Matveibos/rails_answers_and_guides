@@ -200,3 +200,7 @@
           end
           f.actions
         end
+18. How you can create custom translation for f.inputs?
+            
+            # just use label
+             w_time.input :mon_fri, label: I18n.t('labels.mon_fri_label')
