@@ -184,6 +184,9 @@
        
             Добавить к полю текст column :current_lesson_status_text
 17. How you can add json field to active admin?
+        
+        # what tipe of data you have to use 
+            jsonb
       
         permit_params :name, {:links => [:facebook, :twitter]}
 
