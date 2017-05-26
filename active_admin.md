@@ -183,3 +183,17 @@
 16. Как сделать перевод для enum в актив админ?
        
             Добавить к полю текст column :current_lesson_status_text
+17. How you can add json field to active admin?
+      
+        permit_params :name, {:links => [:facebook, :twitter]}
+
+        form do |f|
+          f.inputs "Person Details" do
+            f.input :name
+          end
+          f.inputs :name => "Links", :for => :links do |g|
+            g.input :facebook, :input_html => { :value => "#{person.links['facebook']}" }
+            g.input :twitter, :input_html => { :value => "#{person.links['twitter']}" }
+          end
+          f.actions
+        end
