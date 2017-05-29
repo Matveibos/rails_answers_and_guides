@@ -87,4 +87,6 @@
         <span id="searching_spinner_center" style="position: absolute;display: block;top: 50%;left: 50%;"></span>
 15. How to set bacground images?
         
+        # config/environments/production.rb
+            config.assets.compile = true
         background: url('/assets/ico-location.png') no-repeat left center;
