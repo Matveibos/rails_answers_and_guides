@@ -98,3 +98,6 @@ password
                             li
                               p.left Ladies cut
                               p.right £20 
+15. Json b field
+        
+        https://stackoverflow.com/questions/29526787/is-it-possible-to-show-a-form-with-fields-for-the-jsonb-properties
