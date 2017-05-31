@@ -50,3 +50,10 @@
                       end
                     end
                     
+5. Hot to use json field with object that doesn't support json field?
+          
+          # add serialization          
+          class Temp < ActiveRecord::Base
+            serialize :json_data, JSON
+          end
+          # add text field inside migration 
