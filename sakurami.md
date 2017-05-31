@@ -101,3 +101,6 @@ password
 15. Json b field
         
         https://stackoverflow.com/questions/29526787/is-it-possible-to-show-a-form-with-fields-for-the-jsonb-properties
+16. Example of brief field
+
+                Brief.data = { introduction: [{ type: 'input', label: 'name'}, {type: 'input', label: 'company name'}, { type: 'input', label: 'email'}] }
