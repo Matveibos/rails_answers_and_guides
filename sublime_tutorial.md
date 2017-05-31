@@ -30,7 +30,7 @@
 5. How you can set 2 spcases instead tab in Ruby?
           
           1. open a rb file
-          2. go to Preferences -> Settings -> Syntax Specific
+          2. Sublime Text -> Preferences -> Settings -> Syntax Specific
           3. This should open a settings window named Ruby.sublime_settings
           Save these settings:
 
