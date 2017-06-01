@@ -23,6 +23,6 @@
             # and create link
       
              <%= link_to 'show as pdf', submitted_brief_path(brief, format: :pdf) %>
- 2. Tutorial about creation pdf from vebsite page
+ 2. Tutorial about creation pdf from vebsite page and how to create this to mailer
  
             http://dchua.com/2014/10/30/generate-pdfs-with-html-templates-in-rails/
