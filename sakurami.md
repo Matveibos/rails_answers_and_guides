@@ -111,3 +111,4 @@ password
           <%= create_real_field('input', f, 'email') %>
           <%= f.button :submit %>
         <% end %>
+        params.require(:submitted_brief).permit(:brief_type, :email, data: [:name, :email, :company])
