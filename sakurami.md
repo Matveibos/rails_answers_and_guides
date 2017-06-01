@@ -104,3 +104,10 @@ password
 16. Example of brief field
 
                 Brief.data = { introduction: [{ type: 'input', label: 'name'}, {type: 'input', label: 'company name'}, { type: 'input', label: 'email'}] }
+17. Example of field with helpers
+        
+        <%= simple_form_for @submitted_brief do |f| %>
+          <%= create_real_field('input', f, 'data') %>
+          <%= create_real_field('input', f, 'email') %>
+          <%= f.button :submit %>
+        <% end %>
