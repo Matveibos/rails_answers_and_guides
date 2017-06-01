@@ -112,3 +112,13 @@ password
           <%= f.button :submit %>
         <% end %>
         params.require(:submitted_brief).permit(:brief_type, :email, data: [:name, :email, :company])
+18 - 
+
+        <%= simple_form_for @submitted_brief do |f| %>
+          <%= f.simple_fields_for :data do |data_f| %>
+            <% @submitted_brief.data.each do |a| %>
+              <%= data_f.input a["name"].to_sym %>   
+            <% end %>       
+          <% end %>
+          <%= f.button :submit %>
+        <% end %>
