@@ -12,3 +12,9 @@
               <%= f.input :options, as: :check_boxes, collection: [['Day 1','Day 1'], ['Day 2', 'Day 2']] %>
               <%= f.button :submit %>
             <% end %>
+3. How to add radio_buttons to simple form?
+            
+            <%= simple_form_for @temp do |f| %>
+              <%= f.input :options, as: :radio_buttons, collection: [['1','Day 222'], ['2', 'Day 333']] %>
+              <%= f.button :submit %>
+            <% end %>
