@@ -20,5 +20,6 @@
           end
         end
       # inside views create show.html.erb and show.pdf.erb
+      # and create link
       
-      
+      <%= link_to 'show as pdf', submitted_brief_path(brief, format: :pdf) %>
