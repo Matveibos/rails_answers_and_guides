@@ -125,3 +125,6 @@ password
 19. Added browser validation to simple form
         
         https://stackoverflow.com/questions/31820352/at-forms-required-true-is-not-working
+20. Try to make own custom validation 
+
+        https://stackoverflow.com/questions/38477912/rails-custom-validation-for-postgres-json-fields
