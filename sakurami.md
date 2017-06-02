@@ -122,3 +122,6 @@ password
           <% end %>
           <%= f.button :submit %>
         <% end %>
+19. Added browser validation to simple form
+        
+        https://stackoverflow.com/questions/31820352/at-forms-required-true-is-not-working
