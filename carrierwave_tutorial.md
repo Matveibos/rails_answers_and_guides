@@ -15,8 +15,11 @@
           version :thumb do
             process :resize_to_fit => [50, 50]
           end
+          
+        # add to your model with image field
+          mount_uploader :image, ImageUploader
+        
         # inside simple form 
-  
         <%=f.input :image, :label => 'Your avatar please' %>
           
         # inside view
