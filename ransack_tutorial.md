@@ -20,3 +20,7 @@
 3. What type you have to use for not exact value?
       
        <%= f.search_field :description_cont %>
+4. How you can use ransack with enumerize?
+      
+      
+        <%= f.select :genre_eq, Book.genre.values, include_blank: true %>
