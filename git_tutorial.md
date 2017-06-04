@@ -36,3 +36,6 @@ http://gitreal.codeschool.com/
       
        git add .
        git commit --amend
+10. How to remove something from git?
+      
+        git rm -rf public/uploads
