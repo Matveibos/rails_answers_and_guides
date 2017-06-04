@@ -1,4 +1,6 @@
 1. How to create ordinary simple form?
+        
+        rails generate simple_form:install
       
         <%= simple_form_for @user do |f| %>
           <%= f.input :username %>
