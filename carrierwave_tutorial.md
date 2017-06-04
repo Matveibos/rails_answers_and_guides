@@ -1,6 +1,29 @@
 0. tutorial about carrier wave
     
           https://code.tutsplus.com/tutorials/rails-image-upload-using-carrierwave-in-a-rails-app--cms-25183
+1. How you can add image file field?
+       
+        gem 'carrierwave', '~> 0.10.0'
+        gem 'mini_magick', '~> 4.3'
+        
+        rails g migration AddImageColumnToBooks image:string
+        
+        rails generate uploader Image
+        
+        # uncomment
+          include CarrierWave::MiniMagick
+          version :thumb do
+            process :resize_to_fit => [50, 50]
+          end
+        # inside simple form 
+  
+        <%=f.input :image, :label => 'Your avatar please' %>
+          
+        # inside view
+        <% if book.image&.thumb&.url != nil %>
+          <td><%= image_tag book.image&.thumb&.url %></td> 
+        <% end %>
+        
 1. How you can generate carrier wave folder?
         
         rails generate uploader Image
