@@ -20,3 +20,6 @@
               <%= f.input :options, as: :radio_buttons, collection: [['1','Day 222'], ['2', 'Day 333']] %>
               <%= f.button :submit %>
             <% end %>
+4. How to add boostrap class to simple form elem?
+            
+            <%= f.submit class: 'btn btn-default'%>
