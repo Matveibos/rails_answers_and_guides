@@ -23,3 +23,6 @@
 4. How to add boostrap class to simple form elem?
             
             <%= f.submit class: 'btn btn-default'%>
+5. How to add hidden field?
+                
+             <%= f.hidden_field :brief_type, value: @submitted_brief.brief_type %>
