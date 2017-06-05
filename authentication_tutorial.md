@@ -15,6 +15,9 @@
 		1. https://vk.com/dev
 		2. choose my_app -> create new app -> web-site
 		3. http://localhost:3000/users/auth/vkontakte/callback
+		4. Take id - приложения и защищенный ключ
+		  # config/initializers/devise.rb
+		  config.omniauth :vkontakte, "6062467", "F4ct8LABSyEO3fpPbFWm"
 	  
 2. Where you have to insert KEY in omniath.rb ?
           
