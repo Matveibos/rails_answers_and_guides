@@ -90,3 +90,10 @@
         # config/environments/production.rb
             config.assets.compile = true
         background: url('/assets/ico-location.png') no-repeat left center;
+16. How to turn of a tag default color?
+        
+            a href="" style="text-decoration: none; color: inherit;"
+17. How you can create link to phone?
+            
+            a href="callto:#{@main_salon.phone}"
+                = @main_salon.phone
