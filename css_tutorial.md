@@ -97,3 +97,6 @@
             
             a href="callto:#{@main_salon.phone}"
                 = @main_salon.phone
+18. Tutorial about how you can add social button linnks to the right side of page?
+        
+        http://www.cssportal.com/blog/css-social-media-sidebar/
