@@ -24,3 +24,9 @@
       
       
         <%= f.select :genre_eq, Book.genre.values, include_blank: true %>
+5. How to use ransac with globolize?
+        
+        # name, company just a field from model
+        translations_name_cont
+        translations_company_cont
+        translations_name_or_translations_company_cont        
