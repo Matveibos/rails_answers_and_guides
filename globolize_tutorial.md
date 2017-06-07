@@ -36,3 +36,32 @@
 
         I18n.locale = :he
         post.title # => גלובאלייז2 שולט!
+2. How you can add name_en, name_ru prefix for your db?
+        
+        # 0. include gem
+            gem 'globalize-accessors'
+        
+        # 1. first create file globolize_extension.rb and add there this module
+            module TranslatesWithAccessors
+
+              extend ActiveSupport::Concern
+
+              module ClassMethods
+
+                def translates(*params)
+                  options = params.extract_options!
+                  options.reverse_merge!(:globalize_accessors => true)
+                  accessors = options.delete(:globalize_accessors)
+                  super
+                  globalize_accessors if accessors
+                end
+
+              end
+            end
+
+            # include the extension
+            ActiveRecord::Base.send(:include, TranslatesWithAccessors)
+            
+         # 2. Now you can use name_en, name_ru, name_en = , name_ru =
+        
+        
