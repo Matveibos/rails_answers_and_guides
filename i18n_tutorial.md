@@ -18,3 +18,7 @@
             parsed_locale = request.host.split('.').last
             I18n.available_locales.map(&:to_s).include?(parsed_locale) ? parsed_locale : nil
           end
+3. How to set all available locale?
+        
+        # in config/application
+        I18n.available_locales = [:fr, :de, :es, :en, :ru]
