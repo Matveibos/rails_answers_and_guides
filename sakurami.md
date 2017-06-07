@@ -128,3 +128,79 @@ password
 20. Try to make own custom validation 
 
         https://stackoverflow.com/questions/38477912/rails-custom-validation-for-postgres-json-fields
+21. Temo json file
+{
+  "main_data"=>[
+    {
+      "data"=>[
+        
+      ],
+      "data_label"=>"INTRODUCTION, CONTACT INFORMATION"
+    },
+    {
+      "data"=>[
+        {
+          "name"=>"site_purpose",
+          "type"=>"check_box",
+          "label"=>"Select site purpose",
+          "collection"=>[
+            [
+              "NEW BUSINESS, PRODUCT OR  SERVICE MARKET LAUNCH ",
+              "NEW BUSINESS, PRODUCT OR  SERVICE MARKET LAUNCH "
+            ],
+            [
+              "IMPROVEMENT, NEW VERSION, UPDATE, ALTER THE CURRENT VERSION OF DESIGN",
+              "IMPROVEMENT, NEW VERSION, UPDATE, ALTER THE CURRENT VERSION OF DESIGN"
+            ],
+            [
+              "OTHER, WRITE YOUR OWN ANSWER",
+              "OTHER, WRITE YOUR OWN ANSWER"
+            ]
+          ]
+        }
+      ],
+      "data_label"=>"WHAT IS THE PURPOSE OF WEBSITE DEVELOPMENT, WHAT GOAL THE WEBSITE SHOULD HELP TO ACHIEVE? "
+    },
+    {
+      "data"=>[
+        {
+          "name"=>"site_type",
+          "type"=>"radio_button",
+          "label"=>"Select site type",
+          "collection"=>[
+            [
+              "CORPORATE WEBSITE ",
+              "CORPORATE WEBSITE "
+            ],
+            [
+              "ОNLINE STORE",
+              "ОNLINE STORE"
+            ],
+            [
+              "E-COMMERCE WEBSITE",
+              "E-COMMERCE WEBSITE"
+            ],
+            [
+              "PROMO WEBSITE",
+              "PROMO WEBSITE"
+            ],
+            [
+              "WEB PORTAL",
+              "WEB PORTAL"
+            ],
+            [
+              "WEB SERVICE",
+              "WEB SERVICE"
+            ],
+            [
+              "ANOTHER TYPE OF SITE OR MIXED TYPE",
+              "ANOTHER TYPE OF SITE OR MIXED TYPE"
+            ]
+          ]
+        }
+      ],
+      "data_label"=>"SITE TYPE"
+    }
+  ],
+  "main_label"=>"WHAT IS A BRIEF? "
+}
