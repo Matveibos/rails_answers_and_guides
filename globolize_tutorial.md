@@ -63,5 +63,8 @@
             ActiveRecord::Base.send(:include, TranslatesWithAccessors)
             
          # 2. Now you can use name_en, name_ru, name_en = , name_ru =
-        
+ 
+ 3. How you can accept permitted params for globolize ancesstors?
+            
+            params.require(:product).permit(*Product.globalize_attribute_names)
         
