@@ -214,3 +214,8 @@
 5. How to create glyphicons close button with bigger size?
         
         span.glyphicon.glyphicon-remove.fa-2x.pull-right ng-click="cancel()"
+## ----------------- Bootstrap mobile ------------------------
+1. How to include mobile view for bootstap?
+        
+        # just need add meta tag
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
