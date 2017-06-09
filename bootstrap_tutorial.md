@@ -255,3 +255,8 @@
 
         /* Large */
         @media(min-width:1200px){}
+5. How you can make a link on on one page?
+        
+        a href="#monuments-list" 
+          | link
+        div id="monuments-list"
