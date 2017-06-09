@@ -241,6 +241,11 @@
                 .visible-sm-block
                 .visible-md-block
                 .visible-lg-block
+        # don't want show
+                .hidden-xs
+                .hidden-sm
+                .hidden-md
+                .hidden-lg
         
 4. Bootstrap3 sizes width and height?
         
