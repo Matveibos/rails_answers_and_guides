@@ -260,3 +260,6 @@
         a href="#monuments-list" 
           | link
         div id="monuments-list"
+        
+       # if it does't work you can add
+        a onclick="location.hash=''; location.hash='#map';"
