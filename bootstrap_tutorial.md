@@ -234,4 +234,11 @@
         }
         # and add both to your tag
           .pull-lg-right.pull-sm-left
+3. How you can show elements only for mobile or tabel version?
+        
+        # use this class with element which you want show
+                .visible-xs-block
+                .visible-sm-block
+                .visible-md-block
+                .visible-lg-block
         
