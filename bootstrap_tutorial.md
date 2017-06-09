@@ -242,3 +242,16 @@
                 .visible-md-block
                 .visible-lg-block
         
+4. Bootstrap3 sizes width and height?
+        
+        /* Extra Small */
+        @media(max-width:767px){}
+
+        /* Small */
+        @media(min-width:768px) and (max-width:991px){}
+
+        /* Medium */
+        @media(min-width:992px) and (max-width:1199px){}
+
+        /* Large */
+        @media(min-width:1200px){}
