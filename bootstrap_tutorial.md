@@ -219,3 +219,19 @@
         
         # just need add meta tag
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+2. How you can use pull-right or pull-left only for mobile version?
+        
+        # you just need create new own class pull-lg-right, pull-sm-left
+        @media (max-width: 500px) {
+          .pull-sm-left {
+            float: left;
+          }
+        }
+        @media (min-width: 501px) {
+          .pull-lg-right {
+            float: right;
+          }
+        }
+        # and add both to your tag
+          .pull-lg-right.pull-sm-left
+        
