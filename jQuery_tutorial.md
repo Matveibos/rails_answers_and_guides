@@ -53,3 +53,8 @@
           
            $(".mydiv").show( 1000 );
            $(".mydiv").hide( 1000 );
+15. How you can run js code only after doom loading full?
+          
+           $(window).load(function () {
+
+           });
