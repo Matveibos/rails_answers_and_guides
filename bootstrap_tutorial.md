@@ -268,3 +268,9 @@
         
        # if it does't work you can add
         a onclick="location.hash=''; location.hash='#map';"
+6. How you can turn of ActiveAdmin style?
+        
+        # remove require_tree from application.css
+                *= require_tree .
+        # and add own style
+                *= require book
