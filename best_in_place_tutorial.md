@@ -13,7 +13,7 @@
                 jQuery(".best_in_place").best_in_place();
               });
    
-2. How to add best_in_place to actove admin?
+2. How to add best_in_place to active admin?
 
               # add best_in_place to active_admin.js.coffee
 
@@ -27,3 +27,10 @@
                     best_in_place salon, :price, as: :input
                   end
                 end
+3. best_in_place with enumerize select in activeadmin
+            
+              index do
+                column :genre do |book|
+                  best_in_place book, :genre, as: :select, collection: Book.genre.values.map { |genre| [genre, genre] }
+                end
+              end
