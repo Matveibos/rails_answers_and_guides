@@ -1,17 +1,17 @@
 1. How you can include best_in_place?
       
-      # gem list
-      gem 'best_in_place'
-      
-      # application.js
-      
-        //= require jquery
-        //= require best_in_place
-        
-        $(document).ready(function() {
-          /* Activating Best In Place */
-          jQuery(".best_in_place").best_in_place();
-        });
+            # gem list
+            gem 'best_in_place'
+
+            # application.js
+
+              //= require jquery
+              //= require best_in_place
+
+              $(document).ready(function() {
+                /* Activating Best In Place */
+                jQuery(".best_in_place").best_in_place();
+              });
    
 2. How to add best_in_place to actove admin?
 
