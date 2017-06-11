@@ -14,15 +14,16 @@
         });
    
 2. How to add best_in_place to actove admin?
-        # add best_in_place to active_admin.js.coffee
-        
-          #= require best_in_place
-          $(document).ready ->
-            jQuery(".best_in_place").best_in_place()
-      
-        # salon page
-          index do
-            column :price do |salon|
-              best_in_place salon, :price, as: :input, url: [:admin, salon]
-            end
-          end
+
+              # add best_in_place to active_admin.js.coffee
+
+                #= require best_in_place
+                $(document).ready ->
+                  jQuery(".best_in_place").best_in_place()
+
+              # salon page
+                index do
+                  column :price do |salon|
+                    best_in_place salon, :price, as: :input
+                  end
+                end
