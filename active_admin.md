@@ -321,3 +321,12 @@
             
             # just use label
              w_time.input :mon_fri, label: I18n.t('labels.mon_fri_label')
+19. How to show image in activeadmin?
+	  
+		  show do
+		    attributes_table do
+		      row :image do |article|
+			image_tag(article&.image&.file&.url(:thumb)) if article&.image&.file&.url(:thumb)
+		      end
+		    end
+		  end
