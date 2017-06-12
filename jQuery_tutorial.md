@@ -58,3 +58,8 @@
            $(window).load(function () {
 
            });
+16. How you can run code only after image loading?
+         
+           $( "img" ).load(function() {
+
+           });
