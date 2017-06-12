@@ -39,3 +39,7 @@ http://gitreal.codeschool.com/
 10. How to remove something from git?
       
         git rm -rf public/uploads
+11. How you can download branch from github?
+        
+        git fetch --all
+        git checkout myBranch
