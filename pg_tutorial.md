@@ -150,3 +150,25 @@
 6. Unistal postgres?
 
              https://gist.github.com/mrcasals/2788529
+7. Working database for pg?
+            
+            default: &default
+              adapter: postgresql
+              encoding: unicode
+              username: postgres
+              host: localhost
+              # For details on connection pooling, see rails configuration guide
+              # http://guides.rubyonrails.org/configuring.html#database-pooling
+              pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+            development:
+              <<: *default
+              database: sakurami_development
+
+            test:
+              <<: *default
+              database: sakurami_test
+
+            production:
+              <<: *default
+              database: sakurami_production
