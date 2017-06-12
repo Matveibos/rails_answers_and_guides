@@ -63,3 +63,18 @@
            $( "img" ).load(function() {
 
            });
+17. Another way to run code only all image after loading with rails?
+           
+           $(document).ready(function(){
+               var allimgs = $("img");
+               var count = allimgs.length;
+
+                $("img").one('load', function() {
+                     count--;
+                     if(count == 0) {
+                        alert("all images are loaded");
+                     }
+                }).each(function() {
+                     if(this.complete) $(this).load();
+                });
+            });
