@@ -330,3 +330,30 @@
 		      end
 		    end
 		  end
+20. How to add tab for activeadmin?
+		
+		form do |f|
+		    tabs do
+		      tab I18n.t('users.form.information') do
+			f.inputs do
+			  f.input :full_name
+			  f.input :email
+			  f.input :position
+			  # f.input :phone_number
+			  f.input :company
+			end
+		      end
+		      tab I18n.t('users.form.permisions') do
+			f.inputs do
+			  User::PERMISIONS.each do |permision|
+			    f.input permision, as: :radio,
+				    collection: [[I18n.t('users.form.access_level.read'),'read'],
+						 [I18n.t('users.form.access_level.edit'),'manage'],
+						 [I18n.t('users.form.access_level.none'),'none']
+				    ]
+			  end
+			end
+		      end
+		    end
+		    f.actions
+		  end
