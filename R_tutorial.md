@@ -23,3 +23,6 @@
 5. Ссылку на сегментированную регресиию
 
         https://climateecology.wordpress.com/2012/08/19/r-for-ecologists-putting-together-a-piecewise-regression/
+6. Многофазная регресиия
+    
+        https://www.r-bloggers.com/estimating-continuous-piecewise-linear-regression/
