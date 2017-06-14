@@ -68,3 +68,40 @@
             
             params.require(:product).permit(*Product.globalize_attribute_names)
         
+ 4. How you can unclude active-admin globolize?
+            
+            # include gem https://github.com/fabn/activeadmin-globalize
+                gem 'globalize', git: 'https://github.com/globalize/globalize'
+                gem 'activemodel-serializers-xml'
+                gem 'activeadmin-globalize', '~> 1.0.0.pre', github: 'fabn/activeadmin-globalize', branch: 'develop'
+            # inside model
+                translates :name
+                active_admin_translates :name
+            # inside active admin
+                permit_params :name, translations_attributes: [:id, :locale, :name, :_destroy]
+                  form do |f|
+                    f.inputs name: I18n.t('translated_fields')  do
+                      f.translated_inputs 'ignored title', switch_locale: false do |t|
+                        t.input :name, label: I18n.t('translated_field.name')
+                      end
+                    end
+                    f.actions
+                  end
+            # generati migration Add To existion columns
+            
+            class AddTranslationToService < ActiveRecord::Migration[5.0]
+              def self.up
+                Service.create_translation_table!({
+                  :name => :string
+                }, {
+                  :migrate_data => true,
+                  :remove_source_columns => true
+                })
+              end
+
+              def self.down
+                Service.drop_translation_table! :migrate_data => true
+              end
+            end
+                
+            
