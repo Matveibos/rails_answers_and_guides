@@ -833,3 +833,11 @@ https://www.tutorialspoint.com/coffeescript/switch_statement_in_coffeescript.htm
             ng-model="user.favMovieStub"
             ng-options="movie as movie.name for movie in movies track by movie.id">
         </select>
+
+
+
+Clastering
+
+
+          http://plnkr.co/edit/VmBaz8Qm4GgjCbJR6vAB?p=preview
+          http://tombatossals.github.io/angular-leaflet-directive/examples/0000-viewer.html#/markers/clustering-example
