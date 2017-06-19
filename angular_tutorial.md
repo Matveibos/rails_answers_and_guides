@@ -550,3 +550,9 @@
 		    </div>
 		  </div>
 		</div>
+37. What you have to do if data does't loading?	
+		
+		# set timeout
+		$timeout(function(){
+		    $state.go('publishers.list', {}, { reload: true });
+		},200);
