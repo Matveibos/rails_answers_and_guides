@@ -357,3 +357,15 @@
 		    end
 		    f.actions
 		  end
+21. How to turn of password field on edit page if they are empty?
+	
+		  # user model
+		  controller do
+		    def update
+		      if params[:user][:password].blank? && params[:user][:password_confirmation].blank?
+			params[:user].delete("password")
+			params[:user].delete("password_confirmation")
+		      end
+		      super
+		    end
+		  end
