@@ -841,3 +841,18 @@ Clastering
 
           http://plnkr.co/edit/VmBaz8Qm4GgjCbJR6vAB?p=preview
           http://tombatossals.github.io/angular-leaflet-directive/examples/0000-viewer.html#/markers/clustering-example
+14. Toggle buttons
+       
+          .btn-group.pull-left
+              button.btn.btn-danger.btn-xs.complain-btn ng-click="complaintPopover.open()" popover-is-open="complaintPopover.isOpen" popover-trigger="'outsideClick'" type="button" uib-popover-template="complaintPopover.templateUrl"
+                | {{ 'TO_COMPLAIN' | translate }}
+              button.btn.btn-primary.btn-xs.dropdown-toggle.addition-btn data-toggle="dropdown" type="button" 
+                | {{ 'ADDITIONALLY' | translate }} 
+                span.caret
+              ul.dropdown-menu role="menu" 
+                li
+                  a href="#" ng-click="openPopUpMap(cemetary.id)"
+                    | {{ 'SHOW_OBJECT_ON_MAP' | translate }}
+                li
+                  a href="#" ng-click="showMonumentsFromCemetary(cemetary)"
+                    | {{ 'SHOW_MONUMENTS' | translate }} 
