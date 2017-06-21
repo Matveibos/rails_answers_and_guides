@@ -69,3 +69,9 @@
               $translateProvider.useStaticFilesLoader
                 prefix: '/assets/translations/locale-'
                 suffix: '.json'
+9. Get current language 
+      
+       # add $translate to controller and write
+            var activeLanguage = $translate.use() ||
+                $translate.storage().get($translate.storageKey()) ||
+                $translate.preferredLanguage()
