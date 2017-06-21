@@ -51,3 +51,6 @@
 8. What is the name of package which can higlighth trailking space?
           
           TrailingSpace
+9. How you can select all equla value?
+                    
+          ctrl + cmd + G
