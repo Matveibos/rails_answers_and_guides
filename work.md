@@ -856,3 +856,10 @@ Clastering
                 li
                   a href="#" ng-click="showMonumentsFromCemetary(cemetary)"
                     | {{ 'SHOW_MONUMENTS' | translate }} 
+15. Transalte to russian country?
+          
+              countries = [{"name":"Afghanistan","alpha2":"AF","alpha3":"AFG","numeric":"004"}]
+              countries.map{|hash| hash[:name] = I18n.t(hash[:alpha2], scope: :countries); hash}
+              File.open('my_file.txt', 'w') { |file| file.write(countries) }
+     
+     
