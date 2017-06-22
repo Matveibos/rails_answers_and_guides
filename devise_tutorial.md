@@ -35,3 +35,7 @@
 	   
 	   rails generate devise:views
   
+5. How you can find user by reset passsword token?
+	
+	    # just add
+	    User.with_reset_password_token('8VpyktNLAg-2NskT_V32')
