@@ -78,3 +78,29 @@
                      if(this.complete) $(this).load();
                 });
             });
+18. How to add jquery validation to rails?
+         
+          # https://github.com/jquery-validation/jquery-validation 
+          # https://github.com/meowsus/jquery-validation-rails
+          
+          # add to view
+          <script type="text/javascript">
+            $(document).ready(function () {
+              $("#submitted_brief").validate({
+                rules: {
+                  "submitted_brief[name]": {required: true},
+                  "submitted_brief[position]": {required: true},
+                  "submitted_brief[phone]": {required: true},
+                  "submitted_brief[email]": {required: true}
+                },
+                messages: {
+                  "submitted_brief[name]": "Please fill in the field",
+                  "submitted_brief[position]": "Please fill in the field",
+                  "submitted_brief[phone]": "Please fill in the field",
+                  "submitted_brief[email]": "Please fill in the field"
+                },
+                errorClass: 'error-message error',
+                errorElement: 'div'
+              });
+            });
+          </script>
