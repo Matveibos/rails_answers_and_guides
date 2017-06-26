@@ -79,6 +79,8 @@
                 });
             });
 18. How to add jquery validation to rails?
+          
+          # habr tutorial https://habrahabr.ru/sandbox/19875/
          
           # https://github.com/jquery-validation/jquery-validation 
           # https://github.com/meowsus/jquery-validation-rails
