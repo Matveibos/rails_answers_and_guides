@@ -63,6 +63,10 @@
           Change it to
 
                background: image-url("image.jpg")
+               
+          For bacground-image use, change css to css.scss
+          
+             background-image: url(image_path('rsz_layers.png'));
  8. How you can install sidekiq on heroku?
           
           # In the console:
