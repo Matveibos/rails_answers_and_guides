@@ -119,3 +119,7 @@
 17. How to show all gems on heroku?
             
             heroku run gem list
+18. How to run local production mode?
+            
+            rake assets:precompile RAILS_ENV=production
+            rails s -e production
