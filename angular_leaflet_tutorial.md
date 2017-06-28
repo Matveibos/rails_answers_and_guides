@@ -53,3 +53,9 @@
             leaflet lf-center="center" markers="markers" layers="layers" width="100%" height="480px"
         # in markers add layer
                     coordinates.push({lat: 2, lng: 3, message: 'name', layer: 'monument'})
+
+5. How you can hide layer control?
+       
+      .leaflet-control-layers {
+        visibility: hidden !important;
+      }
