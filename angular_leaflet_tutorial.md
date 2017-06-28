@@ -56,6 +56,6 @@
 
 5. How you can hide layer control?
        
-      .leaflet-control-layers {
-        visibility: hidden !important;
-      }
+            .leaflet-control-layers {
+              visibility: hidden !important;
+            }
