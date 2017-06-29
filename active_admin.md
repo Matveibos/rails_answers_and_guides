@@ -369,3 +369,8 @@
 		      super
 		    end
 		  end
+22. How to add has_one model inside active admin?
+		
+		# see active admin nested resource
+		https://github.com/activeadmin/activeadmin/blob/9c46b14ea0d9b3aaaa3d7520555c9959d06ce7f3/docs/5-forms.md#nested-resources
+		
