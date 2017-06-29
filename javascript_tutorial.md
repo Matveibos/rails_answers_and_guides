@@ -122,3 +122,6 @@ https://habrahabr.ru/post/319472/
                  # you can make interpolation 
                  document.getElementById('image').style.backgroundImage = "url(" + this.src + ")";
 
+2. Link of all pupular tutorila on js?
+
+            http://www.cheat-sheets.org/saved-copy/jsquick.pdf
