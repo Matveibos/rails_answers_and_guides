@@ -115,3 +115,10 @@ https://habrahabr.ru/post/319472/
             $(document).on('turbolinks:load', function() {
             
             });
+# DOM ELEMENTS
+
+1. How to set bacground-image src from object?
+     
+                 # you can make interpolation 
+                 document.getElementById('image').style.backgroundImage = "url(" + this.src + ")";
+
