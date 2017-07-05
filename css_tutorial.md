@@ -100,3 +100,7 @@
 18. Tutorial about how you can add social button linnks to the right side of page?
         
         http://www.cssportal.com/blog/css-social-media-sidebar/
+19. How to start from new line after float: right?
+        
+        # add both: clear
+        <br style="clear:both" />
