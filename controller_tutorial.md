@@ -11,3 +11,12 @@
             redirect_to domain_parts[1..-1].join('.') + request.fullpath, status: 301
           end
         end
+
+3. How you can make redirect if page does't exist?
+      
+        def set_project
+          @project = Project.find(params[:id])
+        rescue ActiveRecord::RecordNotFound
+          flash[:alert] = "The project you were looking for could not be found."
+          redirect_to projects_path
+        end
