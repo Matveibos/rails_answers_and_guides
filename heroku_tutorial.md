@@ -122,4 +122,10 @@
 18. How to run local production mode?
             
             rake assets:precompile RAILS_ENV=production
+            rake db:migrate RAILS_ENV=production
             rails s -e production
+            # if secret.yml not found
+              SECRET_KEY_BASE='rake secret' rails s -e production
+            
+            # config/environments/production.rb (optional)
+              config.serve_static_files = true
