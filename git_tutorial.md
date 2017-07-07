@@ -27,8 +27,10 @@ http://gitreal.codeschool.com/
         git status
 7. How to go back to the previous commit?
         
-        git reset --hard
-        git clean -df
+        # if you already add to something
+          git reset --hard
+        # or
+          git checkout .
 8. How to pull all from master directly?
       
        git pull --rebase origin master
