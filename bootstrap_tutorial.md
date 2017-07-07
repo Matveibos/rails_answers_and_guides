@@ -283,3 +283,12 @@
                 *= require_tree .
         # and add own style
                 *= require book
+
+7. How you can extend ordinary style from bootsrap class?
+           
+           a class="btn btn-success"
+           # they are equal
+           a.new {
+                @extend .btn;
+                @extend .btn-success;
+            }
