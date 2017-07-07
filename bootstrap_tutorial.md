@@ -23,7 +23,16 @@
         //= require bootstrap
         //= require turbolinks
         //= require_tree .
+1. How you can include font-awesome inside rails app?
         
+        gem 'font-awesome-rails'
+        
+        # aplication.css.scss
+          @import "font-awesome";
+          
+        # using font-awesome
+          <%= link_to fa_icon("plus") %>
+                
 1. How you can install bootstap?
 
         got to http://getbootstrap.com/getting-started/ and download bootstrap.zip
