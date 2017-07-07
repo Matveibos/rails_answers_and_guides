@@ -26,3 +26,7 @@
 5. How to add hidden field?
                 
              <%= f.hidden_field :brief_type, value: @submitted_brief.brief_type %>
+
+6. How to create simple form with bootstrap styles?
+        
+        rails g simple_form:install --bootstrap
