@@ -30,3 +30,10 @@
 6. How to create simple form with bootstrap styles?
         
         rails g simple_form:install --bootstrap
+7. How you can show full error insted of short error for simple form?
+        
+          # config/initializers/simple_form_bootstrap.rb
+          config.wrappers :vertical_form, tag: 'div', class: 'form-group', error_class: 'has-error' do |b|
+            # use :full_error instead of :error
+            b.use :full_error, wrap_with: { tag: 'span', class: 'help-block' }
+          end
