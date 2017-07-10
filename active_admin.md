@@ -2,9 +2,10 @@
           
 1. How you can start work with ActiveAdmin?
           
+	  gem 'devise'
           gem 'activeadmin', github: 'activeadmin'
           gem 'inherited_resources', github: 'activeadmin/inherited_resources'
-          gem 'devise'
+          
           
           rails g active_admin:install
           rails db:migrate
