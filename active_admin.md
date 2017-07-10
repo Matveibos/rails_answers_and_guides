@@ -1,19 +1,19 @@
 ## ActiveAdmin
           
 1. How you can start work with ActiveAdmin?
-          
-	  gem 'devise'
-          gem 'activeadmin', github: 'activeadmin'
-          gem 'inherited_resources', github: 'activeadmin/inherited_resources'
-          
-          
-          rails g active_admin:install
-          rails db:migrate
-          rails db:seed
-          
-          http://localhost:3000/admin
-          # Username: admin@example.com
-          # Password: password
+  
+		  gem 'devise'
+		  gem 'activeadmin', github: 'activeadmin'
+		  gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+
+
+		  rails g active_admin:install
+		  rails db:migrate
+		  rails db:seed
+
+		  http://localhost:3000/admin
+		  # Username: admin@example.com
+		  # Password: password
 2. How you can add your model to admin page?
           
           rails generate active_admin:resource Genre
