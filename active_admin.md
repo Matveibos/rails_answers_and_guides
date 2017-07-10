@@ -375,3 +375,11 @@
 		# see active admin nested resource
 		https://github.com/activeadmin/activeadmin/blob/9c46b14ea0d9b3aaaa3d7520555c9959d06ce7f3/docs/5-forms.md#nested-resources
 		
+23. How to add thumb photo for form if photo exist?
+	
+		  form do |f|
+		    f.inputs do
+		      f.input :image,  hint: f.object.image.url.present? ? image_tag(f.object.image.url(:thumb)) : content_tag(:span, 'нет фото')
+		    end
+		    f.actions
+		  end
