@@ -125,3 +125,8 @@ https://habrahabr.ru/post/319472/
 2. Link of all pupular tutorila on js?
 
             http://www.cheat-sheets.org/saved-copy/jsquick.pdf
+3. How to add link link on one some page?
+            
+            h3#monument-edit
+            # add onclick with hash
+            button onclick="location.hash=''; location.hash='#monument-edit';"
