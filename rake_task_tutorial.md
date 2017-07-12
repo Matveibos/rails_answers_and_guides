@@ -1,4 +1,6 @@
 1. How to create task with ActiveModel?
+       
+        # countries.rake
         namespace :countries do
           task :to_alpha => :environment do
             puts 'run my task'
