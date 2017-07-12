@@ -383,3 +383,11 @@
 		    end
 		    f.actions
 		  end
+
+24. How to show validation error for active admin?
+		
+		# add f.semantic_errors *f.object.errors.keys
+		form do |f|
+		  f.semantic_errors *f.object.errors.keys
+		  f.inputs
+		end
