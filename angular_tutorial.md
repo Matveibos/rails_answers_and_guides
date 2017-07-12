@@ -556,3 +556,9 @@
 		$timeout(function(){
 		    $state.go('publishers.list', {}, { reload: true });
 		},200);
+
+38. How you can now if page is loaded?
+
+		div ng-repeat="monument in displayedItems
+	          p ng-if="$last"
+		    | {{ stopSpin() }}
