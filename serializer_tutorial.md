@@ -11,7 +11,7 @@
           end
         end
 
-2. How you can set refereneces for yourself?
+2. How you can set refereneces for yourself? ( nested set )
       
       
             class FamilyTreeSerializer < ActiveModel::Serializer
