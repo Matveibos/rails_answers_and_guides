@@ -10,3 +10,14 @@
             Shop.all
           end
         end
+
+2. How you can set refereneces for yourself?
+      
+      
+            class FamilyTreeSerializer < ActiveModel::Serializer
+              attributes :id, :children
+              def children
+                ActiveModel::Serializer::CollectionSerializer.new(object.children,
+                                                                  serializer: FamilyTreeSerializer)
+              end
+            end 
