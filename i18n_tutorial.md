@@ -22,3 +22,7 @@
         
         # in config/application
         I18n.available_locales = [:fr, :de, :es, :en, :ru]
+  
+4. How to show list of all available locales?
+        
+        I18n.available_locales
