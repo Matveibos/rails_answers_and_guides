@@ -109,3 +109,10 @@
         img:hover {
           box-shadow: 0 0 30px rgba(33,33,33,.5);
         }
+21. How to “crop” a rectangular image into a square with CSS?
+
+        img {
+          object-fit: cover;
+          width:230px;
+          height:230px;
+        }
