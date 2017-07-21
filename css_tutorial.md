@@ -104,3 +104,8 @@
         
         # add both: clear
         <br style="clear:both" />
+20. How to add show on hover?
+
+        img:hover {
+          box-shadow: 0 0 30px rgba(33,33,33,.5);
+        }
