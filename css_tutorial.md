@@ -116,3 +116,6 @@
           width:230px;
           height:230px;
         }
+22. How you can remove horizontal scrooling?
+          
+          overflow-x: hidden;
