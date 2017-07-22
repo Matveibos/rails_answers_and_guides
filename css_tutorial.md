@@ -129,3 +129,6 @@
           input:focus {
              background-color: red;
           }
+25. How you can edit content inside html browser?
+	
+		<div contenteditable="">hello</div>
