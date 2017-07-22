@@ -123,4 +123,9 @@
         
         input:required:invalid {
 	        background: red;
-	    }
+	}
+24. How you can change input on focus?
+          
+          input:focus {
+             background-color: red;
+          }
