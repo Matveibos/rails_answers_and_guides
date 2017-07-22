@@ -20,6 +20,4 @@
           
           <input pattern=".{3,}"   required title="3 characters minimum">
           <input pattern=".{5,10}" required title="5 to 10 characters">
-5. How you can remove horizontal scrooling?
-          
-          overflow-x: hidden;
+
