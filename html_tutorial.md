@@ -33,3 +33,9 @@
           
           <label for="my_name"> Label </label>
           <input id="my_name"> 
+8. How you can create select drop down for form?
+          
+          <select>
+                    <option> 1 </option>
+                    <option> 2 </option>
+          </select>
