@@ -39,3 +39,7 @@
                     <option> 1 </option>
                     <option> 2 </option>
           </select>
+          
+9. What tag you have to use for big text data inside input?
+          
+          <textarea> </textarea>
