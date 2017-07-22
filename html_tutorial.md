@@ -24,3 +24,8 @@
 5. How can you check if browser support elemets?
           
           https://caniuse.com/
+6. How you can add border around form?
+          
+          <fieldset>
+                    <legend> I'm legend </legend>
+          </fieldset>
