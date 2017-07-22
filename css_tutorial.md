@@ -119,3 +119,8 @@
 22. How you can remove horizontal scrooling?
           
           overflow-x: hidden;
+23. How you can highlight input field only if field invalid?
+        
+        input:required:invalid {
+	        background: red;
+	    }
