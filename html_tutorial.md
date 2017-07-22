@@ -29,3 +29,7 @@
           <fieldset>
                     <legend> I'm legend </legend>
           </fieldset>
+7. How you can create label with input for form?
+          
+          <label for="my_name"> Label </label>
+          <input id="my_name"> 
