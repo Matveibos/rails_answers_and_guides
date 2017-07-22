@@ -43,3 +43,8 @@
 9. What tag you have to use for big text data inside input?
           
           <textarea> </textarea>
+10. How you can change input on focus?
+          
+          input:focus {
+             background-color: red;
+          }
