@@ -8,3 +8,7 @@
 3. How to pass params to render form?
       
        <%= render 'form', project: @project, ticket: @ticket %>
+4. How you can specify line break for text?
+            
+            # use helper 
+            simple_format("...")
