@@ -37,3 +37,11 @@
             # use :full_error instead of :error
             b.use :full_error, wrap_with: { tag: 'span', class: 'help-block' }
           end
+8. How you can create polymorphic routing? (/projects/1/tickets/new)
+       
+       <%= simple_form_for([project, ticket]) do |f| %>
+          <%= f.input :name %>
+          <%= f.input :description %>
+
+          <%= f.button :submit %>
+        <% end %>
