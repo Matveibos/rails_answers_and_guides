@@ -5,3 +5,6 @@
       
           link rel="icon" href="/assets/favicon.ico" type="image/x-icon"
           link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon"
+3. How to pass params to render form?
+      
+       <%= render 'form', project: @project, ticket: @ticket %>
