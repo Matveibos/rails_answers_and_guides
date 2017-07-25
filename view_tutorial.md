@@ -12,3 +12,6 @@
             
             # use helper 
             simple_format("...")
+5. How tou create path in link_to method with two arguments?
+            
+            <%= link_to "Delete Ticket", [@project, @ticket], method: :delete %>
