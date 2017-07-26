@@ -61,3 +61,14 @@
             put '/' do
               declared(params)[:monument]
             end
+3. How you can define hash inside another hash?
+            
+            params do
+              requires :monument, type: Hash do
+                optional :first_name, type: String
+                optional :second_name, type: String
+                optional :cemetary, type: Hash do
+                  requires :id, type: Integer
+                end
+              end
+            end
