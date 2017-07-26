@@ -863,3 +863,6 @@ Clastering
               File.open('my_file.txt', 'w') { |file| file.write(countries) }
      
      
+19. How you can add infinity scrolling to angular app?
+
+          https://github.com/sroze/ngInfiniteScroll
