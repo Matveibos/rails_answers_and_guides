@@ -48,3 +48,16 @@
                   end
               8. Got to http://localhost:3000/api/v1/employee_data
               9. Another CRUD action https://www.sitepoint.com/build-great-apis-grape/
+2. How to define strong params with grape?
+           
+            params do
+              requires :monument, type: Hash do
+                optional :first_name, type: String
+                optional :second_name, type: String
+                optional :last_name, type: String
+              end
+            end
+            
+            put '/' do
+              declared(params)[:monument]
+            end
