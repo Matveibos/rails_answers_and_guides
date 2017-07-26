@@ -866,3 +866,4 @@ Clastering
 19. How you can add infinity scrolling to angular app?
 
           https://github.com/sroze/ngInfiniteScroll
+          # Можно попробовать для карты использовать отдельный роут в апи(скидывать туда только,  place + коордитаны и full_name - ид_монумента)
