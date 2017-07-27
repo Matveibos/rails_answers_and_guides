@@ -81,3 +81,22 @@
               mount Buildings::Data
             end
 
+# `GRAPE SWAGGER`
+5. How to use grape swagger?
+      
+       # add gem
+       gem 'grape-swagger'
+       
+       # add swagged documentation
+       module API
+        class Root < Grape::API
+          format :json
+          mount API::Cats
+
+          add_swagger_documentation
+        end
+       end
+       
+       # go to 
+       http://localhost:3000/api/v1/swagger_doc
+      
