@@ -1,4 +1,5 @@
-`R`
+# `R`
+
 1. How you can isntall R on mac?
     
         brew tap homebrew/science
