@@ -71,11 +71,15 @@
 
 4. How to set `json format` for all project?
             
-            # add format :json
-            class API < Grape::API
-              prefix 'api'
-              version 'v1', using: :path
-              format :json
 
-              mount Buildings::Data
-            end
+```
+# add format :json
+class API < Grape::API
+  prefix 'api'
+  version 'v1', using: :path
+  format :json
+
+  mount Buildings::Data
+end
+
+```
