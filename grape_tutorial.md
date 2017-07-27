@@ -100,3 +100,19 @@
        # go to 
        http://localhost:3000/api/v1/swagger_doc
       
+6. How to use UI for grape swagger?
+            
+            # add gem
+              gem 'grape-swagger-ui'
+
+            # add to config/initializers/assets.rb
+              Rails.application.config.assets.precompile += %w( swagger_ui.js)
+              Rails.application.config.assets.precompile += %w( swagger_ui_screen.css swagger_ui_print.css )
+
+            # add to api
+              add_swagger_documentation add_version: true, base_path: '/api'
+
+            # go to 
+              http://localhost:3000/api/swagger
+            
+
