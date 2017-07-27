@@ -6,14 +6,9 @@
             2. Create model for your api 
                rails g model Building name:string address:string age:integer
                rake db:migrate
-            3. Create folder app/api/employee/data.rb and app/api/api.rb
+            2*. #Folder inside api must have same name like module
+            3. Create folder app/api/buildings/data.rb and app/api/api.rb
             4. Add to config/application.rb
-                require File.expand_path('../boot', __FILE__)
-
-                require 'rails/all'
-
-                Bundler.require(*Rails.groups)
-
                 module EmpApi
                   class Application < Rails::Application
                     ## Newly Added code to set up the api code
@@ -21,8 +16,9 @@
                     config.autoload_paths += Dir[Rails.root.join('app', 'api', '*')]
                   end
                 end
-             5. Inside app/api/employee/data.rb add:
-                module Employee
+             5*. # remember, you can create module with same name like already existing class
+             5. Inside app/api/buildings/data.rb add:
+                module Buildings
                   class Data < Grape::API
 
                     resource :employee_data do
@@ -40,7 +36,7 @@
                   class API < Grape::API
                     prefix 'api'
                     version 'v1', using: :path
-                    mount Employee::Data
+                    mount Buildings::Data
                   end
               7. Open app/config/routes.rb and include:
                   Rails.application.routes.draw do
