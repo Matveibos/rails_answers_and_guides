@@ -1,4 +1,4 @@
-1. How to add grape to the simple project?
+1. How to add `grape` to the simple project?
       
             1. Add gem 
                gem 'grape'
@@ -12,8 +12,8 @@
                 module EmpApi
                   class Application < Rails::Application
                     ## Newly Added code to set up the api code
-                    `config.paths.add File.join('app', 'api'), glob: File.join('**', '*.rb')`
-                    `config.autoload_paths += Dir[Rails.root.join('app', 'api', '*')]`
+                    config.paths.add File.join('app', 'api'), glob: File.join('**', '*.rb')
+                    config.autoload_paths += Dir[Rails.root.join('app', 'api', '*')]
                   end
                 end
              5*. # remember, you can create module with same name like already existing class
@@ -75,7 +75,7 @@
             class API < Grape::API
               prefix 'api'
               version 'v1', using: :path
-              `format :json`
+              format :json
 
               mount Buildings::Data
             end
