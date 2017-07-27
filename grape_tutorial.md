@@ -1,3 +1,4 @@
+# `GRAPE`
 1. How to add `grape` to the simple project?
       
             1. Add gem 
@@ -70,16 +71,13 @@
             end
 
 4. How to set `json format` for all project?
-            
 
-```
-# add format :json
-class API < Grape::API
-  prefix 'api'
-  version 'v1', using: :path
-  format :json
+            # add format :json
+            class API < Grape::API
+              prefix 'api'
+              version 'v1', using: :path
+              format :json
 
-  mount Buildings::Data
-end
+              mount Buildings::Data
+            end
 
-```
