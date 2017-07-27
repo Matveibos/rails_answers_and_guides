@@ -44,7 +44,7 @@
                   end
               8. Got to http://localhost:3000/api/v1/employee_data
               9. Another CRUD action https://www.sitepoint.com/build-great-apis-grape/
-2. How to define strong params with grape?
+2. How to define `strong params` with grape?
            
             params do
               requires :monument, type: Hash do
@@ -57,7 +57,7 @@
             put '/' do
               declared(params)[:monument]
             end
-3. How you can define hash inside another hash?
+3. How you can define `hash inside another hash`?
             
             params do
               requires :monument, type: Hash do
@@ -69,7 +69,7 @@
               end
             end
 
-4. How to set json data format for all project?
+4. How to set `json format` for all project?
             
             # add format :json
             class API < Grape::API
