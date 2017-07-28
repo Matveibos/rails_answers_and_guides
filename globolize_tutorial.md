@@ -110,3 +110,7 @@
         
             # add to config/application.rb
              config.i18n.fallbacks = true
+6. How you can see translation for certain language?
+
+            model_object.translation_for(:en)
+            model_object.translation_for(:ru)            
