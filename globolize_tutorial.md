@@ -78,7 +78,8 @@
                 translates :name
                 active_admin_translates :name
             # inside active admin
-                permit_params :name, translations_attributes: [:id, :locale, :name, :_destroy]
+                # permit_params :name # this is my old value
+                permit_params translations_attributes: [:id, :locale, :name, :_destroy]
                   form do |f|
                     f.inputs name: I18n.t('translated_fields')  do
                       f.translated_inputs 'ignored title', switch_locale: false do |t|
