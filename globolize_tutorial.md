@@ -105,4 +105,7 @@
               end
             end
                 
-            
+   5. How to enable fallback for empty translation?
+        
+            # add to config/application.rb
+             config.i18n.fallbacks = true
