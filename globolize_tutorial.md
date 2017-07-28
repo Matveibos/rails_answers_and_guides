@@ -42,6 +42,7 @@
             gem 'globalize-accessors'
         
         # 1. first create file globolize_extension.rb and add there this module
+        # config/initializers/globolize_extension.rb
             module TranslatesWithAccessors
 
               extend ActiveSupport::Concern
