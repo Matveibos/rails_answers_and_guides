@@ -39,3 +39,7 @@
             projects/:id/tickets/new => new_project_ticket_path
             projects/:id/tickets/:tick_id/edit => edit_project_ticket_path
             projects/:id/tickets/:tick_id => project_ticket_path
+
+3. How you can watch all existing routes?
+            
+            rails routes
