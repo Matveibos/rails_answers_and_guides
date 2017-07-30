@@ -30,3 +30,22 @@
             "person#{n}@example.com"
           end
         end
+6. How you can create object with different condition?
+        
+        FactoryGirl.define do
+          factory :todo_item do
+            name 'Pick up a gallon of milk'
+
+            trait :completed do
+              complete true
+            end
+
+            trait :not_completed do
+              complete false
+            end
+          end
+        end
+        
+        # then 
+        create(:todo_item, :completed)
+        create(:todo_item, :not_completed)
