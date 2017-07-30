@@ -183,3 +183,13 @@
 25. How you can group by multiply variables?
             
             @bunch.group_by{|e| [e.commentable_id, e.commentable_type]}
+26. How you can set another name for one table and set references?
+            
+              # add to model
+              belongs_to :author, class_name: "User"
+              
+              # generate miration
+              def change
+                add_reference :tickets, :author, index: true
+                add_foreign_key :tickets, :users, column: :author_id
+              end
