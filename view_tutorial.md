@@ -15,3 +15,7 @@
 5. How tou create path in link_to method with two arguments?
             
             <%= link_to "Delete Ticket", [@project, @ticket], method: :delete %>
+6. How you can check current_page value?
+            
+            current_page?('/')
+            #=> true
