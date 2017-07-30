@@ -22,3 +22,11 @@
 4. How to create factory girl with another field?
         
         FactoryGirl.create(:cemetary, status: 'accepted')
+5. How you can generate uniq email with factory girl?   
+
+        # Defines a new sequence
+        FactoryGirl.define do
+          sequence :email do |n|
+            "person#{n}@example.com"
+          end
+        end
