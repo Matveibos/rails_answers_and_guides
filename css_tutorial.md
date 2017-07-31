@@ -145,3 +145,13 @@
 		background-repeat: no-repeat;
 		
 		# or background-size: cover;
+28. How you can make vertical alligment?
+		
+		.intro {
+		  display: table;
+		}
+		
+		.intro .inner {
+	          display: table-cell;
+		  vertical-align: middle;
+		}
