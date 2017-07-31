@@ -867,3 +867,7 @@ Clastering
 
           https://github.com/sroze/ngInfiniteScroll
           # Можно попробовать для карты использовать отдельный роут в апи(скидывать туда только,  place + коордитаны и full_name - ид_монумента)
+          
+20. How to add to includes with another field?
+
+     Cemetary.includes(:categories, likes: :user, place: [:main_photo, :photos])
