@@ -138,3 +138,8 @@
 		p.uppercase {
 		    text-transform: uppercase;
 		}
+27. How to set background image on full screen size?
+
+		background-image: url('../images/intro-image.jpg');
+		background-size: 100%;
+		background-repeat: no-repeat;
