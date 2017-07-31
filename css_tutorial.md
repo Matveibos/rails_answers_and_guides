@@ -133,3 +133,8 @@
 25. How you can edit content inside html browser?
 	
 		<div contenteditable="">hello</div>
+26. How to set text to upper case?
+		
+		p.uppercase {
+		    text-transform: uppercase;
+		}
