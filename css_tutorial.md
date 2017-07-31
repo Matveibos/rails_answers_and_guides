@@ -143,3 +143,5 @@
 		background-image: url('../images/intro-image.jpg');
 		background-size: 100%;
 		background-repeat: no-repeat;
+		
+		# or background-size: cover;
