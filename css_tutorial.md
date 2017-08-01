@@ -155,3 +155,49 @@
 	          display: table-cell;
 		  vertical-align: middle;
 		}
+# `BXSLIDER`
+1. How to add full screen slider?
+
+	# add ordinary slider
+	# add to html
+		<ul class="bxslider">
+		  <li style="background-image: url('http://bxslider.com/images/home_slides/hillside.jpg');"></li>
+		    <li style="background-image: url('http://bxslider.com/images/home_slides/houses.jpg');"></li>
+		  <li style="background-image: url('http://bxslider.com/images/home_slides/hillside.jpg');"></li>
+		    <li style="background-image: url('http://bxslider.com/images/home_slides/houses.jpg');"></li>
+		</ul>
+	# to css
+		*{
+		    margin: 0px;
+		    padding: 0px;
+		}
+		body, html{
+		    height: 100%;
+		}
+		.bx-viewport, .bx-wrapper{
+		    position:relative;
+		    width:100%;
+		    height:100% !important;
+		    top:0;
+		    left:0;
+		}
+		.bxslider, .bxslider li{
+		    height: 100% !important;;
+		}
+		.bxslider li{
+		    background-repeat: no-repeat;
+		    background-position: top center;
+		    background-size: cover;
+		}
+		.bx-wrapper .bx-viewport{
+		    border: none !important;
+		}
+	# to js
+	$(document).ready(function(){
+	    $('.bxslider').bxSlider({
+		  mode: 'fade',
+		  captions: false,
+		  auto:true,
+		  pager:false
+	    });
+	});
