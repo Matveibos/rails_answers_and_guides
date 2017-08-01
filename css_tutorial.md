@@ -204,3 +204,14 @@
 			  pager:false
 		    });
 		});
+2. How to remove buttons from slider?
+	
+	    $('.bxslider').bxSlider({
+		speed: 3000,
+		controls: false,
+		auto: true,
+		autoControls: false,
+		touchEnabled: true,
+		pager: false // <-------
+		}); 
+	    });
