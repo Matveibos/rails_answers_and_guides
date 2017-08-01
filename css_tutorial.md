@@ -158,8 +158,8 @@
 # `BXSLIDER`
 1. How to add full screen slider?
 
-		# add ordinary slider
-		# add to html
+		# 1. add ordinary slider
+		# 1. add to html
 
 		<ul class="bxslider">
 		  <li style="background-image: url('http://bxslider.com/images/home_slides/hillside.jpg');"></li>
@@ -168,7 +168,7 @@
 		    <li style="background-image: url('http://bxslider.com/images/home_slides/houses.jpg');"></li>
 		</ul>
 		
-		# to css
+		# 2. to css
 		*{
 		    margin: 0px;
 		    padding: 0px;
@@ -195,7 +195,7 @@
 		    border: none !important;
 		}
 		
-		# to js
+		# 3. to js
 		$(document).ready(function(){
 		    $('.bxslider').bxSlider({
 			  mode: 'fade',
