@@ -9,4 +9,4 @@
         
 3. Stable version of ckeditor
       
-      gem 'ckeditor', github: 'galetahub/ckeditor'
+       gem 'ckeditor', github: 'galetahub/ckeditor'
