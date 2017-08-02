@@ -26,3 +26,17 @@
 4. How to show list of all available locales?
         
         I18n.available_locales
+
+5. How you can add error's translation for custom validation?
+        
+        # lang.yml
+        [lang]:
+          activerecord:
+            errors:
+              models:
+                model_name: # or namespace/model_name
+                  attributes:
+                    email:
+                      bad_email: "model-specific message for invalid email"
+        # model
+        add_error(:email, :bad_email)
