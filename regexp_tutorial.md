@@ -107,4 +107,14 @@ Cheat book : https://www.cheatography.com/davechild/cheat-sheets/regular-express
           
           We used parentheses in the pattern to save what we've captured. In the replacement sequence, using backslash and a           number will refer to those captured groups in the numerical order that they appear in the pattern. So, \1 will               refer to the first set of parentheses.
           
+ # `RUBY`
  
+ 1. How to check if string content regExp?
+          
+          # since ruby 2.4.0
+          # pattert = /regexp/
+          pattern.match?(string)
+ 2. How to return matched value?
+          
+          pattern.match(string).to_s
+          
