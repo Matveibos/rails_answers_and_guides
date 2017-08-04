@@ -80,6 +80,8 @@
           redis.set 'data', hash.to_json
 
           data = JSON.parse(redis.get("data"))
-
-        
+ 
+15. How you can start redis on mac?
+          
+          brew services start redis
         
