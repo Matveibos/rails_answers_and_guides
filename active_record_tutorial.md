@@ -193,3 +193,32 @@
                 add_reference :tickets, :author, index: true
                 add_foreign_key :tickets, :users, column: :author_id
               end
+27. How you can create has_and_belongs_to_many association?
+            
+            1. # add to class
+              class Actor < ApplicationRecord
+                has_and_belongs_to_many :movies
+              end
+            
+              class Movie < ApplicationRecord
+                has_and_belongs_to_many :actors
+              end
+            
+            2.# Then generate migration 
+              rails g migration CreateJoinTableActorMovie actor movie
+               
+              # Migration has such view
+              def change
+                create_join_table :actors, :movies do |t|
+                  t.index [:actor_id, :movie_id]
+                  t.index [:movie_id, :actor_id]
+                end
+              end
+           
+           3. # Now you can add new values
+           
+            movie = Movie.find(params[:id])
+            actor = Actor.find(params[:promo_id])
+            movie.actors << actor
+            
+
