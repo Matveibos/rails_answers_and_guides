@@ -402,3 +402,9 @@
 		    "i pity the foo!!!"
 		  end
 		end
+
+
+
+26. How to add date and time picker?
+	
+		input :start_date, as: :datetime_picker
