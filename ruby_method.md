@@ -175,3 +175,9 @@
          
          >> 65.chr
          A
+26. How to check if object property exists?
+         
+         # return true if object doesn't equal (nil, "", '', [], {}, false)
+           object.present?
+         # oposite is method
+           object.blank?
