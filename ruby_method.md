@@ -175,6 +175,9 @@
          
          >> 65.chr
          A
+         
+# `RAILS METHOD`
+
 26. How to check if object property exists?
          
          # return true if object doesn't equal (nil, "", '', [], {}, false)
