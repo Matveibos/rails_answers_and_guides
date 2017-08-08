@@ -389,3 +389,16 @@
 		  f.semantic_errors *f.object.errors.keys
 		  f.inputs
 		end
+
+25. How to create helpers for active admin?
+	
+		1. the filename must end in "_helper.rb"
+		2. the module name must be the camel-case of the file name
+		3. the file must be in app/helpers/active_admin/ directory.
+
+		# app/helpers/active_admin/foo_helper.rb
+		module ActiveAdmin::FooHelper
+		  def foo
+		    "i pity the foo!!!"
+		  end
+		end
