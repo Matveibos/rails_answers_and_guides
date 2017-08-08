@@ -45,3 +45,8 @@
           gravatar_url = "http://www.gravatar.com/avatar/#{Digest::MD5.new.update(current_user.email)}?s=512&d=identicon"
           @user.remote_image_url = gravatar_url
           @user.save 
+6. How you can create link for download file?
+        
+         mount_uploader :my_file, ImageUploader
+         
+         = link_to "Download File", my_file.url, download: File.basename(my_file.url)
