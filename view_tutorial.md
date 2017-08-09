@@ -19,3 +19,6 @@
             
             current_page?('/')
             #=> true
+7. How to deleted all html tags from text?
+      
+            strip_tags('<p> dwdw </p>')
