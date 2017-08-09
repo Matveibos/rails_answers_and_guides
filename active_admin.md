@@ -408,3 +408,8 @@
 26. How to add date and time picker?
 	
 		input :start_date, as: :datetime_picker
+27. How to create custon view for active admin?
+		
+		div class: 'admin-ckeditor-block' do
+                 resource.description.html_safe
+               end
