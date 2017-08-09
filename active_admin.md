@@ -424,3 +424,11 @@
 		    ...
 		  end
 		end
+
+29. How to unscope values in ActiveAdmin?
+
+		  controller do
+		    def scoped_collection
+		      MyModel.unscoped
+		    end
+		  end
