@@ -413,3 +413,14 @@
 		div class: 'admin-ckeditor-block' do
                  resource.description.html_safe
                end
+28. How to add default value to ActiveAdmin?
+
+		form do |f|
+		  f.object.published_at ||= DateTime.now
+		  f.inputs "Post Details" do
+		    f.input :title
+		    f.input :body
+		    f.input :published_at
+		    ...
+		  end
+		end
