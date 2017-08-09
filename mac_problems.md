@@ -18,3 +18,11 @@
 5. What you have to do before install new ruby version?
     
         gem install bundler
+6. How you can stop rails server?
+        
+        
+        # In your terminal to find out the PID of the process:
+        lsof -wni tcp:3000
+        #=> COMMAND   PID  USER   FD   TYPE             DEVICE
+        #=> ruby    40474 macos   67u  IPv4 0xf7c41974f0a6a9e7
+        # kill -9 40474
