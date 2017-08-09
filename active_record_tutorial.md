@@ -222,3 +222,6 @@
             movie.actors << actor
             
 
+28. How you can compare Date?
+
+            .where('created_at <= ?', Time.now)
