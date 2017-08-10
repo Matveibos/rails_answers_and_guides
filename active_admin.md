@@ -432,3 +432,12 @@
 		      MyModel.unscoped
 		    end
 		  end
+30. How to add styles for index tables?
+	
+		  index do
+		    column :title do |full|   
+		      div class: "admin-setting" do
+			full.title
+		      end
+		    end
+		  end
