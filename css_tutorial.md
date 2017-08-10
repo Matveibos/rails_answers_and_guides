@@ -155,6 +155,11 @@
 	          display: table-cell;
 		  vertical-align: middle;
 		}
+		
+29. How to add google fonts through css?
+	
+		@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 # `BXSLIDER`
 1. How to add full screen slider?
 
