@@ -20,3 +20,7 @@
           flash[:alert] = "The project you were looking for could not be found."
           redirect_to projects_path
         end
+4. How to generate controller inside namespace in rails?
+      
+       rails generate controller namespace_name/controller_name
+
