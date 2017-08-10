@@ -441,3 +441,8 @@
 		      end
 		    end
 		  end
+31. How to create scope tabs?
+	 
+	    scope :all do |data|
+	      data.all
+	    end
