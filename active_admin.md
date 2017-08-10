@@ -446,3 +446,8 @@
 	    scope :all do |data|
 	      data.all
 	    end
+32. How to create own button likes show or edit?
+	
+	    action_item :view, only: [:show, :index] do
+	      link_to 'View on site', '/admin'
+	    end
