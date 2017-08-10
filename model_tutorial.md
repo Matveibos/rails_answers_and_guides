@@ -6,3 +6,7 @@
         
          # where main_photo_id == current_class_object.id
          has_one :main_photo, class_name: 'Photo', foreign_key: "main_photo_id", dependent: :destroy
+3. How to generate model inside namespace in rails?
+        
+        rails generate model namespace_name/model_name
+        # NameSpace::Model.create(title: 'hge2')
