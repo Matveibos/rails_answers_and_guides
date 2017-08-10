@@ -39,3 +39,6 @@
 	
 	    # just add
 	    User.with_reset_password_token('8VpyktNLAg-2NskT_V32')
+6. How you can generate custom controller?
+
+		rails generate devise:controllers users
