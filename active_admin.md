@@ -410,9 +410,9 @@
 		input :start_date, as: :datetime_picker
 27. How to create custon view for active admin?
 		
-		div class: 'admin-ckeditor-block' do
-                 resource.description.html_safe
-               end
+              div class: 'admin-ckeditor-block', style: 'font-size: 40px' do
+                resource.description.html_safe
+              end
 28. How to add default value to ActiveAdmin?
 
 		form do |f|
