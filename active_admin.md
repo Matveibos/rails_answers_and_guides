@@ -451,3 +451,10 @@
 	    action_item :view, only: [:show, :index] do
 	      link_to 'View on site', '/admin'
 	    end
+33. How to add html erb text in ActiveAdmin?
+	  
+	          index do
+		    column :description do |full|
+		      raw("hi <h1>#{full.description}</h1>")
+		    end
+	          end
