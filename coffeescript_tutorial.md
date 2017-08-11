@@ -80,3 +80,12 @@
        
         # just use @x
  
+14. How you can iterate through object?
+       
+        player = 
+          x: 10
+          y: 20
+
+        for key, value of player
+          alert "#{key} - #{value}"
+       
