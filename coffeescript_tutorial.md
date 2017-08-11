@@ -7,6 +7,12 @@
 0. How you can compile coffee file to js?
        
        coffee --compile name_file.coffee
+       
+0. How you can set auto compile on save?
+       
+       # from game.coffee to main.js
+       coffee -j script/main.js -w -c src/game.coffee
+
 1. How you can create sample function in CoffeeScript?
     
         hello = (name) ->
