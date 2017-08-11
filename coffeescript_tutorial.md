@@ -53,3 +53,6 @@
        
        # just use back quotes
        `console.log(10);`
+9. How you can write cycle in one string?
+       
+       console.log "hello" for [1..3]
