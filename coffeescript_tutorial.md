@@ -48,3 +48,8 @@
 
        for x in [0..10]
          console.log(x)
+ 
+8. How you can insert js code to your coffee file?
+       
+       # just use back quotes
+       `console.log(10);`
