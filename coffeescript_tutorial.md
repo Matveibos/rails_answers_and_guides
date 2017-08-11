@@ -22,3 +22,10 @@
         
         arr_x2 = [45,135,225,315].map (num) ->
           num * 2
+ 
+6. How you can select specific values from array?
+        
+        [20,40,4,5,1].filter (value) -> 
+          value % 2 == 0
+        
+        #=> [20, 40, 4]
