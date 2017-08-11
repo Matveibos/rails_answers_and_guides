@@ -70,3 +70,8 @@
         loop
           alert
           break if true
+12. Loop with index?
+
+       arr = ['one', 'two','three']
+       for num, i in arr
+         alert "#{i} - #{num}"
