@@ -18,3 +18,7 @@
         
         ['a','b','c'].join('-')
         => 'a-b-c'
+5. How you can change default array in coffee?
+        
+        arr_x2 = [45,135,225,315].map (num) ->
+          num * 2
