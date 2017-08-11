@@ -75,3 +75,7 @@
         arr = ['one', 'two','three']
         for num, i in arr
           alert "#{i} - #{num}"
+          
+13. How you can use this.x in coffee?
+       
+       # just use @x
