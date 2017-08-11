@@ -4,6 +4,9 @@
 0. How you can run coffee file?
 
        coffee name_file.coffee
+0. How you can compile coffee file to js?
+       
+       coffee --compile name_file.coffee
 1. How you can create sample function in CoffeeScript?
     
         hello = (name) ->
