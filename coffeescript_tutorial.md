@@ -38,3 +38,7 @@
           value % 2 == 0
         
         #=> [20, 40, 4]
+7. How you can write simple cycle?
+
+       for x in [0..10]
+         console.log(x)
