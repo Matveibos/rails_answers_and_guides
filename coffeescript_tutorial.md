@@ -56,3 +56,7 @@
 9. How you can write cycle in one string?
        
        console.log "hello" for [1..3]
+10. How you can create loop with some step?
+
+       for x in [10..3] by -2
+         alert x
