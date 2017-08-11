@@ -60,3 +60,13 @@
 
        for x in [10..3] by -2
          alert x
+11. What another loop you now?
+        
+        # --------------
+        alert 1 while true
+        # --------------
+        alert 1 until true
+        # --------------
+        loop
+          alert
+          break if true
