@@ -1,7 +1,9 @@
 0. How you can install coffee_script?
 
        sudo npm install -g coffee-script
+0. How you can run coffee file?
 
+       coffee name_file.coffee
 1. How you can create sample function in CoffeeScript?
     
         hello = (name) ->
