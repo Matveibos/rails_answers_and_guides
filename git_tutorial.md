@@ -45,3 +45,11 @@ http://gitreal.codeschool.com/
         
         git fetch --all
         git checkout myBranch
+        
+12. How to include gem directly from github?
+        
+        # from https://github.com/unfernandito/coupons
+        gem 'coupons', github: 'unfernandito/coupons'
+        
+        
+        
