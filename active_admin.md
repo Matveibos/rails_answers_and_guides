@@ -458,3 +458,11 @@
 		      raw("hi <h1>#{full.description}</h1>")
 		    end
 	          end
+34. How you can working with date?
+	
+		# ordinary date
+			f.input :my_date, as: :datepicker
+		# only time
+			f.input :my_date, as: :time_picker	
+		# date with time
+			f.input :my_date, as: :datetime_picker			
