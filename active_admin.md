@@ -466,3 +466,12 @@
 			f.input :my_date, as: :time_picker	
 		# date with time
 			f.input :my_date, as: :datetime_picker			
+35. How you can select, what you need?
+
+		  form do |f|
+		    f.inputs do 
+		      f.input :country, as: :select, collection: Country.all.map { |r| [r.name.to_s, r.id] }
+		    end
+
+		    f.actions
+		  end
