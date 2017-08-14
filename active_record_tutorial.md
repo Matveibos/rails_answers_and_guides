@@ -225,3 +225,9 @@
 28. How you can compare Date?
 
             .where('created_at <= ?', Time.now)
+29. How you can create transaction? (only perform when all action succeed as one action)
+            
+            ActiveRecord::Base.transaction do
+              david.withdrawal(100)
+              mary.deposit(100)
+            end
