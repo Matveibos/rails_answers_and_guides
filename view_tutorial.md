@@ -22,3 +22,10 @@
 7. How to deleted all html tags from text?
       
             strip_tags('<p> dwdw </p>')
+
+8. How to set up route path for custom action?
+            
+            # route
+                  post 'my_controller/my_action'
+            # view
+                  = form_for @my_temp, url: url_for(controller: 'my_controller', action: 'my_action') do
