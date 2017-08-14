@@ -10,3 +10,6 @@
         
         rails generate model namespace_name/model_name
         # NameSpace::Model.create(title: 'hge2')
+4. How to validate number beetween 2 values?
+
+         validates :amount, numericality: {greater_than_or_equal_to: 0, less_than_or_equal_to: 100}
