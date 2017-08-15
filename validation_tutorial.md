@@ -5,5 +5,7 @@
 
             def active_customer
               errors.add(:customer_id, "is not active") unless customer.active?
+              # or for tranlation use 
+              # errors.add(:customer_id, I18n.t('activerecord.errors.models.message.should_contain_body_or_attachment'))
             end
           end
