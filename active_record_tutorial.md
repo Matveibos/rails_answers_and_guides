@@ -231,3 +231,8 @@
               david.withdrawal(100)
               mary.deposit(100)
             end
+30. How you can increment some values in model?
+
+            a = Article.first
+            a.increment!(:view_count)
+            a.reload.view_count # -> 1
