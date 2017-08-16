@@ -72,3 +72,17 @@
             UserMailer.welcome_email(self, self.password).deliver_now
               and
             UserMailer.welcome_email(self, self.password).deliver_later
+ 
+8. How you can test deliver_letter method?
+            
+            # add active job and perform_enqueued_jobs
+            include ActiveJob::TestHelper
+            
+            it 'sends email with coupon code to user' do
+              expect do
+                perform_enqueued_jobs do
+                  described_class.new(user).call
+                end
+              end.to change { UserMailer.deliveries.count }.by(1)
+            end
+            
