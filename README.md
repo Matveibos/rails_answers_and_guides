@@ -1,5 +1,7 @@
 # The most useful rails materials and guades
 
+## Ruby articles 
+  https://rubyplus.com/articles
 ## 10 best ruby book 2017
   https://www.youtube.com/watch?v=EMuGmEScABw
 ## Neural network
