@@ -29,3 +29,7 @@
                   post 'my_controller/my_action'
             # view
                   = form_for @my_temp, url: url_for(controller: 'my_controller', action: 'my_action') do
+9. What you can do if you want link_to inside button?
+            
+            # use button_to instead of link_to
+            button_to
