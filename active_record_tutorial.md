@@ -236,3 +236,7 @@
             a = Article.first
             a.increment!(:view_count)
             a.reload.view_count # -> 1
+31. How you can check if object exists?
+            
+            # where coupon is ActiveRecord model
+            Coupon.exists?(status: :unactivated)
