@@ -51,5 +51,30 @@ http://gitreal.codeschool.com/
         # from https://github.com/unfernandito/coupons
         gem 'coupons', github: 'unfernandito/coupons'
         
+13. How you can show current remote url?     
+
+        git remote -v
         
+14. How you can set new current remote url?
         
+         git remote set-url origin https://........git
+         
+15. How you can change latest commit name?
+        
+        git commit --amend
+        # then set new name 
+        git push --force
+
+16. How you can push changes without pulling date?
+        
+        git push --force
+        
+17. How you can change old commit name?
+        
+        git rebase -i --root
+        # then change 'pick' to 'reword' and write new commit name
+
+19. How you can combine many commits into one?
+        
+        git rebase -i --root
+        # then change 'pick' to 'squash'
