@@ -10,7 +10,7 @@
 3. Stable version of ckeditor
       
        gem 'ckeditor', github: 'galetahub/ckeditor'
-4. How to remove default <p> tags?
+4. How to remove default p tags?
       
           ready = ->
             $('.ckeditor').each ->
