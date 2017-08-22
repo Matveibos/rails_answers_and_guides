@@ -10,3 +10,12 @@
 3. Stable version of ckeditor
       
        gem 'ckeditor', github: 'galetahub/ckeditor'
+4. How to remove default <p> tags?
+      
+          ready = ->
+            $('.ckeditor').each ->
+              CKEDITOR.config.enterMode = CKEDITOR.ENTER_BR
+              CKEDITOR.config.forcePasteAsPlainText = true
+
+          $(document).ready(ready)
+          $(document).on('page:load', ready)
