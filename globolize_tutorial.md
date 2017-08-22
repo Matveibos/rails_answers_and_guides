@@ -113,4 +113,20 @@
 6. How you can see translation for certain language?
 
             model_object.translation_for(:en)
-            model_object.translation_for(:ru)            
+            model_object.translation_for(:ru)  
+            
+7. How you can add new field for already existing translation table?
+              
+              def change
+                reversible do |dir|
+                  dir.up do
+                    Salon.add_translation_fields! description: :text
+                    Salon.globalize_migrator.move_data_to_translation_table
+                    remove_column :salons, :description
+                  end
+
+                  dir.down do
+                    remove_column :salon_translations, :description
+                  end
+                end
+              end
