@@ -43,3 +43,8 @@
 3. How you can watch all existing routes?
             
             rails routes
+4. How you can create route to custom controller action?
+
+            get 'heartbeat' => "custom_controller#heartbeat"
+            # or 
+            get 'custom_controller/heartbeat', as: 'heartbeat'
