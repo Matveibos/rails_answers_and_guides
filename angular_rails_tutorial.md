@@ -484,3 +484,61 @@
                        $scope.submit = function() {
                                   Restangular.all('examples').post({name: $scope.dynamicPopover.title});
                         };
+ 
+1. How you can init rails/angular app from scratch?
+          
+          1. bower init (skipp all)
+          2. create .bowerrc and add there
+                    {
+                      "directory":"vendor/assets/bower_components"
+                    }
+          3. bower install angular angular-ui-router bootstrap --save
+          4. add to application.js 
+                    //= require angular
+                    //= require angular-ui-router
+                    //= require_tree . 
+          5. add gem 'angular-rails-templates'
+                    gem 'angular-rails-templates'
+                    //= require angular-rails-templates
+                    
+          6. add to layout 
+                      <body class="container" ng-app="angular_sample">
+                        <ui-view> </ui-view>
+                      </body>
+          7. rails g home controller index 
+              def index
+                render 'layouts/application'  
+              end
+              
+              # index.view
+                empty    
+              # routes.rb
+                root 'home#index'
+                get '*path' => 'home#index'
+          8. application.js
+            //= require angular_sample
+          9. angular_sample.coffee
+                 #= require_self
+                #= require_tree ./app/controllers
+                #= require_tree ./app/templates
+
+                app = angular.module 'angular_sample', ['templates', 'ui.router']
+
+                app.config ['$stateProvider','$urlRouterProvider', '$locationProvider', ($stateProvider, $urlRouterProvider, $locationProvider) ->
+                  $stateProvider.state('root',
+                      url: '/'
+                      controller: 'HomeController'
+                      templateUrl: 'app/templates/home/index.html'
+                  )
+
+                  $urlRouterProvider.otherwise('/')
+                  $locationProvider.html5Mode(true)
+                ]
+         10. create app/templates/home/index.html.erb
+         11. create app/controller/home_controller.coffee
+            HomeController = ($scope) ->
+
+            angular.module('angular_sample').controller 'HomeController', ['$scope', HomeController]
+
+
+                
