@@ -475,3 +475,10 @@
 
 		    f.actions
 		  end
+36. How you can set another page on action new?
+	  
+		  controller do
+			def new
+			  render 'admin/_sample.html.erb', layout: "active_admin"
+			end
+		  end
