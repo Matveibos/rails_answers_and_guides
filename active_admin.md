@@ -482,3 +482,14 @@
 			  render 'admin/_sample.html.erb', layout: "active_admin"
 			end
 		  end
+37. How you can crete has_one connection?
+	      
+	      f.inputs name: 'SEO' do 
+		f.inputs for: [:seo, f.object.seo || Seo.new] do |seo|
+		  f.inputs do
+		    seo.input :title, label: I18n.t('labels.seo.title')
+		    seo.input :description, label: I18n.t('labels.seo.description')
+		    seo.input :tags, label: I18n.t('labels.seo.tags')
+		  end
+		end
+	      end
