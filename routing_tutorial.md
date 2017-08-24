@@ -50,3 +50,7 @@
             # or 
             get 'custom_controller/heartbeat', as: 'heartbeat'
             # /custom_controller/heartbeat
+            
+5. How you can create redirect from all another routes to one route?
+            
+            get '*path' => 'home#index'
