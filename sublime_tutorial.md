@@ -54,3 +54,13 @@
 9. How you can select all equla value?
                     
           ctrl + cmd + G
+10. How to set space and new line in the end of file?
+          
+          # Sublime-preferences-user
+          {
+            "ensure_newline_at_eof_on_save": true,
+            "trim_trailing_white_space_on_save": true,
+            "translate_tabs_to_spaces": true,
+            "tab_size": 2,
+            "rulers": [80]
+          }
