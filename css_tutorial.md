@@ -220,3 +220,7 @@
 		pager: false // <-------
 		}); 
 	    });
+# `FLICKITY`
+1.  Where you can find all needed option?
+	
+	https://flickity.metafizzy.co/v1/options.html
