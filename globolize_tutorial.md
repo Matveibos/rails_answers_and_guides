@@ -130,3 +130,6 @@
                   end
                 end
               end
+8. How you can translation for nested models?
+            
+                permit_params slider_attributes: [:id, images_attributes: [:id, :file, :_destroy], translations_attributes: [:id, :locale, :description, :_destroy]],
