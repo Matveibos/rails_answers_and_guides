@@ -41,6 +41,9 @@
 14. How you can set some condition for group_by operation?
         
         SELECT price, AVG(price) from my_table GROUP_BY price HAVING AVG(price) > 3;
+15. How you can write sub request?
+        
+         select cust_name, (select count(*) as count_order from orders where Orders.cust_id = Customers.cust_id) from customers;
 6. How you can wrte comment in sql?
         
         -- my-comment
