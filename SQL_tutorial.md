@@ -10,6 +10,12 @@
 5. How you can get some row started not from first?
         
         SELECT * FROM my_table offset 5;
+6. How you can sorted rows?
+        
+        SELECT * FROM my_table ORDER BY column_name;
+7. Sorted in reverse order?
+        
+        SELECT * FROM my_table ORDER BY column_name DESC;
 6. How you can wrte comment in sql?
         
         -- my-comment
