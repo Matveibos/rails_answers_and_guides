@@ -16,6 +16,9 @@
 7. Sorted in reverse order?
         
         SELECT * FROM my_table ORDER BY column_name DESC;
+8. How you can return certain row with condition?
+        
+        SELECT * FROM my_table where price > 20;
 6. How you can wrte comment in sql?
         
         -- my-comment
