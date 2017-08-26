@@ -19,6 +19,19 @@
 8. How you can return certain row with condition?
         
         SELECT * FROM my_table where price > 20;
+9. How yoc can select rows with some condition which includes part of string?
+        
+        # ....%.... or ..._... for one symbol
+        SELECT * FROM my_table where name like 'vla%';
+        
+10. How you can concatanate two column into one?
+
+        -- or + for another db
+        SELECT name || ' ' || price FROM my_table
+11. How you can calculate new field?
+        
+        SELECT price, amount, price * amount as common_price from my_table;
+        
 6. How you can wrte comment in sql?
         
         -- my-comment
