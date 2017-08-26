@@ -31,7 +31,9 @@
 11. How you can calculate new field?
         
         SELECT price, amount, price * amount as common_price from my_table;
+12. How you can return AVG, OR SUM from columns?
         
+        SELECT AVG(price) from my_table;
 6. How you can wrte comment in sql?
         
         -- my-comment
