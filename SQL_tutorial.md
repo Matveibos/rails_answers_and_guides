@@ -33,7 +33,14 @@
         SELECT price, amount, price * amount as common_price from my_table;
 12. How you can return AVG, OR SUM from columns?
         
+        # AVG, SUM, MIN, MAX, COUNT
         SELECT AVG(price) from my_table;
+13. Haw you can use group data?
+
+        SELECT price, AVG(price) from my_table GROUP_BY price;
+14. How you can set some condition for group_by operation?
+        
+        SELECT price, AVG(price) from my_table GROUP_BY price HAVING AVG(price) > 3;
 6. How you can wrte comment in sql?
         
         -- my-comment
