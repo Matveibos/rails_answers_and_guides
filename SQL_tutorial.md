@@ -44,6 +44,13 @@
 15. How you can write sub request?
         
          select cust_name, (select count(*) as count_order from orders where Orders.cust_id = Customers.cust_id) from customers;
+
+16. How you can get information from another associative table?
+    
+        select vend_name, prod_name from vendors, products where products.vend_id = vendors.vend_id;
+17. Another way for getting information from table?
+        
+        select vend_name, prod_name from vendors inner join  products on Vendors.vend_id = Products.vend_id;
 6. How you can wrte comment in sql?
         
         -- my-comment
