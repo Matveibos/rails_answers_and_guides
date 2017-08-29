@@ -1,5 +1,8 @@
 # The most useful rails materials and guades
 
+## 47 places for learning programming
+  https://learntocodewith.me/posts/code-for-free/
+
 ## Ruby articles 
   https://rubyplus.com/articles
 ## 10 best ruby book 2017
