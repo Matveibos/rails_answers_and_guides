@@ -1,0 +1,7 @@
+1. How you can use auto-correct?
+    
+    rubocop --only EmptyLines --auto-correct
+
+2. Where you can find all available methods?
+
+    https://github.com/bbatsov/rubocop/wiki/Automatic-Corrections
