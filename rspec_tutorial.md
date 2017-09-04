@@ -151,3 +151,10 @@
 20. How you can compare value with length?
                 
                 expect(admin.password.length).to be(8)
+21. How you can define let with hash?
+
+        let(:user_params) { {"email" => user.email, "password" => user.password} }
+        # or
+        let(:user_params) do 
+          { "email" => user.email, "password" => user.password }
+        end
