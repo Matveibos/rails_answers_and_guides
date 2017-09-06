@@ -49,3 +49,13 @@
         # then 
         create(:todo_item, :completed)
         create(:todo_item, :not_completed)
+
+7. How you create factory from class inside namespace?
+        
+        FactoryGirl.define do
+          factory :salon_translation, class: Salon::Translation do
+            description { Faker::Lorem.sentence }
+            address 'Pushkina 35'
+            locale 'ru'
+          end
+        end
