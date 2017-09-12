@@ -240,3 +240,8 @@
             
             # where coupon is ActiveRecord model
             Coupon.exists?(status: :unactivated)
+            
+32. How you can find values inside associative tables?
+            
+            # just include this table
+            Monument.joins(:categories).where(categories: {name: "World War II", name: "Колонны"})
