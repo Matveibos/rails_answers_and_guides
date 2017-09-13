@@ -26,3 +26,8 @@
         #=> COMMAND   PID  USER   FD   TYPE             DEVICE
         #=> ruby    40474 macos   67u  IPv4 0xf7c41974f0a6a9e7
         # kill -9 40474
+
+7. Hide folder
+        
+        chflags hidden name_of_folder
+        chflags nohidden name_of_folder
