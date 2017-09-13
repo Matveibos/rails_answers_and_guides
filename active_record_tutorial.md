@@ -245,3 +245,9 @@
             
             # just include this table
             Monument.joins(:categories).where(categories: {name: ["World War II", "Колонны"]})
+33. How you can all values only by part words?
+            
+            where("first_name LIKE  ?", "%#{first_name}%")
+34. How you can correctly write method where with optional params?
+            
+            http://brendankemp.com/essays/build-a-query-in-activerecord-from-optional-params-the-non-hideous-version/
