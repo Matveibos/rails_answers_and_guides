@@ -251,3 +251,6 @@
 34. How you can correctly write method where with optional params?
             
             http://brendankemp.com/essays/build-a-query-in-activerecord-from-optional-params-the-non-hideous-version/
+35. Select where clause with multy variable, return exactly variable?
+            
+            Person.joins(:books).where("books.id IN (?)", [1,2,4]).group(:id).having('count(books.id) = ?', a)
