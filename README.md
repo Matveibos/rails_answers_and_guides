@@ -1,6 +1,8 @@
 # The most useful rails materials and guades
 ## Russian 100-hours ruby tutorial for beginners
   http://rubyschool.us/
+## Js tutorial on russian 
+  https://learn.javascript.ru/
 ## 47 places for learning programming
   https://learntocodewith.me/posts/code-for-free/
 
