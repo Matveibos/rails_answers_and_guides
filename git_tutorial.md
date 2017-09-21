@@ -78,3 +78,8 @@ http://gitreal.codeschool.com/
         
         git rebase -i --root
         # then change 'pick' to 'squash'
+20. How you can make changing in already pushed branch without commit?
+        
+        git add .
+        git commit --amend
+        git push -f origin <branch>
