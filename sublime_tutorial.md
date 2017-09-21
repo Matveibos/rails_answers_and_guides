@@ -64,3 +64,6 @@
             "tab_size": 2,
             "rulers": [80]
           }
+11. Show me all sublime short command?
+          
+          https://learn.javascript.ru/article/sublime/sheet.pdf
