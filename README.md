@@ -1,4 +1,9 @@
 # The most useful rails materials and guades
+
+## Some basic simple tutorial
+  https://www.learnenough.com/courses
+## Some new courses may be expensive
+  https://launchschool.com/course_catalog
 ## Russian 100-hours ruby tutorial for beginners
   http://rubyschool.us/
 ## Js tutorial on russian 
