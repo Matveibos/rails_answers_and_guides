@@ -53,6 +53,9 @@
                                           :password_confirmation)
            end
 
+5. How you can generate only controller with scaffold?
+         
+          rails g scaffold_controller <name>
 
 ## -----------------------------------MODEL-----------------------------------
 
