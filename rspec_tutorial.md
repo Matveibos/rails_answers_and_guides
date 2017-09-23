@@ -158,7 +158,7 @@
         let(:user_params) do 
           { "email" => user.email, "password" => user.password }
         end
-## Integration test
+## Integration test (capybara)
 1. How you can include integration test?
         
         # inside rspec_helper.rb
@@ -181,3 +181,6 @@
             expect(page).to have_selector('h1', text: "About")
           end
         end 
+3. List of available command for capybara?
+        
+        https://gist.github.com/tomas-stefano/6652111
