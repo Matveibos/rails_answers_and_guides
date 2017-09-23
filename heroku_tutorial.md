@@ -131,3 +131,6 @@
               config.serve_static_files = true
             # you can deleted all generated assets with 
               rails assets:clobber
+19. Destroy app from command line?
+          
+          heroku apps:destroy
