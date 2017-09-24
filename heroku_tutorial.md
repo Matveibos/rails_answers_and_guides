@@ -134,3 +134,6 @@
 19. Destroy app from command line?
           
           heroku apps:destroy
+20. How to push another branch to heroku? 
+          
+          git push heroku yourbranch:master
