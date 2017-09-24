@@ -224,3 +224,11 @@
 1.  Where you can find all needed option?
 	
 	https://flickity.metafizzy.co/v1/options.html
+
+
+2. How you can aling image by center??
+		
+		# set 
+			margin: 0 auto;
+		# for bootstrap
+			.center-block
