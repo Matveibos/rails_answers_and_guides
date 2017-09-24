@@ -5,3 +5,8 @@
 2. How to set id or class from rails model?
       
             div class="sample #{@variable.name}"
+3. How you can translate erb to slime inside rails app?
+            
+            gem install erb_to_slim
+            # And inside your project folder, use:
+            erb_to_slim
