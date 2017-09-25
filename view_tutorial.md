@@ -33,3 +33,9 @@
             
             # use button_to instead of link_to
             button_to
+10. How you can select input field with fail validation?
+      
+            # rails automaticalyy added such class
+            .field_with_errors {
+              @extend .has-error;
+            }
