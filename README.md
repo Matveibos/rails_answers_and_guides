@@ -1,5 +1,8 @@
 # The most useful rails materials and guades
 
+## Some open source rails project with their code on github
+  http://www.opensourcerails.com/
+
 ## Some basic simple tutorial
   https://www.learnenough.com/courses
 ## Some new courses may be expensive
