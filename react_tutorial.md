@@ -1,3 +1,6 @@
+1. Single page pattern on js
+        
+        http://singlepageappbook.com/
 1. Five simple react tutorial links
         
         http://andrewhfarmer.com/getting-started-tutorials/
