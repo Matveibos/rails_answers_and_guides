@@ -12,3 +12,7 @@
             delete '/:id' do
               Like.delete(params[:id])
             end
+
+2. How you can get object as response from api?
+      
+       # Restangular.all("url").customGET(""); 
