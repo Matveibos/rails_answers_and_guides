@@ -130,3 +130,6 @@ https://habrahabr.ru/post/319472/
             h3#monument-edit
             # add onclick with hash
             button onclick="location.hash=''; location.hash='#monument-edit';"
+4. Merge two hashes into one?
+
+            Object.assign(t, v)
