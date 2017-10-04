@@ -21,3 +21,9 @@
                                                                   serializer: FamilyTreeSerializer)
               end
             end 
+3. Make root node in ActiveModel serializer?
+            
+            # create file serializer.rb
+            # config/initializers/serializer.rb
+            ActiveModelSerializers.config.adapter = :json
+            ActiveModelSerializers.config.json_include_toplevel_object = true
