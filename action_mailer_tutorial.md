@@ -89,3 +89,6 @@
 9. How to create link for account activation?
             
               = link_to "activate", edit_account_activation_url(@user.activation_token, email: @user.email)
+10. Set default url for email
+            
+            config.action_mailer.default_url_options = { host: "localhost:3000" }
