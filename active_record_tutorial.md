@@ -254,3 +254,9 @@
 35. Select where clause with multy variable, return exactly variable?
             
             Person.joins(:books).where("books.id IN (?)", [1,2,4]).group(:id).having('count(books.id) = ?', a)
+36. Rails order by results count of has_many association
+
+            Company
+              .left_joins(:jobs)
+              .group(:id)
+              .order('COUNT(jobs.id) DESC')
