@@ -260,3 +260,6 @@
               .left_joins(:jobs)
               .group(:id)
               .order('COUNT(jobs.id) DESC')
+37. How you can make case-unsensitive search in Rails?
+            
+            Product.where('lower(name) = ?', name.downcase)
