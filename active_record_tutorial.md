@@ -263,3 +263,6 @@
 37. How you can make case-unsensitive search in Rails?
             
             Product.where('lower(name) = ?', name.downcase)
+38. How you can search on multiply attributes?
+            
+            Model.where("lower(first_name || ' ' || last_name) LIKE ?", "%#{search.downcase}%")
