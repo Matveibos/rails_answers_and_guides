@@ -18,3 +18,6 @@
           <%= form_with(model: @article, url: edit_article_path(@article), method: :patch) do |f| %>
             ...
           <% end %>
+4. How to add ajax request for links?
+          
+          <%= link_to "an article", @article, remote: true %>
