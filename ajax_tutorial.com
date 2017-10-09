@@ -20,4 +20,7 @@
           <% end %>
 4. How to add ajax request for links?
           
+          # post
           <%= link_to "an article", @article, remote: true %>
+          # delete
+          <%= link_to "delete", User.first, remote: true, method: :delete %>
