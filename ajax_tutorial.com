@@ -26,3 +26,12 @@
           <%= link_to "delete", User.first, remote: true, method: :delete %>
           # patch (with params in second argument)
           <%= link_to "update", user_path(@user, user: { email: "new", name: "this_is_you" }), remote: true, method: :patch %>
+5. How to send data with ajax request and one link?
+      
+          # coffee.file
+          $ ->
+            $("#my-id-template").on "ajax:success", (e, data, status, xhr) ->
+              alert $(this).data("name")
+          # html
+          <%= link_to "update", user_path(@user, user: { email: "new", name: "this_is_you" }),
+          remote: true, method: :patch, data: { name: 'hello'}, id: 'my-id-template' %>
