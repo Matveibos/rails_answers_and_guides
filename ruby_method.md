@@ -194,3 +194,6 @@
            object.present?
          # oposite is method
            object.blank?
+27. How you can make time formating?
+
+         webinar.start_date.strftime("%d.%m.%y %H:%M")
