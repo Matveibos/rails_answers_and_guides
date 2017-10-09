@@ -24,3 +24,5 @@
           <%= link_to "an article", @article, remote: true %>
           # delete
           <%= link_to "delete", User.first, remote: true, method: :delete %>
+          # patch (with params in second argument)
+          <%= link_to "update", user_path(@user, user: { email: "new", name: "this_is_you" }), remote: true, method: :patch %>
