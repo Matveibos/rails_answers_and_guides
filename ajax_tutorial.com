@@ -35,3 +35,6 @@
           # html
           <%= link_to "update", user_path(@user, user: { email: "new", name: "this_is_you" }),
           remote: true, method: :patch, data: { name: 'hello'}, id: 'my-id-template' %>
+6. How you can fix js function which doesn't work after ajax call?
+          
+          https://stackoverflow.com/questions/20962471/jquery-function-doesnt-work-after-ajax-call
