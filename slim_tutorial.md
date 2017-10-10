@@ -1,6 +1,7 @@
 1. How to change image or class in one string?
       
                .course-item class="#{index.even? ? 'dark' : 'light'}"
+               div class=(is_active? ? 'active' : 'inactive')
                style="background-image: url(#{image_url(index.even? ? 'course-bg_d.png' : 'course-bg_w.png')})"
 2. How to set id or class from rails model?
       
