@@ -197,3 +197,17 @@
 27. How you can make time formating?
 
          webinar.start_date.strftime("%d.%m.%y %H:%M")
+
+
+28. How to make regexp for yotube video?
+         
+           def youtube_embed(youtube_url)
+             if youtube_url[/youtu\.be\/([^\?]*)/]
+               youtube_id = $1
+             else
+               youtube_url[/^.*((v\/)|(embed\/)|(watch\?))\??v?=?([^\&\?]*).*/]
+               youtube_id = $5
+             end
+
+             return "http://www.youtube.com/embed/#{ youtube_id }"
+           end
