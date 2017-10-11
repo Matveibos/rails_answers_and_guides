@@ -43,3 +43,12 @@
 6. How you can fix js function which doesn't work after ajax call?
           
           https://stackoverflow.com/questions/20962471/jquery-function-doesnt-work-after-ajax-call
+7. How you can invoke ajax error request?
+          
+          render plain: 'Unactivated coupon', status: :internal_server_error
+9. Can you show me succes and error ajax request?
+          
+          $(document).on('ajax:success', 'form#new_coupon', (e, xhr, settings) ->
+            alert 'success'
+          ).on "ajax:error", 'form#new_coupon', (e, xhr, settings) ->
+            alert 'error'
