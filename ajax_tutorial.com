@@ -52,3 +52,6 @@
             alert 'success'
           ).on "ajax:error", 'form#new_coupon', (e, xhr, settings) ->
             alert 'error'
+10. Multiply view and file uploader?
+          
+          https://stackoverflow.com/questions/21411988/rails-4-multiple-image-or-file-upload-using-carrierwave
