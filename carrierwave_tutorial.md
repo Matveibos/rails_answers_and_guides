@@ -53,3 +53,42 @@
 7. How to set standart size for all image?
         
         process resize_to_limit: [400, 400]
+
+
+## FOG
+
+1. How to add fog for heroku?
+
+        # add gem fog
+        gem 'fog'
+        
+        # add config/initializers/carrierwave.rb
+        if Rails.env.production?
+          CarrierWave.configure do |config|
+            config.fog_credentials = {
+              # Configuration for Amazon S3
+              :provider              => 'AWS',
+              :aws_access_key_id     => ENV['S3_ACCESS_KEY'],
+              :aws_secret_access_key => ENV['S3_SECRET_KEY'],
+              :region                => ENV['S3_REGION'] // 'eu-central-1'
+            }
+            config.fog_directory     =  ENV['S3_BUCKET']
+          end
+        end
+        
+        # add storoge fog for uploader
+          if Rails.env.production?
+            storage :fog
+          else
+            storage :file
+          end
+        
+        # add key for heroku 
+        heroku config:set S3_ACCESS_KEY=<access key>
+        heroku config:set S3_SECRET_KEY=<secret key>
+        heroku config:set S3_BUCKET=<bucket name>
+        
+        # create acount on amazon 
+            1. https://aws.amazon.com/ru/
+            2. Get key and secret_key https://console.aws.amazon.com/iam/home?#/security_credential
+            3. create bucket https://s3.console.aws.amazon.com/s3/home?region=us-east-2
