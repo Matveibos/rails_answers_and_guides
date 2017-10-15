@@ -50,3 +50,6 @@
          mount_uploader :my_file, ImageUploader
          
          = link_to "Download File", my_file.url, download: File.basename(my_file.url)
+7. How to set standart size for all image?
+        
+        process resize_to_limit: [400, 400]
