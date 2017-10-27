@@ -21,3 +21,7 @@
           <script type="text/babel">
             ReactDOM.render(<h1> Sherlock Homs </h1>, document.body);
           </script>
+5. How to get element from html?
+
+        <div id="container"></div>
+        document.querySelector('#container')
