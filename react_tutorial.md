@@ -89,3 +89,9 @@
             {this.props.children}
           </div>
         );              
+11. How you can pass all properties by one time?
+          
+            # instead of this
+            <Square color={this.props.color} heigth={this.props.height}/>
+            # use that
+            <Square {...this.props}/>
