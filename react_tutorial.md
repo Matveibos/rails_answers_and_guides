@@ -66,3 +66,7 @@
               document.querySelector("#container")
             );        
         
+9. How you can add css class for react component?
+            
+            #  use  className attribute
+             <div className="letter">
