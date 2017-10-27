@@ -76,7 +76,7 @@
         var letterStyle = {
           padding: 10,
           margin: 10,
-          backgroundColor: "#ffde00",
+          backgroundColor: this.props.bgcolor,
           color: "#333",
           display: "inline-block",
           fontFamily: "monospace",
