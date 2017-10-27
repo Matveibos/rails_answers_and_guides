@@ -146,3 +146,21 @@
                   # do something with pressed shift button 
                 }
               }
+18. How you can add Listeners by Event?
+        
+            var Something = React.createClass({
+              handleMyEvent: function(e) {
+                alert('sss');
+              },
+              componentDidMount: function() {
+                window.addEventListener("someEvent", this.handleMyEvent);
+              },
+              componentWillUnmount: function() {
+                window.removeEventListener("someEvent", this.handleMyEvent);
+              },
+              render: function() {
+                return (
+                   <div>Hello!</div>
+                );
+              }
+            });
