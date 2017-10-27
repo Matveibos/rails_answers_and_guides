@@ -25,3 +25,30 @@
 
         <div id="container"></div>
         document.querySelector('#container')
+
+6. How you can create component?
+        
+            var HelloWorld = React.createClass({
+              render: function() {
+                return <p> Hello World ! </p>;
+              }
+            });
+            
+            ReactDOM.render(
+              <HelloWorld/>,
+              document.querySelector("#container")
+            );
+            
+7. How you can send params to component?
+
+            var HelloWorld = React.createClass({
+              render: function() {
+                return <p> Hello World ! { this.props.name } and { this.props.surname } </p>;
+              }
+            });
+            
+            ReactDOM.render(
+              <HelloWorld name="Vlad" surname="Hilko"/>,
+              document.querySelector("#container")
+            );
+        
