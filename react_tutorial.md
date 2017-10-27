@@ -16,3 +16,8 @@
 3. How you can add react to rails app?
         
         https://www.pluralsight.com/guides/ruby-ruby-on-rails/react-vs-angular-2-integration-with-rails
+4. Can you show me 'Hello World' on react?
+          
+          <script type="text/babel">
+            ReactDOM.render(<h1> Sherlock Homs </h1>, document.body);
+          </script>
