@@ -95,3 +95,20 @@
             <Square color={this.props.color} heigth={this.props.height}/>
             # use that
             <Square {...this.props}/>
+12. What is the function will fire before component render?
+        
+        getInitialState: function() {
+            return {
+                strikes: 0
+            };
+        }
+13. What is the function will fire after component render?
+        
+        componentDidMount: function() {
+            setInterval(this.timerTick, 1000);
+        }
+14. What is the function will fire state shanging?
+        
+        this.setState({
+          strikes: this.state.strikes + 100
+        });
