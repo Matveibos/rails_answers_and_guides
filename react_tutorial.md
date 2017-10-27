@@ -187,3 +187,10 @@
 22. How you can add ReactRouter?
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router/4.2.0/react-router.js"></script>
+23. How to get values from input?
+        
+        <input ref={(a) => this._inputElement = a} placeholder="input task">
+        </input>
+        
+        # them get
+        text: this._inputElement.value
