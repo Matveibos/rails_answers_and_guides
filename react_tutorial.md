@@ -51,4 +51,18 @@
               <HelloWorld name="Vlad" surname="Hilko"/>,
               document.querySelector("#container")
             );
+8. How you can get params from compents inside tag?
+           
+           # this.props.children
+           
+           var HelloWorld = React.createClass({
+              render: function() {
+                return <p> { this.props.children } </p>;
+              }
+            });
+            
+            ReactDOM.render(
+              <HelloWorld> This is the text for children property! </HelloWorld>,
+              document.querySelector("#container")
+            );        
         
