@@ -184,3 +184,6 @@
         componentWillUpdate
         render
         componentDidUpdate
+22. How you can add ReactRouter?
+        
+        <script src="https://npmcdn.com/react-router/umd/ReactRouter.min.js"></script>
