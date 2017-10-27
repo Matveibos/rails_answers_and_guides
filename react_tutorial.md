@@ -112,3 +112,16 @@
         this.setState({
           strikes: this.state.strikes + 100
         });
+15. How you can create own function and invoke her?
+        
+            var LigtingContainer = React.createClass({
+              timerTick: function() {
+                 # do something
+              },
+              render: function() {
+                this.timerTick;
+                return (
+                  <h1>{this.state.strikes}</h1>
+                );
+              }
+            });
