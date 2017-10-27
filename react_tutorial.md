@@ -70,3 +70,22 @@
             
             #  use  className attribute
              <div className="letter">
+
+10. How you can add css rules directly from js?
+                
+        var letterStyle = {
+          padding: 10,
+          margin: 10,
+          backgroundColor: "#ffde00",
+          color: "#333",
+          display: "inline-block",
+          fontFamily: "monospace",
+          fontSize: "32",
+          textAlign: "center"
+        };
+
+        return (
+          <div style={letterStyle}>
+            {this.props.children}
+          </div>
+        );              
