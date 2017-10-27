@@ -139,3 +139,10 @@
                 );
               }
             });
+17. How you can catch click with ShiftButton?
+        
+              increase: function(e) {
+                if(e.shiftKey) {
+                  # do something with pressed shift button 
+                }
+              }
