@@ -186,4 +186,4 @@
         componentDidUpdate
 22. How you can add ReactRouter?
         
-        <script src="https://npmcdn.com/react-router/umd/ReactRouter.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router/4.2.0/react-router.js"></script>
