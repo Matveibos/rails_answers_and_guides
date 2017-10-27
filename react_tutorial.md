@@ -164,3 +164,23 @@
                 );
               }
             });
+19. What you can say about 'Initial render life cycle'?
+
+        getDefaultProps
+        getInitialState
+        componentWillMount
+        render
+        componentDidMount
+20. What you can say about 'State change life cycle'?
+
+        shouldComponentUpdate
+        componentWillUpdate
+        render
+        componentDidUpdate
+21. What you can say about 'Props change life cycle'?
+
+        componentWillReceiveProps
+        shouldComponentUpdate
+        componentWillUpdate
+        render
+        componentDidUpdate
