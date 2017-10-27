@@ -125,3 +125,17 @@
                 );
               }
             });
+16. How you can fire event on click?
+        
+            var CounterParent = React.createClass({
+              increase: function(e) {
+                # do something by click
+              },
+              render: function() {
+                return (
+                  <div}>
+                    <button onClick={this.increase}> + </button>
+                  </div>
+                );
+              }
+            });
