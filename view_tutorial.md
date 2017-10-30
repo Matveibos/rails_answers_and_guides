@@ -39,3 +39,11 @@
             .field_with_errors {
               @extend .has-error;
             }
+11. How you can create layout for certain controller views?
+      
+            views 
+                 hello
+                        index
+                 layout
+                        application
+                        hello
