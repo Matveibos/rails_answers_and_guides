@@ -55,3 +55,10 @@
               def index
               end
             end
+13. How you can invoke some part of specific code?
+            
+            <% content_for :not_authorized do %>
+              <h1>Not authorized</h1>
+            <% end %>
+            
+             <%= yield :not_authorized %>
