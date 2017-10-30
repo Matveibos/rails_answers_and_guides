@@ -47,3 +47,11 @@
                  layout
                         application
                         hello
+12. How you can select what layout you would like to use?
+            
+            class HelloController < ApplicationController
+              layout "standart"
+
+              def index
+              end
+            end
