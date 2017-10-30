@@ -62,3 +62,7 @@
             <% end %>
             
              <%= yield :not_authorized %>
+
+14. Can you write chain of action for writting html template?
+            
+            route -> controller -> custom view -> layout
