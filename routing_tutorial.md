@@ -46,6 +46,9 @@
 4. How you can create route to custom controller action?
 
             get 'heartbeat' => "custom_controller#heartbeat"
+            # or
+            get 'heartbeat', to "custom_controller#heartbeat"
+            
             # /hearbeat
             # or 
             get 'custom_controller/heartbeat', as: 'heartbeat'
