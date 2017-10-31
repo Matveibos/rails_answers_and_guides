@@ -82,3 +82,15 @@
             
             get 'entries/sign_in', to: 'entries#sign_in'
             post 'entries/sign_in', to: 'entries#sign_in'
+
+16. What kind of form_for exist in rails?
+            
+            f.label :name
+            f.text_field :name
+ 
+            f.text_area :description
+            f.hidden_field :authenticity_token
+            f.password_field :secret
+            
+            
+            
