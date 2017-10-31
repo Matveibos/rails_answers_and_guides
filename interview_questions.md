@@ -111,6 +111,11 @@
 
            puts object.method(:object_id).call # (Kudos to Ezra)
             #=> 282660
+
+13. What is the difference bettween 'first' and 'first!'
+           
+           first! will return ERROR if record doesn't find
+           
 ##----------------------------RAILS--------------------------------------------------
 
 11. What is the difference between User.find(1) and User.find_by(id: 1)?
