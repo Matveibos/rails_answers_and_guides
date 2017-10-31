@@ -66,3 +66,19 @@
 14. Can you write chain of action for writting html template?
             
             route -> controller -> custom view -> layout
+15. How to add form to view?
+            
+            <%= form_tag action: 'sign_in' do %>
+              <p>Enter your name:
+              <%= text_field_tag 'visitor_name', @name %></p>
+              <%= submit_tag 'Sign in' %>
+            <% end %>
+            
+            # controller
+            def sign_in
+               @name = params[:visitor_name]
+            end
+            # route
+            
+            get 'entries/sign_in', to: 'entries#sign_in'
+            post 'entries/sign_in', to: 'entries#sign_in'
