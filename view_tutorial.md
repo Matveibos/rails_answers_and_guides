@@ -96,5 +96,15 @@
             
             f.check_box :can_send_email, {checked: checked}
             
+            f.radio_button :country, 'Mexico' 
+            
+            f.select :country, [ ['Canada', 'Canada'],
+                               ['Mexico', 'Mexico'],
+                               ['United Kingdom', 'UK'],
+                               ['United States of America', 'USA'] ]
+                               
+            f.date_select :birthday
+            
+            f.time_select :favorite_time
             
             
