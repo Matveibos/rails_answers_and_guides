@@ -89,8 +89,12 @@
             f.text_field :name
  
             f.text_area :description
+            
             f.hidden_field :authenticity_token
+            
             f.password_field :secret
+            
+            f.check_box :can_send_email, {checked: checked}
             
             
             
