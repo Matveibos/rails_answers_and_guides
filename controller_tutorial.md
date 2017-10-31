@@ -24,3 +24,11 @@
       
        rails generate controller namespace_name/controller_name
 
+5. Can you show me some example of respond to?
+       
+          respond_to do |format|
+            format.html
+            format.js
+            format.json
+            format.xml
+          end
