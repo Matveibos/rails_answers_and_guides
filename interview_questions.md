@@ -115,7 +115,28 @@
 13. What is the difference bettween 'first' and 'first!'
            
            first! will return ERROR if record doesn't find
+ 
+14. Why using a class variable it's a bad idea?
            
+           # Because class variable inherits from parent 
+           class A
+             def initialize(name)
+               @@name = name
+             end
+
+             def foo
+               puts @@name
+             end
+           end
+
+
+           class B < A
+             def increment
+               @@name += 1
+             end
+           end 
+           
+           # Class B will change @@name 
 ##----------------------------RAILS--------------------------------------------------
 
 11. What is the difference between User.find(1) and User.find_by(id: 1)?
