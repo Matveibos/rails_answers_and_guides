@@ -116,3 +116,16 @@
             
             form_with(model: person, local: true, html: { multipart: true })
             
+19. How to create link for nested routing?
+            
+            # route.rb
+            resources :students do
+              resources :awards
+            end
+            
+           # view link
+            link_to 'Show', [@student, award]
+            link_to 'Edit', edit_student_award_path(@student, award)
+            link_to 'Destroy', [@student, award], method: :delete, data: { confirm: 'Are you sure?' }
+            link_to 'New Award', new_student_award_path(@student)
+          
