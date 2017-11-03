@@ -110,3 +110,9 @@
             f.file_field :photo
             
             
+17. When you have to use 'multipart: true'?
+            
+            multipart: true is used, when you have file upload in your form.
+            
+            form_with(model: person, local: true, html: { multipart: true })
+            
