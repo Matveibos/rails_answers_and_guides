@@ -9,3 +9,10 @@
               # errors.add(:customer_id, I18n.t('activerecord.errors.models.message.should_contain_body_or_attachment'))
             end
           end
+2. How you can invoke validation by certain condition?
+          
+            validates :name, presence: true, if: :validation_need?
+
+            def validation_need?
+              false
+            end
