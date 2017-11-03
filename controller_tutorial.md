@@ -32,3 +32,13 @@
             format.json
             format.xml
           end
+6. How to create new object when routing is nested?
+            
+            # routes
+                  resources :students do
+                      resources :awards
+                  end
+            # new
+                  @award = @student.awards.build
+            # create 
+                  @award = @student.awards.build(award_params)
