@@ -107,4 +107,6 @@
             
             f.time_select :favorite_time
             
+            f.file_field :photo
+            
             
