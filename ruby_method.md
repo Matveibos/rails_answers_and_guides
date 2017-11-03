@@ -211,3 +211,6 @@
 
              return "http://www.youtube.com/embed/#{ youtube_id }"
            end
+29. How to remove all unnessesary spaces?
+         
+         "aaad fef ffr   ".squish
