@@ -12,3 +12,6 @@
 4. How you can generate rails app for API?
             
         rails new my_app --api
+5. How to generate scaffold controller with params without model?
+        
+        rails g scaffold_controller User name:string email:string
