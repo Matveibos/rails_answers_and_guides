@@ -11,7 +11,16 @@
             handler.removeMarkers(Gmaps.markers)
 
             Gmaps.markers = handler.addMarkers(markersData)
-            handler.bounds.extendWith(Gmaps.markers);
-            handler.fitMapToBounds();
           })();
         </script>
+        
+3. How to set up clusterization for different size of zoom?
+      
+        handler = Gmaps.build('Google', {
+          markers: {
+            clusterer: {
+              maxZoom:  17,
+              gridSize: 50
+            }
+          }
+        });
