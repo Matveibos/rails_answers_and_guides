@@ -55,3 +55,41 @@
 10. Multiply view and file uploader?
           
           https://stackoverflow.com/questions/21411988/rails-4-multiple-image-or-file-upload-using-carrierwave
+          
+11. How to send ajax request for updating part of page from js?
+          
+          # 1. include jquery
+          # 2. Add File my_js.js
+                $(document).ready(function () {
+                    // will call refreshPartial every 3 seconds
+                    setInterval(refreshPartial, 1000)
+                });
+
+                // calls action refreshing the partial
+                function refreshPartial() {
+                  $.ajax({
+                    type: 'GET',
+                    dataType: 'script',
+                    url: '/users/refresh_part'
+                  });
+                 }
+          # 3. Add to route.rb
+                get 'users/refresh_part'
+          # 4. Add to user controller
+                
+                  def refresh_part
+                  # get whatever data you need to a variable named @data
+                    render :refresh_part
+                  end
+         # 5. Add refresh_part.js.erb
+             $("#part_you_want_to_refresh").html("<%= raw escape_javascript(render(partial: 'my_partial')) %>")
+         # 6. Add to your partial _my_partial.html.erb
+             <div id="part_you_want_to_refresh">
+              <% if @data.present? %>
+                <%= @data %>
+              <% end %>
+             </div>
+         # 7. Add somewhere in view <%= render "my_partial" %>
+            
+             
+
