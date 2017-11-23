@@ -31,3 +31,7 @@
         
         chflags hidden name_of_folder
         chflags nohidden name_of_folder
+8. How to unistall homebrew lib?
+        
+        brew uninstall opencv3
+        brew cleanup
