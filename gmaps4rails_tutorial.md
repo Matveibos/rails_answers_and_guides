@@ -24,3 +24,10 @@
             }
           }
         });
+4. How to set up center coordiantes?
+        
+        handler.map.centerOn([53.928143, 27.685503]);
+
+5. How to set up Zoom?
+    
+        handler.buildMap({ provider: { Zoom: 19 }})
