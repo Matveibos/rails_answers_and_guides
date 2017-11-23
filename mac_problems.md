@@ -39,3 +39,8 @@
         
         brew search postgresql@
         brew install postgresql@9.5
+        
+10. How to install opencv on mac?
+        
+        brew install opencv@2
+        gem install ruby-opencv -- --with-opencv-dir=/path/to/opencvdir
