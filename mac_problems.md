@@ -35,3 +35,7 @@
         
         brew uninstall opencv3
         brew cleanup
+9. How you can show and install specific version of program?
+        
+        brew search postgresql@
+        brew install postgresql@9.5
