@@ -62,3 +62,14 @@
                  received: (data) ->
                       unless data.message.blank?
                         $('#messages-table').append data.message
+10. How to set middle level before subscription?
+            
+            module ApplicationCable
+              class Connection < ActionCable::Connection::Base
+                identified_by :current_user
+
+                def connect
+                  self.current_user = return_my_user_method()
+                end
+              end
+            end
