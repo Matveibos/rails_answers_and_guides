@@ -120,3 +120,11 @@
             $('#message_content').on 'keydown', (event) ->
               if event.keyCode is 13
                 console.log(event)
+21. How to simulate click by enter?
+         
+         submit_message = () ->
+            $('#message_content').on 'keydown', (event) ->
+              if event.keyCode is 13
+                $('input').click()
+                event.target.value = ""
+                event.preventDefault()
