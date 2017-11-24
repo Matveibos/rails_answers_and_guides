@@ -128,3 +128,7 @@
                 $('input').click()
                 event.target.value = ""
                 event.preventDefault()
+22. How to scroll to the lattest element with help Jquery? 
+          
+         scroll_bottom = () ->
+           $('#messages').scrollTop($('#messages')[0].scrollHeight)
