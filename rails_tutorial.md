@@ -258,3 +258,17 @@
                   # 4. rails s -e production
                   # 5. RAILS_ENV=production bundle exec rake assets:precompile
                   # 6. set config/environments/production config.assets.compile = true
+
+
+## ----------------------- INCLUDING CODE -------------------------------
+
+
+1. How to include lib files to rails app?
+         
+         # in config/application.rb:
+          config.autoload_paths << Rails.root.join('lib')
+
+         # in lib/foo.rb:
+
+          class Foo
+          end
