@@ -32,3 +32,7 @@
 
               received: (data) ->
                 # Called when there's incoming data on the websocket for this channel
+6. How to include ActionCable from route?
+            
+            # route.rb
+            mount ActionCable.server, at: '/cable'
