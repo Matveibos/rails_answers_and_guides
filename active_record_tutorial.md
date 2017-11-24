@@ -273,6 +273,8 @@
 
 1. How you can use ActiveRecord with some db without rails?
             
+            # create file test_without_rails.rb
+            
             require 'active_record'
 
             ActiveRecord::Base.establish_connection({
@@ -289,3 +291,6 @@
             end
 
             Thing.create(name: "vlad")
+2. Article about using ActiveRecord without rails?
+
+            http://ashleyangell.com/2015/05/estabilishing-activerecord-database-connections-in-ruby-but-without-rails/
