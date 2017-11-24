@@ -92,3 +92,8 @@
 15. How to check if value is blank?
         
         data.content.blank?
+16. Can you use 'if' on one line like in ruby?
+        
+        # yes
+        alert("You have a new mention") if data.mention
+       
