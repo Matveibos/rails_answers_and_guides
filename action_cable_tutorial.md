@@ -17,3 +17,6 @@
             # Any cleanup needed when channel is unsubscribed
           end
         end
+4. How to invoke subscribed action for app?
+      
+         ActionCable.server.broadcast 'room_channel', <data hash>
