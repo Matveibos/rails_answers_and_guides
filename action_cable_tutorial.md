@@ -50,3 +50,15 @@
                 <%= f.text_area :content %>
                 <%= f.submit "Send" %>
               <% end %>
+9. How you can send part of html code to the channel?
+      
+            # 1. define render message
+                  def render_message(message)
+                    render(partial: 'message', locals: { message: message })
+                  end
+            # 2. Send this message to channel
+                  ActionCable.server.broadcast 'room_channel', message: render_message(message)
+            # 3. Change values inside js
+                 received: (data) ->
+                      unless data.message.blank?
+                        $('#messages-table').append data.message
