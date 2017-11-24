@@ -106,3 +106,8 @@
               });
             });
           </script>
+19. How to add JQuery to rails app?
+          
+          $(document).on('turbolinks:load', function() {
+            $('#messages-table').append('hello, world!');
+          });
