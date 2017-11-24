@@ -89,3 +89,6 @@
         for key, value of player
           alert "#{key} - #{value}"
        
+15. How to check if value is blank?
+        
+        data.content.blank?
