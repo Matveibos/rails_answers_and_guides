@@ -294,3 +294,9 @@
 2. Article about using ActiveRecord without rails?
 
             http://ashleyangell.com/2015/05/estabilishing-activerecord-database-connections-in-ruby-but-without-rails/
+3. If you are using sqlite then you need to write a correct path to sqlite db file
+            
+            ActiveRecord::Base.establish_connection({
+              adapter:  'sqlite3',
+              database: '../not_my_database_development'
+            })
