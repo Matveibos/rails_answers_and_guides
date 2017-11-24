@@ -13,3 +13,8 @@
 4. How to validate number beetween 2 values?
 
          validates :amount, numericality: {greater_than_or_equal_to: 0, less_than_or_equal_to: 100}
+5. How to set new db table to model?
+        
+        class MyBook < ApplicationRecord
+          self.table_name = 'books'
+        end
