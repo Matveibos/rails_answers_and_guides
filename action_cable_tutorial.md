@@ -43,3 +43,10 @@
             received: (data) ->
               alert data.user_name
               # Called when there's incoming data on the websocket for this channel
+8. How you can send ajax request from form?
+                  
+              # add remote: true
+              <%= form_for(@message, remote: true) do |f| %>
+                <%= f.text_area :content %>
+                <%= f.submit "Send" %>
+              <% end %>
