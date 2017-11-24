@@ -36,3 +36,10 @@
             
             # route.rb
             mount ActionCable.server, at: '/cable'
+            
+7. Where you can get information from rails subscribe method?
+            
+            # room.coffee
+            received: (data) ->
+              alert data.user_name
+              # Called when there's incoming data on the websocket for this channel
