@@ -75,3 +75,16 @@
                 end
               end
             end
+11. How to invoke events for specific user's stream?
+            
+            # 1. invoke method with id
+                  ActionCable.server.broadcast "room_channel_user_#{some_obejct.id}", some_object: true
+            # 2. set up some_object.id in ApplicationCable::Connection
+            # 3. Create channel witch will be listen him
+            # app/channels
+                  def subscribed
+                    stream_from "room_channel_user_#{some_object.id}"
+                  end
+            # 4. in js call alert if channel was invoke
+              received: (data) ->
+                  alert("You have a new mention") if data.some_object
