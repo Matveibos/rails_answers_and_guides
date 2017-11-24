@@ -3,6 +3,14 @@
         https://www.pluralsight.com/guides/ruby-ruby-on-rails/creating-a-chat-using-rails-action-cable
         
         https://www.learnenough.com/action-cable-tutorial#code-message_appender_function
+        
+        # new
+        
+        https://blog.heroku.com/real_time_rails_implementing_websockets_in_rails_5_with_action_cable
+        
+        http://joeyschoblaska.com/posts/rails-5-chess-with-action-cable-websockets
+        
+        https://www.youtube.com/watch?v=KJVTM7mE1Cc
 2. How to genereate channel?
       
          rails generate channel Room
