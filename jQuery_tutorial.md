@@ -111,3 +111,12 @@
           $(document).on('turbolinks:load', function() {
             $('#messages-table').append('hello, world!');
           });
+20. How to catch the action by click enter inside form?
+          
+          $(document).on 'turbolinks:load', ->
+            submit_message()
+
+          submit_message = () ->
+            $('#message_content').on 'keydown', (event) ->
+              if event.keyCode is 13
+                console.log(event)
