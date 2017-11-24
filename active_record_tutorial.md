@@ -266,3 +266,26 @@
 38. How you can search on multiply attributes?
             
             Model.where("lower(first_name || ' ' || last_name) LIKE ?", "%#{search.downcase}%")
+
+
+## ------------------------ ActiveRecord without rails ------------------------
+
+
+1. How you can use ActiveRecord with some db without rails?
+            
+            require 'active_record'
+
+            ActiveRecord::Base.establish_connection({
+              adapter: 'postgresql',
+              encoding: 'unicode',
+              username: 'postgres',
+              host: 'localhost',
+              database: 'myapp_development'
+            })
+
+            class Thing < ActiveRecord::Base
+              # set table which already exists here
+              self.table_name = "users"
+            end
+
+            Thing.create(name: "vlad")
