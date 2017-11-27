@@ -1,3 +1,13 @@
+1. How to add to rails?
+        
+        group :development, :test do
+          gem 'rspec-rails', '~> 3.6'
+        end
+        
+        rails generate rspec:install
+2. How to generate a standart model spec?
+
+        rails generate rspec:model model_name
 1. How you can begin rspec test?
         
           rspec spec\hello_world_spec.rb
