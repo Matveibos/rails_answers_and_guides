@@ -6,4 +6,11 @@
         brew install rabbitmq
         # and start
         rabbitmq-server
+2. How you can install rabbit plagin for web( RabbitMQ Web-Stomp Plugin )?
+        
+        # write it in command line
+        rabbitmq-plugins enable rabbitmq_web_stomp
+        # run rabbit MQ on background
+        # check if it works
+        http://127.0.0.1:15674/stomp
  
