@@ -44,3 +44,6 @@
         
         brew install opencv@2
         gem install ruby-opencv -- --with-opencv-dir=/path/to/opencvdir
+11. terminal open new tab in same directory
+        
+        https://apple.stackexchange.com/questions/178017/new-terminal-to-same-directory
