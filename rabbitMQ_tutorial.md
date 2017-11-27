@@ -15,6 +15,7 @@
         http://127.0.0.1:15674/stomp
  
 3. Where you have to include rabbit service?
-
+        
+        # in config/application.rb:
         config.autoload_paths << Rails.root.join('lib')
         under lib directory ( lib/match_score_service.rb )
