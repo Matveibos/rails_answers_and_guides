@@ -11,6 +11,8 @@
         http://joeyschoblaska.com/posts/rails-5-chess-with-action-cable-websockets
         
         https://www.youtube.com/watch?v=KJVTM7mE1Cc
+        
+        https://www.onehub.com/blog/2016/02/18/event-notifications-in-rails-5-with-actioncable/
 2. How to genereate channel?
       
          rails generate channel Room
