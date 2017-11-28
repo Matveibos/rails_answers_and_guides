@@ -17,4 +17,9 @@
                }
             }
             RestClient.put 'http://localhost:3000/parking_places/3.json', json_my
+3. How you can check responce status?
+            
+            response =  RestClient.put "http://localhost:3000/parking_places/ ...
+            response.code 
+            
 
