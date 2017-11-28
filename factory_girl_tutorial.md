@@ -1,3 +1,16 @@
+1. How to include new version of gem? (FactoryBot)
+        
+        # add gem 
+        gem "factory_bot_rails"
+        
+        # add spec/support/factory_bot.rb
+        RSpec.configure do |config|
+          config.include FactoryBot::Syntax::Methods
+        end
+        # Remember to require the above file in your rails_helper since the support folder isn't eagerly loaded
+        require 'support/factory_bot'
+        
+        # In new place use FactoryBot instead of FactoryGirl
 1. How you can initialize factory folder?
 
         gem "factory_girl_rails"
