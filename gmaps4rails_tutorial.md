@@ -1,6 +1,7 @@
 1. Where you can find the materials?
     
       https://apneadiving.github.io/
+      https://www.sitepoint.com/use-google-maps-rails/
       
 2. Script for markers updating?
         
