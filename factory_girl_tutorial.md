@@ -1,3 +1,8 @@
+1. How you can initialize factory folder?
+
+        gem "factory_girl_rails"
+        rails g factory_girl:model MyModel
+        # it will create spec/factories/my_model.rb
 1. How to create Factory?
     
         # This will guess the User class
