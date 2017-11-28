@@ -57,3 +57,10 @@
 5. How you can create redirect from all another routes to one route?
             
             get '*path' => 'home#index'
+6. How to add routing without link on id (like /profile)?
+            
+            # singular for
+            resource :user do
+              get :my_method, on: :member
+            end
+            # controller/users define my_method
