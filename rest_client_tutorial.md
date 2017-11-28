@@ -23,3 +23,6 @@
             response.code 
             
 
+4. How to send get request with params?
+            
+            RestClient.get 'http://example.com/resource', {params: {id: 50, 'foo' => 'bar'}}
