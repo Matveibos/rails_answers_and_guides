@@ -42,3 +42,9 @@
                   @award = @student.awards.build
             # create 
                   @award = @student.awards.build(award_params)
+7. Return data in json format
+            
+       def show
+         @user = User.find(params[:id])
+         render json: @user
+       end
