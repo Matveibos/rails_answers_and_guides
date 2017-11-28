@@ -137,6 +137,17 @@
            end 
            
            # Class B will change @@name 
+15. What will be in this part of code?
+           
+           def my_method
+             arr = (1..100).to_a
+             arr.each do |a| 
+               return a if a == 40
+               puts a
+             end
+           end
+
+           puts my_method
 ##----------------------------RAILS--------------------------------------------------
 
 11. What is the difference between User.find(1) and User.find_by(id: 1)?
