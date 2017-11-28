@@ -151,6 +151,16 @@
            
            # will return a == 40
            and puts for 1 to 40 
+16. What will be in this part of code?
+           
+           def method
+             (1..300).each do |a|
+               return if a == 1000
+             end
+           end
+
+           puts method
+           # will return (1..300)
 ##----------------------------RAILS--------------------------------------------------
 
 11. What is the difference between User.find(1) and User.find_by(id: 1)?
