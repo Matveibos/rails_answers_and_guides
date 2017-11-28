@@ -148,6 +148,9 @@
            end
 
            puts my_method
+           
+           # will return a == 40
+           and puts for 1 to 40 
 ##----------------------------RAILS--------------------------------------------------
 
 11. What is the difference between User.find(1) and User.find_by(id: 1)?
