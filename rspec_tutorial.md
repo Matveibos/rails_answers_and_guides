@@ -209,3 +209,8 @@
         RSpec.configure do |config|
           config.include FeatureHelper
         end
+## API SPECS
+
+1. Articles
+        
+        http://matthewlehner.net/rails-api-testing-guidelines/
