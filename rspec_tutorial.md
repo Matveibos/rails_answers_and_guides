@@ -248,3 +248,8 @@
 1. Articles
         
         https://semaphoreci.com/community/tutorials/how-to-test-rails-models-with-rspec
+## STUB/ MOCK
+
+1. Articles
+        
+        https://github.com/bblimke/webmock
