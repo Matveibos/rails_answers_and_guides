@@ -102,3 +102,12 @@
                 resources :events
               end
             end
+8. How you can create subdomain? And hide a part of path?
+            
+        constraints subdomain: 'api' do
+          scope module: 'api' do
+            namespace :v1 do
+              resources :users
+            end
+          end
+        end
