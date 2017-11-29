@@ -103,6 +103,8 @@
               end
             end
 8. How you can create subdomain? And hide a part of path?
+
+        # understand only path with subdomain api. Hided api from the localhost:3000/api
             
         constraints subdomain: 'api' do
           scope module: 'api' do
