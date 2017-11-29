@@ -64,3 +64,34 @@
               get :my_method, on: :member
             end
             # controller/users define my_method
+
+1. how you can see all route?
+         
+         rails routes
+1. How you can set root route?
+         
+         root 'controller_name#method_name'
+2. How you can set simple get action?
+         
+         get 'controller_name/method_name'
+2. How you can set shortest name?
+         
+         get '/method_name', to: 'controller_name#method_name'
+2. How you can add all action for User?
+         
+         resources :users
+3. What is the difference between root_path and root_url?
+         
+         root_path -> '/'
+         root_url  -> 'http://www.example.com/'
+4. How you can change standart action_path?
+         
+          get '/about', to: 'static_pages#about', as: 'ab'
+          #=> was about_path, will be ab_path
+5. How you can find specific name in routes?
+         
+         rake routes | grep ressource_name
+6. How you can set default another format for answer (json for example)?
+         
+         resources :visitors, only: [:index, :create, :destroy], defaults: {format: :json}
+ 
