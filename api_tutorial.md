@@ -12,3 +12,21 @@
              Apiclient.find_by_client_key(token).present?
             end
         end
+        
+3. In what place you have to put Api key?
+        
+         API key in the request header 
+4. How you can take API key from request header?
+        
+        # Before action 
+        before_action :authenticate 
+        
+        def authenticate
+          api_key = request.headers['X-Api-Key']
+          @user = User.where(api_key: api_key).first if api_key
+
+          unless @user
+            head status: :unauthorized
+            return false
+          end
+        end
