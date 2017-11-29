@@ -28,3 +28,7 @@
 4. How to send get request with params?
             
             RestClient.get 'http://example.com/resource', {params: {id: 50, 'foo' => 'bar'}}
+            
+5. How to send request with API key inside response header?
+            
+            RestClient.post(url, request, :content_type => :json, :accept => :json, :'x-auth-key' => "mykey")
