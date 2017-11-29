@@ -1,6 +1,7 @@
 1. Articles
     
          https://blog.joshsoftware.com/2014/05/08/implementing-rails-apis-like-a-professional/
+         https://sourcey.com/building-the-prefect-rails-5-api-only-app/
          
 2. How to generate app only for api?
         
