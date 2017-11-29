@@ -1,6 +1,8 @@
 1. Articles
     
          https://blog.joshsoftware.com/2014/05/08/implementing-rails-apis-like-a-professional/
+         
+## SECURITY
 2. How to add method for authorization api through token?
         
         # Before action 
@@ -30,3 +32,12 @@
             return false
           end
         end
+5. How to set/get Rails app secrets?
+        
+        # config/secrets.yml
+        development:
+          secret_key_base: ec....
+          my_own_token: aw...
+        
+        # call it
+        Rails.application.secrets.secret_key_base
