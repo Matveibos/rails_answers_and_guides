@@ -253,3 +253,5 @@
 1. Articles
         
         https://github.com/bblimke/webmock
+        # webmock with VCR
+        http://www.thegreatcodeadventure.com/stubbing-with-vcr/
