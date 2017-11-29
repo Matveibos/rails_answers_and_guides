@@ -2,6 +2,10 @@
     
          https://blog.joshsoftware.com/2014/05/08/implementing-rails-apis-like-a-professional/
          
+2. How to generate app only for api?
+        
+        rails new my_app --api
+         
 ## SECURITY
 2. How to add method for authorization api through token?
         
