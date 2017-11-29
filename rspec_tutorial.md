@@ -243,3 +243,8 @@
               }.to change { ParkingPlace.count }
             end
           end
+## MODEL TESTS
+
+1. Articles
+        
+        https://semaphoreci.com/community/tutorials/how-to-test-rails-models-with-rspec
