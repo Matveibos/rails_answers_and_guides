@@ -49,3 +49,6 @@
 6. Gem for protect your web app from bad clients
         
         https://github.com/kickstarter/rack-attack
+7. How to check your access to website throught a token in command line?
+        
+        curl -H "Authorization: Token token=lIQAaDgj8Sl5GREFYDtgEwtt" http://api.lvh.me:3000/v1/users
