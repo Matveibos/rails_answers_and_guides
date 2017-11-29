@@ -46,3 +46,6 @@
         
         # call it
         Rails.application.secrets.secret_key_base
+6. Gem for protect your web app from bad clients
+        
+        https://github.com/kickstarter/rack-attack
