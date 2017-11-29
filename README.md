@@ -1,5 +1,6 @@
 # The most useful rails materials and guades
-
+## CLEAN RUBY TUTORIAL
+  https://blog.joshsoftware.com/
 ## Some open source rails project with their code on github
   http://www.opensourcerails.com/
 
