@@ -95,3 +95,10 @@
          
          resources :visitors, only: [:index, :create, :destroy], defaults: {format: :json}
  
+7. How you can create route path under another path? (namespace)
+            
+            namespace :api do
+              namespace :v1 do
+                resources :events
+              end
+            end
