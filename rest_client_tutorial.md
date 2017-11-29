@@ -4,7 +4,7 @@
               protect_from_forgery with: :exception
             to
               protect_from_forgery with: :null_session
-2. How you can send get/delete/put request?
+2. How you can send get/delete/put/post request?
             
             RestClient.get 'http://localhost:3000/parking_places/1.json', {}
             RestClient.delete 'http://localhost:3000/parking_places/1.json'
@@ -17,6 +17,8 @@
                }
             }
             RestClient.put 'http://localhost:3000/parking_places/3.json', json_my
+            RestClient.post 'http://localhost:3000/parking_places', json_my
+            
 3. How you can check responce status?
             
             response =  RestClient.put "http://localhost:3000/parking_places/ ...
