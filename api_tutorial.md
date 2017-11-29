@@ -1,3 +1,14 @@
 1. Articles
     
-    https://blog.joshsoftware.com/2014/05/08/implementing-rails-apis-like-a-professional/
+         https://blog.joshsoftware.com/2014/05/08/implementing-rails-apis-like-a-professional/
+2. How to add method for authorization api through token?
+        
+        # Before action 
+        before_action :authenticate
+        
+        # this block should return true or false
+        def authenticate
+            authenticate_or_request_with_http_token |token,other_options|
+             Apiclient.find_by_client_key(token).present?
+            end
+        end
