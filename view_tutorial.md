@@ -129,3 +129,16 @@
             link_to 'Destroy', [@student, award], method: :delete, data: { confirm: 'Are you sure?' }
             link_to 'New Award', new_student_award_path(@student)
           
+20. How to create button for some action by click?
+            
+            # route.rb
+                    resources :parking_places do
+                      post :make_free_all, on: :collection
+                    end    
+            # controller.rb (parking_place)
+                    def make_free_all
+                      ParkingPlace.update_all(status: 'free')
+                      redirect_to parking_places_path
+                    end
+            # index.html
+                  <%= link_to 'Free all',  make_free_all_parking_places_path, method: :post, class: "btn btn-primary" %>
