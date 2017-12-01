@@ -267,7 +267,9 @@
             
             Model.where("lower(first_name || ' ' || last_name) LIKE ?", "%#{search.downcase}%")
 
-
+39. How to get time before some second from created_at?
+            
+            MyModel.where("created_at < ?", 2.days.ago)
 ## ------------------------ ActiveRecord without rails ------------------------
 
 
