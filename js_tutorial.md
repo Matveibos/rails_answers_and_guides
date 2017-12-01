@@ -117,6 +117,15 @@
             $(document).on('turbolinks:load', function() {
             
             });
+# OBJECTS
+1. How to delete key abd value in object?
+            
+            var obj = {
+              one: "1",
+              second: "2"
+            }
+
+            delete obj.one
 # DOM ELEMENTS
 
 1. How to set bacground-image src from object?
