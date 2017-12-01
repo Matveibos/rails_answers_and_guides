@@ -142,3 +142,16 @@
                     end
             # index.html
                   <%= link_to 'Free all',  make_free_all_parking_places_path, method: :post, class: "btn btn-primary" %>
+21. How to create button for destroying all type of information?
+             
+             # route.rb
+                    resources :parking_places do
+                      delete :destroy_all_dynamic, on: :collection
+                    end
+             # controller.rb (parking_place)
+                    def destroy_all_dynamic
+                      ParkingPlace.with_place_type(:dynamic).destroy_all
+                      redirect_to parking_places_path
+                    end
+             # index.html
+                    <%= link_to 'Destroy all dynamic places', destroy_all_dynamic_parking_places_path, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary" %>
