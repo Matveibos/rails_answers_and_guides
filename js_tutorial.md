@@ -1,5 +1,7 @@
-# some tutorial
-https://habrahabr.ru/post/319472/
+## ARTICLES
+            https://habrahabr.ru/post/319472/
+            https://bonsaiden.github.io/JavaScript-Garden/
+            http://www.cheat-sheets.org/saved-copy/jsquick.pdf
 
 1. How you can check if array include element?
             
@@ -122,9 +124,6 @@ https://habrahabr.ru/post/319472/
                  # you can make interpolation 
                  document.getElementById('image').style.backgroundImage = "url(" + this.src + ")";
 
-2. Link of all pupular tutorila on js?
-
-            http://www.cheat-sheets.org/saved-copy/jsquick.pdf
 3. How to add link link on one some page?
             
             h3#monument-edit
