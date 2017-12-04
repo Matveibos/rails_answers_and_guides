@@ -6,6 +6,10 @@
 
       https://medium.com/selleo/essential-rubyonrails-patterns-part-1-service-objects-1af9f9573ca1
       
+3. Controller service tutorial
+      
+      https://www.engineyard.com/blog/keeping-your-rails-controllers-dry-with-services
+
 2. How you can add simple services?
       
             # add app/services folder
