@@ -9,6 +9,7 @@
 3. Controller service tutorial
       
       https://www.engineyard.com/blog/keeping-your-rails-controllers-dry-with-services
+      https://hackernoon.com/service-objects-in-ruby-on-rails-and-you-79ca8a1c946e
 
 2. How you can add simple services?
       
