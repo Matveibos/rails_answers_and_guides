@@ -89,3 +89,13 @@ http://gitreal.codeschool.com/
            git log 
         # and return every changing back with new message
           git revert e2917f3302afceffe7ebe27b7b2c9a996694f306
+22. How you can hide already added files with git?
+        
+        touch 10.txt
+        git add .
+        
+        # it will hide changing
+          git stash
+        # it will show changing again
+          git stash pop
+        
