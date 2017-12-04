@@ -92,4 +92,18 @@
          # 7. Add somewhere in view <%= render "my_partial" %>
             
              
-
+12. How you can send params throught ajax request to the action?
+          
+            # coffee
+                $.ajax
+                  type: 'GET'
+                  dataType: 'script'
+                  url: '/parkings/refresh_dynamic_markers'
+                  data:
+                    param1: "First Param value"
+                    param2: "Second param value"
+            # rails action 
+                def refresh_dynamic_markers
+                  params["param1"]
+                  params["param2"]
+                end
