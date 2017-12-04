@@ -1,6 +1,6 @@
 1. How to create simple rails project with ajax?
           
-        https://www.tutorialspoint.com/ruby-on-rails/rails-and-ajax.htm
+                https://www.tutorialspoint.com/ruby-on-rails/rails-and-ajax.htm
 2. How to create ajax form for rails?
           
           <%= form_with(model: @article) do |f| %>
