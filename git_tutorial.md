@@ -83,3 +83,9 @@ http://gitreal.codeschool.com/
         git add .
         git commit --amend
         git push -f origin <branch>
+21. How to return back changes from any commits?
+        
+        # to see the hash numbers of commits
+           git log 
+        # and return every changing back with new message
+          git revert e2917f3302afceffe7ebe27b7b2c9a996694f306
