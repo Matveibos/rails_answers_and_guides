@@ -232,3 +232,15 @@
 			margin: 0 auto;
 		# for bootstrap
 			.center-block
+
+
+3. How to correctly add own fonts?
+		
+	      @font-face {
+		font-family: myFont;
+		src: url(bebas.ttf);
+		font-weight: bold;
+	      }
+	      div {
+		font-family: myFont;
+	      }
