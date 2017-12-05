@@ -209,3 +209,10 @@
 1. How to remove all addition spaces inside the string?
             
             string.replace(/\s+/g, ' ').trim()
+2. Get subarray without changing our array
+            
+            // Пример: наши хорошие друзья цитрусовые среди фруктов
+            var fruits = ['Банан', 'Апельсин', 'Лимон', 'Яблоко', 'Манго'];
+            var citrus = fruits.slice(1, 3);
+
+            // citrus содержит ['Апельсин', 'Лимон']
