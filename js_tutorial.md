@@ -131,6 +131,11 @@
             typeof my_object;
               or
             {} instanceof Object;
+3. How to convert object to string then return it to the previus state?
+            
+            var a  = { b: 12, c: 23}
+            b = JSON.stringify(aa) => will be a text
+            JSON.parse(b) => will be an object
 # DOM ELEMENTS
 
 1. How to set bacground-image src from object?
