@@ -173,7 +173,10 @@
                 c = 'me';
 2. When you converting string to number everywhere add counting system
             
-             parseInt("10", 10)
+            parseInt("10", 10)
+3. Compare objects with '==='
+            
+            a === b
 # ARRAY
 
 1. How to delete elem from array?
