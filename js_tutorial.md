@@ -150,7 +150,7 @@
            
 # PATERNS
 
-1. Single var pattern
+1. Single var pattern (one var for every variable)
             
             var b = 'hello',
                 a = 22,
