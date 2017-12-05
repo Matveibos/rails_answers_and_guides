@@ -126,6 +126,11 @@
             }
 
             delete obj.one
+2. How to check type of object?
+            
+            typeof my_object;
+              or
+            {} instanceof Object;
 # DOM ELEMENTS
 
 1. How to set bacground-image src from object?
