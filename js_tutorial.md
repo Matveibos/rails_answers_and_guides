@@ -50,7 +50,7 @@
             var a = 123.toString()
             var a = 123 + '';
             
-            parseInt("10")
+            parseInt("10", 10)
             
 8. How you can create a range?
             
@@ -165,3 +165,6 @@
             var b = 'hello',
                 a = 22,
                 c = 'me';
+2. When you converting string to number everywhere add counting system
+            
+             parseInt("10", 10)
