@@ -141,3 +141,17 @@
 4. Merge two hashes into one?
 
             Object.assign(t, v)
+# DATA TYPES
+
+1. What is the difference between var, let and const in js?
+            
+            
+            
+           
+# PATERNS
+
+1. Single var pattern
+            
+            var b = 'hello',
+                a = 22,
+                c = 'me';
