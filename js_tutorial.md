@@ -181,3 +181,15 @@
             var arr = [1,3,4,5]
             arr.splice(1,0)
             # this method will remove 1 element from 0 indexes
+2. How to add element to arr?
+            
+           var arr = []
+           # add to the end of array 
+             arr.push('333')
+           # remove last value
+             arr.pop()
+           
+           # add to the start of array
+             arr.unshift('121221')
+           # remove from the start
+             arr.shift()
