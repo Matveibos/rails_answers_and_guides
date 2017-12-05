@@ -142,6 +142,11 @@
 5. What is true?
             
             Everything else ("false", "0" and ...)
+6. How to check if key exist in the object?
+            
+            var a = { x: 1 }
+            'x' in a
+            # => true
 # DOM ELEMENTS
 
 1. How to set bacground-image src from object?
