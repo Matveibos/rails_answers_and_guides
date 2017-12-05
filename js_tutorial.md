@@ -204,3 +204,8 @@
              arr.unshift('121221')
            # remove from the start
              arr.shift()
+# FUNCTION
+
+1. How to remove all addition spaces inside the string?
+            
+            string.replace(/\s+/g, ' ').trim()
