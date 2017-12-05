@@ -174,3 +174,10 @@
 2. When you converting string to number everywhere add counting system
             
              parseInt("10", 10)
+# ARRAY
+
+1. How to delete elem from array?
+            
+            var arr = [1,3,4,5]
+            arr.splice(1,0)
+            # this method will remove 1 element from 0 indexes
