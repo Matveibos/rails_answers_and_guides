@@ -139,6 +139,9 @@
 4. What is false value?
             
             false, null, undefined, "", 0, NaN
+5. What is true?
+            
+            Everything else ("false", "0" and ...)
 # DOM ELEMENTS
 
 1. How to set bacground-image src from object?
