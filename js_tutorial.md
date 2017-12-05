@@ -136,6 +136,9 @@
             var a  = { b: 12, c: 23}
             b = JSON.stringify(aa) => will be a text
             JSON.parse(b) => will be an object
+4. What is false value?
+            
+            false, null, undefined, "", 0, NaN
 # DOM ELEMENTS
 
 1. How to set bacground-image src from object?
