@@ -182,6 +182,9 @@
 3. Compare objects with '==='
             
             a === b
+4. Always stay semicolons ';'
+            
+            var a = b;
 # ARRAY
 
 1. How to delete elem from array?
