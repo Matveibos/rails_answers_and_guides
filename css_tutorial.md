@@ -155,10 +155,9 @@
 	          display: table-cell;
 		  vertical-align: middle;
 		}
+29. How to set real height and width without padding/border/margin?
 		
-29. How to add google fonts through css?
-	
-		@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+		box-sizing: border-box;
 
 # `BXSLIDER`
 1. How to add full screen slider?
@@ -244,3 +243,6 @@
 	      div {
 		font-family: myFont;
 	      }
+29. How to add google fonts through css?
+	
+		@import url('https://fonts.googleapis.com/css?family=Open+Sans');
