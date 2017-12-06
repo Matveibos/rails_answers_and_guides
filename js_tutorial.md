@@ -204,6 +204,22 @@
              arr.unshift('121221')
            # remove from the start
              arr.shift()
+3. How to iterate through array with break?
+
+            let arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            for (let el of arr) {
+              console.log(el);
+              if (el === 5) {
+                break;
+              }
+            }
+4. How to iterate through array? (2 - way)
+            
+            var arr = ["Яблоко", "Апельсин", "Груша"];
+
+            arr.forEach(function(item, i, arr) {
+              alert( i + ": " + item + " (массив:" + arr + ")" );
+            });
 # FUNCTION
 
 1. How to remove all addition spaces inside the string?
