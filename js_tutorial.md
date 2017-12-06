@@ -235,6 +235,9 @@
             # add something to another array
             [].push.apply(items, [1, 3, 4]);
             [].push.apply(items, [1, 5, 6]);
+7. How to create n-elements for array and fill them?
+
+            let result = new Array(n).fill('')
 # FUNCTION
 
 1. How to remove all addition spaces inside the string?
