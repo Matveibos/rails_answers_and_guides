@@ -250,3 +250,7 @@
             var citrus = fruits.slice(1, 3);
 
             // citrus содержит ['Апельсин', 'Лимон']
+# EXCEPTION 
+1. How to throw an exception?
+            
+            throw new TypeError('my_message is invalid')
