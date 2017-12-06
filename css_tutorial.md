@@ -233,7 +233,7 @@
 		# for bootstrap
 			.center-block
 
-
+# FONTS
 3. How to correctly add own fonts?
 		
 	      @font-face {
