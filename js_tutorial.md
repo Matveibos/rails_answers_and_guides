@@ -227,6 +227,14 @@
             my = [].concat(array1, array2)
             
             => [ 1, 3, 400, 10, 20, 30 ]
+6. How to add one array to another with changing default array object?
+            
+            # clear deafult array
+            items.length = 0;
+
+            # add something to another array
+            [].push.apply(items, [1, 3, 4]);
+            [].push.apply(items, [1, 5, 6]);
 # FUNCTION
 
 1. How to remove all addition spaces inside the string?
