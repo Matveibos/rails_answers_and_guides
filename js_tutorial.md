@@ -220,6 +220,13 @@
             arr.forEach(function(item, i, arr) {
               alert( i + ": " + item + " (массив:" + arr + ")" );
             });
+5. How to add add one array to another?
+            
+            let array1 = [1,3,400];
+            let array2 = [10,20,30];
+            my = [].concat(array1, array2)
+            
+            => [ 1, 3, 400, 10, 20, 30 ]
 # FUNCTION
 
 1. How to remove all addition spaces inside the string?
