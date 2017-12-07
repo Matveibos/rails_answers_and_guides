@@ -254,3 +254,23 @@
 1. How to throw an exception?
             
             throw new TypeError('my_message is invalid')
+# QUESTION
+
+1. What will return this code?
+            
+            function hello1() {
+              console.log("hello1");
+            }
+            function hello2() {
+              console.log("hello2");
+            }
+            function hello3() {
+              console.log("hello3");
+            }
+
+            hello3(hello2(hello1()))
+            
+            # ---------------
+            # hello1
+            # hello2
+            # hello3
