@@ -117,6 +117,11 @@
             $(document).on('turbolinks:load', function() {
             
             });
+19. How to check if a function doesn't take an argument?
+            
+           function expr(number, operation) {
+             if (!operation) return 'something';
+           }
 # OBJECTS
 1. How to delete key abd value in object?
             
