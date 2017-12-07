@@ -275,3 +275,23 @@
 		.trans:hover {
 		  transform: rotate(180deg);
 		}		
+3. How to add animation by parts?
+		
+		@keyframes example {
+		  0% {
+		    background-color: red;
+		  }
+		  50% {
+		    background-color: blue;
+		  }
+		  100% {
+		    background-color: green;
+		  }
+		}
+		.trans {
+		  width: 200px;
+		  height: 200px;
+		  background: red;
+		  animation-name: example;
+		  animation-duration: 4s;
+		}
