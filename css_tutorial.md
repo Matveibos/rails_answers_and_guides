@@ -246,7 +246,7 @@
 29. How to add google fonts through css?
 	
 		@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-# ACTION
+# ANIMATION
 
 1. How to add an element expanding on hover?
 
@@ -262,3 +262,16 @@
 		  width: 300px;
 		  height: 300px;
 		}
+2. How to rotate elements?
+		
+		# transition: transform 2s;
+	
+		.trans {
+		  width: 200px;
+		  height: 200px;
+		  background: blue;
+		  transition: transform 2s ;
+		}
+		.trans:hover {
+		  transform: rotate(180deg);
+		}		
