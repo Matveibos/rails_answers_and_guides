@@ -246,3 +246,19 @@
 29. How to add google fonts through css?
 	
 		@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+# ACTION
+
+1. How to add an element expanding on hover?
+
+		# transition 
+	
+		.trans {
+		  width: 200px;
+		  height: 200px;
+		  background: blue;
+		  transition: width 2s, height 2s;
+		}
+		.trans:hover {
+		  width: 300px;
+		  height: 300px;
+		}
