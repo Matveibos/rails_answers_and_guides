@@ -279,3 +279,9 @@
             # hello1
             # hello2
             # hello3
+# STRING
+
+1. How to repeat string many times?
+            
+            "my_string".repeat(3)
+            => it will show "my_string" 3 times
