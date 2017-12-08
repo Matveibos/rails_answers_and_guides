@@ -250,6 +250,11 @@
               return a * b;
             })
            # -> 10000
+           # for reduce right ( from right -> to left)
+            [].reduceRight(function(a, b){
+              return a * b;
+            }, c)
+            b - current, a - previous, c - intial values ( setting to 'a' at the first invokation)
 # FUNCTION
 
 1. How to remove all addition spaces inside the string?
