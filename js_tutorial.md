@@ -243,6 +243,13 @@
 7. How to create n-elements for array and fill them?
 
             let result = new Array(n).fill('')
+8. How to multuply/summuraze array with one function?
+           
+           # use reduce
+           let arr = [10,10,10,10].reduce(function(a, b){
+              return a * b;
+            })
+           # -> 10000
 # FUNCTION
 
 1. How to remove all addition spaces inside the string?
