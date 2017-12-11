@@ -47,3 +47,9 @@
 11. terminal open new tab in same directory
         
         https://apple.stackexchange.com/questions/178017/new-terminal-to-same-directory
+12. How to fix xcodebuild? After installing Xcodeselect
+        
+        This fixed it for me:
+
+        Install Xcode
+        Run sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
