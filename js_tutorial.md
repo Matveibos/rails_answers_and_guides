@@ -255,6 +255,9 @@
               return a * b;
             }, c)
             b - current, a - previous, c - intial values ( setting to 'a' at the first invokation)
+9. How to check if an object is Array?
+            
+            Array.isArray(obj);
 # FUNCTION
 
 1. How to remove all addition spaces inside the string?
