@@ -15,3 +15,6 @@
               username: root
               password:
               socket: /tmp/mysql.sock
+4. How to open mysql console?
+            
+            mysql -u root
