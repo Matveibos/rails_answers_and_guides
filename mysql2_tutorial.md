@@ -18,6 +18,9 @@
 4. How to open mysql console?
             
             mysql -u root
+5. How to open mysql console with password?
+            
+            mysql -u root -p
 5. How to show a specific table?
             
             # inside console use 
