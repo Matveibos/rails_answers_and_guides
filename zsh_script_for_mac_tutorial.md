@@ -13,7 +13,8 @@
             mkdir name
             # file
             touch 1.txt
-4. How to open sublime or create a git repo?
+4. How to open sublime/create a git repo/rub ruby script?
             
             subl new_task.rb
             git init
+            ruby new_task.rb
