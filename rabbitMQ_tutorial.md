@@ -2,6 +2,12 @@
 
         https://github.com/rabbitmq/rabbitmq-tutorials/tree/master/ruby
         http://blog.mechanicles.com/2016/09/19/microservices-using-rails-http-and-rabbitmq.html
+1. How you can start rabbitMQ on mac?
+        
+        /usr/local/sbin/rabbitmq-server
+        # if you add this string export PATH=/usr/local/sbin:$PATH
+        # just type
+        rabbitmq-server
 1. How you can install rabbitMQ on mac?
     
         brew install rabbitmq
