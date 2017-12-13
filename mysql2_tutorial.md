@@ -35,3 +35,9 @@
             update user set authentication_string=password('123321') where user='root';
             
             
+7. How to make a db dump?
+            
+            # install sequal pro - connect - cmd + shift + e
+            # afted downloading
+            
+            mysql -u root -p adapter_development < ~/Documents/fidor_dumps/adapter_production_2017-12-13.sql
