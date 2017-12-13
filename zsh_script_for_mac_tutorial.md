@@ -18,3 +18,6 @@
             subl new_task.rb
             git init
             ruby new_task.rb
+5. How you can open new iterm window?
+            
+            open . -a iterm
