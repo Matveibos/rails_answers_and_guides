@@ -152,6 +152,11 @@
             var a = { x: 1 }
             'x' in a
             # => true
+7. How to check that an object has a function property?
+            
+            if (typeof me.onChange === "function") { 
+                // safe to use the function
+            }
 # DOM ELEMENTS
 
 1. How to set bacground-image src from object?
