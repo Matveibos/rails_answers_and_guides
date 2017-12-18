@@ -54,3 +54,13 @@
         
         # first - text, second - point coordinate
         image.put_text!(area.to_s, CvPoint.new(place_x, place_y) , CvFont.new(:simplex), CvColor::Blue )
+5. How to write countours?
+        
+          # create black/white image
+          image = capture.query
+          gray = image.BGR2GRAY
+          thresh = gray.threshold(127,255,0)
+          
+          # draw
+          contours = thresh.find_contours(mode: CV_RETR_TREE, method: CV_CHAIN_APPROX_SIMPLE)
+          image.draw_contours!(contours, CvColor::Red, CvColor::Black, 2, :thickness => 1, :line_type => :aa)
