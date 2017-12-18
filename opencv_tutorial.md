@@ -1,3 +1,19 @@
+1. How to include opencv?
+        
+        require 'opencv'
+
+        include OpenCV
+2. How to create window with video?
+        
+        window = GUI::Window.new("convexhull")
+        capture = CvCapture::open("../k3v.avi")
+        
+        loop do
+            image = capture.query
+            window.show image
+            
+            exit if GUI::wait_key(1)
+        end
 1. How to save image from OpenCV?
     
           image = IplImage::load("path/to/file.jpg")
