@@ -25,6 +25,12 @@
         
         # where the first and the seconds args it's level of white/dark
         bin = gray.threshold(0x77, 0xFF, :binary)
+5. How to traslate image to Gray with better quality?
+        
+        # using gaussian c
+        gray.adaptive_threshold(255, :adaptive_method => CV_ADAPTIVE_THRESH_GAUSSIAN_C,
+                                    :threshold_type => CV_THRESH_BINARY, :block_size => 11,
+                                    :param1 => 5)
 1. How to save image from OpenCV?
     
           image = IplImage::load("path/to/file.jpg")
