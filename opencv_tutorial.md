@@ -25,6 +25,8 @@
         
         # where the first and the seconds args it's level of white/dark
         bin = gray.threshold(0x77, 0xFF, :binary)
+        # or
+        gray.threshold(127,255,0)
 5. How to traslate image to Gray with better quality?
         
         # using gaussian c
