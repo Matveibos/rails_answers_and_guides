@@ -14,6 +14,10 @@
             
             exit if GUI::wait_key(1)
         end
+3. How to include api camera?
+        
+        # just like the video too
+        CvCapture::open("http://10.6.88.46:1978/1")
 1. How to save image from OpenCV?
     
           image = IplImage::load("path/to/file.jpg")
