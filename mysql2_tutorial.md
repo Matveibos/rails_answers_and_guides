@@ -41,3 +41,6 @@
             # afted downloading
             
             mysql -u root -p adapter_development < ~/Documents/fidor_dumps/adapter_production_2017-12-13.sql
+8. How to download db from server to mac local machine?
+            
+            https://sequelpro.com/download#auto-start
