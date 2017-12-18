@@ -44,3 +44,11 @@
 2. How to crop an image?
         
         sub = image.sub_rect(x,y, width, height)
+3. How to add circle to an image?
+        
+        # first - coordinate, second - size
+        image.circle!(CvPoint.new(place_x, place_y), 60, :color => CvColor::Red, :thickness => 3, :line_type => :aa)
+4. How to add text to an image?
+        
+        # first - text, second - point coordinate
+        image.put_text!(area.to_s, CvPoint.new(place_x, place_y) , CvFont.new(:simplex), CvColor::Blue )
