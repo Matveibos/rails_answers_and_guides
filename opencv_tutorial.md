@@ -18,6 +18,13 @@
         
         # just like the video too
         CvCapture::open("http://10.6.88.46:1978/1")
+        
+4. How to translate Image to gray(and binary)?
+        
+        gray = image.BGR2GRAY
+        
+        # where the first and the seconds args it's level of white/dark
+        bin = gray.threshold(0x77, 0xFF, :binary)
 1. How to save image from OpenCV?
     
           image = IplImage::load("path/to/file.jpg")
