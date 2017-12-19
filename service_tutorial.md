@@ -20,3 +20,20 @@
 
              end
             # Invoke services where you want
+
+3. How to create Singleton class in ruby?
+            
+            require 'singleton'
+
+            class Sample
+              include Singleton
+
+              attr_accessor :name
+
+              def self.name
+                instance.name
+              end
+            end
+
+            Sample.instance.name = "Hello"
+            puts  Sample.name
