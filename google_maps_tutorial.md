@@ -54,7 +54,13 @@
                     map: map,
                     title: 'Hello world'
                   })         
-          
+3.2 How to remove marker for double click?
+         
+         # after standart template inside initMap()
+         
+                   marker.addListener('dblclick', function() {
+                    marker.setMap(null);
+                  });
 4. How to open a popup window after marker click?
           
           # after standart template inside initMap() and marker creating
