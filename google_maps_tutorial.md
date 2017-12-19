@@ -96,3 +96,8 @@
                       my_marker.setMap(null);
                     });
                   })
+7. How to invoke ivent by marker drug ( and write coordinates )?
+          
+          my_marker.addListener('drag', function(e){
+            document.getElementById(my_marker.id).innerHTML = e.latLng;
+          });
