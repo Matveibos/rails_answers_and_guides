@@ -184,6 +184,10 @@
           # insert to another page
           my_div = document.getElementById("text");
           my_div.appendChild(el);
+6. How to remove element?
+
+          document.getElementById('elem_id').remove();
+
 # DATA TYPES
 
 1. What is the difference between var, let and const in js?
