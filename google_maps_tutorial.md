@@ -35,3 +35,12 @@
             </body>
           </html>
 
+3. How to add marker?
+          
+          # after standart template inside initMap()
+                  var tribeca = {lat: 40.719526, lng: -74.0089934};
+                  var marker = new google.maps.Marker({
+                    position: tribeca,
+                    map: map,
+                    title: 'Hello world'
+                  })
