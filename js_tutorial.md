@@ -172,6 +172,18 @@
 4. Merge two hashes into one?
 
             Object.assign(t, v)
+            
+5. Create new elements and insert it inside onther tag?
+          
+          # create elem
+          var el = document.createElement('p');
+          el.id = my_marker.id;
+          el.className = "coordinate";
+          el.innerHTML = my_marker.position;
+          
+          # insert to another page
+          my_div = document.getElementById("text");
+          my_div.appendChild(el);
 # DATA TYPES
 
 1. What is the difference between var, let and const in js?
