@@ -44,3 +44,25 @@
                     map: map,
                     title: 'Hello world'
                   })
+4. How to open popup window after marker click?
+          
+          # after standart template inside initMap() and marker creating
+          
+                  var infowindow = new google.maps.InfoWindow({
+                    content: "Hello my dear friends"
+                  });
+
+                  marker.addListener('click', function() {
+                    infowindow.open(map, marker);
+                  });
+                  
+5. How to add marker by click on the map?
+          
+          # after standart template inside initMap()
+                  map.addListener('click', function(e) {
+                    new google.maps.Marker({
+                      position: e.latLng,
+                      map: map,
+                      title: 'Hello world'
+                    });
+                  })
