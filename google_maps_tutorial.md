@@ -35,7 +35,7 @@
             </body>
           </html>
 
-3. How to add marker?
+3. How to add a marker?
           
           # after standart template inside initMap()
                   var tribeca = {lat: 40.719526, lng: -74.0089934};
@@ -44,7 +44,18 @@
                     map: map,
                     title: 'Hello world'
                   })
-4. How to open popup window after marker click?
+3.1. How to add a draggable marker?
+           
+           # after standart template inside initMap()
+                  var tribeca = {lat: 40.719526, lng: -74.0089934};
+                  var marker = new google.maps.Marker({
+                    position: tribeca,
+                    draggable: true,
+                    map: map,
+                    title: 'Hello world'
+                  })         
+          
+4. How to open a popup window after marker click?
           
           # after standart template inside initMap() and marker creating
           
@@ -56,7 +67,7 @@
                     infowindow.open(map, marker);
                   });
                   
-5. How to add marker by click on the map?
+5. How to add a marker by click on the map?
           
           # after standart template inside initMap()
                   map.addListener('click', function(e) {
