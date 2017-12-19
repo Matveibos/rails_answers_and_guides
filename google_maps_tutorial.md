@@ -1,7 +1,9 @@
 1. Articles
           
           1. Udacity google maps course
-          https://classroom.udacity.com/courses/ud864/lessons/8304370457/concepts/83122494390923
+          https://www.udacity.com/course/google-maps-apis--ud864
+          2. Their repo
+          https://github.com/udacity/ud864
 
 2. Standart template
   
