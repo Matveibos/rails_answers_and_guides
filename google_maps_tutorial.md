@@ -83,3 +83,16 @@
                       title: 'Hello world'
                     });
                   })
+6. How to add marker by left mouseclick and remove by right click?
+          
+                   map.addListener('click', function(e) {
+                    var my_marker = new google.maps.Marker({
+                      position: e.latLng,
+                      draggable: true,
+                      map: map,
+                      title: 'Hello world',
+                    });
+                    my_marker.addListener('rightclick', function() {
+                      my_marker.setMap(null);
+                    });
+                  })
