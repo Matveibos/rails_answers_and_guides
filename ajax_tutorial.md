@@ -20,11 +20,45 @@
           <% end %>
 3.1. Full way for creating ajax request?
           
-          # create form action 
-          # add route
+          # require jquery to rails 5 project
+                    gem 'jquery-rails'
+                    
+                    //= require jquery
+                    //= require jquery_ujs
+
+          # create form action and partial link
+                 <%= form_with(model: @image, url: upload_images_path, method: :post) do |form| %>
+                  <div class="field">
+                    <%= form.label :image %>
+                    <%= form.file_field :image, :label => 'Your avatar please' %>
+                  </div>
+
+                  <div class="actions">
+                    <%= form.submit %>
+                  </div>
+                <% end %>  
+                
+                <%= render 'shared/partial_for_image' %>
+          # add route with your action
+              resource :images do
+                post :upload, on: :member
+              end           
+          # find your route and add it to your controler
+              rails routes
           # add controller action
+            def upload
+              @image = Image.new(params.permit(:image))
+
+              render :refresh_image_canvas
+            end
           # create partial
+                    # images/refresh_image_canvas
+                    $("#image-canvas").html("<%= raw escape_javascript(render(partial: 'shared/partial_for_image')) %>")
           # create method for updating it
+                    # shared/_partial_for_image.html.erb
+                    <div id='image-canvas'>
+                       # your @image variable is available here
+                    </div>
 4. How to add ajax request for links?
           
           # post
