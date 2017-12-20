@@ -16,10 +16,13 @@
           
           canvas.addEventListener('click', function(e) {
             var marker_image = new Image();
+            
+            marker_image.addEventListener("load", function() {
+              # e.layerX - coordiante of canvas
+              # marker_image.height / width
+              
+              ctx.drawImage(marker_image, e.layerX - marker_image.width / 2, e.layerY - marker_image.height);
+            }, false)
+            
             marker_image.src = 'google_map_marker.png';
-            
-            # e.layerX - coordiante of canvas
-            # marker_image.height / width
-            
-            ctx.drawImage(marker_image, e.layerX - marker_image.width / 2, e.layerY - marker_image.height);
           });
