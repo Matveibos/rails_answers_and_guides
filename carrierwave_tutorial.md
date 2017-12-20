@@ -54,7 +54,22 @@
         
         process resize_to_limit: [400, 400]
 
+8. How to get image width/height?
+    
+        # generate width/height column to Image class
+        class ImageUploader < CarrierWave::Uploader::Base
+          include CarrierWave::MiniMagick
 
+          process :store_dimensions
+
+          private
+
+          def store_dimensions
+            if file && model
+              model.width, model.height = ::MiniMagick::Image.open(file.file)[:dimensions]
+            end
+          end
+        end
 ## FOG
 
 1. How to add fog for heroku?
