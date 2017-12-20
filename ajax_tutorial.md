@@ -18,6 +18,13 @@
           <%= form_with(model: @article, url: edit_article_path(@article), method: :patch) do |f| %>
             ...
           <% end %>
+3.1. Full way for creating ajax request?
+          
+          # create form action 
+          # add route
+          # add controller action
+          # create partial
+          # create method for updating it
 4. How to add ajax request for links?
           
           # post
