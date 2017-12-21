@@ -170,6 +170,16 @@
                puts ENV['MARCO']
            # inside console
                env MARCO="Pollo" ruby hello.rb
+19. How to handle an exception?
+
+             begin  
+               puts 'I am before the raise.'  
+               raise 'An error has occured.'  
+               puts 'I am after the raise.'  
+             rescue  
+               puts 'I am rescued.'  
+             end  
+             puts 'I am after the begin block.'  
 ##----------------------------RAILS--------------------------------------------------
 
 11. What is the difference between User.find(1) and User.find_by(id: 1)?
