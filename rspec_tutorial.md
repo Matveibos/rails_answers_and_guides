@@ -1,7 +1,9 @@
 1. Articles
         
-        # rspec documentation
+        # rspec core documentation
         https://relishapp.com/rspec/rspec-core/v/3-7/docs/example-groups
+        # rspec expectation documentation
+        https://relishapp.com/rspec/rspec-expectations/v/3-7/docs/built-in-matchers
 
 1. How to use rspec without rails?
         
