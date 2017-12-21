@@ -1,3 +1,6 @@
+1. How to use rspec without rails?
+        
+        https://gist.github.com/juggleross/f9636ebf4bd1122cb9ef20bccafa5840
 1. How to add to rails?
         
         group :development, :test do
