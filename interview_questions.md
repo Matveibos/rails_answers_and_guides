@@ -161,9 +161,15 @@
 
            puts method
            # will return (1..300)
-17. Everything from koans
+17. You have to know everything from koans
            
            http://rubykoans.com/
+18. How to run ruby environment variables?
+           
+           # hello.rb
+               puts ENV['MARCO']
+           # inside console
+               env MARCO="Pollo" ruby hello.rb
 ##----------------------------RAILS--------------------------------------------------
 
 11. What is the difference between User.find(1) and User.find_by(id: 1)?
