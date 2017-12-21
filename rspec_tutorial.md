@@ -1,3 +1,8 @@
+1. Articles
+        
+        # rspec documentation
+        https://relishapp.com/rspec/rspec-core/v/3-7/docs/example-groups
+
 1. How to use rspec without rails?
         
         https://gist.github.com/juggleross/f9636ebf4bd1122cb9ef20bccafa5840
