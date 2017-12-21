@@ -161,6 +161,9 @@
 
            puts method
            # will return (1..300)
+17. Everything from koans
+           
+           http://rubykoans.com/
 ##----------------------------RAILS--------------------------------------------------
 
 11. What is the difference between User.find(1) and User.find_by(id: 1)?
