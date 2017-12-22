@@ -28,4 +28,5 @@
             http://dchua.com/2014/10/30/generate-pdfs-with-html-templates-in-rails/
 3. How to download and install wkhtmltopdf?
             
+            # orinary dmg file installation
             https://wkhtmltopdf.org/
