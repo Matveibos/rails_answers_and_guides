@@ -26,3 +26,6 @@
  2. Tutorial about creation pdf from vebsite page and how to create this to mailer
  
             http://dchua.com/2014/10/30/generate-pdfs-with-html-templates-in-rails/
+3. How to download and install wkhtmltopdf?
+            
+            https://wkhtmltopdf.org/
