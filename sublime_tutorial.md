@@ -67,3 +67,6 @@
 11. Show me all sublime short command?
           
           https://learn.javascript.ru/article/sublime/sheet.pdf
+12. How to set sublime text as default editor for the git?
+          
+          git config --global core.editor "code --wait"
