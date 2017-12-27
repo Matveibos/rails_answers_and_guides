@@ -281,5 +281,5 @@
         # instance_double
                 
                 user_verifiable = instance_double(Array, whatever_method: nil)
-                # it will raise an error, because Array doesn't has such a method
+                # it will raise an error, because Array doesn't have such a method
                 
