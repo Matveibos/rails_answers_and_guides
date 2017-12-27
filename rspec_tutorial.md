@@ -267,3 +267,19 @@
         https://github.com/bblimke/webmock
         # webmock with VCR
         http://www.thegreatcodeadventure.com/stubbing-with-vcr/
+2. What is the diference between Spy vs Double vs Instance Double?
+        
+        # spy
+        # spy can recieve any methods without error
+                user_spy = spy(User)
+                spy.whatever_method
+                # no error
+        # doubles
+                user_double = double(User)
+                user_double.whatever_method
+                # raise error
+        # instance_double
+                
+                user_verifiable = instance_double(Array, whatever_method: nil)
+                # it will raise an error, because Array doesn't has such a method
+                
