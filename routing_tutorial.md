@@ -113,3 +113,8 @@
             end
           end
         end
+9. How to get a route without a prefix?
+       
+            scope module: 'admin' do
+              resources :articles, :comments
+            end
