@@ -101,10 +101,11 @@ http://gitreal.codeschool.com/
         
 23. How to updated the forked repo from master?
        
-       https://help.github.com/articles/configuring-a-remote-for-a-fork/
-       
-       # git remote -v
-       git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
-       # git remote -v
-       
-       # git pull upstream master
+         https://help.github.com/articles/configuring-a-remote-for-a-fork/
+
+         # git remote -v
+         git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+         # git remote -v
+
+         # git pull upstream master
+         # git push 
