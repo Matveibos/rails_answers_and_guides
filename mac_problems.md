@@ -55,3 +55,8 @@
 
         Install Xcode
         Run sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+13. How to fixed qmake command?
+    
+        # after installing qt with homebrew it's participate in the Cellear folder, we need to create link to the binary foolder with ln -s command
+        
+        ln -s /usr/local/Cellar/qt@5.5/5.5.1_1/bin/qmake /usr/local/bin/qmake
