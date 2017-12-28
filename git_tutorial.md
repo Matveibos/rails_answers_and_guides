@@ -46,6 +46,14 @@ http://gitreal.codeschool.com/
         git fetch --all
         git checkout myBranch
         
+        
+        # certain branch
+        git fetch <remote> <rbranch>:<lbranch> 
+        git checkout <lbranch>
+        
+        # where <rbranch> is the remote branch or source ref and <lbranch> is the as yet non-existent local branch or destination ref you want to track and which you probably want to name the same as the remote branch or source ref.
+        
+        
 12. How to include gem directly from github?
         
         # from https://github.com/unfernandito/coupons
