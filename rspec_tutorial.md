@@ -174,7 +174,21 @@
         let(:user_params) do 
           { "email" => user.email, "password" => user.password }
         end
-
+4. How to send post request with params?
+        
+       user_params = FactoryGirl.attributes_for(:user)
+       post :create, params: { session: user_params }
+5. How to add helper inside test?
+        
+        module FeatureHelper
+          def log_in_as
+            # ---
+          end
+        end
+        
+        RSpec.configure do |config|
+          config.include FeatureHelper
+        end
 1. Articles
         
         http://matthewlehner.net/rails-api-testing-guidelines/
