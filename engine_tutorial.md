@@ -34,12 +34,21 @@
        # use main_app prefix
        <%= link_to 'Main', main_app.root_path %>
 7. How you can add dependency to your engine app?
-      
-            # add it to you gemspec
-            
-            require 'carrierwave'
-            require 'mini_magick'
 
+
+            # if you want require it before engine add it to the lib folder
+            # lib/engine_class/engine.rb
+             require 'carrierwave'
+             require 'mini_magick'
+             
+            module AnimalSnake
+              class Engine < ::Rails::Engine
+                isolate_namespace AnimalSnake
+              end
+            end
+                  
+            # add it to you gemspec
+           
             # Describe your gem and declare its dependencies:
             Gem::Specification.new do |s|
               # ....
