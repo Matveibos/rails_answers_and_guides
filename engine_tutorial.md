@@ -58,3 +58,7 @@
 
               s.add_development_dependency "sqlite3"
             end
+8. What do you have to do if you can't generate anything?
+            
+            # you need to disable spring for some time
+            DISABLE_SPRING=1 bin/rails generate controller my_controoler
