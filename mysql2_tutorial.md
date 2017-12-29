@@ -44,3 +44,11 @@
 8. How to download db from server to mac local machine?
             
             https://sequelpro.com/download#auto-start
+9. How to make dump with the workbench help?
+            
+            1. Open workbench MySql
+            2. Choose your local db
+            3. Select 'Data import/Restore'
+            4. Select 'import from self contained file' -> choose a sql file
+            5. Choose a default target schema 
+            
