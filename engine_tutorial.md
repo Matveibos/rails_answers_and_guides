@@ -10,6 +10,7 @@
         
         # like in ordinary way
         rails generate scaffold article title:string text:text
+        # don't use equal name for engine and model
 3. Hot to add your existing engine to your app?
         
         # path to your engines from current app
