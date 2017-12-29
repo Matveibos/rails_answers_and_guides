@@ -42,4 +42,3 @@
         RSpec.configure do |config|
           config.include FeatureHelper
         end
-## API SPECS
