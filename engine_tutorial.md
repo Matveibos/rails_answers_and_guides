@@ -4,6 +4,7 @@
 2. How to create own engine?
       
         rails plugin new blorgh --mountable
+        # don't forget to remove TODO text from the gemspec
         
 3. How to generate model/controller/scaffold?
         
