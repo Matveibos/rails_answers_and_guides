@@ -21,3 +21,12 @@
         
         # then add migrations
             rails blorgh:install:migrations
+5. How to use make a link on the route from engine?
+        
+        # where 'blorgh' is Engine and articles are routes inside Engine
+        <%= link_to "Blog articles", blorgh.articles_path %>
+        <%= link_to "Blog articles add", blorgh.new_article_path %>
+        <%= link_to "Blog articles edit", blorgh.edit_article_path(1) %>
+        <%= link_to "Blog articles show", blorgh.article_path(1) %>
+        
+        
