@@ -29,4 +29,7 @@
         <%= link_to "Blog articles edit", blorgh.edit_article_path(1) %>
         <%= link_to "Blog articles show", blorgh.article_path(1) %>
         
-        
+6. How can you add a link to the main app from the Engine?
+      
+       # use main_app prefix
+       <%= link_to 'Main', main_app.root_path %>
