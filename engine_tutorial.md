@@ -33,3 +33,19 @@
       
        # use main_app prefix
        <%= link_to 'Main', main_app.root_path %>
+7. How you can add dependency to your engine app?
+      
+            # add it to you gemspec
+            
+            require 'carrierwave'
+            require 'mini_magick'
+
+            # Describe your gem and declare its dependencies:
+            Gem::Specification.new do |s|
+              # ....
+
+              s.add_dependency "carrierwave", '~> 0.10.0'
+              s.add_dependency 'mini_magick', '~> 4.3'
+
+              s.add_development_dependency "sqlite3"
+            end
