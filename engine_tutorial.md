@@ -4,6 +4,11 @@
 2. How to create own engine?
       
         rails plugin new blorgh --mountable
+        
+3. How to generate model/controller/scaffold?
+        
+        # like in ordinary way
+        rails generate scaffold article title:string text:text
 3. Hot to add your existing engine to your app?
         
         # path to your engines from current app
