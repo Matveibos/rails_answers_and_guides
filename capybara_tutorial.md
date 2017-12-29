@@ -27,4 +27,14 @@
 3. List of available command for capybara?
         
         https://gist.github.com/tomas-stefano/6652111
+        
+4. Another way for includign capybara?
+      
+        # add gems
+            gem 'capybara', '~> 2.13'
+            gem 'selenium-webdriver'
+        
+        # create rspec test
+        # include to rspec_helper.rb 
+            require 'capybara/rspec'
 
