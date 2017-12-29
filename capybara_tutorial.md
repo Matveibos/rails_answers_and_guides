@@ -47,3 +47,20 @@
             require 'capybara-screenshot/rspec'
             
             # the screnshoots will save in the temp/capybara dir
+## CAPYBARA-WEBKIT
+
+1. How to include capybara-webkit to rails app?
+      
+            
+            1. gem "capybara-webkit"
+            2. 
+            # inside rspec_helper.rb
+            
+              require 'capybara-webkit'
+
+              Capybara.javascript_driver = :webkit
+            
+            3.
+            # inside sample set js: true
+            it 'destroys last record', js: true do
+            end
