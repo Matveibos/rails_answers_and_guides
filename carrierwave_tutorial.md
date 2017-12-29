@@ -21,6 +21,10 @@
         
         # inside simple form 
         <%=f.input :image, :label => 'Your avatar please' %>
+        
+        
+        # inside scaffold form
+        <%=f.file_field :image, :label => 'Your avatar please' %>
           
         # inside view
         <% if book.image&.thumb&.url != nil %>
