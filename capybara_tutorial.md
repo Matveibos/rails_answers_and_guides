@@ -38,3 +38,12 @@
         # include to rspec_helper.rb 
             require 'capybara/rspec'
 
+5. How to add screenshoot for capybara?
+      
+            gem 'capybara-screenshot', :group => :test
+      
+            # rspec_helper.rb
+            # remember: you must require 'capybara/rspec' first
+            require 'capybara-screenshot/rspec'
+            
+            # the screnshoots will save in the temp/capybara dir
