@@ -7,3 +7,6 @@
 2. Decarator pattern
       
        https://medium.com/@dljerome/design-patterns-in-ruby-decorator-b7f2da4153b0
+3. Addapter pattern
+      
+       https://www.sitepoint.com/using-and-testing-the-adapter-design-pattern/
