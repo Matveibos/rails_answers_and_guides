@@ -81,3 +81,17 @@
           2. step 
                     shift + cmd + p
                     Git Blame show all
+14. How to take yml path by click?
+          
+          https://github.com/ddiachkov/sublime-yaml-nav
+          
+          1. step 
+                    shift + cmd + p 
+                    Package Control: Install Package
+                    YAML Nav
+          2. 
+                    find
+                    cmd + r
+                    
+                    get path ( name focused )
+                    cmd + shift + w
