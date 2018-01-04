@@ -71,6 +71,8 @@
           
           git config --global core.editor "code --wait"
 13. How can you show the git author of the page/line in sublime?
+
+          https://stackoverflow.com/questions/14891364/how-to-show-git-author-name-in-sublime-text-editor
           
           1. step 
                     shift + cmd + p 
