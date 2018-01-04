@@ -70,3 +70,12 @@
 12. How to set sublime text as default editor for the git?
           
           git config --global core.editor "code --wait"
+13. How can you show the git author of the page/line in sublime?
+          
+          1. step 
+                    shift + cmd + p 
+                    Package Control: Install Package
+                    Git: Blame
+          2. step 
+                    shift + cmd + p
+                    Git Blame show all
