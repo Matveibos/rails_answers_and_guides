@@ -16,8 +16,8 @@
         # In new place use FactoryBot instead of FactoryGirl
 1. How you can initialize factory folder?
 
-        gem "factory_girl_rails"
-        rails g factory_girl:model MyModel
+        gem "factory_bot_rails"
+        rails g factory_bot:model MyModel
         # it will create spec/factories/my_model.rb
 1. How to create Factory?
     
