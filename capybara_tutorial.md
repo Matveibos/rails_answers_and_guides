@@ -2,6 +2,9 @@
       
       https://github.com/teamcapybara/capybara
 ## Integration test (capybara)
+1. How to generate a default template?
+      
+       rails g rspec:feature Animal
 1. How you can include integration test?
         
         # inside rspec_helper.rb
