@@ -109,6 +109,7 @@
             
             f.file_field :photo
             
+            f.collection_select(:owner_id, Owner.all, :id, :name)
             
 17. When you have to use 'multipart: true'?
             
