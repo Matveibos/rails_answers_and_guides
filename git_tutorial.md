@@ -117,3 +117,7 @@ http://gitreal.codeschool.com/
 
          git pull upstream master
          git push 
+24. How to undo last commit adn return back to the previuse commit?
+        
+        git log
+        git reset --hard COMMIT_ID
