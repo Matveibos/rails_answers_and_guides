@@ -18,3 +18,12 @@
         class MyBook < ApplicationRecord
           self.table_name = 'books'
         end
+6. How to get access to hellpers from the model?
+        
+        class Book < ApplicationRecord
+          def self.helper
+            ActionController::Base.helpers
+          end
+        end
+        
+        Book.helper.link_to "any_link", "/"
