@@ -50,6 +50,13 @@
             require 'capybara-screenshot/rspec'
             
             # the screnshoots will save in the temp/capybara dir
+6. How to check post request sending?
+      
+       gem 'webmock'
+       
+       # add to rspec_helper.rb
+         require 'webmock/rspec'
+         WebMock.disable_net_connect!(allow_localhost: true)
 ## CAPYBARA-WEBKIT
 
 1. How to include capybara-webkit to rails app?
