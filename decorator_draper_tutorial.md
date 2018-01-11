@@ -21,3 +21,8 @@
         
         @article = Article.first.decorate
         @articles = Article.popular.decorate
+6. How to add to draper ability to add html tag?
+            
+        def draper_h1
+          h.content_tag(:h1, "Awesome", class: "display-1", style: "color: blue")
+        end
