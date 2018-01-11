@@ -31,3 +31,5 @@
         def draper_link
           h.link_to("", h.books_path, class: "btn btn-outline-primary")
         end
+        
+        # if you don't want to write h. everywhere, you can add 'include Draper::LazyHelpers' in the top of app
