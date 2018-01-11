@@ -34,3 +34,13 @@
         end
         
         # if you don't want to write h. everywhere, you can add 'include Draper::LazyHelpers' in the top of app
+8. How to predefinded some variables in Draper?
+       
+        # inside the drapep class
+              attr_reader :predefined_variable
+
+              def initialize(book_instance, params = {})
+                @predefined_variable = "Predefined variable"
+                super(book_instance)
+              end
+        # you have access to the predefind variable now
