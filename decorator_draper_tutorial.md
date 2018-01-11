@@ -15,6 +15,7 @@
         class ArticleDecorator < Draper::Decorator
           def published_at
             object.published_at.strftime("%A, %B %e")
+            # you can also use the alias - model
           end
         end
 5. How to start using this methods?
