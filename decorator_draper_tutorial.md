@@ -26,3 +26,8 @@
         def draper_h1
           h.content_tag(:h1, "Awesome", class: "display-1", style: "color: blue")
         end
+7. How you can use rails view helper to draper?
+        
+        def draper_link
+          h.link_to("", h.books_path, class: "btn btn-outline-primary")
+        end
