@@ -27,3 +27,7 @@
         end
         
         Book.helper.link_to "any_link", "/"
+7. How to return object attributes like a hash?
+        
+        Book.last.attributes
+        => it return hash attributes
