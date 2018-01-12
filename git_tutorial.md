@@ -121,3 +121,6 @@ http://gitreal.codeschool.com/
         
         git log
         git reset --hard COMMIT_ID
+25. How to download branch without merge conflict?
+        
+        git reset --hard origin/<branch_name>
