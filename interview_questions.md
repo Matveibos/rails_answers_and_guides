@@ -188,4 +188,5 @@
            User.find_by will return nill
 12. How to use symbol with dish?
            
-           s = :'my-symbol-hello'
+            
+            s = :'my-symbol-hello'
