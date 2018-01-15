@@ -186,3 +186,6 @@
            
            User.find return exception if argument uncorect
            User.find_by will return nill
+12. How to use symbol with dish?
+           
+           s = :'my-symbol-hello'
