@@ -15,3 +15,9 @@
         hash = { a: true, b: false, c: nil}
         hash.except(:c) # => { a: true, b: false}
         hash # => { a: true, b: false, c: nil}
+4. How to get access to the inner hash data?
+        
+        h = { foo: {bar: {baz: 1}}}
+
+        h.dig(:foo, :bar, :baz)           #=> 1
+        h.dig(:foo, :zot)                 #=> nil
