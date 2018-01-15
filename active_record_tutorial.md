@@ -270,6 +270,9 @@
 39. How to get time before some second from created_at?
             
             MyModel.where("created_at < ?", 2.days.ago)
+40. Hwo to update attributes without rewriting db?
+            
+            my_obj.write_attribute(:my_field, 'some value')
 ## ------------------------ ActiveRecord without rails ------------------------
 
 
