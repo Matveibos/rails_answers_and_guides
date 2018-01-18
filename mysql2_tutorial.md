@@ -56,4 +56,5 @@
             
 10. How make db:reset for downloaded production db on your local db?
       
-                        For those who had replicate production database to local, and want to drop it on local machine, you will need to set bin/rails db:environment:set RAILS_ENV=development, and after rake db:drop
+            bin/rails db:environment:set RAILS_ENV=development, 
+            rake db:drop
