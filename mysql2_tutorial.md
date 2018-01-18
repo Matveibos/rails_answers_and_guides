@@ -44,6 +44,8 @@
 8. How to download db from server to mac local machine?
             
             https://sequelpro.com/download#auto-start
+            cmd+shift+e for downloading this db
+            
 9. How to make dump with the workbench help?
             
             1. Open workbench MySql
@@ -52,3 +54,6 @@
             4. Select 'import from self contained file' -> choose a sql file
             5. Choose a default target schema 
             
+10. How make db:reset for downloaded production db on your local db?
+      
+                        For those who had replicate production database to local, and want to drop it on local machine, you will need to set bin/rails db:environment:set RAILS_ENV=development, and after rake db:drop
