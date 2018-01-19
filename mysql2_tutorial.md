@@ -45,7 +45,13 @@
             
             https://sequelpro.com/download#auto-start
             cmd+shift+e for downloading this db
+9. Sequal pro db update without sql
             
+            download everything in csv format
+            # change to local bd
+            # import 
+            cmd + shift + i
+            # to your selected db
 9. How to make dump with the workbench help?
             
             1. Open workbench MySql
