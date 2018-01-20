@@ -22,3 +22,15 @@
             end
           end
         end
+3. How to raise another error from the event?
+        
+            event :jump do
+              error do |error|
+                if error.class == AASM::InvalidTransition
+                  raise ActiveRecord::RecordInvalid
+                else
+                  raise error
+                end
+              end
+              transitions from: :running, to: :jumping
+            end
