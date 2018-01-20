@@ -124,3 +124,10 @@ http://gitreal.codeschool.com/
 25. How to download branch without merge conflict?
         
         git reset --hard origin/<branch_name>
+26. How to add new ssh key to your account?
+        
+        https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
+        https://help.github.com/enterprise/2.11/user/articles/adding-a-new-ssh-key-to-your-github-account/
+27. How you can change account?
+
+        For chnaging users you can remove github.com key Keychain Access program on mac
