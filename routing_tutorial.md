@@ -121,3 +121,6 @@
 10. How to find neccessary route?
         
         rake routes | grep ressource_name
+11. Watches routing from there app?
+
+         http://localhost:3000/rails/info/routes
