@@ -118,3 +118,6 @@
             scope module: 'admin' do
               resources :articles, :comments
             end
+10. How to find neccessary route?
+        
+        rake routes | grep ressource_name
