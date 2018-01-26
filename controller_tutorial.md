@@ -48,3 +48,6 @@
          @user = User.find(params[:id])
          render json: @user
        end
+8. How to redirect with flash message?
+            
+            redirect_to card_types_path, flash: { success: "my message" }
