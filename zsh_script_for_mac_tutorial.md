@@ -4,6 +4,9 @@
              zsh (personally I use zsh+oh-my-zsh https://github.com/robbyrussell/oh-my-zsh)
             # create hello.sh script and run it
              zsh hello.sh 
+3. How to install zsh?
+            
+            sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 2. How to puts hello world with script?
             
             echo 'Hello world!'
