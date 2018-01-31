@@ -131,3 +131,6 @@ http://gitreal.codeschool.com/
 27. How you can change account?
 
         For chnaging users you can remove github.com key Keychain Access program on mac
+28. How to remove remote name?
+        
+        git remote remove some_name
