@@ -184,6 +184,9 @@
            
                        s = :'my-symbol-hello'
 
+13. Some list of questions
+           
+           https://github.com/undr/ruby-trivia
 ##----------------------------RAILS--------------------------------------------------
 
 11. What is the difference between User.find(1) and User.find_by(id: 1)?
