@@ -2,6 +2,8 @@
             https://habrahabr.ru/post/319472/
             https://bonsaiden.github.io/JavaScript-Garden/
             http://www.cheat-sheets.org/saved-copy/jsquick.pdf
+            # js with json api
+            https://scotch.io/tutorials/how-to-use-the-javascript-fetch-api-to-get-data
 
 1. How you can check if array include element?
             
