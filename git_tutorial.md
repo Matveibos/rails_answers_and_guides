@@ -85,7 +85,11 @@ http://gitreal.codeschool.com/
 19. How you can combine many commits into one?
         
         git rebase -i --root
+        or git rebase -i HEAD~n # where n numbers of commit for the merge
         # then change 'pick' to 'squash'
+        # delete message which you don't use
+        # now you can push your changes
+        git push origin master -f
 20. How you can make changing in already pushed branch without commit?
         
         git add .
