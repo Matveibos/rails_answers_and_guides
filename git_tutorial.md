@@ -32,7 +32,14 @@ http://gitreal.codeschool.com/
         # or
           git checkout .
 8. How to pull all from master directly?
-      
+       
+       # you are on another branch and want to have last update from main branch
+       # and move it before your branch
+       
+       git pull origin master
+       git rebase master 
+       
+       # or in one action 
        git pull --rebase origin master
 9. How you can add information to old last commit?
       
