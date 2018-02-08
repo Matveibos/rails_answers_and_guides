@@ -87,3 +87,9 @@
             Capybara::Webkit.configure do |config|
               config.raise_javascript_errors = true
             end
+## Screenshoot 
+
+1. How to make screenshoot with capybara?
+
+            https://github.com/mattheworiordan/capybara-screenshot
+            Capybara::Screenshot.screenshot_and_open_image
