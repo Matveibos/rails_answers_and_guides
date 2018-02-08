@@ -74,3 +74,16 @@
             # inside sample set js: true
             it 'destroys last record', js: true do
             end
+## JS testing
+
+1. How to include debug js mode while testing?
+            
+            # rails_helper.rb
+            Capybara.javascript_driver = :webkit_debug
+
+2. How you can raise js erorrs in rspec capybara?
+            
+            # rails_helper.rb
+            Capybara::Webkit.configure do |config|
+              config.raise_javascript_errors = true
+            end
