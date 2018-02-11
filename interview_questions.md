@@ -192,6 +192,17 @@
            MyClass.instance_methods(false)
            my_instance.instance_varibles
            my_instance.methods
+15. Can you name 3 way for invoking method on object?
+           
+           my_hash = {a: 12}
+           p my_hash.nil?
+
+           my_hash = {a: 12}
+           p my_hash.send(:nil?)
+
+           my_method = {a: 12}.method(:nil?)
+           p my_method.call
+
 ##----------------------------RAILS--------------------------------------------------
 
 11. What is the difference between User.find(1) and User.find_by(id: 1)?
