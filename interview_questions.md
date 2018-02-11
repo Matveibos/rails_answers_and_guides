@@ -191,6 +191,7 @@
 
            MyClass.instance_methods(false)
            my_instance.instance_varibles
+           my_instance.methods
 ##----------------------------RAILS--------------------------------------------------
 
 11. What is the difference between User.find(1) and User.find_by(id: 1)?
