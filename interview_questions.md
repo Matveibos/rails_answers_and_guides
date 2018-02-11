@@ -187,6 +187,10 @@
 13. Some list of questions
            
            https://github.com/undr/ruby-trivia
+14. List of instance 
+
+           MyClass.instance_methods(false)
+           my_instance.instance_varibles
 ##----------------------------RAILS--------------------------------------------------
 
 11. What is the difference between User.find(1) and User.find_by(id: 1)?
