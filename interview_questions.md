@@ -202,7 +202,11 @@
 
            my_method = {a: 12}.method(:nil?)
            p my_method.call
-
+15. What 3 things are not object on ruby?
+           
+           # if/else/switch
+           # while/loop/times
+           # block
 ##----------------------------RAILS--------------------------------------------------
 
 11. What is the difference between User.find(1) and User.find_by(id: 1)?
