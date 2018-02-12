@@ -207,6 +207,32 @@
            # if/else/switch
            # while/loop/times
            # block
+           
+16. What would show this code?
+           
+           module First
+             def initialize
+               puts "First"
+             end
+           end
+
+           module Second
+             def initialize
+               puts "second"
+             end
+           end
+
+           class Employee
+             include First
+             include Second
+
+             def initialize()
+               super()
+             end
+           end
+
+           Employee.new
+           # second
 ##----------------------------RAILS--------------------------------------------------
 
 11. What is the difference between User.find(1) and User.find_by(id: 1)?
