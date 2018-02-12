@@ -95,3 +95,6 @@
                     
                     get path ( name focused )
                     cmd + shift + w
+15. Multiply selection with keyboard
+
+          https://www.sublimetext.com/docs/3/multiple_selection_with_the_keyboard.html
