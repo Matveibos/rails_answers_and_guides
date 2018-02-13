@@ -98,3 +98,6 @@
 15. Multiply selection with keyboard
 
           https://www.sublimetext.com/docs/3/multiple_selection_with_the_keyboard.html
+16. How to add jsx huiglight to sublime?
+
+          https://github.com/babel/babel-sublime
