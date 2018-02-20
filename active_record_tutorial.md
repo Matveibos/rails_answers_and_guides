@@ -273,6 +273,11 @@
 40. Hwo to update attributes without rewriting db?
             
             my_obj.write_attribute(:my_field, 'some value')
+41. How to allow nil value in association belongs_to?
+            
+            class Book < ActiveRecord::Base
+                belongs_to :author, optional: true
+            end
 ## ------------------------ ActiveRecord without rails ------------------------
 
 
