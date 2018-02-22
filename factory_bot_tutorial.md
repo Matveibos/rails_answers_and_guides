@@ -1,5 +1,5 @@
 1. ARTICLES
-
+        https://github.com/thoughtbot/factory_bot/blob/master/GETTING_STARTED.md
         https://semaphoreci.com/community/tutorials/working-effectively-with-data-factories-using-factorygirl
 1. How to include new version of gem? (FactoryBot)
         
