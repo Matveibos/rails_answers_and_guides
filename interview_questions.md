@@ -233,6 +233,39 @@
 
            Employee.new
            # second
+17. Difference between public and protected methods?
+           
+           class Hobbit
+             def check_protected_access(hobbit = self)
+               hobbit.protected_has_access?
+             end
+
+             def check_private_access(hobbit = self)
+               hobbit.private_has_access?
+             end
+
+             protected
+
+             def protected_has_access?
+               puts true
+             end
+
+             private
+
+             def private_has_access?
+               puts true
+             end
+
+           end
+
+           hobbit = Hobbit.new
+           hobbit.check_protected_access
+           # true
+           hobbit2 = Hobbit.new
+           hobbit.check_protected_access(hobbit2)
+           # true
+           hobbit.check_private_access
+           # false
 ##----------------------------RAILS--------------------------------------------------
 
 11. What is the difference between User.find(1) and User.find_by(id: 1)?
