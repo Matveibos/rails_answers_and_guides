@@ -74,6 +74,13 @@
             # inside sample set js: true
             it 'destroys last record', js: true do
             end
+2. How to use capybara with seleniym?
+      
+            brew install geckodriver
+            
+            Capybara.javascript_driver = :selenium
+            WebMock.disable_net_connect!(allow: ["127.0.0.1:24000", "127.0.0.1:4444"])
+      
 ## JS testing
 
 1. How to include debug js mode while testing?
