@@ -50,3 +50,14 @@
              document.getElementsByClassName("post_like _like_wrap")[i].click();
           }
           
+6. Add VK like
+
+          function setLike() {
+            document.getElementsByClassName('pv_like_link _link')[0].click();
+          }
+
+          for(var i = 0; i <= 1000; i++) {
+                    setTimeout(function() {
+                              setLike();
+                    }, 1000 * i);
+          }
