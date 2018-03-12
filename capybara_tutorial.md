@@ -100,3 +100,6 @@
 
             https://github.com/mattheworiordan/capybara-screenshot
             Capybara::Screenshot.screenshot_and_open_image
+2. How to run show backtrase when running rspec capybara?
+            
+            Capybara.javascript_driver = :webkit_debug
