@@ -101,3 +101,8 @@
 16. How to add jsx huiglight to sublime?
 
           https://github.com/babel/babel-sublime
+17. How to Huglight the end of the bracket block?
+          
+          # cmd + shift + p
+          # install package
+          # BracketHighlighter
