@@ -283,6 +283,11 @@
            p a.instance_variable_get(:@hello)
            a.instance_variable_set(:@hello, 0)
            p a.instance_variable_get(:@hello)
+18. How you can define methods dynamic?
+           
+           define_method(:hello) { puts 'hello' }
+           hello
+           => 'hello'
 ##----------------------------RAILS--------------------------------------------------
 
 11. What is the difference between User.find(1) and User.find_by(id: 1)?
