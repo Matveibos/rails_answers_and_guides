@@ -271,6 +271,18 @@
            p Array.new(2)
            p Object.const_get(:Array).new(2)
            p [nil, nil]
+17. How to get access to instance variable inside class without addition code?
+
+           class A
+             def initialize
+               @hello = 123
+             end
+           end
+
+           a = A.new
+           p a.instance_variable_get(:@hello)
+           a.instance_variable_set(:@hello, 0)
+           p a.instance_variable_get(:@hello)
 ##----------------------------RAILS--------------------------------------------------
 
 11. What is the difference between User.find(1) and User.find_by(id: 1)?
