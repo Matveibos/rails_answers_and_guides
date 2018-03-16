@@ -266,6 +266,11 @@
            # true
            hobbit.check_private_access
            # false
+16. Can you show me 3 ways for creating Array obeject?
+ 
+           p Array.new(2)
+           p Object.const_get(:Array).new(2)
+           p [nil, nil]
 ##----------------------------RAILS--------------------------------------------------
 
 11. What is the difference between User.find(1) and User.find_by(id: 1)?
