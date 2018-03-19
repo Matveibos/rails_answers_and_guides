@@ -17,5 +17,6 @@
             mongo
             use your_db
             db.your_db_table.count()
-
+5. How to find all record with some data?
             
+            db.your_db_table.find({field1: 'value1', field2: 'value2'})
