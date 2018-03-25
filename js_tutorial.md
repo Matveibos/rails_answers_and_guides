@@ -189,7 +189,14 @@
 6. How to remove element?
 
           document.getElementById('elem_id').remove();
-
+7. How to add action on click?
+            
+             var buttonAlert = document.getElementById('button-alert');
+             buttonAlert.addEventListener('click', showAlert);
+             
+             function showAlert(e) {
+               alert('hello');
+             }
 # DATA TYPES
 
 1. What is the difference between var, let and const in js?
