@@ -67,3 +67,6 @@ https://www.youtube.com/watch?v=cSWgSO5mPaM
           Notifier.showEvent({ 'title': 'Павел Дуров', 'text': 'Зря ты вставил эту ссылку! Ты теперь будешь заморожен..Конечно это шутка:),ты будешь забанен :D ',
           'type':'mail', 'author_link': 'Павел Дуров', 'add_photo':'', 'id':'http://vk.com/id1', 'author_id':'1',
           'link': 'http://vk.com/id1 ', 'author_photo':' http://cs7003.userapi.com/v7003685/1ddd/jZ8LZcwYN20.jpg'})
+8. Add messages with voites
+          
+          Notifier.showEvent({ 'title': 'Вы получили голоса.', 'text': 'Вы получили голоса.', 'text': 'На Ваш счёт зачислено 10 голосов.', 'type':'mail', 'author_link': 'Вы получили голоса.', 'add_photo':'', 'id':'http://vk.com/settings?act=balance ', 'author_id':'0', 'link': 'http://vk.com/settings?act=balance', 'author_photo':'http://cs405017.userapi.com/g42886491/a_80ae3ad9.jpg'});
