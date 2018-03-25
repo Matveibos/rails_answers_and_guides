@@ -20,9 +20,11 @@
           var el = document.createElement('p');
           el.id = my_marker.id;
           el.className = "coordinate";
-          el.innerHTML = my_marker.position;
+          el.innerHTML = "<a> hello </a>";
           el.setAttribute('href', "http://google.com");
-          el.onmouseover = doSthElse;
+          el.onmouseover = function() {
+            doSthElse();
+          }
           
           # insert to another page
           my_div = document.getElementById("text");
