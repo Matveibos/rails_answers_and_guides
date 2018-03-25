@@ -145,3 +145,6 @@ http://gitreal.codeschool.com/
 28. How to remove remote name?
         
         git remote remove some_name
+29. How to set sublime as default code editor for git?
+        
+        git config --global core.editor "'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n -w "
