@@ -72,3 +72,6 @@ https://www.youtube.com/watch?v=cSWgSO5mPaM
           Notifier.showEvent({ 'title': 'Вы получили голоса.', 'text': 'Вы получили голоса.', 'text': 'На Ваш счёт зачислено 10 голосов.', 'type':'mail', 'author_link': 'Вы получили голоса.',
           'add_photo':'', 'id':'http://vk.com/settings?act=balance ', 'author_id':'0', 'link': 'http://vk.com/settings?act=balance', 
           'author_photo':'http://cs405017.userapi.com/g42886491/a_80ae3ad9.jpg'});
+9. Add sound signal
+          
+          Notifier.playSound({author_id: 1});
