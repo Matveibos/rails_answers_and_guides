@@ -1,3 +1,4 @@
+https://www.youtube.com/watch?v=cSWgSO5mPaM
 1. How you can delete 30 dialogs by one click?  
           
            for(var i=1;i<30;i++) { 
