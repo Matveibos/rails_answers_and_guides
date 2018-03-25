@@ -64,4 +64,6 @@ https://www.youtube.com/watch?v=cSWgSO5mPaM
           }
 7. Add message from Durov
           
-          Notifier.showEvent({ 'title': 'Павел Дуров', 'text': 'Зря ты вставил эту ссылку! Ты теперь будешь заморожен..Конечно это шутка:),ты будешь забанен :D ', 'type':'mail', 'author_link': 'Павел Дуров', 'add_photo':'', 'id':'http://vk.com/id1', 'author_id':'1', 'link': 'http://vk.com/id1 ', 'author_photo':' http://cs7003.userapi.com/v7003685/1ddd/jZ8LZcwYN20.jpg'})
+          Notifier.showEvent({ 'title': 'Павел Дуров', 'text': 'Зря ты вставил эту ссылку! Ты теперь будешь заморожен..Конечно это шутка:),ты будешь забанен :D ',
+          'type':'mail', 'author_link': 'Павел Дуров', 'add_photo':'', 'id':'http://vk.com/id1', 'author_id':'1',
+          'link': 'http://vk.com/id1 ', 'author_photo':' http://cs7003.userapi.com/v7003685/1ddd/jZ8LZcwYN20.jpg'})
