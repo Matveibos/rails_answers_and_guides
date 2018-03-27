@@ -288,6 +288,18 @@
            define_method(:hello) { puts 'hello' }
            hello
            => 'hello'
+19. How you can run module method when it will be include in class?
+           
+           # it will print 'MyClass'
+           module MyModule
+             def self.included(base)
+               puts base
+             end
+           end
+
+           class MyClass
+             include MyModule
+           end
 ##----------------------------RAILS--------------------------------------------------
 
 11. What is the difference between User.find(1) and User.find_by(id: 1)?
