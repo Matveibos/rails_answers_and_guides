@@ -300,6 +300,39 @@
            class MyClass
              include MyModule
            end
+20. Can you provide another way for extending class methods from Module to Class?
+
+           module ClassMethod
+             def show
+               puts 'show class'
+             end
+           end
+
+           class Book
+             # extend ClassMethod
+           end
+
+           Book.extend ClassMethod
+           Book.show
+
+           # => show class
+20. Can you provide another way for extending class methods from Module to Class?
+          
+           module InstanceMethod
+             def show
+               puts 'show instance'
+             end
+           end
+
+           class Book
+             # include InstanceMethod
+           end
+
+
+           Book.include InstanceMethod
+           Book.new.show
+
+           # => show instance
 ##----------------------------RAILS--------------------------------------------------
 
 11. What is the difference between User.find(1) and User.find_by(id: 1)?
