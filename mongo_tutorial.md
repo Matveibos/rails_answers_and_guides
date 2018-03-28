@@ -20,3 +20,10 @@
 5. How to find all record with some data?
             
             db.your_db_table.find({field1: 'value1', field2: 'value2'})
+6. Show databases?
+      
+       show databases
+7. Show models tables(collection)?
+      
+       use your_db
+       show collections
