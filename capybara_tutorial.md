@@ -103,3 +103,6 @@
 2. How to run show backtrase when running rspec capybara?
             
             Capybara.javascript_driver = :webkit_debug
+3. How to open browser chrome for capybara tests?
+            
+            https://robots.thoughtbot.com/headless-feature-specs-with-chrome
