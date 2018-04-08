@@ -37,5 +37,9 @@
        # { "class" : "F", "total" : 140343 }
 10. Is it possible to do an OR in the $match?
 
-       $match: { $or: [{ author: 'dave' }, { author: 'john' }] }
+        $match: { $or: [{ author: 'dave' }, { author: 'john' }] }
+        
+11. How to make offset?
+         
+         { $skip: 3 }
       
