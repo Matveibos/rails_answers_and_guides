@@ -27,3 +27,6 @@
       
        use your_db
        show collections
+8. How to exclude some values from set of result?
+       
+       db.airlines.aggregate([{ $match: { destCountry: { $ne: 'United States' }}}])
