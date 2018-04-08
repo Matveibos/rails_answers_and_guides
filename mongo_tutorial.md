@@ -30,3 +30,8 @@
 8. How to exclude some values from set of result?
        
        db.airlines.aggregate([{ $match: { destCountry: { $ne: 'United States' }}}])
+9. How to show only specific fields?
+      
+       db.airlines.aggregate([{ $group: { _id: {class: "$class"}, total: { $sum: 1 } }}, { $project: {_id: 0, class: "$_id.class", total: "$total"}}])
+       
+       # { "class" : "F", "total" : 140343 }
