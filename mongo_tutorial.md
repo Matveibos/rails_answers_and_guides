@@ -35,3 +35,7 @@
        db.airlines.aggregate([{ $group: { _id: {class: "$class"}, total: { $sum: 1 } }}, { $project: {_id: 0, class: "$_id.class", total: "$total"}}])
        
        # { "class" : "F", "total" : 140343 }
+10. Is it possible to do an OR in the $match?
+
+       $match: { $or: [{ author: 'dave' }, { author: 'john' }] }
+      
