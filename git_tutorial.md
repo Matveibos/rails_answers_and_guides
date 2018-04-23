@@ -148,3 +148,7 @@ http://gitreal.codeschool.com/
 29. How to set sublime as default code editor for git?
         
         git config --global core.editor "'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n -w "
+30. How you can merge only one commit to your new branch?
+        
+        # use cherry-pick
+        https://coderwall.com/p/emz8iw/git-cherry-pick
