@@ -152,3 +152,14 @@ http://gitreal.codeschool.com/
         
         # use cherry-pick
         https://coderwall.com/p/emz8iw/git-cherry-pick
+31. How to change commits body which has already existed in history?
+
+        git rebase -i @~9   # Show the last 9 commits in a text editor
+        
+        Find the commit you want, change pick to e (edit), and save and close the file. Git will rewind to that commit, allowing you to either:
+
+        use git commit --amend to make changes
+        
+        Then, run git rebase --continue, and Git will replay the subsequent changes on top of your modified commit. You may be asked to fix some merge conflicts.
+        
+        
