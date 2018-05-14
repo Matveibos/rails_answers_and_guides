@@ -60,3 +60,6 @@
         # after installing qt with homebrew it's participate in the Cellear folder, we need to create link to the binary foolder with ln -s command
         
         ln -s /usr/local/Cellar/qt@5.5/5.5.1_1/bin/qmake /usr/local/bin/qmake
+14. How to install capybara webkit on mac?
+        
+        https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit
