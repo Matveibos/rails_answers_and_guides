@@ -24,3 +24,25 @@
 5. How you can open new iterm window?
             
             open . -a iterm
+6. How you can declare variables?
+            
+            a=Hello
+            b=world
+
+            echo "$a $b"
+            #=> Hello world
+            
+7. How to exit from code flow?
+
+            echo Hello world
+            exit
+            echo Does not show
+8. How to write conditions?
+            
+            age=20
+
+            if [ "$age" -ge 18 ]; then
+              echo 'You can vote'
+            else
+              echo 'You are younger'
+            fi
