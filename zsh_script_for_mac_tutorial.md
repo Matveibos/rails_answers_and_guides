@@ -77,3 +77,10 @@
             if [ $name ]; then
               echo "Not zero length!"
             fi
+13. How to check if directory exist or not?
+
+            name=test/app/models
+
+            if [ -d $name ]; then
+              echo "Is a directory"
+            fi
