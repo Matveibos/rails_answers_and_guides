@@ -39,6 +39,8 @@
             echo Does not show
 8. How to write conditions?
             
+            # -ge == greater than
+            # if == end
             age=20
 
             if [ "$age" -ge 18 ]; then
@@ -46,3 +48,10 @@
             else
               echo 'You are younger'
             fi
+9. You have ability to cancatanate several variabels to one
+
+            prefix=ABC.BCA
+            second=1222
+
+            echo $prefix/---$second
+            => ABC.BCA/---1222
