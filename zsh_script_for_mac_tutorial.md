@@ -94,3 +94,7 @@
             # -f specifies which field you want to extract
             $(echo $file_name | cut -d "_" -f 1)
             # => saaasad/ssa
+            # you could also extract more than 1 field 
+            cut -d "_" -f 1,2,3
+            # or range
+            cut -d "_" -f 1-3
