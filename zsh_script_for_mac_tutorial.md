@@ -55,3 +55,10 @@
 
             echo $prefix/---$second
             => ABC.BCA/---1222
+10. How to write function?
+            
+            function Welcome() {
+              echo "java $1"
+            }
+
+            Welcome Hello
