@@ -70,3 +70,10 @@
             if [ -z $name ]; then
               echo "Is zero!"
             fi
+12. How to check if value isn't blank?
+            
+            name='Tests'
+
+            if [ $name ]; then
+              echo "Not zero length!"
+            fi
