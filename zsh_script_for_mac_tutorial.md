@@ -87,3 +87,10 @@
 14. Only basename
             
             basename include/stdio.h => stdio.h
+15. How to cut field by delimiter?
+            
+            file_name='saaasad/ssa_1111_222'
+            # -d specifies what is the field delimiter that is used in the input file
+            # -f specifies which field you want to extract
+            $(echo $file_name | cut -d "_" -f 1)
+            # => saaasad/ssa
