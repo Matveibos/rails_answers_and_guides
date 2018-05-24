@@ -84,3 +84,6 @@
             if [ -d $name ]; then
               echo "Is a directory"
             fi
+14. Only basename
+            
+            basename include/stdio.h => stdio.h
