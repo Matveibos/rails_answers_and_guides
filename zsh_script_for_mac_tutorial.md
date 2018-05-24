@@ -62,3 +62,11 @@
             }
 
             Welcome Hello
+11. How to check if string size is zero?
+            
+            # Checks if the given string operand size is zero
+            name=''
+
+            if [ -z $name ]; then
+              echo "Is zero!"
+            fi
