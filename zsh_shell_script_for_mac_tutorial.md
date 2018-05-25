@@ -98,3 +98,8 @@
             cut -d "_" -f 1,2,3
             # or range
             cut -d "_" -f 1-3
+16. How to cut by sybmols in reverse order?
+            
+            bic_and_date=FVLBNL20XXX20180412
+            $(echo $bic_and_date | rev | cut -c 1-9 | rev)
+            #=> 20180412
