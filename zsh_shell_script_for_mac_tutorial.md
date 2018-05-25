@@ -103,3 +103,9 @@
             bic_and_date=FVLBNL20XXX20180412
             $(echo $bic_and_date | rev | cut -c 1-9 | rev)
             #=> 20180412
+17. How to use pattern inside shell?
+
+            pat='^(SCT|SDD)_(.+)_(.+)([0-9]{8})\.([0-9]{3})$'
+            [[ $file_name =~ $pat ]]
+            "${BASH_REMATCH[1]}"
+            => SCT
