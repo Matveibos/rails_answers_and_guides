@@ -16,3 +16,8 @@
         
         
         rake countries:to_alpha
+2. How to generate task?
+       
+       rails g task my_namespace my_task1 my_task2
+       # then 
+       rake my_namespace:my_task1
