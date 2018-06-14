@@ -333,6 +333,9 @@
            Book.new.show
 
            # => show instance
+21. How you can check if one date range contains a subset of another date range?
+    
+           (x.first <= y.last) and (y.first <= x.last)
 ##----------------------------RAILS--------------------------------------------------
 
 11. What is the difference between User.find(1) and User.find_by(id: 1)?
