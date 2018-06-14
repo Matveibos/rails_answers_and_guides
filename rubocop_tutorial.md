@@ -2,6 +2,7 @@
     
          rubocop --only EmptyLines --auto-correct
          rubocop --only HashSyntax --auto-correct
+         rubocop -a
 
 2. Where you can find all available methods?
 
