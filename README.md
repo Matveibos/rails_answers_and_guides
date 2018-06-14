@@ -90,6 +90,7 @@ http://iwanttolearnruby.com/
 ## Rspec tutorial 
 https://www.tutorialspoint.com/rspec/rspec_introduction.htm
 
-
+## Some rails blogs from ashle yangell
+  http://ashleyangell.com/
 
 
