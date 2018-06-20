@@ -132,7 +132,8 @@ http://gitreal.codeschool.com/
         
         git log
         git reset --hard COMMIT_ID
-25. How to download branch without merge conflict?
+25. How to download branch without merge conflict / Replace local branch with remote branch entirely
+?
         
         git reset --hard origin/<branch_name>
 26. How to add new ssh key to your account?
