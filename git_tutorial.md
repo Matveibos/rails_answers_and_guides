@@ -172,3 +172,7 @@ http://gitreal.codeschool.com/
 
         git branch -m <newname>
         A way to remember this, is -m is for "move" (or mv), which is how you rename files.
+33. How you can remove last commit?
+      
+        git rebase -i HEAD~n # where n numbers of commit for the merge
+        and select drop
