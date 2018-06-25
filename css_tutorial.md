@@ -295,3 +295,27 @@
 		  animation-name: example;
 		  animation-duration: 4s;
 		}
+4. On a CSS hover event, can I change another div's styling?
+ 	
+		If #b is a descendant of #a, you can simply use #a:hover #b
+		
+		f #b comes immediately after #a: http://jsfiddle.net/u7tYE/
+
+		#a:hover + #b {
+		    background: #ccc
+		}
+
+		<div id="a">Div A</div>
+		<div id="b">Div B</div>
+	
+		If there are other elements between #a and #b, you can use this: http://jsfiddle.net/u7tYE/1/
+
+		#a:hover ~ #b {
+		    background: #ccc
+		}
+
+		<div id="a">Div A</div>
+		<div>random other elements</div>
+		<div>random other elements</div>
+		<div>random other elements</div>
+		<div id="b">Div B</div>
