@@ -319,3 +319,10 @@
 		<div>random other elements</div>
 		<div>random other elements</div>
 		<div id="b">Div B</div>
+
+5. How to exend your class from another class logic?
+		
+		.my_class {
+		   @extend .btn-link:hover
+		}
+		
