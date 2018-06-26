@@ -5,7 +5,7 @@
 1. How you can start rabbitMQ on mac?
         
         /usr/local/sbin/rabbitmq-server
-        # if you add this string export PATH=/usr/local/sbin:$PATH
+        # if you add this string ----> ' export PATH=/usr/local/sbin:$PATH '
         # just type
         rabbitmq-server
 1. How you can install rabbitMQ on mac?
