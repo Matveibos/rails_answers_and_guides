@@ -1,5 +1,7 @@
 # The most useful rails materials and guades
 
+## Ruby on Rails and microservices
+  https://blog.codeship.com/architecting-rails-apps-as-microservices/
 ## Free stolen expencive online courses (mostly in russian language)
   https://coursehunters.net/
 ## Notes for proffesionals
