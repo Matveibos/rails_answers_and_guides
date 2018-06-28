@@ -176,3 +176,15 @@ http://gitreal.codeschool.com/
       
         git rebase -i HEAD~n # where n numbers of commit for the merge
         and select drop
+34. What is the best way for debbuging with help of git?
+        
+
+          git bisect start # start debbugging
+          git bisect bad  # set the first commit as bad
+          git bisect good erre34r4kk # set the first good commit
+          
+          # then you will go in the middle and you should check is it ok or not, and type bad or false
+          
+          # after finding write
+          git bisect restart
+          
