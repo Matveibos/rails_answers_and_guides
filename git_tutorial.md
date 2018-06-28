@@ -188,3 +188,6 @@ http://gitreal.codeschool.com/
           # after finding write
           git bisect restart
           
+35. How you see who touched a file?
+        
+          git blame name_of_file.txt
