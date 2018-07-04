@@ -198,3 +198,8 @@
         
         # them get
         text: this._inputElement.value
+24. How to generate react app?
+        
+        npx create-react-app my-app
+        cd my-app
+        npm start
