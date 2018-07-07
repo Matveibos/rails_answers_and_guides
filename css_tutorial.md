@@ -1,3 +1,5 @@
+## 10 very interesting text animation
+	https://speckyboy.com/css-javascript-text-animation-snippets/
 # `CSS`
 1. How you can make text align center?
     
