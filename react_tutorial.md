@@ -193,11 +193,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router/4.2.0/react-router.js"></script>
 23. How to get values from input?
         
-        <input ref={(a) => this._inputElement = a} placeholder="input task">
+        <input ref={(input_value) => this.inputElement = input_value} placeholder="input task">
         </input>
         
         # them get
-        text: this._inputElement.value
+        text: this.inputElement.value
 24. How to generate react app?
         
         npx create-react-app my-app
