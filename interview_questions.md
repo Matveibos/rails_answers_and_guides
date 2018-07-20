@@ -342,3 +342,18 @@
            
            User.find return exception if argument uncorect
            User.find_by will return nill
+12. What will return the following code?
+           
+           
+           def hello
+             age = 10
+
+             proc { age = age + 1}
+           end
+
+           a = hello
+           a.call
+           a.call
+           a.call
+           p a.call
+           # =>> 14
