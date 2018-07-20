@@ -360,3 +360,23 @@
 13. How you can correctly initialize hash with default values?
            
            final_hash = Hash.new { |h, k| h[k] = []}
+14. What will return the following code?
+ 
+           def hello
+             uniq_var = 0
+
+             [
+               proc { uniq_var += 1},
+               lambda { uniq_var -= 1}
+             ]
+           end
+
+           add, sub = hello
+           add.call
+           add.call
+           p add.call
+           # => 3
+           sub.call
+           sub.call
+           p sub.call
+           # => 0
