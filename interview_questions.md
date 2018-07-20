@@ -357,3 +357,6 @@
            a.call
            p a.call
            # =>> 14
+13. How you can correctly initialize hash with default values?
+           
+           final_hash = Hash.new { |h, k| h[k] = []}
