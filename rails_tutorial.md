@@ -1,7 +1,10 @@
 1. How you can run server with another environment?
          
          rails s -e another_environment_name
+
+2. How you can redirect back in rails?
          
+         redirect_back(fallback_location: root_path)
 ## -----------------------------------SESSION-----------------------------------
 
 1. How you can include session?
