@@ -5,6 +5,10 @@
 2. How you can redirect back in rails?
          
          redirect_back(fallback_location: root_path)
+3. How to send params woth post request bu link click?
+         
+         link_to "Your value", your_custom_path(param1: 'value1', param2: 'value2'), method: :post
+
 ## -----------------------------------SESSION-----------------------------------
 
 1. How you can include session?
