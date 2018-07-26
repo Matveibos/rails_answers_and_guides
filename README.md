@@ -1,5 +1,7 @@
 # The most useful rails materials and guades
 
+## Build a restful api with rails
+  https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-one
 ## Ruby on Rails and microservices
   https://blog.codeship.com/architecting-rails-apps-as-microservices/
 ## Free stolen expencive online courses (mostly in russian language)
