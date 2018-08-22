@@ -203,3 +203,6 @@
         npx create-react-app my-app
         cd my-app
         npm start
+25. How to change background color with react?
+        
+        document.body.style = 'background: red;';
