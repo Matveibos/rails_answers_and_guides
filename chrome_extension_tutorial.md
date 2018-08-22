@@ -7,3 +7,6 @@
 3. How to create a simple extension (alert on click, popup, calor-page changing) ?
         
         https://grantwinney.com/making-your-first-chrome-extension/
+4. How you can see code from other extension?
+        
+        https://chrome.google.com/webstore/detail/chrome-extension-source-v/jifpbeccnghkjeaalbbjmodiffmgedin
