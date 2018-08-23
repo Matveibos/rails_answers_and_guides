@@ -10,3 +10,6 @@
 4. How you can see code from other extension?
         
         https://chrome.google.com/webstore/detail/chrome-extension-source-v/jifpbeccnghkjeaalbbjmodiffmgedin
+5. Youtube playlist about building your own chrome extension?
+        
+        https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bL9VOMT65ahNEri9uqLWfS
