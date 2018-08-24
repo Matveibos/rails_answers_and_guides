@@ -75,3 +75,6 @@ https://www.youtube.com/watch?v=cSWgSO5mPaM
 9. Add sound signal
           
           Notifier.playSound({author_id: 1});
+10. VK chrome extension
+          
+          https://github.com/ezhlobo/vkleaner
