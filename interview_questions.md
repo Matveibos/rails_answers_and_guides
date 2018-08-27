@@ -1,3 +1,17 @@
+## General questions
+1. Could you please tell us about your last project?
+2. How did you solve your biggest problem?
+3. Could you tell us how you can improve our 'API app' speed of working?
+
+## JS questions
+1. What is the promise?
+2. How does js async await work?
+3. What is the callback?
+
+## http
+1. What is the Cross-Origin Resource Sharing (CORS)?
+
+## Ruby questions
 1. Different between '<<' and '+=' string concatanate:
            
         tom = "kitty"
