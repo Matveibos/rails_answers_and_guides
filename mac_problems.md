@@ -63,3 +63,15 @@
 14. How to install capybara webkit on mac?
         
         https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit
+15. How to get access to my localhost from other devices?
+        
+        # check nodejs existing
+          node -v
+          npm -v
+        # install localtunnel
+          npm install -g localtunnel
+        # run your localtunel where YYYY - it’s your local port ( 3000 for example )
+          lt --port YYYY
+          
+          https://creative-coding.decontextualize.com/mobile/
+          https://github.com/localtunnel/localtunnel
