@@ -40,3 +40,24 @@
              function showAlert(e) {
                alert('hello');
              }
+8. How to observe the elements changing?
+
+
+          // выбираем целевой элемент
+          var target = document.getElementById('some-id');
+
+          // создаём экземпляр MutationObserver
+          var observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+              console.log(mutation.type);
+            });    
+          });
+
+          // конфигурация нашего observer:
+          var config = { attributes: true, childList: true, characterData: true };
+
+          // передаём в качестве аргументов целевой элемент и его конфигурацию
+          observer.observe(target, config);
+
+          // позже можно остановить наблюдение
+          observer.disconnect();
