@@ -121,3 +121,6 @@
 11. Watches routing from there app?
 
          http://localhost:3000/rails/info/routes
+12. How to add a simple post route ?
+         
+         post 'add_screenshot', controller: 'screenshots', action: 'add_screenshot'
