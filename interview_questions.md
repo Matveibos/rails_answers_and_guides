@@ -10,7 +10,13 @@
 
 ## http
 1. What is the Cross-Origin Resource Sharing (CORS)?
+## database
+1. Could you tell us how you can improve app perfomance?
 
+           https://www.engineyard.com/blog/improving-rails-app-performance-with-database-refactoring-and-caching
+           - eager loading ( N + 1 )
+           - indexes ( 100 times faster sometimes )
+           - cashing on the Nginx server ( with gem https://github.com/rails/actionpack-page_caching )
 ## Ruby questions
 1. Different between '<<' and '+=' string concatanate:
            
