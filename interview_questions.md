@@ -356,13 +356,13 @@
 21. How you can check if one date range contains a subset of another date range?
     
            (x.first <= y.last) and (y.first <= x.last)
-##----------------------------RAILS--------------------------------------------------
+## Rails
 
-11. What is the difference between User.find(1) and User.find_by(id: 1)?
+1. What is the difference between User.find(1) and User.find_by(id: 1)?
            
            User.find return exception if argument uncorect
            User.find_by will return nill
-12. What will return the following code?
+2. What will return the following code?
            
            
            def hello
@@ -377,10 +377,10 @@
            a.call
            p a.call
            # =>> 14
-13. How you can correctly initialize hash with default values?
+3. How you can correctly initialize hash with default values?
            
            final_hash = Hash.new { |h, k| h[k] = []}
-14. What will return the following code?
+4. What will return the following code?
  
            def hello
              uniq_var = 0
