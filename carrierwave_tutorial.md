@@ -74,6 +74,33 @@
             end
           end
         end
+1. How to add base64 image like an ordinary image?
+        
+        # add gems
+             gem 'carrierwave'
+             gem 'carrierwave-base64'
+        # create uploader
+            rails generate uploader Image
+        # this will be created
+            class ImageUploader < CarrierWave::Uploader::Base
+
+              ...
+
+              storage :file
+
+              ...
+
+              def store_dir
+                "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
+              end
+
+              ...
+            end
+        # add this line for your model ( inage is it your base64 string )
+            
+            mount_base64_uploader :image, ImageUploader
+       # inside view use image_url instead of just image
+            <%= image_tag @user.image_url%>
 ## FOG
 
 1. How to add fog for heroku?
