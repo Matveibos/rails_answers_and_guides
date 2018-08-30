@@ -65,9 +65,6 @@
             end
             # controller/users define my_method
 
-1. how you can see all route?
-         
-         rails routes
 1. How you can set root route?
          
          root 'controller_name#method_name'
