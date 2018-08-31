@@ -28,6 +28,8 @@
         yarn add styled-components
 6. How to add JQuery only with webpacker?
         
+        https://www.youtube.com/watch?v=1vT7M3Kx9IQ
+        
         rails new DemoJsApp --webpack
         yarn add jquery
         rails yarn:install
