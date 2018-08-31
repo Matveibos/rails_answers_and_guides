@@ -58,3 +58,18 @@
           //= require lg-fullscreen      
         # app/assets/stylesheets/pages.scss
           @import "lightgallery/dist/css/lightgallery.css"
+        # app/views/pages/index.html.erb
+            <div id="lightgallery">
+              <a href="https://media.istockphoto.com/photos/plant-growing-picture-id510222832?k=6&m=510222832&s=612x612&w=0&h=Pzjkj2hf9IZiLAiXcgVE1FbCNFVmKzhdcT98dcHSdSk=">
+                  <img src="https://media.istockphoto.com/photos/plant-growing-picture-id510222832?k=6&m=510222832&s=612x612&w=0&h=Pzjkj2hf9IZiLAiXcgVE1FbCNFVmKzhdcT98dcHSdSk=" />
+              </a>
+              <a href="https://media.istockphoto.com/photos/plant-growing-picture-id510222832?k=6&m=510222832&s=612x612&w=0&h=Pzjkj2hf9IZiLAiXcgVE1FbCNFVmKzhdcT98dcHSdSk=">
+                  <img src="https://media.istockphoto.com/photos/plant-growing-picture-id510222832?k=6&m=510222832&s=612x612&w=0&h=Pzjkj2hf9IZiLAiXcgVE1FbCNFVmKzhdcT98dcHSdSk=" />
+              </a>
+            </div>
+        # app/views/layouts/application.html.erb
+            <script>
+              $(document).ready(function() {
+                  $("#lightgallery").lightGallery();
+              });
+            </script>
