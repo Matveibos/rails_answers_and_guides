@@ -1,3 +1,13 @@
+1. How to disable coffee script default files generation?
+         
+         rails new hello --skip-coffee
+         
+         # or 
+         # Remove or comment out gem 'coffee-rails' from Gemfile.
+         # Change Javascript files that ends with .js.coffee to .js.
+         # Add config.generators.javascript_engine = :js to your application.rb.
+         # Make sure your tmp cache is cleared with rake tmp:cache:clear   
+         
 1. How you can run server with another environment?
          
          rails s -e another_environment_name
