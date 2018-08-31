@@ -4,7 +4,9 @@
             http://www.cheat-sheets.org/saved-copy/jsquick.pdf
             # js with json api
             https://scotch.io/tutorials/how-to-use-the-javascript-fetch-api-to-get-data
-
+1. Playlist about promises in js 
+            
+            https://www.youtube.com/watch?v=QO4NXhWo_NM&list=PLRqwX-V7Uu6bKLPQvPRNNE65kBL62mVfx
 1. How you can check if array include element?
             
             arr = [1,2,3]
