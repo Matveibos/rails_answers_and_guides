@@ -46,3 +46,15 @@
                 $(document).ready(function(){
                   $("#message").html("This is Hello World by JQuery");
                 });
+7. How to include lightgallery inside rails project?
+
+        https://github.com/sachinchoolur/lightGallery
+        # add to yarn 
+          yarn add jquery lightgallery lg-thumbnail lg-fullscreen
+        # app/assets/javascripts/application.js
+          //= require jquery
+          //= require lightgallery
+          //= require lg-thumbnail
+          //= require lg-fullscreen      
+        # app/assets/stylesheets/pages.scss
+          @import "lightgallery/dist/css/lightgallery.css"
