@@ -26,3 +26,16 @@
 5. How to add new npm packages to the app?
         
         yarn add styled-components
+6. How to add JQuery only with webpacker?
+        
+        rails new DemoJsApp --webpack
+        yarn add jquery
+        rails yarn:install
+        rails webpacker:install
+        
+        # add jquery to the app/assets/javascripts/application.js
+                //= require jquery
+        # check if it works
+                $(document).ready(function(){
+                  $("#message").html("This is Hello World by JQuery");
+                });
