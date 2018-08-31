@@ -5,4 +5,4 @@
         
 2. How to add webpacker to rails app video tutorial?
       
-      https://www.youtube.com/watch?v=Szs1DwEMhPg
+        https://www.youtube.com/watch?v=Szs1DwEMhPg
