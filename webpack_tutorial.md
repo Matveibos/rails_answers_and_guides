@@ -26,6 +26,11 @@
 5. How to add new npm packages to the app?
         
         yarn add styled-components
+5.1 How to remove package from the app?
+        
+        yarn remove [package]
+        rails yarn:install
+        
 6. How to add JQuery only with webpacker?
         
         https://www.youtube.com/watch?v=1vT7M3Kx9IQ
