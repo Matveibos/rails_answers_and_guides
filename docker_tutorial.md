@@ -18,9 +18,12 @@
                 FROM ubuntu:latest
 
                 CMD echo 'Hello this is the first container I have build'
-        # run docker build
+        # build docker
         
                 docker build . -t vlad_hello_world
+        # run docker 
+                
+                docker run vlad_hello_world
 2. How to see logs after docker-compose up command?
         
         docker-compose logs -f
