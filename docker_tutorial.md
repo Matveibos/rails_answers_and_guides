@@ -7,3 +7,5 @@
 3. How to reacreate containerers after docker-compose up?
         
         docker-compose build --no-cache
+4. How to install Rails on the docker image?
+        
