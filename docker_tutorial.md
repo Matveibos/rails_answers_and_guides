@@ -1,6 +1,10 @@
 1. How to install docker for MAC?
         
         https://docs.docker.com/docker-for-mac/
+1.1. How to check eaither instalation is succesfull?
+        
+        docker -v
+        docker run hello-world
 2. How to see logs after docker-compose up command?
         
         docker-compose logs -f
