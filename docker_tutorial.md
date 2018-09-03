@@ -9,6 +9,9 @@
         
         docker ps
         docker ps -a
+1.3. How to remove a container?
+        
+        docker rm CONTAINER_ID
 2. How to see logs after docker-compose up command?
         
         docker-compose logs -f
