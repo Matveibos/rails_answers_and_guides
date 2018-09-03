@@ -14,3 +14,6 @@
 5. How to run docker with rails on the digital ocean?
         
         https://coderjourney.com/deploy-docker-digital-ocean/
+6. Rails with docker video tutorial
+        
+        https://www.youtube.com/channel/UCeMoPFyEAoQz398VAWx4BZg/videos
