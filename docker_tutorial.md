@@ -12,6 +12,15 @@
 1.3. How to remove a container?
         
         docker rm CONTAINER_ID
+1.4. How to create your first docker image?
+        
+        # create Dockerfile with the text below
+                FROM ubuntu:latest
+
+                CMD echo 'Hello this is the first container I have build'
+        # run docker build
+        
+                docker build . -t vlad_hello_world
 2. How to see logs after docker-compose up command?
         
         docker-compose logs -f
