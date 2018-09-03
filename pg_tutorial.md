@@ -152,26 +152,26 @@
              https://gist.github.com/mrcasals/2788529
 7. Working database for pg?
             
-        default: &default
-          adapter: postgresql
-          encoding: unicode
-          username: postgres
-          host: localhost
-          # For details on connection pooling, see rails configuration guide
-          # http://guides.rubyonrails.org/configuring.html#database-pooling
-          pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+       default: &default
+         adapter: postgresql
+         encoding: unicode
+         username: postgres
+         host: localhost
+         # For details on connection pooling, see rails configuration guide
+         # http://guides.rubyonrails.org/configuring.html#database-pooling
+         pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
-        development:
-          <<: *default
-          database: sakurami_development
+       development:
+         <<: *default
+         database: sakurami_development
 
-        test:
-          <<: *default
-          database: sakurami_test
+       test:
+         <<: *default
+         database: sakurami_test
 
-        production:
-          <<: *default
-          database: sakurami_production
+       production:
+         <<: *default
+         database: sakurami_production
 8. How to install pg gem for mac? 
             
             gem install pg -- --with-pg-config=/Applications/Postgres.app/Contents/Versions/latest/bin/pg_config
