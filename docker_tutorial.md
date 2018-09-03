@@ -11,3 +11,6 @@
         
         https://gist.github.com/juggleross/811b604cdf3f583512d599c8bc8e3bf9
         
+5. How to run docker with rails on the digital ocean?
+        
+        https://coderjourney.com/deploy-docker-digital-ocean/
