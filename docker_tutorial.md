@@ -9,3 +9,5 @@
         docker-compose build --no-cache
 4. How to install Rails on the docker image?
         
+        https://gist.github.com/juggleross/811b604cdf3f583512d599c8bc8e3bf9
+        
