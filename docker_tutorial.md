@@ -5,6 +5,10 @@
         
         docker -v
         docker run hello-world
+1.2. How to see the list of all available containers?
+        
+        docker ps
+        docker ps -a
 2. How to see logs after docker-compose up command?
         
         docker-compose logs -f
