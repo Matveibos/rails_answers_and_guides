@@ -62,6 +62,20 @@
           docker run -it --rm vlad_hello_world /bin/bash
         # check 
           vi -v
+3.4. How to add a healthcheck for docker?
+        
+        # Dockerfile
+        FROM tomcat:latest
+
+        RUN apt-get update && apt-get install -y --no-install-recommends curl && apt-get clean
+
+        HEALTHCHECK --interval=5s --timeout=3s --retries=3 \
+              CMD curl -f http://localhost:8080 || exit 1
+        # then 
+        
+        docker build . -t my-tomcat
+        docker run -d -P my-tomcat
+        
 4.1. How to see docker logs?
         
         docker logs container_id
