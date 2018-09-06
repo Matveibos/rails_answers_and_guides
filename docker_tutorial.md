@@ -13,7 +13,7 @@
         
         docker rm CONTAINER_ID
 1.4. How to create your first docker image?
-        
+             
         # create Dockerfile with the text below
                 FROM ubuntu:latest
 
@@ -24,6 +24,9 @@
         # run docker 
                 
                 docker run vlad_hello_world
+        # check your image existing
+                
+                docker images
 2.1. How to run a docker container on the specific port?
         
         docker run -d -p 84:80 container_name
@@ -44,7 +47,20 @@
 3.2. How to run a ruby script from your computer inside the docker container?
         
         docker run -it --rm -v "$(pwd)/my_script_name.rb:/home/another_name.rb" ruby:latest /bin/bash  
+
+3.3. How to build a docker image with pre-instaled vim ( for example )?
         
+        # create Dockerfile
+        FROM ubuntu:latest
+
+        RUN apt-get update && apt-get install -y --no-install-recommends vim && apt-get clean 
+        
+        # create build
+          docker build . -t vlad_hello_world
+        # run build
+          docker run -it --rm vlad_hello_world /bin/bash
+        # check 
+          vi -v
 2. How to see logs after docker-compose up command?
         
         docker-compose logs -f
