@@ -9,9 +9,10 @@
         
         docker ps
         docker ps -a
-1.3. How to remove a container?
+1.3. How to remove a container/image?
         
         docker rm CONTAINER_ID
+        docker rmi IMAGE_ID
 1.4. How to create your first docker image?
              
         # create Dockerfile with the text below
@@ -61,6 +62,13 @@
           docker run -it --rm vlad_hello_world /bin/bash
         # check 
           vi -v
+4.1. How to see docker logs?
+        
+        docker logs container_id
+        # restricted by line count
+          docker logs --tail max_line_number container_id
+        # see logs online
+          docker logs --follow container_id
 2. How to see logs after docker-compose up command?
         
         docker-compose logs -f
