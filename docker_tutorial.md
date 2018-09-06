@@ -24,6 +24,10 @@
         # run docker 
                 
                 docker run vlad_hello_world
+2.1. How to run a docker container on the specific port?
+        
+        docker run -d -p 84:80 container_name
+        
 2. How to see logs after docker-compose up command?
         
         docker-compose logs -f
