@@ -35,6 +35,15 @@
           docker run -it --rm ubuntu:latest /bin/bash
         # if you want to get access to the already working container 
           docker exec -it container_id /bin/bash
+3.1. How to add ruby to your docker container?
+       
+        # go to the https://hub.docker.com/ and check the ruby image existing 
+        # run the following command ( -it means - interactive )
+        docker run -it --rm ruby:latest /bin/bash
+
+3.2. How to run a ruby script from your computer inside the docker container?
+        
+        docker run -it --rm -v "$(pwd)/my_script_name.rb:/home/another_name.rb" ruby:latest /bin/bash  
         
 2. How to see logs after docker-compose up command?
         
