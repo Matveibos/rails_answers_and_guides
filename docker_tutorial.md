@@ -27,6 +27,14 @@
 2.1. How to run a docker container on the specific port?
         
         docker run -d -p 84:80 container_name
+2.2. How to get inside the specific container?
+        
+        docker run -it ubuntu:latest /bin/bash
+        
+        # if you want to clean a container after exiting use 
+          docker run -it --rm ubuntu:latest /bin/bash
+        # if you want to get access to the already working container 
+          docker exec -it container_id /bin/bash
         
 2. How to see logs after docker-compose up command?
         
