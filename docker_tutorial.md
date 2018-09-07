@@ -117,6 +117,19 @@
 5.2. How to stop docker-compose?
         
         docker-compose down
+6.1. How to create docker network?
+        
+        docker network create name_of_the_network
+6.2. How to see the list of the networks?
+        
+        docker network ls
+6.3. How to see what containers are inside the network?
+        
+        docker network inspect name_of_the_network
+6.4. How to connect/disconect a container to/from the network?
+        
+        docker network connect network_id container_id
+        docker network disconnect network_id container_id
 2. How to see logs after docker-compose up command?
         
         docker-compose logs -f
