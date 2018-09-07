@@ -19,7 +19,7 @@
         # get list of all cantainer id
           docker ps -q
         # the remove it
-          docker rm $(docker ps -q)
+          docker rm $(docker ps -q -a)
 1.4. How to create your first docker image?
              
         # create Dockerfile with the text below
