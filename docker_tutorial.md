@@ -13,6 +13,13 @@
         
         docker rm CONTAINER_ID
         docker rmi IMAGE_ID
+1.3.1. How to remove all containers?
+        
+        docker rm CONTAINER_ID CONTAINER_ID_1 CONTAINER_ID_2
+        # get list of all cantainer id
+          docker ps -q
+        # the remove it
+          docker rm $(docker ps -q)
 1.4. How to create your first docker image?
              
         # create Dockerfile with the text below
