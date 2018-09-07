@@ -90,6 +90,30 @@
           docker logs --tail max_line_number container_id
         # see logs online
           docker logs --follow container_id
+5.1. How to use docker-compose?
+        
+        # create docker-compose.yml
+                version: '3.1'
+                services:
+                  tomcat1:
+                    image: tomcat:latest
+                    ports:
+                      - 1002:80
+                      - 1003:8080
+                      - 1013:8080
+                  tomcat2:
+                    image: tomcat:latest
+                    ports:
+                      - 1004:80
+                      - 1005:8080
+                    environment:
+                      TEST_ENV_VAR: tests
+         # run docker-compose
+                docker-compose up 
+                # or docker-compose up -d
+         # You have an access to the TEST_ENV_VAR
+                
+                echo $TEST_ENV_VAR
 2. How to see logs after docker-compose up command?
         
         docker-compose logs -f
