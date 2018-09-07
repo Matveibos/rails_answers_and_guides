@@ -114,6 +114,9 @@
          # You have an access to the TEST_ENV_VAR
                 
                 echo $TEST_ENV_VAR
+5.2. How to stop docker-compose?
+        
+        docker-compose down
 2. How to see logs after docker-compose up command?
         
         docker-compose logs -f
