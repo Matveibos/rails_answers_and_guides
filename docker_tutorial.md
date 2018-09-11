@@ -143,7 +143,24 @@
 5. How to run docker with rails on the digital ocean?
         
         https://coderjourney.com/deploy-docker-digital-ocean/
+5.1. How to pull rails app to gigital ocean?
 
+        https://www.youtube.com/watch?v=jlVrYgVEl6M
+        docker-machine create --driver digitalocean --digitalocean-access-token=aa9399a2175a93b17b1c86c807e08d3fc4b79876545432a629602f61cf6ccd6b --digitalocean-size s-1vcpu-1gb  blog
+        
+        docker-machine env blog
+        eval $(docker-machine env blog)
+        
+        docker-compose up -d db
+        docker-compose build app
+        
+        docker-compose -f docker-compose.prod.yml run --rm  app rake db:create db:migrate
+
+        docker-compose -f docker-compose.prod.yml up app
+
+        docker-machine ip blog
+        # go to this ip dress
+        http://159.65.176.203:3000/
 6.1. Rails with docker video tutorial
         
         https://www.youtube.com/channel/UCeMoPFyEAoQz398VAWx4BZg/videos
