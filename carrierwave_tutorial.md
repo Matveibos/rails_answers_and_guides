@@ -107,6 +107,8 @@
 
         # add gem fog
         gem 'fog'
+        # if you have problem with installing fog try to use another version 
+        gem 'fog', '1.41'
         
         # add config/initializers/carrierwave.rb
         if Rails.env.production?
