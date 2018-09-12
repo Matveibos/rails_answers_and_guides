@@ -138,3 +138,4 @@
             1. https://aws.amazon.com/ru/
             2. Get key and secret_key https://console.aws.amazon.com/iam/home?#/security_credential
             3. create bucket https://s3.console.aws.amazon.com/s3/home?region=us-east-2
+            # get region shortcut from here https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html
