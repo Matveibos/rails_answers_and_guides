@@ -147,24 +147,6 @@
 
         https://www.youtube.com/watch?v=jlVrYgVEl6M
         
-        docker-machine create --driver digitalocean --digitalocean-access-token=aa9399a2175a93b17b1c86c807e08d3fc4b79876545432a629602f61cf6ccd6b --digitalocean-size s-1vcpu-1gb  blog
-        # or
-        export TOKEN=aa9399a2175a93b17b1c86c807e08d3fc4b79876545432a629602f61cf6ccd6b
-        docker-machine create --driver digitalocean --digitalocean-access-token $TOKEN --digitalocean-size s-1vcpu-1gb  blog
-        
-        docker-machine env blog
-        eval $(docker-machine env blog)
-        
-        docker-compose up -d db
-        docker-compose build app
-        
-        docker-compose -f docker-compose.prod.yml run --rm  app rake db:create db:migrate
-
-        docker-compose -f docker-compose.prod.yml up app
-
-        docker-machine ip blog
-        # go to this ip dress
-        http://159.65.176.203:3000/
 5.2. How to rebuild an app after some changes?
         
          docker-compose build app
@@ -172,6 +154,15 @@
 5.3. How to create a rails app from scratch and put it to DigitalOcean?
         
         https://gist.github.com/juggleross/1a0602ffc5c6b3480efbfcda894adf1d
+        
+5.4. How to use another port for the rails app?
+        
+        # set the 3002 port for example instead of 3000
+        services:
+          web:
+            ports:
+              - "3002:3000"
+
 6.1. Rails with docker video tutorial
         
         https://www.youtube.com/channel/UCeMoPFyEAoQz398VAWx4BZg/videos
