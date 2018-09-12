@@ -169,6 +169,9 @@
         
          docker-compose build app
          docker-compose -f docker-compose.prod.yml up app
+5.3. How to create a rails app from scratch and put it to DigitalOcean?
+        
+        https://gist.github.com/juggleross/1a0602ffc5c6b3480efbfcda894adf1d
 6.1. Rails with docker video tutorial
         
         https://www.youtube.com/channel/UCeMoPFyEAoQz398VAWx4BZg/videos
