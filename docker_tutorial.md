@@ -146,7 +146,11 @@
 5.1. How to pull rails app to gigital ocean?
 
         https://www.youtube.com/watch?v=jlVrYgVEl6M
+        
         docker-machine create --driver digitalocean --digitalocean-access-token=aa9399a2175a93b17b1c86c807e08d3fc4b79876545432a629602f61cf6ccd6b --digitalocean-size s-1vcpu-1gb  blog
+        # or
+        export TOKEN=aa9399a2175a93b17b1c86c807e08d3fc4b79876545432a629602f61cf6ccd6b
+        docker-machine create --driver digitalocean --digitalocean-access-token $TOKEN --digitalocean-size s-1vcpu-1gb  blog
         
         docker-machine env blog
         eval $(docker-machine env blog)
