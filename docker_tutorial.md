@@ -165,6 +165,10 @@
         docker-machine ip blog
         # go to this ip dress
         http://159.65.176.203:3000/
+5.2. How to rebuild an app after some changes?
+        
+         docker-compose build app
+         docker-compose -f docker-compose.prod.yml up app
 6.1. Rails with docker video tutorial
         
         https://www.youtube.com/channel/UCeMoPFyEAoQz398VAWx4BZg/videos
