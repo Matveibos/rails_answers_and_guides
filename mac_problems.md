@@ -55,6 +55,12 @@
 
         Install Xcode
         Run sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+12.1. How to download xcode-command tools?
+        
+        go to https://developer.apple.com/download/more/
+        # find here something simular to (Command line tools OS X 10.11) for Xcode 7.1
+        # To see you xcode version run 
+        /usr/bin/xcodebuild -version
 13. How to fixed qmake command?
     
         # after installing qt with homebrew it's participate in the Cellear folder, we need to create link to the binary foolder with ln -s command
