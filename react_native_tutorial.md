@@ -12,3 +12,8 @@
         npm start
         # and in another window
         npm run ios
+
+3. How to start android simulator?
+        
+        # 1. Download android studio
+            https://developer.android.com/studio/
