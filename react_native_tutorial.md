@@ -7,3 +7,8 @@
         npm start
 
         
+2. How to start ios - simulator?
+        
+        npm start
+        # and in another window
+        npm run ios
