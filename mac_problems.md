@@ -81,3 +81,6 @@
           
           https://creative-coding.decontextualize.com/mobile/
           https://github.com/localtunnel/localtunnel
+16. How to open and change bash_profile?
+        
+        open ~/.bash_profile
