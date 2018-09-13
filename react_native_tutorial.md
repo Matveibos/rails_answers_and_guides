@@ -14,6 +14,9 @@
         npm run ios
 
 3. How to start android simulator?
+
+        # see the full video for more information
+        https://www.youtube.com/watch?v=Q0dERWCzoi0
         
         # 1. Download android studio
             https://developer.android.com/studio/
@@ -26,3 +29,7 @@
         export ANDROID_HOME=/Users/vladislav_hilko/Library/Android/sdk
         export PATH=$ANDROID_HOME/platform-tools:$PATH
         export PATH=$ANDROID_HOME/tools:$PATH
+        
+        # 5. Then start android
+        npm start
+        npm run android
