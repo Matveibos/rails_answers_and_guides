@@ -169,4 +169,6 @@
 6.2. Udemy docker 8-h course
         
         https://coursehunters.net/course/docker-ot-a-do-ya-swarm-jenkins
-
+7.1. How you can emport/export docker machine?
+        
+        https://github.com/bhurlow/machine-share#readme
