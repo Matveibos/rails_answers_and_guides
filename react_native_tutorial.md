@@ -1,3 +1,9 @@
-1. How to install react native?
+1. How to install and run react-native app?
     
-    npm install -g create-react-native-app
+        npm install -g create-react-native-app
+        
+        create-react-native-app any_name
+        cd any_app
+        npm start
+
+        
