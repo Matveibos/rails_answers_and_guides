@@ -1,10 +1,10 @@
-1. Articles
+## Articles
     
          + https://blog.joshsoftware.com/2014/05/08/implementing-rails-apis-like-a-professional/
          + https://sourcey.com/building-the-prefect-rails-5-api-only-app/
          https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-one
          
-2. How to generate app only for api?
+1. How to generate app only for api?
         
         rails new my_app --api
          
@@ -24,7 +24,7 @@
 3. In what place you have to put Api key?
         
          API key in the request header 
-4. How you can take API key from request header?
+4. How you can take API key from the request header?
         
         # Before action 
         before_action :authenticate 
@@ -47,9 +47,9 @@
         
         # call it
         Rails.application.secrets.secret_key_base
-6. Gem for protect your web app from bad clients
+6. Gem for protection your web app from bad clients
         
         https://github.com/kickstarter/rack-attack
-7. How to check your access to website throught a token in command line?
+7. How to check your access to a website throught a token in the command line?
         
         curl -H "Authorization: Token token=lIQAaDgj8Sl5GREFYDtgEwtt" http://api.lvh.me:3000/v1/users
