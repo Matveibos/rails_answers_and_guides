@@ -1,3 +1,9 @@
+## Questions for learning
+    1. How to create a secure access with token?
+    2. What a main structure of the api rails app?
+    3. How to write api test?
+    4. What are ther main difference between token base authentication and session based authentication?
+
 ## Articles
     
          + https://blog.joshsoftware.com/2014/05/08/implementing-rails-apis-like-a-professional/
