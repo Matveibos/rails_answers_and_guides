@@ -43,7 +43,7 @@
           @user = User.where(api_key: api_key).first if api_key
 
           unless @user
-            head status: :unauthorized
+            render status: 401, plain: 'Unathorize'
             return false
           end
         end
