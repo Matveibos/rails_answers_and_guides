@@ -11,6 +11,8 @@
          https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-one
          https://www.pluralsight.com/guides/token-based-authentication-with-ruby-on-rails-5-api
          
+         https://gist.github.com/juggleross/dde617784deefa0a54305d5cbd93cfb0
+         
 1. How to generate app only for api?
         
         rails new my_app --api
