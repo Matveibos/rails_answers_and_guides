@@ -13,3 +13,9 @@
               with.library :rails
             end
           end
+2. The list of most useful mathcher 
+
+          it { is_expected.to belong_to(:todo) }
+          it { is_expected.to have_many(:items)}
+          
+          it { is_expected.to validate_presence_of(:name) }
