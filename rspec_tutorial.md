@@ -6,6 +6,12 @@
         https://relishapp.com/rspec/rspec-expectations/v/3-7/docs/built-in-matchers
         # rspec mock documentation
         https://relishapp.com/rspec/rspec-mocks/v/3-7/docs
+        
+        https://semaphoreci.com/community/tutorials/getting-started-with-rspec
+        http://blog.teamtreehouse.com/an-introduction-to-rspec
+        # models 
+        https://semaphoreci.com/community/tutorials/how-to-test-rails-models-with-rspec
+        http://betterspecs.org/ru/
 
 1. How to use rspec without rails?
         
@@ -20,9 +26,6 @@
 2. How to generate a standart model spec?
 
         rails generate rspec:model model_name
-1. How you can begin rspec test?
-        
-          rspec spec\hello_world_spec.rb
           
 2. Example describe, it, expect().to eq methods 
         
@@ -125,17 +128,11 @@
 11. Rspec test api?
         
         http://www.thegreatcodeadventure.com/better-rails-5-api-controller-tests-with-rspec-shared-examples/
+        https://gist.github.com/juggleross/7040f6ee17a4eb304bac1912d939d6f0
 12. FactoryGirl documentation
         
         https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md
-13. На русском языке немного об рспек
-        
-        http://betterspecs.org/ru/
-14. Пару вводных уроков 
 
-        https://semaphoreci.com/community/tutorials/getting-started-with-rspec
-        http://blog.teamtreehouse.com/an-introduction-to-rspec
-        https://semaphoreci.com/community/tutorials/how-to-test-rails-models-with-rspec
 15. How to check has_many association?
         
         # gem 'shoulda'
@@ -221,11 +218,7 @@
               }.to change { ParkingPlace.count }
             end
           end
-## MODEL TESTS
 
-1. Articles
-        
-        https://semaphoreci.com/community/tutorials/how-to-test-rails-models-with-rspec
 ## STUB/ MOCK
 
 1. Articles
