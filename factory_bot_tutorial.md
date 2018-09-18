@@ -47,14 +47,14 @@
 5. How you can generate uniq email with factory girl?   
 
         # Defines a new sequence
-        FactoryGirl.define do
+        FactoryBot.define do
           sequence :email do |n|
             "person#{n}@example.com"
           end
         end
 6. How you can create object with different condition?
         
-        FactoryGirl.define do
+        FactoryBot.define do
           factory :todo_item do
             name 'Pick up a gallon of milk'
 
@@ -74,7 +74,7 @@
 
 7. How you create factory from class inside namespace?
         
-        FactoryGirl.define do
+        FactoryBot.define do
           factory :salon_translation, class: Salon::Translation do
             description { Faker::Lorem.sentence }
             address 'Pushkina 35'
