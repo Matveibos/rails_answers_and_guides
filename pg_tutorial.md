@@ -1,6 +1,3 @@
-            
-# ------------------------------------PostgreSQL - Setup----------------------------------------------------
-
 1. How you can install gem pg?
       
             sudo apt-get install libpq-dev
@@ -175,3 +172,8 @@
 8. How to install pg gem for mac? 
             
             gem install pg -- --with-pg-config=/Applications/Postgres.app/Contents/Versions/latest/bin/pg_config
+            
+9. How to add command line commands for Postgresql APP on mac?
+            
+            sudo mkdir -p /etc/paths.d &&
+            echo /Applications/Postgres.app/Contents/Versions/latest/bin | sudo tee /etc/paths.d/postgresapp
