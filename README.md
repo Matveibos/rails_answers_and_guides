@@ -1,5 +1,6 @@
 # The most useful rails materials and guades
-
+## Rails 5 article serias
+  https://blog.bigbinary.com/categories/rails-5/
 ## Build a restful api with rails
   https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-one
 ## Ruby on Rails and microservices
