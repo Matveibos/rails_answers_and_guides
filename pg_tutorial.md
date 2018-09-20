@@ -177,3 +177,8 @@
             
             sudo mkdir -p /etc/paths.d &&
             echo /Applications/Postgres.app/Contents/Versions/latest/bin | sudo tee /etc/paths.d/postgresapp
+
+10. How to download pg_dump from a remote server?
+
+            pg_dump your_project_production -U your_project_production --password --host 10.6.240.111 > prod.sql
+            psql your_project_development < prod.sql
