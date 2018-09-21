@@ -12,6 +12,8 @@
          https://www.pluralsight.com/guides/token-based-authentication-with-ruby-on-rails-5-api
          
          https://gist.github.com/juggleross/dde617784deefa0a54305d5cbd93cfb0
+         # devise rewrite standart methods
+         https://medium.com/@mazik.wyry/rails-5-api-jwt-setup-in-minutes-using-devise-71670fd4ed03
          
 1. How to generate app only for api?
         
