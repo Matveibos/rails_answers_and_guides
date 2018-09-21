@@ -1,3 +1,7 @@
+1. How to install a rails app with the most simple way?
+         
+         http://installrails.com/
+
 1. How to disable coffee script default files generation?
          
          rails new hello --skip-coffee
