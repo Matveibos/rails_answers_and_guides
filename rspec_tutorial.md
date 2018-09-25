@@ -218,6 +218,15 @@
               }.to change { ParkingPlace.count }
             end
           end
+5. How to laod a json file form the fixtures?
+        
+        JSON.parse(file_fixture("example.txt").read)
+        
+        # if you want to change default fixtures folder
+        
+        RSpec.configure do |config|
+          config.file_fixture_path = "spec/custom_directory"
+        end
 
 ## STUB/ MOCK
 
