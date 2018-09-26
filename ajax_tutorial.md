@@ -148,3 +148,19 @@
                   params["param1"]
                   params["param2"]
                 end
+
+1. How to send ajax request without JQuery?
+
+          //= require rails-ujs
+          
+          Rails.ajax({
+            dataType: 'script',
+            url: "/teste",
+            type: "GET",
+            beforeSend: function() {
+              return true
+            },
+            success: function(data) {
+              console.log('Carregou')
+            }
+          })
