@@ -84,3 +84,8 @@
 16. How to open and change bash_profile?
         
         open ~/.bash_profile
+17. How to upgrade nodeJS?
+
+        brew update
+        brew upgrade node
+        npm install -g npm
