@@ -15,3 +15,17 @@ https://medium.com/in-the-weeds/learning-react-with-create-react-app-part-1-a12e
 
         yarn run build
         npm run build
+5. How to use css module?
+      
+       Upgrade to react-scripts@next (CRA v2) by running 
+            yarn upgrade react-scripts@next
+       You just have to create a file with the extension .module.css
+            .myStyle {
+              color: #fff
+            }
+       Then you can use it like so:
+
+            import React from 'react'
+            import styles from 'mycssmodule.module.css'
+
+            export default () => <div className={styles.myStyle}>We are styled!</div>
