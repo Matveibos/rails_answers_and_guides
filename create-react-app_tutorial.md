@@ -29,3 +29,7 @@ https://medium.com/in-the-weeds/learning-react-with-create-react-app-part-1-a12e
             import styles from 'mycssmodule.module.css'
 
             export default () => <div className={styles.myStyle}>We are styled!</div>
+
+6. How you can start react-app on the diffirent port?
+            
+       PORT=3001 yarn start
