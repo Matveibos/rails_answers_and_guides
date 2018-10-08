@@ -43,6 +43,6 @@
 6. How to send params to transltions?
         
         # in yml
-                course_ended_soon: "Курс «%{course_name}» скоро завершится!"
+                course_ended_soon: "Курс %{course_name} скоро завершится!"
         # inside code
                 I18n.t('course_ended_soon', course_name: course.name)
