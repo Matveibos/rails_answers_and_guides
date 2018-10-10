@@ -18,3 +18,7 @@
               # now you can get access through 
 
                 Rails.application.config_for(:my_data)['some_data']
+
+2. Storing secret data with rails 5.2 ?
+                
+                https://www.viget.com/articles/storing-secret-credentials-in-rails-5-2-and-up/
