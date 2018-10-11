@@ -22,3 +22,17 @@
 2. Storing secret data with rails 5.2 ?
                 
                 https://www.viget.com/articles/storing-secret-credentials-in-rails-5-2-and-up/
+
+3. How to add ENV variables to your app?
+                
+                # create .env file with 
+                  export SFTP_USER=foo
+                  export SFTP_PASSWORD=pass
+                  
+                # add gem 'dotenv-rails'
+                  gem 'dotenv-rails', groups: [:development, :test]
+                  
+                # add ENV variable to the yml
+                  default: &default
+                    user: <%= ENV.fetch('SFTP_USER') %>
+                    password: <%= ENV.fetch('SFTP_PASSWORD') %>
