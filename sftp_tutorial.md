@@ -19,3 +19,14 @@
 
             sftp -P 2222 foo@10.6.84.47 
  
+2. How to download a file from sftp with checking file existing?
+            
+                sftp = Net::SFTP.start(
+                  SFTP_CONFIG['ip'],
+                  SFTP_CONFIG['user'],
+                  password: SFTP_CONFIG['password'],
+                  port: SFTP_CONFIG['port']
+                )
+
+                sftp.stat(source) { |request| return false unless request.ok? }
+                sftp.download!(source, destination)
