@@ -489,4 +489,4 @@
 		  end
 39. How to skip comments table generation?
 	
-	rails g active_admin:install --skip-comments
+		rails g active_admin:install --skip-comments
