@@ -14,9 +14,7 @@
 		  # Password: password
 2. How you can add your model to admin page?
           
-          rails generate active_admin:resource Genre
-          rails generate active_admin:resource Author
-          rails generate active_admin:resource Book
+          rails generate active_admin:resource YourModelName
 3. How you can show only specific column?
           
           # inside app/admin/book.rb add
@@ -37,13 +35,13 @@
               "#{first_name} #{last_name}"
             end
           end
-5. How to add View, Edit and delete method to row?
+5. How to add View, Edit and delete methods to the column?
           
           # add actions field
           index do
-              column :name
-              column :author
-              actions
+						column :name
+						column :author
+						actions
           end
 6. How to add helper for money?
           
@@ -178,7 +176,7 @@
 4. ActiveAdmin haw you can manage data access?
            
            https://activeadmin.info/13-authorization-adapter.html
-5. How to hide field only for creating new record?
+5. How to hide the field only for creating a new record?
             
               form do |f|
                 f.inputs "Member Details" do
@@ -493,3 +491,9 @@
 		  end
 		end
 	      end
+38. How to remove standart ActiveAdmin authentification?
+		
+			# config/initializers/active_admin.rb
+			ActiveAdmin.setup do |config|
+				config.authentication_method = nil
+		  end
