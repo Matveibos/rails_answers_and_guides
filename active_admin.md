@@ -493,7 +493,7 @@
 	      end
 38. How to remove standart ActiveAdmin authentification?
 		
-			# config/initializers/active_admin.rb
-			ActiveAdmin.setup do |config|
-				config.authentication_method = nil
+		# config/initializers/active_admin.rb
+		  ActiveAdmin.setup do |config|
+		    config.authentication_method = nil
 		  end
