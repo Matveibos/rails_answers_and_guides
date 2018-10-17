@@ -487,6 +487,7 @@
 		  ActiveAdmin.setup do |config|
 		    config.authentication_method = nil
 		  end
-39. How to skip comments table generation?
+39. How to skip comments/user table generation?
 	
 		rails g active_admin:install --skip-comments
+		rails g active_admin:install --skip-users
