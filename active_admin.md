@@ -76,17 +76,7 @@
 		  end
 11. How you can customize show action?
 		
-		# admin/users.rb
-		 show do
-		    attributes_table do
-		      row :id
-		      row :email
-		      row :role do |p|
-			p.role.user_role  unless p.role_id.nil?
-		      end
-		    end
-		    active_admin_comments
-		  end
+         https://gist.github.com/juggleross/13021bd41bdc88e346f2c088b364954a
 12. How  you can show correct value of refferences model?
 		
 		# just add for bad customize model(for example Role.md)
