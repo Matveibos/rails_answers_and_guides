@@ -12,6 +12,15 @@
 		  http://localhost:3000/admin
 		  # Username: admin@example.com
 		  # Password: password
+		  
+1.1. How to skip comments/user table generation?
+
+		gem 'activeadmin'
+	
+		rails g active_admin:install --skip-comments
+		rails g active_admin:install --skip-users
+		
+		# then remove migrations if it's neccessary
 2. How you can add your model to admin page?
           
           rails generate active_admin:resource YourModelName
@@ -487,7 +496,4 @@
 		  ActiveAdmin.setup do |config|
 		    config.authentication_method = nil
 		  end
-39. How to skip comments/user table generation?
-	
-		rails g active_admin:install --skip-comments
-		rails g active_admin:install --skip-users
+
