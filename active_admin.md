@@ -56,9 +56,9 @@
           
           # add number_to_currency helper
           index do
-              column :price do |product|
-                number_to_currency product.price
-              end
+						column :price do |product|
+			      	number_to_currency product.price
+						end
           end
  7. How you can change column name?
           
