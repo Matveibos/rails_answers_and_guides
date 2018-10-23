@@ -43,12 +43,7 @@
 			      	number_to_currency product.price
 						end
           end
- 8. How you can change right side filter?
-          
-            filter :author
-            filter :name
-            filter :genre
-            filter :price
+
  9. How you can change list to check box in filter?
           
             filter :author, :as => :checkbox
