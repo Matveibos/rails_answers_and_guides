@@ -24,15 +24,6 @@
 2. How you can add your model to admin page?
           
           rails generate active_admin:resource YourModelName
-3. How you can show only specific column?
-          
-          # inside app/admin/book.rb add
-            index do
-              column :name
-              column :author
-              column :genre
-              column :price
-            end
 4. How you can show other name (not only column name)?
           
           # rewrite model class with to_s
@@ -44,14 +35,6 @@
               "#{first_name} #{last_name}"
             end
           end
-5. How to add View, Edit and delete methods to the column?
-          
-          # add actions field
-          index do
-						column :name
-						column :author
-						actions
-          end
 6. How to add helper for money?
           
           # add number_to_currency helper
@@ -59,11 +42,6 @@
 						column :price do |product|
 			      	number_to_currency product.price
 						end
-          end
- 7. How you can change column name?
-          
-          index do
-            column "new name", :name
           end
  8. How you can change right side filter?
           
