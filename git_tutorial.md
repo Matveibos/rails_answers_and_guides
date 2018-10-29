@@ -56,6 +56,7 @@ http://gitreal.codeschool.com/
         
         # certain branch
         git fetch <remote> <rbranch>:<lbranch> 
+        # or just: git fetch <remote> <branch_name>
         git checkout <lbranch>
         
         # where <rbranch> is the remote branch or source ref and <lbranch> is the as yet non-existent local branch or destination ref you want to track and which you probably want to name the same as the remote branch or source ref.
