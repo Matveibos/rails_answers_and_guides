@@ -3,9 +3,7 @@
         # use this docker container with sftp server
         https://github.com/atmoz/sftp
 
-        # create docker compose file
-        # where /Users/vladislav_hilko/upload your mirror folder
-
+        # 1.1. create docker compose file: docker-compose.yml        
          sftp:
             image: atmoz/sftp
             volumes:
@@ -13,8 +11,17 @@
             ports:
                 - "2222:22"
             command: foo:pass:1001
-
-        # connect to your local sftp server
+ 
+        # where /Users/vladislav_hilko/upload - folder on your computer
+        # /home/foo/upload - folder inside the docker container, foo - name, pass - password
+        
+        # 1.2. run docker-compose.yml
+            docker-compose up
+        # 1.3. (optional) You can enter inside the docker container with
+            docker ps
+            docker exec -it container_id /bin/bash
+            
+        # 2. Creating connection with your local sftp server
         # 2222 - is a port, foo - is a username, 10.6.84.47  - your computer ip
 
         sftp -P 2222 foo@10.6.84.47 
