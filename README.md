@@ -2,6 +2,8 @@
 
 ## How to refactor your code ( some rules )
   https://blog.codeship.com/how-to-find-ruby-code-smells-with-reek/
+## Interesting lection about refactoring
+  http://blog.testdouble.com/posts/2016-09-16-surgical-refactors-with-suture.html
 ## Rails 5 article serias
   https://blog.bigbinary.com/categories/rails-5/
 ## Build a restful api with rails
