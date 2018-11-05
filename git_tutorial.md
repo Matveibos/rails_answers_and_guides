@@ -192,3 +192,10 @@ http://gitreal.codeschool.com/
 35. How you see who touched a file?
         
           git blame name_of_file.txt
+36. How to move commit from master to another branch?
+        
+        
+        # Note: Any changes not committed will be lost.
+        git branch newbranch      # Create a new branch, saving the desired commits
+        git reset --hard HEAD~3   # Move master back by 3 commits (GONE from master)
+        git checkout newbranch    # Go to the new branch that still has the desired commits
