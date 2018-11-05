@@ -1,6 +1,7 @@
 1. Articles
       
        https://www.engineyard.com/blog/wrapping-your-api-in-a-ruby-gem
+       https://crypt.codemancers.com/posts/2013-05-30-how-to-write-a-gem/
 1. How to generate own gem?
       
        bundle gem <gem-name>
