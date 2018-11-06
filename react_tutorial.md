@@ -177,3 +177,9 @@
         onClick={() => this.changeName('Name')}
         # second
         onClick={this.changeName.bind(this, 'Max')}
+27. How to add value from input?
+        
+          changeNameHandler = (event) => {
+            event.target.value
+          }
+          <input onChange={this.changeNameHandler} type="text"/>
