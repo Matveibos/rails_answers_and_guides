@@ -1,25 +1,17 @@
-1. React with rails start
+1. Articles
         
         https://medium.com/quick-code/simple-rails-crud-app-with-react-frontend-using-react-rails-gem-b708b89a9419
-
-1. Single page pattern on js
-        
-        http://singlepageappbook.com/
-1. Five simple react tutorial links
-        
+        http://singlepageappbook.com/     
         http://andrewhfarmer.com/getting-started-tutorials/
-1. React with rails tutorial?
-    
         https://blog.codeship.com/realtime-with-react-and-rails/
-2. How include all react with cdn?
+        # add react to rails app
+        https://www.pluralsight.com/guides/ruby-ruby-on-rails/react-vs-angular-2-integration-with-rails
+2. How to include all react with cdn?
     
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.js"></script>
+          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.js"></script>
           <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
           <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 
-3. How you can add react to rails app?
-        
-        https://www.pluralsight.com/guides/ruby-ruby-on-rails/react-vs-angular-2-integration-with-rails
 4. Can you show me 'Hello World' on react?
           
           <script type="text/babel">
@@ -45,30 +37,24 @@
             
 7. How you can send params to component?
 
-            var HelloWorld = React.createClass({
-              render: function() {
-                return <p> Hello World ! { this.props.name } and { this.props.surname } </p>;
-              }
-            });
+            import React from 'react';
+
+            const HelloWorld = (props) => {
+              return (
+                <div>
+                  <h1> {props.name} {props.age}</h1>
+                  # inside tag 
+                  <p>{props.children}</p>
+                </div>
+              )
+            }
+
+            export default person;
             
             ReactDOM.render(
-              <HelloWorld name="Vlad" surname="Hilko"/>,
+              <HelloWorld name="Vlad" surname="Hilko"/> Children will be here <HelloWorld>,
               document.querySelector("#container")
-            );
-8. How you can get params from compents inside tag?
-           
-           # this.props.children
-           
-           var HelloWorld = React.createClass({
-              render: function() {
-                return <p> { this.props.children } </p>;
-              }
-            });
-            
-            ReactDOM.render(
-              <HelloWorld> This is the text for children property! </HelloWorld>,
-              document.querySelector("#container")
-            );        
+            );      
         
 9. How you can add css class for react component?
             
@@ -130,44 +116,22 @@
               }
             });
 16. How you can fire event on click?
-        
-            var CounterParent = React.createClass({
-              increase: function(e) {
+           
+            import React, { Component } from 'react';
+            
+            class App extends Component {
+              increase = () => {
                 # do something by click
-              },
-              render: function() {
+              }
+              
+              render() {
                 return (
-                  <div}>
+                  <div>
                     <button onClick={this.increase}> + </button>
                   </div>
-                );
+                )
               }
-            });
-17. How you can catch click with ShiftButton?
-        
-              increase: function(e) {
-                if(e.shiftKey) {
-                  # do something with pressed shift button 
-                }
-              }
-18. How you can add Listeners by Event?
-        
-            var Something = React.createClass({
-              handleMyEvent: function(e) {
-                alert('sss');
-              },
-              componentDidMount: function() {
-                window.addEventListener("someEvent", this.handleMyEvent);
-              },
-              componentWillUnmount: function() {
-                window.removeEventListener("someEvent", this.handleMyEvent);
-              },
-              render: function() {
-                return (
-                   <div>Hello!</div>
-                );
-              }
-            });
+            })
 19. What you can say about 'Initial render life cycle'?
 
         getDefaultProps
@@ -188,9 +152,7 @@
         componentWillUpdate
         render
         componentDidUpdate
-22. How you can add ReactRouter?
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router/4.2.0/react-router.js"></script>
+
 23. How to get values from input?
         
         <input ref={(input_value) => this.inputElement = input_value} placeholder="input task">
@@ -206,3 +168,12 @@
 25. How to change background color with react?
         
         document.body.style = 'background: red;';
+26. Can you provide 2 ways for sending arguments into function?
+ 
+          changeName = (newName) => {
+                alert(newName)
+          }
+        # first
+        onClick={() => this.changeName('Name')}
+        # second
+        onClick={this.changeName.bind(this, 'Max')}
