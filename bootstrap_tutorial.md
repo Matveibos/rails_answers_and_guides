@@ -292,3 +292,6 @@
                 @extend .btn;
                 @extend .btn-success;
             }
+8. How to prevent the bootstrap element from expanding?
+        
+        <%= link_to 'Open', '#', class: "btn", onclick: 'event.stopPropagation()'%>
