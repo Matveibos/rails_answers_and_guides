@@ -4,11 +4,13 @@ Articles
 
 1. How to run sidekiq sheduler?
 
+        https://github.com/moove-it/sidekiq-scheduler
+
 2. How to include web view to the route?
     
-    require 'sidekiq/web'
-    require 'sidekiq-scheduler/web'
+        require 'sidekiq/web'
+        require 'sidekiq-scheduler/web'
 
-    Rails.application.routes.draw do
-      mount Sidekiq::Web => '/sidekiq'
-    end
+        Rails.application.routes.draw do
+          mount Sidekiq::Web => '/sidekiq'
+        end
