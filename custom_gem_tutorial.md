@@ -53,3 +53,6 @@
  3.1. How to add external dependency to the your gem?
             
             spec.add_dependency "activesupport", "~> 5.2.1"
+            bundle
+            # add require it to the gem lib class
+            require 'active_support'
