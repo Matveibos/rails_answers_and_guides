@@ -35,3 +35,19 @@
                   it 'returns correct message' do
                   end
                 end        
+2.2 SimpleCov. How to add coverage report?
+            
+            # add dependency to the gemspec file 
+              spec.add_development_dependency "simplecov"
+            # then install it
+              bundle
+            # create .simplecov file with:
+             SimpleCov.start do
+               add_group 'lib', 'lib'
+             end
+            # include it to the spec_helper.rb file
+              require 'rspec'
+              require 'simplecov'
+              require 'custom_gem_sample'
+            
+           
