@@ -16,3 +16,22 @@
             
             gem env
             cd /Users/vladislav_hilko/.rvm/gems/ruby-2.4.2/gems
+
+2.1. RSPEC. How to add rspec tests to your gem?
+            
+            # add dependency to the gemspec file 
+              spec.add_development_dependency "rspec"
+            # then install it
+              bundle
+            # create folder for the tests
+            # spec/spec_helper.rb
+              require 'rspec'
+              require 'custom_gem_sample'
+            # create some tests spec/custom_gem_sample_spec.rb
+               
+                require 'spec_helper'
+
+                describe CustomGemSample do
+                  it 'returns correct message' do
+                  end
+                end        
