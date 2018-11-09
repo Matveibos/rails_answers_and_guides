@@ -50,4 +50,6 @@
               require 'simplecov'
               require 'custom_gem_sample'
             
-           
+ 3.1. How to add external dependency to the your gem?
+            
+            spec.add_dependency "activesupport", "~> 5.2.1"
