@@ -263,3 +263,6 @@
 
           class Foo
           end
+2. How to group elements in active record?
+         
+         ModelName.all.group_by(&:value).keys
