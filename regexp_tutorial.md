@@ -126,3 +126,9 @@ Cheat book : https://www.cheatography.com/davechild/cheat-sheets/regular-express
           pattern.match(string).captures
           # => ["22", "2"]
           
+4. How can you get group value by name?
+          
+          string = 'SFS2010-2'
+          pattern = /SFS(?<year>\d+)-(\d+)/
+          pattern.match(string)[:year]
+          # => '2010'          
