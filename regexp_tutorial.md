@@ -109,12 +109,20 @@ Cheat book : https://www.cheatography.com/davechild/cheat-sheets/regular-express
           
  # `RUBY`
  
- 1. How to check if string content regExp?
+ 1. How to check if string contain regExp?
           
           # since ruby 2.4.0
-          # pattert = /regexp/
+          # pattern = /regexp/
           pattern.match?(string)
+          
+          # return true or false
  2. How to return matched value?
           
           pattern.match(string).to_s
+ 3. How to get values devided by groups?
+          
+          string = 'SFS22-2'
+          pattern = /SFS(\d+)-(\d+)/
+          pattern.match(string).captures
+          # => ["22", "2"]
           
