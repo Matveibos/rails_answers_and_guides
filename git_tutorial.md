@@ -199,3 +199,8 @@ http://gitreal.codeschool.com/
         git branch newbranch      # Create a new branch, saving the desired commits
         git reset --hard HEAD~3   # Move master back by 3 commits (GONE from master)
         git checkout newbranch    # Go to the new branch that still has the desired commits
+37. How to fix “Authentication Failed” github problems when two-factor authentication is enabled?
+        
+        git remote -v 
+        git remote remove origin 
+        git remote add origin git@github.com:user/repo.git 
