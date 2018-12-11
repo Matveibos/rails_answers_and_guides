@@ -1,9 +1,11 @@
-1. How to see succesful message without deliver? letter_oppener
-      
-            First add the gem to your development environment and run the bundle command to install it.
+1. How to see successful message without real delivery? letter_oppener
+```ruby
+            # First add the gem to your development environment and run the bundle command to install it.
                   gem "letter_opener", :group => :development
-            Then set the delivery method in config/environments/development.rb
+            # Then set the delivery method in config/environments/development.rb
                   config.action_mailer.delivery_method = :letter_opener
+```
+___
 2. How to create simple ActionMailer? 
       
             # app/mailers/user_mailer.rb
