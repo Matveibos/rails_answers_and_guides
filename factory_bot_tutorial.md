@@ -21,7 +21,7 @@
         rails g factory_bot:model MyModel
         # it will create spec/factories/my_model.rb
 1. How to create Factory?
-    
+```ruby
         # This will guess the User class
         FactoryBot.define do
           factory :user do
@@ -30,6 +30,8 @@
             admin false
           end
         end
+```
+___
 2. How to create factory with association?
         
         FactoryGirl.define do
