@@ -1,4 +1,4 @@
-1. How to see successful message without real delivery? letter_oppener
+1. How to see a successful message without a real delivery? letter_oppener
 ```ruby
 # First add the gem to your development environment and run the bundle command to install it.
     gem "letter_opener", :group => :development
