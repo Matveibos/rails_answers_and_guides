@@ -2,3 +2,4 @@
 ```ruby
     User.methods - Object.methods
 ```
+___
