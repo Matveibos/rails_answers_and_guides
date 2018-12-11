@@ -1,3 +1,4 @@
-1. How can use show only methods availabe in current class?
-    
-         User.methods - Object.methods
+1. How you can show only methods availabe in current class?
+```ruby
+User.methods - Object.methods
+```
