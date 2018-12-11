@@ -5,7 +5,7 @@
 
             https://www.netguru.co/codestories/11-books-every-ror-developer-should-read
             
-1. `Clean code -  Robert Martins`
+### `Clean code -  Robert Martins`
       
       1. Code should be on one abstraction layer ( a = 1 + 1, MyClass.new(a) not a good idea)
       2. Law of demeter ( A knows B, B knows C, A shouldn't know about C)
