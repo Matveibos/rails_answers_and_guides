@@ -33,13 +33,15 @@
 ```
 ___
 2. How to create factory with association?
-        
-        FactoryGirl.define do
-          factory :category_assignment do
-            association :category, factory: :category
-            association :assignment_entity, factory: :monument
-          end
-        end
+ ```ruby     
+    FactoryBot.define do
+      factory :category_assignment do
+        association :category, factory: :category
+        association :assignment_entity, factory: :monument
+      end
+    end
+```
+___
 3. How to create many factory by one model?
         
         http://stackoverflow.com/questions/5509790/how-to-create-build-multiple-instances-of-a-factory-in-factory-girl
