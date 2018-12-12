@@ -254,40 +254,7 @@
            # second
 17. Difference between public and protected methods?
            
-           class Hobbit
-             def check_protected_access(hobbit = self)
-               hobbit.protected_has_access?
-             end
-
-             def check_private_access(hobbit = self)
-               hobbit.private_has_access?
-             end
-
-             protected
-
-             def protected_has_access?
-               puts true
-             end
-
-             private
-
-             def private_has_access?
-               puts true
-             end
-
-           end
-
-           hobbit = Hobbit.new
-           hobbit.check_protected_access
-           # true
-           hobbit2 = Hobbit.new
-           hobbit.check_protected_access(hobbit2)
-           # true
-           hobbit.check_private_access
-           # false
-           # conclusion
-           # It's impossible to call private methods on any instance variable of the class
-           # It's possible to call protected methods on any instance variable of the class only inside public method of the class 
+           https://gist.github.com/juggleross/ad981bb0d4eded08f6b9b8372ed70513#file-ruby_class_or_module_questions-md
 16. Can you show me 3 ways for creating Array obeject?
  
            p Array.new(2)
@@ -295,16 +262,8 @@
            p [nil, nil]
 17. How to get access to instance variable inside class without addition code?
 
-           class A
-             def initialize
-               @hello = 123
-             end
-           end
-
-           a = A.new
-           p a.instance_variable_get(:@hello)
-           a.instance_variable_set(:@hello, 0)
-           p a.instance_variable_get(:@hello)
+           https://gist.github.com/juggleross/ad981bb0d4eded08f6b9b8372ed70513#file-ruby_class_or_module_questions-md
+           
 18. How you can define methods dynamic?
            
            define_method(:hello) { puts 'hello' }
