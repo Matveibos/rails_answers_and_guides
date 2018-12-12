@@ -262,7 +262,7 @@
            p [nil, nil]
 17. How to get access to instance variable inside class without addition code?
 
-<https://gist.github.com/juggleross/ad981bb0d4eded08f6b9b8372ed70513#file-ruby_class_or_module_questions-md>
+           <https://gist.github.com/juggleross/ad981bb0d4eded08f6b9b8372ed70513#file-ruby_class_or_module_questions-md>
            
 18. How you can define methods dynamic?
            
