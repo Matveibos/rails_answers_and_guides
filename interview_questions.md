@@ -285,6 +285,9 @@
            # true
            hobbit.check_private_access
            # false
+           # conclusion
+           # It's impossible to call private methods on any instance variable of the class
+           # It's possible to call protected methods on any instance variable of the class only inside public method of the class 
 16. Can you show me 3 ways for creating Array obeject?
  
            p Array.new(2)
