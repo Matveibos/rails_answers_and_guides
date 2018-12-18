@@ -94,6 +94,9 @@ http://gitreal.codeschool.com/
         
         git rebase -i --root
         or git rebase -i HEAD~n # where n numbers of commit for the merge
+        or git rebase --interactive [commit-hash]
+        # where commit-hash is a 'bf7e745c' after which you want to start
+        
         # then change 'pick' to 'squash'
         # delete message which you don't use
         # now you can push your changes
