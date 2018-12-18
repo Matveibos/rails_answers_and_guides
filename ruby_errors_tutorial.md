@@ -22,3 +22,11 @@
               exception.record.new_record? ? ...
             end
         end
+3. How to reraise error after catching?
+
+        begin
+          this_will_fail!
+        rescue Failure => error
+          log.error error.message
+          raise
+        end
