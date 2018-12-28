@@ -1,10 +1,10 @@
-1. How you can select all rows from table?
+1. How you can select all rows from the table?
     
         SELECT * FROM my_table;
-3. How you can select uniq value from table?
+3. How you can select uniq value from the table?
         
         SELECT DISTINCT FROM my_table;
-4. How you can set limit for table?
+4. How you can set limit for the table?
         
         SELECT * FROM my_table limit 5;
 5. How you can get some row started not from first?
