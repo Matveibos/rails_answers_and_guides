@@ -58,3 +58,6 @@
         
         DROP TABLE table_name;
         
+20.1. How you can get another name for the table?
+        
+      SELECT p.city FROM Customers as p
