@@ -1,5 +1,7 @@
 ## ActiveAdmin
-          
+         
+0. List with main ActiveAdmin actions:
+a https://gist.github.com/juggleross/13021bd41bdc88e346f2c088b364954a
 1. How you can start work with ActiveAdmin?
   
 		  gem 'devise'
