@@ -26,58 +26,12 @@ List with main ActiveAdmin actions: https://gist.github.com/juggleross/13021bd41
 2. How you can add your model to admin page?
           
           rails generate active_admin:resource YourModelName
-4. How you can show other name (not only column name)?
-          
-          # rewrite model class with to_s
-          
-          class Author < ApplicationRecord
-            has_many :books
-
-            def to_s
-              "#{first_name} #{last_name}"
-            end
-          end
-6. How to add helper for money?
-          
-          # add number_to_currency helper
-          index do
-						column :price do |product|
-			      	number_to_currency product.price
-						end
-          end
-
  9. How you can change list to check box in filter?
           
             filter :author, :as => :checkbox
- 10. How to change references model to normal view?
- 	    
-	   	 # admin/users.rb
-		 index do
-		      column :role do |p|
-			p.role.user_role  unless p.role_id.nil?
-		      end
-		      actions
-		  end
 11. How you can customize show action?
 		
          https://gist.github.com/juggleross/13021bd41bdc88e346f2c088b364954a
-12. How  you can show correct value of refferences model?
-		
-		# just add for bad customize model(for example Role.md)
-		  def to_s
-		    user_role
-		  end
-13. How you can permmit change params for user?
-		
-		# admin/user.rb
-		permit_params :role_id, :email, :id, :role
-14. How you can show something differrent in activeAdmin?
-		
-		  index do
-		    column :complaints do |monument|
-		      monument.complaints.size
-		    end
-		  end
 15. Create link with filter by click inside ActiveAdmin?
 		
 		    column "Число жалоб", :complaints do |cemetary|
@@ -88,7 +42,7 @@ List with main ActiveAdmin actions: https://gist.github.com/juggleross/13021bd41
 
 1. How you can create status_tag?
       
-      column(:status) {|estimate| status_tag(estimate.status)}
+        column(:status) {|estimate| status_tag(estimate.status)}
 2. How you can create setting on main ActiveAdmin page?
 
         https://github.com/artofhuman/activeadmin_settings_cached
@@ -150,19 +104,6 @@ List with main ActiveAdmin actions: https://gist.github.com/juggleross/13021bd41
 4. ActiveAdmin haw you can manage data access?
            
            https://activeadmin.info/13-authorization-adapter.html
-5. How to hide the field only for creating a new record?
-            
-              form do |f|
-                f.inputs "Member Details" do
-                    f.input :email
-                    if !f.object.new_record?
-                        f.input :password
-                        f.input :password_confirmation
-                    end
-                    f.input :role
-                end
-                f.actions
-               end
 6. ckeditor with activeadmin?
       
             https://github.com/activeadmin/activeadmin/wiki/ckeditor-integration
