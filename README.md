@@ -1,5 +1,7 @@
 # The most useful rails materials and guades
 
+## A relly good articles about indexes in Rails
+  https://bamboolab.eu/blog/rails-postgresql-index-btree-gin-gist
 ## How to refactor your code ( some rules )
   https://blog.codeship.com/how-to-find-ruby-code-smells-with-reek/
 ## Interesting lection about refactoring
