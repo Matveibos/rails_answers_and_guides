@@ -1,5 +1,7 @@
 # The most useful rails materials and guades
 
+## Ruby task with algorithm discriptions
+  https://leetcode.com
 ## A relly good articles about indexes in Rails
   https://bamboolab.eu/blog/rails-postgresql-index-btree-gin-gist
 ## How to refactor your code ( some rules )
