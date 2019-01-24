@@ -1,5 +1,7 @@
 # The most useful rails materials and guades
 
+## The list with all ruby books
+  http://www.allrubybooks.com/
 ## Ruby task with algorithm discriptions
   https://leetcode.com
 ## A relly good articles about indexes in Rails
