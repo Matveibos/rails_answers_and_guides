@@ -185,6 +185,14 @@
          when (1..10) === b
            puts "Something in closed range of [1..10]"
          end
+27. Iterate by array by 2 values `each_cons`
+```ruby
+  [1,2,3,4].each_cons(2) { |a, b| p "#{a} #{b}" }]
+  # 1 2
+  # 2 3
+  # 3 4
+```
+
 
 # `RAILS METHOD`
 
