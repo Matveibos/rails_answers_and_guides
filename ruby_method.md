@@ -193,6 +193,13 @@
   # 3 4
 ```
 
+28. Group value into seprated arrays while condition is true  `chunk_while`
+```ruby
+  a = [1, 2, 4, 9, 10, 11, 12, 15, 16, 19, 20, 21]
+  a.chunk_while { |a, b| b - a == 1 }.to_a
+  # [[1, 2], [4], [9, 10, 11, 12], [15, 16], [19, 20, 21]]
+```
+
 
 # `RAILS METHOD`
 
