@@ -31,6 +31,8 @@ ___
 ___
 * [Ruby® Notes for Professionals book](https://books.goalkicker.com/RubyBook/)
 ___
+* [Ruby on Rails Tutorial (Rails 5) - Michael Hartl](https://www.railstutorial.org/book)
+___
 
 </details>
 
