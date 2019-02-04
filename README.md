@@ -36,11 +36,22 @@ ___
 
 </details>
 
+<details>
+<summary>
+   <h2> List of free websites for training Ruby algorithm skills and solving tasks  </h3>
+</summary>
+   
+* [codewars.com](https://www.codewars.com/kata/search/ruby?q=&beta=false)
+___
+* [leetcode.com](https://leetcode.com/problemset/algorithms/)
+___
+
+</details>
+
+
 ___
 ## The list with all ruby books
   http://www.allrubybooks.com/
-## Ruby task with algorithm discriptions
-  https://leetcode.com
 ## A relly good articles about indexes in Rails
   https://bamboolab.eu/blog/rails-postgresql-index-btree-gin-gist
 ## How to refactor your code ( some rules )
