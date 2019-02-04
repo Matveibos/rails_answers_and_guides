@@ -77,6 +77,7 @@
 ```ruby
  # add bin/my_gem_name
  # add these info there
+# -------------------------
  #!/usr/bin/env ruby
 
 require "my_gem_name"
