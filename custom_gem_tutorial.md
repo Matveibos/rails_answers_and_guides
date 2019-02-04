@@ -1,8 +1,12 @@
 1. Articles
       
        https://www.engineyard.com/blog/wrapping-your-api-in-a-ruby-gem
+       
        # mountable gem ( do something like a rails app) 
        https://crypt.codemancers.com/posts/2013-05-30-how-to-write-a-gem/
+       
+       # pushing gem
+       https://www.alexedwards.net/blog/how-to-make-a-rubygem-part-three
 1. How to generate own gem?
        
        # https://blog.faodailtechnology.com/step-by-step-guide-to-publish-your-first-ruby-gem-bae3291aeab4
@@ -56,3 +60,10 @@
             bundle
             # add require it to the gem lib class
             require 'active_support'
+4.1. How to push/deploy your gem to rebygem.org?
+      
+            # signin on rubygems 
+            https://rubygems.org/sign_in
+            # add your creditionals
+            $ curl -u your_name https://rubygems.org/api/v1/api_key.yaml > ~/.gem/credentials; chmod 0600 ~/.gem/credentials
+            #  gem push your-gem-name-0.1.0.gem
