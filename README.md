@@ -1,5 +1,17 @@
 # The most useful rails materials and guades
 
+<details>
+<summary>
+   <h3> List with the most useful free Ruby/Ruby on Rails video courses in English  </h3>
+</summary>
+   
+* [Build Airbnb with Ruby on Rails - Level 1](https://coursehunters.net/course/delaem-klon-airbnb-s-ruby-on-rails-uroven-1)
+* [Build Airbnb with Ruby on Rails - Level 2](https://coursehunters.net/course/delaem-klon-airbnb-s-ruby-on-rails-uroven-2)
+* [Build Airbnb with Ruby on Rails - Level 3](https://coursehunters.net/course/delaem-klon-airbnb-s-ruby-on-rails-i-react-native-uroven-3)
+
+</details>
+
+___
 ## The list with all ruby books
   http://www.allrubybooks.com/
 ## Ruby task with algorithm discriptions
