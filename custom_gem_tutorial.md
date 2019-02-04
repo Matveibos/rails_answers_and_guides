@@ -73,21 +73,26 @@
             gem uninstall my_gem_name
 6.1. How To Write a Command Line Ruby Gem?
             
-            # add bin/my_gem_name
-            # add these info there
-            ```ruby
-             #!/usr/bin/env ruby
 
-            require "my_gem_name"
+```ruby
+ # add bin/my_gem_name
+ # add these info there
+ #!/usr/bin/env ruby
 
-            gem = MyGenName::Hello
-            gem.hi           
-            ```
-            # change my_gem.gemspec
-            ```ruby
-            # spec.bindir        = "bin"
-            spec.executables   = ["my_gem_name"]        
-            ```
+require "my_gem_name"
+
+gem = MyGenName::Hello
+gem.hi           
+```
+```ruby
+# change my_gem.gemspec
+
+# spec.bindir        = "bin"
+spec.executables   = ["my_gem_name"]
+# run rake install
+# my_gem_name
+#=> 'Hi'
+```
 
 
 
