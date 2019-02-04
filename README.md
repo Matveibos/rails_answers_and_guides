@@ -35,6 +35,8 @@ ___
 ___
 * [Practical Object-Oriented Design in Ruby - Sandi Metz](https://vk.com/doc182314867_467188804)
 ___
+* [Many different free ruby and ruby on rails books](https://www.foxebook.net/search/ruby/)
+___
 * [The list with all available ruby books(NOT FREE)](http://www.allrubybooks.com/)
 ___
 
