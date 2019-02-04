@@ -8,6 +8,17 @@
 * [Build Airbnb with Ruby on Rails - Level 1](https://coursehunters.net/course/delaem-klon-airbnb-s-ruby-on-rails-uroven-1)
 * [Build Airbnb with Ruby on Rails - Level 2](https://coursehunters.net/course/delaem-klon-airbnb-s-ruby-on-rails-uroven-2)
 * [Build Airbnb with Ruby on Rails - Level 3](https://coursehunters.net/course/delaem-klon-airbnb-s-ruby-on-rails-i-react-native-uroven-3)
+___
+* [Ruby on Rails 5 from lyndacom](https://coursehunters.net/course/ruby5)
+___
+
+* [Complete Developers Guide: Ruby on Rails & React with Redux (udemy) ](https://coursehunters.net/course/ruby-on-rails-i-react-vmeste-s-redux-polnoe-rukovodstvo-dlya-razrabotchikov)
+___
+
+* [JavaScript and Ruby on Rails with React, Angular and Vue.js (udemy) ](https://coursehunters.net/course/ruby-on-rails-s-react-i-angular)
+___
+
+
 
 </details>
 
