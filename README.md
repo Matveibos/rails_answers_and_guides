@@ -75,9 +75,13 @@ ___
 * [Can't deploy your rails app on DigitalOcean!?](https://gorails.com/deploy/ubuntu/14.04)
 * [How To Install and Use PostgreSQL on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04)
 
-
+___
 </details>
 
+<details>
+<summary>
+   <h2> JUST list with useful links </h3>
+</summary>
 ## Rails 5 article serias
   https://blog.bigbinary.com/categories/rails-5/
 
@@ -116,7 +120,7 @@ https://www.learnenough.com/web-development-fundamentals
 ## Any new tutorial?
 Old tutorial, but may be usefull [railscast](http://railscasts.com/)
 
-## Do you neea any information and articles about Ruby and rails 5?
+## Do you need any information and articles about Ruby and rails 5?
 Check it [rubyplus](https://rubyplus.com/articles)
 
 ## You are always have seen it, but never complete, may be time is comming?
@@ -146,3 +150,6 @@ https://www.tutorialspoint.com/rspec/rspec_introduction.htm
 ## Create your own documentation like a book
   
   https://www.gitbook.com/
+</details>
+
+
