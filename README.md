@@ -76,6 +76,8 @@ ___
 * [Can't deploy your rails app on DigitalOcean!?](https://gorails.com/deploy/ubuntu/14.04)
 * [How To Install and Use PostgreSQL on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04)
 
+
+</details>
 ## Rails 5 article serias
   https://blog.bigbinary.com/categories/rails-5/
 
