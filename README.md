@@ -57,7 +57,6 @@ ___
 ___
 
 </details>
-___
 
 <details>
 <summary>
