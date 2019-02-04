@@ -67,3 +67,27 @@
             # add your creditionals
             $ curl -u your_name https://rubygems.org/api/v1/api_key.yaml > ~/.gem/credentials; chmod 0600 ~/.gem/credentials
             #  gem push your-gem-name-0.1.0.gem
+5.1. How to install gem from the folder? Or Uninstall it?
+            
+            rake install
+            gem uninstall my_gem_name
+6.1. How To Write a Command Line Ruby Gem?
+            
+            # add bin/my_gem_name
+            # add these info there
+            ```ruby
+             #!/usr/bin/env ruby
+
+            require "my_gem_name"
+
+            gem = MyGenName::Hello
+            gem.hi           
+            ```
+            # change my_gem.gemspec
+            ```ruby
+            # spec.bindir        = "bin"
+            spec.executables   = ["my_gem_name"]        
+            ```
+
+
+
