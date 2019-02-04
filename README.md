@@ -33,6 +33,11 @@ ___
 ___
 * [Ruby on Rails Tutorial (Rails 5) - Michael Hartl](https://www.railstutorial.org/book)
 ___
+* [Practical Object-Oriented Design in Ruby - Sandi Metz](https://vk.com/doc182314867_467188804)
+___
+---
+* [The list with all available ruby books(NOT FREE)](http://www.allrubybooks.com/)
+___
 
 </details>
 
@@ -50,8 +55,6 @@ ___
 
 
 ___
-## The list with all ruby books
-  http://www.allrubybooks.com/
 ## A relly good articles about indexes in Rails
   https://bamboolab.eu/blog/rails-postgresql-index-btree-gin-gist
 ## How to refactor your code ( some rules )
