@@ -82,9 +82,10 @@
 require "my_gem_name"
 
 gem = MyGenName::Hello
-gem.hi           
-```
-```ruby
+gem.hi
+# or send with arg
+gem.hi ARGV[0]
+#-------------------------
 # change my_gem.gemspec
 
 # spec.bindir        = "bin"
