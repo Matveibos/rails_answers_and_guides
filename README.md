@@ -2,7 +2,7 @@
 
 <details>
 <summary>
-   <h3> List with the most useful free Ruby/Ruby on Rails video courses in English  </h3>
+   <h2> List with the most useful free Ruby/Ruby on Rails video courses in English  </h3>
 </summary>
    
 * [Build Airbnb with Ruby on Rails - Level 1](https://coursehunters.net/course/delaem-klon-airbnb-s-ruby-on-rails-uroven-1)
@@ -19,6 +19,18 @@ ___
 ___
 
 
+
+</details>
+
+<details>
+<summary>
+   <h2> List with the most useful free Ruby/Ruby on Rails books in English  </h3>
+</summary>
+   
+* [Ruby® on Rails Notes for Professionals book](https://books.goalkicker.com/RubyOnRailsBook/)
+___
+* [Ruby® Notes for Professionals book](https://books.goalkicker.com/RubyBook/)
+___
 
 </details>
 
@@ -39,11 +51,6 @@ ___
   https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-one
 ## Ruby on Rails and microservices
   https://blog.codeship.com/architecting-rails-apps-as-microservices/
-## Ruby video courses
-  https://coursehunters.net/search?q=ruby
-## Notes for proffesionals
-  https://books.goalkicker.com/
-  
 ## CLEAN RUBY TUTORIAL
   https://blog.joshsoftware.com/
 ## Some open source rails project with their code on github
