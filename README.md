@@ -77,6 +77,7 @@ ___
 
 
 </details>
+
 ## Rails 5 article serias
   https://blog.bigbinary.com/categories/rails-5/
 
