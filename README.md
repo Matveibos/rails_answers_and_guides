@@ -2,7 +2,7 @@
 
 <details>
 <summary>
-   <h2> List with the most useful free Ruby/Ruby on Rails video courses in English  </h3>
+   <h2> List with the awesome free Ruby/Ruby on Rails video courses in English  </h3>
 </summary>
    
 * [Build Airbnb with Ruby on Rails - Level 1](https://coursehunters.net/course/delaem-klon-airbnb-s-ruby-on-rails-uroven-1)
@@ -24,7 +24,7 @@ ___
 
 <details>
 <summary>
-   <h2> List with the most useful free Ruby/Ruby on Rails books in English  </h3>
+   <h2> List with the awesome free Ruby/Ruby on Rails books in English  </h3>
 </summary>
    
 * [Ruby® on Rails Notes for Professionals book](https://books.goalkicker.com/RubyOnRailsBook/)
