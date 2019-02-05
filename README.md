@@ -80,7 +80,7 @@ ___
 
 <details>
 <summary>
-   <h2> JUST list with useful links </h3>
+   <h2> JUST a list with useful links </h3>
 </summary>
 ## Rails 5 article serias
   https://blog.bigbinary.com/categories/rails-5/
