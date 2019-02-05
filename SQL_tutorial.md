@@ -1,3 +1,5 @@
+# `SQL`
+
 1. How you can select all rows from the table?
     
         SELECT * FROM my_table;
