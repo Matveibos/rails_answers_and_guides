@@ -7,4 +7,7 @@
 ```ruby
   # read info from the file
   File.open('spec/fixtures/temp.json').read
+  
+  # check if file exist
+  File.exist? 'spec/fixtures/amendments.json'
 ```
