@@ -14,3 +14,5 @@
 5. Set design like in atom
 
         https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark
+6. Set size of icons and folders
+        ??
