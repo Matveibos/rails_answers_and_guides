@@ -7,6 +7,10 @@
 3. Set 2 spaces tab instead of 4
 
         https://stackoverflow.com/questions/29972396/vscode-how-do-i-set-tab-space-style
-4. Set key map like in atom 
+4. Set keyboad shortcut like in atom 
         
         https://marketplace.visualstudio.com/items?itemName=ms-vscode.atom-keybindings
+        
+5. Set design like in atom
+
+        https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark
