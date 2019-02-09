@@ -1,3 +1,14 @@
+0. How to add zsh plugins for ruby?
+      
+            $ subl ~/.zshrc 
+            # add ruby plugins there
+            plugins=(rails git ruby)
+            
+            # ruby - https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/ruby/ruby.plugin.zsh
+            # rails - https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/rails/rails.plugin.zsh
+            # you can add your alias
+            alias rb="ruby"
+
 1. How to run sh script?
       
             # install zsh
