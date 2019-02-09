@@ -209,4 +209,6 @@ http://gitreal.codeschool.com/
         git remote add origin git@github.com:user/repo.git 
 38. How to make commit in the past time?
         
-        git commit --date="10 day ago" -m "Your commit message" 
+        git commit --date="10 day ago" -m "Your commit message"
+        # or 
+        git commit --date="Mon 8 Mar 2015 20:19:19 BST" --amend
