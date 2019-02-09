@@ -207,3 +207,6 @@ http://gitreal.codeschool.com/
         git remote -v 
         git remote remove origin 
         git remote add origin git@github.com:user/repo.git 
+38. How to make commit in the past time?
+        
+        git commit --date="10 day ago" -m "Your commit message" 
