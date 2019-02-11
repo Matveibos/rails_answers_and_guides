@@ -212,3 +212,6 @@ http://gitreal.codeschool.com/
         git commit --date="10 day ago" -m "Your commit message"
         # or 
         git commit --date="Mon 8 Mar 2015 20:19:19 BST" --amend
+39. How to add commit without any changes?
+        
+        git commit -m "temp" --allow-empty
