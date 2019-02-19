@@ -61,7 +61,11 @@ http://gitreal.codeschool.com/
         
         # where <rbranch> is the remote branch or source ref and <lbranch> is the as yet non-existent local branch or destination ref you want to track and which you probably want to name the same as the remote branch or source ref.
         
-        
+11.1. How to download branch from github Pull Reqest?
+      
+      # ID - is PR number like '../pull/130'
+      # Branch name - is a new local branch with your changes
+      git fetch origin pull/ID/head:BRANCHNAME
 12. How to include gem directly from github?
         
         # from https://github.com/unfernandito/coupons
