@@ -64,7 +64,7 @@ http://gitreal.codeschool.com/
 11.1. How to download branch from github Pull Reqest?
       
       # ID - is PR number like '../pull/130'
-      # Branch name - is a new local branch with your changes
+      # Branch name - is a name for this branch on your local machine
       git fetch origin pull/ID/head:BRANCHNAME
 12. How to include gem directly from github?
         
