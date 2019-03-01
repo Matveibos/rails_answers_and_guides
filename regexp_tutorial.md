@@ -134,5 +134,5 @@ Cheat book : https://www.cheatography.com/davechild/cheat-sheets/regular-express
           # => '2010'          
 5. How to get all mathched values? ( With case insensitive )
 ```ruby
-          content.scan(/(?=(something))/i).flatten.compact
+  content.scan(/(?=(something))/i).flatten.compact
 ```
