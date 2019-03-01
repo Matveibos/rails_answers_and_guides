@@ -132,3 +132,7 @@ Cheat book : https://www.cheatography.com/davechild/cheat-sheets/regular-express
           pattern = /SFS(?<year>\d+)-(\d+)/
           pattern.match(string)[:year]
           # => '2010'          
+5. How to get all mathched values? ( With case insensitive )
+```ruby
+          content.scan(/(?=(something))/i).flatten.compact
+```
