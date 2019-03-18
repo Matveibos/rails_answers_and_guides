@@ -200,6 +200,24 @@
   # [[1, 2], [4], [9, 10, 11, 12], [15, 16], [19, 20, 21]]
 ```
 
+29. How to implement custom sort?
+```ruby
+  def sort_by_weight
+    list_number.sort { |first, second| sort_condition(first, second) }.join(' ')
+  end
+  
+  private
+  
+  def number_weight(num)
+    num.split('').map(&:to_i).reduce(&:+)
+  end
+  
+  def sort_condition(first, second)
+    return  1 if number_weight(first) > number_weight(second)
+    return -1 if number_weight(first) < number_weight(second)
+    first <=> second
+  end
+```
 
 # `RAILS METHOD`
 
