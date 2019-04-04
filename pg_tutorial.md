@@ -1,3 +1,7 @@
+`#articles`
+
+      https://coursehunters.net/course/egghead-get-started-with-postgresql
+
 1. How you can install gem pg?
       
             sudo apt-get install libpq-dev
