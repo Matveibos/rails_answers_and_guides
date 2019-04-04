@@ -1,6 +1,7 @@
 `# articles`
 
       https://coursehunters.net/course/egghead-get-started-with-postgresql
+      http://sqlfiddle.com #postgresql fiddle
 
 1. How you can install gem pg?
       
