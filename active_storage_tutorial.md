@@ -28,3 +28,6 @@ Articles
         # link to the attached file
         link_to 'File', rails_blob_path(archive.xml_archive)
         
+2. How to get content fron the donwloaded file?
+        
+        archive.xml_archive.download
