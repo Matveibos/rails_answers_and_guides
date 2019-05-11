@@ -219,6 +219,14 @@
   end
 ```
 
+30. How to convert any object to Array?
+
+```ruby 
+  Array('a') => ['a']
+  Array(nil) => []
+  Arrau([1,2]) => [1,2]
+```
+
 # `RAILS METHOD`
 
 26. How to check if object property exists?
