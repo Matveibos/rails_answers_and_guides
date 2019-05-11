@@ -21,3 +21,27 @@
 
         h.dig(:foo, :bar, :baz)           #=> 1
         h.dig(:foo, :zot)                 #=> nil
+
+4. add to hash 
+         
+         hsh["pig"] = "Wilbur"
+5. iterate in hash
+
+         hsh.each_pair{ |k,v| puts "#{k}: #{v}"}
+         
+         -------------------------------------------------------------------
+         
+         {"CA"=>"California"}.each do |pair|
+            puts pair[0]
+            puts pair[1]
+         end      
+
+         #=> CA
+         #=> California
+         
+5. inject
+         
+         val = [1,3,5,7].inject(0) do |total, num|
+           total += num
+         end   
+         puts val   #=> 16
