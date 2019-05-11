@@ -224,7 +224,7 @@
 ```ruby 
   Array('a') => ['a']
   Array(nil) => []
-  Arrau([1,2]) => [1,2]
+  Array([1,2]) => [1,2]
 ```
 
 # `RAILS METHOD`
