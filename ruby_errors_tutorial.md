@@ -56,3 +56,17 @@ ensure
   # will be called in any case
 end
 ```
+
+6. Why do you need to use try/catch?
+
+```ruby
+# it's a control flow, it helps you to terminate your loop whenever you want 
+catch(:five) do
+  10.times do
+    10.times do |a|
+      throw(:five, a) if a == 5
+    end
+  end
+end
+
+```
