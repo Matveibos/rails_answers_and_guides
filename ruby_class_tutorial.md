@@ -30,3 +30,27 @@ b.hello
 # => undefined method `hello' f    
 ```
 ___
+
+3. What is prepend method?
+```ruby
+
+# prepend insert module before the reciever
+
+module A
+  def h
+    p 'h'
+  end
+end
+
+class B 
+  prepend A
+
+  def h 
+  end
+end
+
+B.ancestors
+# => [A, B, Object ...
+
+```
+___
