@@ -30,3 +30,29 @@
           log.error error.message
           raise
         end
+4. How to retry service call after an errors?
+
+```ruby
+# use retry 
+begin
+  raise
+
+rescue
+  p 'failed'
+  sleep 1
+  
+  retry
+end
+```
+
+5. How to run part of code in any case?
+
+```ruby
+# use ensure
+
+begin
+  raise 
+ensure
+  # will be called in any case
+end
+```
