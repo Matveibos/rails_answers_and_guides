@@ -140,6 +140,23 @@
   Array([1,2]) => [1,2]
 ```
 
+31. How to check object inside the `switch` operation?
+
+```ruby 
+# use ->(arg) {} for it
+
+a = 'aaa'
+case a
+when 'aa'
+ p 1
+when ->(value) { value.length == 3}
+ p 2
+end
+
+# 2
+
+```
+
 # `RAILS METHOD`
 
 26. How to check if object property exists?
