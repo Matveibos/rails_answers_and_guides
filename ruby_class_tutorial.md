@@ -70,3 +70,22 @@ end
 
 A.hello
 ```
+
+___
+
+5. How to use module methods without directly calling module?
+
+```ruby
+# include module inside your app
+
+module A
+  module_function
+
+  def hello
+    p 'hello!'
+  end
+end
+
+include A
+hello #=> 'hello!'
+```
