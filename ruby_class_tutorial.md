@@ -54,3 +54,19 @@ B.ancestors
 
 ```
 ___
+
+4. How to create module function?
+
+```ruby 
+# use module_function
+
+module A
+  def hello
+    p 'hello!'
+  end
+
+  module_function :hello
+end
+
+A.hello
+```
