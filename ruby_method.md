@@ -185,3 +185,7 @@ end
 29. How to remove all unnessesary spaces?
          
          "aaad fef ffr   ".squish
+30. How to check real boolean values?
+
+         ActiveModel::Type::Boolean.new.cast 'false' 
+         # => false
