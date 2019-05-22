@@ -124,6 +124,8 @@
                   end
          # 5. Add refresh_part.js.erb
              $("#part_you_want_to_refresh").html("<%= raw escape_javascript(render(partial: 'my_partial', data: @data)) %>")
+             # or ( don't forget to setup data inside the controller action @data = 1 )
+             $("#part_you_want_to_refresh").html("<%= j render 'my_partial' %>")
          # 6. Add to your partial _my_partial.html.erb
              <div id="part_you_want_to_refresh">
               <% if @data.present? %>
