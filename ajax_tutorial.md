@@ -166,3 +166,17 @@
               console.log('Carregou')
             }
           })
+2. Destroy picture with ajax
+
+```ruby
+          # create a link with a route
+            resources :rooms, only: [:destroy]
+            <%= link_to(room_path(room.id), remote: true, method: :delete) %>
+          # create controller with destroy method
+          def destroy
+            @room.destroy
+            respond_to :js
+          end
+          # create rooms/destroy.js file and update any #id what you want with any partial
+          $("#photos").html("<%= j render 'photo_list' %>")
+```
