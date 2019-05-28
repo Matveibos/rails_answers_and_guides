@@ -31,3 +31,17 @@
         
         Book.last.attributes
         => it return hash attributes
+8. How to generate a model without migration?
+
+```ruby
+   rails g model Animal --skip-migration
+   #or
+   rails g model Animal --migration=false
+   
+```
+
+9. How to generate a model with a parent?
+
+```ruby
+   rails g model Animal --parrent=BaseAnimal
+```
