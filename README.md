@@ -152,4 +152,6 @@ https://www.tutorialspoint.com/rspec/rspec_introduction.htm
   https://www.gitbook.com/
 </details>
 
+# BLOGS
 
+https://blog.bigbinary.com/
