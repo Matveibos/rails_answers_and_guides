@@ -1,4 +1,7 @@
-1. How you can check data?
+0. How to get show the source of a method?
+            
+            ActiveRecord::Base.method(:find).source_location
+1. How can you check the data?
             
             user = User.new(name: "Michael Hartl", email: "mhartl@example.com")
             user.valid?
