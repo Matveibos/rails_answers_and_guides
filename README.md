@@ -155,3 +155,4 @@ https://www.tutorialspoint.com/rspec/rspec_introduction.htm
 # BLOGS
 
 https://blog.bigbinary.com/
+https://www.justinweiss.com/articles/archives/
