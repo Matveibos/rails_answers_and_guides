@@ -5,6 +5,8 @@ Articles
         https://api.rubyonrails.org/files/activestorage/README_md.html
         # rspec 
         https://medium.com/craft-academy/rails-attachments-with-active-storage-e8c9e726ab0d
+        # How to attach file to amazon s3?
+        https://medium.com/alturasoluciones/setting-up-rails-5-active-storage-with-amazon-s3-3d158cf021ff
         
 0. How to add active_storage to the project?
 
