@@ -7,6 +7,8 @@ Articles
         https://medium.com/craft-academy/rails-attachments-with-active-storage-e8c9e726ab0d
         # How to attach file to amazon s3?
         https://medium.com/alturasoluciones/setting-up-rails-5-active-storage-with-amazon-s3-3d158cf021ff
+        # How to attach file to the google cloud stage?
+        https://medium.com/@pjbelo/setting-up-rails-5-2-active-storage-using-google-cloud-storage-and-heroku-23df91e830f8
         
 0. How to add active_storage to the project?
 
