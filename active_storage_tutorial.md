@@ -35,3 +35,6 @@ Articles
 2. How to get content fron the donwloaded file?
         
         archive.xml_archive.download
+3. How to check if file is attached?
+        
+        archive.xml_archive.attached?
