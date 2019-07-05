@@ -137,3 +137,6 @@
 20. How to push another branch to heroku? 
           
           git push heroku yourbranch:master
+21. How to create heroku app with a name?
+          
+          heroku create your_name
