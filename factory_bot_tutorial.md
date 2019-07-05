@@ -4,22 +4,11 @@
         https://semaphoreci.com/community/tutorials/working-effectively-with-data-factories-using-factorygirl
 1. How to include new version of gem? (FactoryBot)
  ```ruby       
-    # add gem 
     gem "factory_bot_rails"
-
-    # add spec/support/factory_bot.rb
-    RSpec.configure do |config|
-      config.include FactoryBot::Syntax::Methods
-    end
-    # Remember to require the above file in your rails_helper since the support folder isn't eagerly loaded
-    require 'support/factory_bot'
-
-    # In new place use FactoryBot instead of FactoryGirl
 ```
 ___
 1. How you can initialize factory folder?
 ```ruby
-    gem "factory_bot_rails"
     rails g factory_bot:model MyModel
     # it will create spec/factories/my_model.rb
 ```
