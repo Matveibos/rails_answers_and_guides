@@ -228,6 +228,9 @@
           config.file_fixture_path = "spec/custom_directory"
         end
 
+6. How to match regexp?
+
+       expect('hello').to match(regexp)
 ## STUB/ MOCK
 
 1. Articles
