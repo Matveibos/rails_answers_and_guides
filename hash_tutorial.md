@@ -45,3 +45,9 @@
          #=> CA
          #=> California
 
+6. How to update the hash and don't create a new copy of hash?
+      
+```ruby
+   # it will create hash without an array
+   [{'hello' => 'hello'}].reduce({}, :update)
+```
