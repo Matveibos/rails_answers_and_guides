@@ -313,3 +313,11 @@
               adapter:  'sqlite3',
               database: '../not_my_database_development'
             })
+## ------------------------ ActiveRecord LOCK ------------------------
+
+1. How to lock creating object before running the next query?
+```ruby
+    with_lock do
+      codes.create(generated_attrubutes)
+    end
+```
