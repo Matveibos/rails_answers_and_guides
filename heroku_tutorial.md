@@ -140,3 +140,7 @@
 21. How to create heroku app with a name?
           
           heroku create your_name
+
+22. How to open your app in bash console?
+          
+          heroku run bash -a my-app
