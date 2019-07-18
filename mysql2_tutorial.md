@@ -72,4 +72,5 @@
             $ mysql.server restart
 12. How to set up mysql on heroku?
             
+            # If you’re using the mysql2 gem, you will need to change the mysql:// scheme in the CLEARDB_DATABASE_URL to mysql2://
             https://medium.com/@emersonthis/running-rails-with-mysql-on-heroku-4765df033428
