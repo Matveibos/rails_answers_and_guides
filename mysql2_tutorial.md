@@ -64,3 +64,9 @@
       
             bin/rails db:environment:set RAILS_ENV=development, 
             rake db:drop
+11. How to set up an empty password for the MySql root user?
+            
+            $ mysqld --skip-grant-tables
+            $ mysql -u root mysql
+            $ update user set authentication_string=password('') where user='root';
+            $ mysql.server restart
