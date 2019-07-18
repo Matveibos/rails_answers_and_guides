@@ -70,3 +70,6 @@
             $ mysql -u root mysql
             $ update user set authentication_string=password('') where user='root';
             $ mysql.server restart
+12. How to set up mysql on heroku?
+            
+            https://medium.com/@emersonthis/running-rails-with-mysql-on-heroku-4765df033428
