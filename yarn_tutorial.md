@@ -6,3 +6,6 @@
 
         yarn init
         yarn add bootstrap
+3. How to install yarn dependency package?
+      
+        yarn install
