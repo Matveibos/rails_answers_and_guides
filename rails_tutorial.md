@@ -266,3 +266,9 @@
 2. How to group elements in active record?
          
          ModelName.all.group_by(&:value).keys
+
+## RAILS METHODS
+
+1. delegate_missing_to :object
+
+        # if such method doesn't exist then delegate the functionlaity of this method into other object
