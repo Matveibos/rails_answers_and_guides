@@ -269,6 +269,6 @@
 
 ## RAILS METHODS
 
-1. delegate_missing_to :object
+1. `delegate_missing_to :object`
 
         # if such method doesn't exist then delegate the functionlaity of this method into other object
