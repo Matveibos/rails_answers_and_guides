@@ -271,4 +271,7 @@
 
 1. `delegate_missing_to :object`
 
-        # if such method doesn't exist then delegate the functionlaity of this method into other object
+        # if such method DOES'T EXIST then delegate the functionlaity of this method into other object
+1. `delegate :some_existing_method, to: :another_object`
+
+        # if such method EXIST then delegate the functionlaity of this method into other object
