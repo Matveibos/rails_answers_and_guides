@@ -254,3 +254,6 @@
                 user_verifiable = instance_double(Array, whatever_method: nil)
                 # it will raise an error, because Array doesn't have such a method
                 
+3. How to show rspec input with documentation?
+        
+        rspec -fd spec
