@@ -11,3 +11,7 @@
 3. Addapter pattern
       
        https://www.sitepoint.com/using-and-testing-the-adapter-design-pattern/
+
+4. List of the most usefull patterns
+
+      https://sourcemaking.com/design_patterns
