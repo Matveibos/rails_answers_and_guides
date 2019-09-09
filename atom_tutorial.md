@@ -17,3 +17,4 @@
 4. How to open atom from terminal?
                 
             ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/atom
+            http://tutorials.jumpstartlab.com/academy/workshops/terminal_and_editor.html
