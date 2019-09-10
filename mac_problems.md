@@ -90,3 +90,6 @@
         brew upgrade node
         npm install -g npm
        
+18. How to open a new terminal window in the same folder as before?
+        
+        https://medium.com/ayuth/new-tab-iterm2-with-in-current-directory-627b0c31734a
