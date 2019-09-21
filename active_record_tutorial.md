@@ -66,18 +66,11 @@
             
             # user belongs_to role, role has_many :users
             user.role.any_params
-15. How to add default value to column throught a migration?
-            
-            # rails g migration add_default_value
-              def change
-                change_column_default :table, :column, value
-              end
+
 14. How to remove index from column?
             
             remove_index :table, :column
-15. How to remove column from table?
 
-            remove_column :table_name, :column_name
 16. How to create many_to_many polimorphic accociation?
             
             # asigment.rb
@@ -174,12 +167,6 @@
 22. How to set after_update callback with condition?
             
             before_save :do_something, if: :status_id_changed?
-23. How to change column type and column name by migration?
-            
-            def change
-              rename_column :general_exams, :semester, :semester_id
-              change_column :general_exams, :semester_id, :integer
-            end
 24. How to select uniq value from active record models?
                         
             user.addresses.pluck(:city).uniq # => ['Moscow']
@@ -276,11 +263,6 @@
 40. Hwo to update attributes without rewriting db?
             
             my_obj.write_attribute(:my_field, 'some value')
-41. How to allow nil value in association belongs_to?
-            
-            class Book < ActiveRecord::Base
-                belongs_to :author, optional: true
-            end
 ## ------------------------ ActiveRecord without rails ------------------------
 
 
