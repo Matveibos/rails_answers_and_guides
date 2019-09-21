@@ -1,4 +1,4 @@
-1. How to change a column type and a column name with a migration?
+1. How to change a `column_type` and a `column_name with a migration?
 
 ```rb
 def change
