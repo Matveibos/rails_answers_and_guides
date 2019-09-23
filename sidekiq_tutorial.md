@@ -14,3 +14,12 @@ Articles
         Rails.application.routes.draw do
           mount Sidekiq::Web => '/sidekiq'
         end
+        
+3. How to run sidekiq sheduler on a daily basis?
+
+```rb
+
+    https://tecadmin.net/crontab-in-linux-with-20-examples-of-cron-schedule/
+
+    '0 2 * * *'
+```
