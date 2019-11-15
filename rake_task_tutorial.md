@@ -21,3 +21,9 @@
        rails g task my_namespace my_task1 my_task2
        # then 
        rake my_namespace:my_task1
+3. What is the most important think you must know about the rake tasks?
+
+       
+       Every method which will be defined in the rake task will be available to another rake tasks
+       So it's not easy to avoid collision in this case.
+       https://supergood.software/dont-step-on-a-rake/
