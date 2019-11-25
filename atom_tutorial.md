@@ -18,3 +18,6 @@
                 
             ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/atom
             http://tutorials.jumpstartlab.com/academy/workshops/terminal_and_editor.html
+5. How to open tree view with keyboard shortcut?
+        
+        cmd + shift + | (pipe)
