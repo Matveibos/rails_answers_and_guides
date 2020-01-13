@@ -41,6 +41,10 @@ ___
 ___
 * [The list with all available ruby books(NOT FREE)](http://www.allrubybooks.com/)
 ___
+* [FREE RUBY BOOK](https://www.twirpx.com/files/applied/comp/ruby/)
+___
+
+
 
 </details>
 
