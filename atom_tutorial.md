@@ -4,13 +4,13 @@
         
 2. What packages you need to install?
             
-            Atom Beutify
+            atom-beutify
             Copy Path
-            Git Blame
-            GoTo Defenition
-            Pretty JSON
+            git-blame
+            goto-defenition
+            pretty-json
             Tree View
-            Tab To Spaces
+            tab-to-spaces
 3. How to add react autocomplete?
         
             https://gist.github.com/mxstbr/361ddb22057f0a01762240be209321f0
