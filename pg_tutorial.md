@@ -175,6 +175,8 @@
          <<: *default
          database: sakurami_production
 8. How to install pg gem for mac? 
+
+            # you need to install PG first https://postgresapp.com/downloads.html
             
             gem install pg -- --with-pg-config=/Applications/Postgres.app/Contents/Versions/latest/bin/pg_config
             
