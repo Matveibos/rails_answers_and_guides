@@ -219,3 +219,6 @@ http://gitreal.codeschool.com/
 39. How to add commit without any changes?
         
         git commit -m "temp" --allow-empty
+40. How to cherry pick several commits?
+
+        git cherry-pick first_commit~1..last_commit
