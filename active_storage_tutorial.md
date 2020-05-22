@@ -38,3 +38,7 @@ Articles
 3. How to check if file is attached?
         
         archive.xml_archive.attached?
+        
+4. How to get file name?
+
+        @import.file.blob.filename
