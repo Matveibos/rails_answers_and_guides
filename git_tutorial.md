@@ -222,3 +222,5 @@ http://gitreal.codeschool.com/
 40. How to cherry pick several commits?
 
         git cherry-pick first_commit~1..last_commit
+        
+        # don't forget to run git cherry-pick --continue if any conflict appears
