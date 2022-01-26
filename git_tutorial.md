@@ -224,3 +224,10 @@ http://gitreal.codeschool.com/
         git cherry-pick first_commit~1..last_commit
         
         # don't forget to run git cherry-pick --continue if any conflict appears
+        
+41. How to continue merge after fixing conflicts?
+
+        git merge origin/main 
+        # conflict appears
+        git add .
+        git merge --continue
