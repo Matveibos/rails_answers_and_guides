@@ -11,6 +11,7 @@
             pretty-json
             Tree View
             tab-to-spaces
+            tablr
             https://atom.io/packages/rails-rspec
 3. How to add react autocomplete?
         
@@ -22,3 +23,15 @@
 5. How to open tree view with keyboard shortcut?
         
         cmd + shift + | (pipe)
+        
+6. CSV editor
+
+```rb
+https://atom.io/packages/tablr
+
+# we need to fix it by doing it
+
+apm uninstall tablr
+apm install https://github.com/mfripp/atom-tablr.git
+
+```
